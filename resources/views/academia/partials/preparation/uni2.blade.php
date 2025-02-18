@@ -256,7 +256,6 @@ h1.preparation__title.titulo_conoce {
       #tab1:checked~.content #content1,
       #tab2:checked~.content #content2,
       #tab3:checked~.content #content3,
-      #tab5:checked~.content #content5,
       #tab6:checked~.content #content6,
       #tab7:checked~.content #content7,
       #tab8:checked~.content #content8
@@ -978,11 +977,7 @@ h1.preparation__title.titulo_conoce {
          Escolar IEN
       </label>
 
-      
-      <input id="tab5" type="radio" name="tabs" >
-      <label for="tab5">
-         Verano
-      </label>
+   
       
       
       <!--input id="tab4" type="radio" name="tabs">
@@ -1069,31 +1064,21 @@ h1.preparation__title.titulo_conoce {
                      <td>Tarde</td>
                   </tr>
                </tbody>
+                     <td>S/ 450.00</td>
+                     <td>S/ 200.00</td>
             </table>
          </div-->
 
 
          <div id="content5">
             <table class="table-rest5 animate__animated animate__fadeIn">
-               <thead>
-                  <tr>
-                     <th>Inicio</th>
-			            <th>Fin</th>
-                     <th>N° Semanas</th>
-                     <th>Pago al contado</th>
-			            <th>Cuota 1</th>
-                     <th>Cuota 2</th>
-                     <th>Modalidad</th>
-                  </tr>
-               </thead>
+
                <tbody>
                   <tr>
 				         <td>02/01/2025</td>
       				   <td>15/02/2025</td>
                      <td>7</td>
 				         <td>S/ 600.00</td>
-                     <td>S/ 450.00</td>
-                     <td>S/ 200.00</td>
                      <td>Presencial</td>
                   </tr>
                   <tr>
@@ -1270,7 +1255,6 @@ h1.preparation__title.titulo_conoce {
       <a href="https://www.trilce.edu.pe/l/brochure-anual-uni-2025" target="_blank" class="btn">Descargar Brochure Anual</a>
       <a href="https://www.trilce.edu.pe/l/brochure-semestral-uni-2025" target="_blank" class="btn">Descargar Brochure Semestral</a>
       <a href="https://www.trilce.edu.pe/l/brochure-escolar-ien-uni-2025" target="_blank" class="btn">Descargar Brochure Escolar IEN</a>
-      <a href="https://www.trilce.edu.pe/l/verano-uni-2025" target="_blank" class="btn">Descargar Brochure Verano</a>
     </div>
   </div>
 

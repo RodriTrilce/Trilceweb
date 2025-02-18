@@ -316,8 +316,6 @@
       transition: 0.3s;
       }
       #tab1:checked~.content #content1,
-      #tab2:checked~.content #content2,
-      #tab3:checked~.content #content3,
       #tab4:checked~.content #content4,
       #tab5:checked~.content #content5 {
       display: block;
@@ -717,15 +715,7 @@
 			 POP I
 		</label>
 
-      
-      <input id="tab2" type="radio" name="tabs">
-		<label for="tab2">
-			Repaso
-		</label>
-      <input id="tab3" type="radio" name="tabs">
-		<label for="tab3">
-			Verano
-		</label>
+   
 
 
       <!--input id="tab2" type="radio" name="tabs">
@@ -823,80 +813,7 @@
                </table>
             </div> 
 
-            <div id="content2">
-               <table class="table-rest2 animate__animated animate__fadeIn">
-                  <thead>
-                     <tr>
-                        <th>Inicio</th>
-			               <th>Fin</th>
-                        <th>Nro. Semanas</th>
-                        <th>Pago al contado</th>
-                        <th>Cuota 1</th>
-                        <th>Cuota 2</th>
-                        <th>Modalidad</th>
-                        <th>Sedes</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>30/12/2024</td>
-      				      <td>15/02/2025</td>
-                        <td>7</td>
-				            <td>S/ 750.00</td>
-				            <td>S/ 500.00</td>
-                        <td>S/ 300.00</td>
-                        <td>Presencial</td>
-                        <td>Santa Beatriz, Los Olivos</td>
-                     </tr>
 
-                  </tbody>
-               </table>
-            </div>
-
-            <div id="content3">
-               <table class="table-rest2 animate__animated animate__fadeIn">
-                  <thead>
-                     <tr>
-                        <th>Inicio</th>
-			               <th>Fin</th>
-                        <th>Nro. Semanas</th>
-                        <th>Pago  al contado</th>
-                        <th>Cuota 1</th>
-                        <th>Cuota 2</th>
-                        <th>Modalidad</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <td>02/01/2025</td>
-      				      <td>15/02/2025</td>
-                        <td>6</td>
-				            <td>S/ 700.00</td>
-				            <td>S/ 500.00</td>
-                        <td>S/ 250.00</td>
-                        <td>Presencial</td>
-                     </tr>
-                     <tr>
-                        <td>02/01/2025</td>
-      				      <td>15/02/2025</td>
-                        <td>6</td>
-				            <td>S/ 450.00</td>
-				            <td>S/ 300.00</td>
-                        <td>S/ 200.00</td>
-                        <td>Virtual</td>
-                     </tr>
-                     <tr>
-                        <td>13/01/2025</td>
-      				      <td>15/02/2025</td>
-                        <td>5</td>
-				            <td>S/ 600.00</td>
-				            <td>S/ 400.00</td>
-                        <td>S/ 250.00</td>
-                        <td>Presencial </td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
 
             <div id="content5">
                <table class="table-rest animate__animated animate__fadeIn">
@@ -1046,8 +963,6 @@
     <div class="benefits-buttons">
       <a href="https://www.trilce.edu.pe/l/brochure-semestral-pucp-2025" target="_blank" class="btn">Descargar Brochure Semestral I</a>
       <a href="https://www.trilce.edu.pe/l/brochure-pop-pucp-2025" target="_blank" class="btn">Descargar Brochure POP I</a>
-      <a href="https://www.trilce.edu.pe/l/verano-catolica-2025" target="_blank" class="btn">Descargar Brochure Verano</a>
-      <a href="https://www.trilce.edu.pe/l/repaso-catolica-2025" target="_blank" class="btn">Descargar Brochure Repaso</a>
     </div>
   </div>
 
