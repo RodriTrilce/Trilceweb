@@ -9,10 +9,6 @@ switch ($_POST['ciclo'])
     case "Escolar IEN":
         $ciclo = "00177";
         break;
-    
-    case "Verano":
-        $ciclo = "00112";
-        break;
    
     case "Anual":
         $ciclo = "00116";
@@ -183,11 +179,6 @@ if ($ciclo == "00177")
 {
     $subject = "¡Gracias por registrarte! - Ciclo escolar IEN UNI - Trilce Academia";
 	require 'r_uni/escolar.php';	
-}
-elseif ($ciclo == "00112")
-{
-    $subject = "¡Gracias por registrarte! - Preparación UNI - Trilce Academia";
-	require 'r_uni/verano.php';	
 }
 elseif ($ciclo == "00116")
 {

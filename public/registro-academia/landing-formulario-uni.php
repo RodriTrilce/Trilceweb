@@ -338,9 +338,6 @@
     },
     "Escolar IEN": {
       "Mañana": [],
-    },
-    "Verano": {
-      "Mañana": [],
     }
   }
   window.onload = function()

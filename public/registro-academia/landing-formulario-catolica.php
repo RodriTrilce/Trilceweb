@@ -340,12 +340,6 @@ $(document).ready(function()
     },
     "POP I": {
       "Mañana": []
-    },
-    "Repaso": {
-      "Mañana": []
-    },
-		"Verano": {
-      "Mañana": []
     }
   }
   window.onload = function()

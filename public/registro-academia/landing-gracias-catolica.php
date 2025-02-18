@@ -6,12 +6,6 @@ $SERVICIO 				= "ACACA";
 
 switch ($_POST['ciclo'])  
 {
-	case "Repaso":
-		$ciclo = "00148";
-		break;
-	case "Verano":
-		$ciclo = "00149";
-		break;
     case "Semestral":
         $ciclo = "00154";
         break;
@@ -168,17 +162,7 @@ $mail->addBCC('');
 
 $mail->CharSet = 'UTF-8';
 
-if ($ciclo == "00148")
-{
-    $subject = "¡Gracias por registrarte! - Preparación Católica - Trilce Academia";
-	require 'r_pucp/repaso.php';	
-}
-elseif ($ciclo == "00149")
-{
-    $subject = "¡Gracias por registrarte! - Preparación Católica - Trilce Academia";
-	require 'r_pucp/verano.php';	
-}
-elseif ($ciclo == "00124")
+if ($ciclo == "00124")
 {
     $subject = "¡Gracias por registrarte! - Ciclo escolar Primera Opción Católica - Trilce Academia";
 	require 'r_pucp/pop.php';	
