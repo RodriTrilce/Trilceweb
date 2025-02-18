@@ -1,0 +1,482 @@
+.navbar-nav .nav-item:nth-child(1) .nav-link {
+    border-bottom: 1.2px solid white
+}
+
+/* SECTIONS */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+section.registry {
+    background-color: #F5F5F5;
+    padding: 5em 0em;
+}
+
+.registry h3 {
+    color: #FF6334;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0.8em;
+}
+
+.registry p {
+    color: #5C6064;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+
+section.hr {
+    background-color: #fff;
+    height: 10vh;
+}
+
+/* FORM TO REGISTRY MATERIAL DESIGN  */
+
+.form-registry {
+    font-family: 'Geogrotesque-Rg';
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*------------------------------input type text and textarea and other starts-----*/
+.form-inline>.form-group,
+.form-inline>.btn {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-help {
+    margin-top: 0.125rem;
+    margin-left: 0.125rem;
+    color: #5C6064;
+    font-size: 0.8rem;
+}
+
+.form-group input {
+    height: 1.9rem;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group select {
+    width: 100%;
+    font-size: 1rem;
+    height: 1.6rem;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    background: none;
+    border: none;
+    line-height: 1.6;
+    box-shadow: none;
+}
+
+.form-group .input-label {
+    position: absolute;
+    top: 0.25rem;
+    pointer-events: none;
+    padding-left: 0.125rem;
+    z-index: 1;
+    color: #5C6064;
+    font-size: 1rem;
+    font-weight: normal;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    left: 0px;
+}
+
+.form-group .bar {
+    position: relative;
+    border-bottom: 0.0625rem solid #5C6064;
+    display: block;
+}
+
+.form-group .bar::before {
+    content: '';
+    height: 0.125rem;
+    width: 0;
+    left: 50%;
+    bottom: -0.0625rem;
+    position: absolute;
+    background: #FF6334;
+    -webkit-transition: left 0.28s ease, width 0.28s ease;
+    transition: left 0.28s ease, width 0.28s ease;
+    z-index: 2;
+}
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+
+.form-group input[type="file"] {
+    line-height: 1;
+}
+
+.form-group input[type="file"]~.bar {
+    display: none;
+}
+
+.form-group select,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value {
+    color: #5C6064;
+    background: transparent;
+}
+
+.form-group select~.input-label,
+.form-group input:focus~.input-label,
+.form-group input:valid~.input-label,
+.form-group input.form-file~.input-label,
+.form-group input.has-value~.input-label,
+.form-group textarea:focus~.input-label,
+.form-group textarea:valid~.input-label,
+.form-group textarea.form-file~.input-label,
+.form-group textarea.has-value~.input-label {
+    font-size: 0.8rem;
+    color: #5C6064;
+    top: -1rem;
+    left: 0;
+}
+
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+}
+
+.form-group select:focus~.input-label,
+.form-group input:focus~.input-label,
+.form-group textarea:focus~.input-label {
+    color: #FF6334;
+}
+
+.form-group select:focus~.bar::before,
+.form-group input:focus~.bar::before,
+.form-group textarea:focus~.bar::before {
+    width: 100%;
+    left: 0;
+}
+
+.form-registry select option {
+    background-color: #F5F5F5 !important;
+}
+
+/*------------------------------input type text and textarea and other ends-----*/
+
+
+
+/*--------------------------------Checkbox and radio button Starts --------------*/
+.form-radio,
+.form-group {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
+    position: absolute;
+    width: 100%;
+}
+
+.checkbox .form-help {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-radio .form-help {
+    padding-top: 0.25rem;
+    margin-top: -1rem;
+}
+
+.checkbox label,
+.form-radio label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 2rem;
+    text-align: left;
+    color: #5C6064
+}
+
+.checkbox input,
+.form-radio input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+
+.checkbox small {
+    color: #FF6334;
+    font-weight: bolder;
+}
+
+.radio {
+    margin-bottom: 1rem;
+}
+
+.radio .helper {
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #5C6064;
+}
+
+.radio .helper::before,
+.radio .helper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-transition: -webkit-transform 0.28s ease;
+    transition: -webkit-transform 0.28s ease;
+    transition: transform 0.28s ease;
+    transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+    border-radius: 50%;
+    border: 0.125rem solid currentColor;
+}
+
+.radio .helper::after {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background-color: #B73394;
+    border-color: #B73394;
+}
+
+.radio label:hover .helper {
+    color: #B73394;
+}
+
+.radio input:checked~.helper::after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.radio input:checked~.helper::before {
+    color: #B73394;
+}
+
+.checkbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox .helper {
+    color: #5C6064;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1rem;
+    height: 1rem;
+    z-index: 0;
+    border: 0.125rem solid currentColor;
+    border-radius: 0.0625rem;
+    -webkit-transition: border-color 0.28s ease;
+    transition: border-color 0.28s ease;
+}
+
+.checkbox .helper::before,
+.checkbox .helper::after {
+    position: absolute;
+    height: 0;
+    width: 0.2rem;
+    background-color: #FF6334;
+    display: block;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 0.25rem;
+    content: '';
+    -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+    transition: opacity 0.28s ease, height 0s linear 0.28s;
+    opacity: 0;
+}
+
+.checkbox .helper::before {
+    top: 0.65rem;
+    left: 0.38rem;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    box-shadow: 0 0 0 0.0625rem #FF6334;
+}
+
+.checkbox .helper::after {
+    top: 0.3rem;
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.checkbox label:hover .helper {
+    color: #5C6064;
+}
+
+.checkbox input:checked~.helper {
+    color: #5C6064;
+}
+
+.checkbox input:checked~.helper::after,
+.checkbox input:checked~.helper::before {
+    opacity: 1;
+    -webkit-transition: height 0.28s ease;
+    transition: height 0.28s ease;
+}
+
+.checkbox input:checked~.helper::after {
+    height: 0.5rem;
+}
+
+.checkbox input:checked~.helper::before {
+    height: 1.2rem;
+    -webkit-transition-delay: 0.28s;
+    transition-delay: 0.28s;
+}
+
+.checkbox a {
+    color: #5C6064;
+    font-weight: bold;
+}
+
+.radio+.radio,
+.checkbox+.checkbox {
+    margin-top: 1rem;
+}
+
+.has-error .legend.legend,
+.has-error.form-group .input-label.input-label {
+    color: #d9534f;
+}
+
+.has-error.form-group .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+    color: #d9534f;
+}
+
+.has-error .bar::before {
+    background: #d9534f;
+    left: 0;
+    width: 100%;
+}
+
+/*----------------------------Checkbox and radio button Ends-------------------*/
+
+
+/*--------------------------------Button starts--------------------------------*/
+.button-container {
+    text-align: center;
+}
+
+.button {
+    border: 1px solid #FF6334;
+    background-color: #F5F5F5;
+    max-width: 640px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 1em 0em;
+}
+
+.button span {
+    color: #FF6334;
+    position: relative;
+    z-index: 1;
+}
+
+.button:hover span {
+ color: #fff !important;
+}
+
+.button:hover:before {
+    transform: scaleX(1);
+     color: #fff !important;
+}
+
+.button::before {
+    color: #fff !important;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #FF6334;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+}
+
+.button:active::before,
+.button:focus::before {
+    -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+    transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    color: #fff !important;
+}
+
+.button:focus {
+    outline: none;
+    color: #fff !important;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112446135-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-112446135-1');
+	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Términos y Condiciones - Trilce Academia</title>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/line-awesome.min.css">
+  <style>
+    #ciclo_default,
+    #turno_default {
+      display: block;
+    }
+
+    #ciclo_uni,
+    #ciclo_sanmarcos,
+    #ciclo_catolica,
+    #turno_uni_anual,
+    #turno_uni_semestral,
+    #turno_sanmarcos_anual,
+    #turno_sanmarcos_semestral,
+    #turno_catolica_semestral,
+    #turno_catolica_primeraopcion{
+      display: none;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<nav class="fixed-top py-1">
+  <div class="container">
+    <div class="row box-nav">
+      <div class="col-xs-6 col-md-6 my-2">
+        <a class="navbar-brand" href="https://www.trilce.edu.pe/" target="_blank">
+          <img src="img/logo-academias_tc.svg" width="100" class="ml_logo">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-6 d-flex justify-content-end align-items-center mr_iconos" >
+        <div class="row d-flex">
+          <aside>
+            <a href="https://www.trilce.edu.pe/academia">
+              <img src="img/academia/home.svg" alt="Logo Academia" class="icono_colegio">
+            </a>
+          </aside>
+          <aside>
+            <a href="https://www.trilce.edu.pe/l/whatsapp-academias" target="_blank">
+              <img src="img/academia/whatsapp.svg" alt="Logo Academia" class="icono_colegio">
+            </a>
+          </aside>
+          <aside>
+            <a href="tel:016198100">
+              <img src="img/academia/telefono.svg" alt="Logo Academia" class="icono_colegio">
+            </a>
+          </aside>
+          <aside>
+            <p class="phone desktop">6198 100</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="banner d-flex justify-content-center align-items-center text-center pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center font-weight-bold my-4 titulo_tc phone" style="font-family: NunitoSans-Black;">Condiciones<br> Económicas</h1>
+        <h1 class="text-center font-weight-bold my-4 titulo_tc desktop" style="font-family: NunitoSans-Black;">Condiciones Económicas</h1>
+        <form action="registro.php" method="post" id="form-registry">
+          <div class="container">
+            <div class="row">
+              <div class="box-form col-xs-12 col-md-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <fieldset class="form-group">
+                        <input class="form-control" type="onlytext" minlength="3" maxlength="50" id="nombre" name="nombre" aria-label="Nombres" placeholder="Nombres y apellidos del alumno" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <fieldset class="form-group">
+                        <input class="form-control" type="text" min="0" id="dni" name="dni" placeholder="DNI del alumno" aria-label="DNI" minlength="8" maxlength="8" required="" onkeypress="return isNumber(event)" onpaste="return false;">
+                      </fieldset>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                      <fieldset class="form-group">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                    </div>
+                    <div class="col-xs-12 col-md-12 mb-3 ml-2">
+                      <fieldset class="form-check check-div">
+                        <label for=""></label>
+                        <input class="form-check-input" type="checkbox" id="aceptar" name="aceptar" aria-label="Confirmar Términos y Condiciones" required="" value="1"> <b>Acepto términos y condiciones</b>
+                      </fieldset> 
+                    </div>
+
+                    <div class="col-xs-5 col-md-5">
+                    </div>
+                    <div class="col-xs-2 col-md-2" style="text-align: center">
+                      <button class="btn btn-block btn_enviar" type="submit">Enviar</button>
+                    </div>
+                    <div class="col-xs-5 col-md-5">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="section-accordion accordion" id="accordion-primeros-puestos">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <div class="container">
+        <div class="row">
+          <div style="text-align: center" class="col-xs-12 offset-md-1 col-md-10">
+            <a type="button" class="h1 my-5 gray" data-toggle="collapse" data-target="#collapseOne"><b style="font-family: NunitoSans-Black;" class="ver_titulo_acordeon">¡Ver términos y condiciones aquí!&nbsp;&nbsp;&nbsp;<i class="fa la-angle-down"></i></b>
+            </a>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-primeros-puestos" style="background-color: rgba(0,0,0,.03);">
+      <div class="card-body"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 offset-md-1 col-md-10" style="text-align: justify">
+              <h4 class="ver_subtitulo_acordeon"><b>CONDICIONES ECONÓMICAS</b></h4>
+              <br><br>
+		          <h5 class="ver_subtitulo_acordeon"><b>MODALIDAD VIRTUAL</b></h5>
+              <br><br>
+              <b>1.</b> Para los ciclos Semestral, Anual, Repaso Semestral y Escolar, el pago se realiza mensualmente de forma adelantada. 
+              <br><br>
+              <b>2.</b> En caso el alumno quiera cambiar de ciclo, el trámite lo debe realizar el apoderado o alumno mayor de edad, mediante un correo al tutor y/o coordinador encargado. Sin embargo, se deberá esperar la finalización de la fecha de vencimiento de la cuota; es decir, no puede realizarse el cambio en pleno desarrollo del ciclo o del turno. 
+              <br><br>
+              <b>3.</b> Si el padre de familia, apoderado o alumno mayor de edad requiere la devolución del dinero, ello se aceptará por temas de salud, viaje, problemas familiares, económicos y otros debidamente sustentados, con los documentos respectivos que acrediten la causa. No obstante, la Institución retendrá la suma de S/ 50.00 por concepto de gastos administrativos. Además, se procederá a descontar los días asistidos y no asistidos. El monto restante será devuelto en un plazo de 30 días hábiles.
+              <br><br>
+              <b>4.</b> Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo académico inmediato en el cual el alumno se matricule. En caso decida no retomar la preparación en el ciclo siguiente, el monto reservado le será devuelto en un plazo de 30 días calendario, a solicitud del padre de familia, apoderado o alumno mayor de edad. Ello generará un gasto administrativo de S/ 50.00.
+              <br><br>
+              <b>5.</b> Una vez terminado el ciclo en el cual se inscribió el alumno, el correo institucional, Classroom e Intranet quedarán inhabilitados.
+              <br><br>
+              <b>6.</b> En caso de estar retrasado en el pago de su cuota, se procederá a dar de baja al día siguiente el correo institucional del alumno, Classroom e Intranet. En consecuencia, el estudiante se verá imposibilitado de acceder a las plataformas mencionadas.
+              <br><br>
+              <b>7.</b> El dictado de clases se iniciará siempre que se alcance el número mínimo de alumnos matriculados establecido por la Institución. De lo contrario, se devolverá el dinero en un plazo de 30 días calendario.<br><br>
+              <b>8.</b> Manifiesto mi conformidad en caso la Institución cambie la fecha de inicio del dictado de clases del ciclo en cuestión.
+              <br><br>El tiempo de registro en el banco de datos personales es de 2 años desde el cese de la matrícula.
+              <br><br>"Declaro tener conocimiento de que la Academia Preuniversitaria Trilce incluirá la información personal de mi menor hijo(a), padres y/o apoderados en su base de datos en un tiempo indefinido para fines de la actividad que desarrolla, según la ley n.° 29733".
+              <br><br><br><br>
+		          <h5 class="ver_subtitulo_acordeon"><b>MODALIDAD PRESENCIAL</b></h5>
+              <br><br>
+              <b>1.</b> Para los ciclos UNI y San Marcos: Semestral, Anual, Repaso Semestral, Intensivo y Escolar, el pago se realiza mensualmente de forma adelantada. Para los ciclos Católica: Semestral y POP, el pago se efectúa al contado o en dos cuotas.
+              <br><br>
+              <b>2.</b> En caso el alumno quiera cambiar de ciclo, el trámite lo debe realizar el apoderado o alumno mayor de edad, mediante un correo al tutor y/o coordinador encargado. Sin embargo, se deberá esperar la finalización de la fecha de vencimiento de la cuota; es decir, no puede realizarse el cambio en pleno desarrollo del ciclo o del turno. 
+              <br><br>
+              <b>3.</b> Si el padre de familia, apoderado o alumno mayor de edad requiere la devolución del dinero, ello se aceptará por temas de salud, viaje, problemas familiares, económicos y otros debidamente sustentados, con los documentos respectivos que acrediten la causa. No obstante, la Institución retendrá la suma de S/ 50.00 por concepto de gastos administrativos. Además, se procederá a descontar los días asistidos y no asistidos. El monto restante será devuelto en un plazo de 30 días hábiles.
+              <br><br>
+              <b>4.</b> Para el trámite de postergación de matrícula, se procederá a descontar los días asistidos y no asistidos sin justificación. El monto restante será reservado para el siguiente ciclo académico inmediato en el cual el alumno se matricule. En caso decida no retomar la preparación en el ciclo siguiente, el monto reservado le será devuelto en un plazo de 30 días calendario, a solicitud del padre de familia, apoderado o alumno mayor de edad. Ello generará un gasto administrativo de S/ 50.00.
+              <br><br>
+              <b>5.</b> Una vez terminado el ciclo en el cual se inscribió el alumno, el correo institucional, Classroom e Intranet quedarán inhabilitados.
+              <br><br>
+              <b>6.</b> En caso de estar retrasado en el pago de su cuota, al día siguiente el alumno no podrá ingresar a clases. Adicionalmente, se procederá a dar de baja el correo institucional del alumno, Classroom e Intranet.
+              <br><br>
+              <b>7.</b> El dictado de clases se iniciará siempre que se alcance el número mínimo de alumnos matriculados establecido por la Institución. De lo contrario, se devolverá el dinero en un plazo de 30 días calendario.<br><br>
+              <b>8.</b> Manifiesto mi conformidad en caso la Institución cambie la fecha de inicio del dictado de clases del ciclo en cuestión.
+              <br><br>El tiempo de registro en el banco de datos personales es de 2 años desde el cese de la matrícula.
+              <br><br>"Declaro tener conocimiento de que la Academia Preuniversitaria Trilce incluirá la información personal de mi menor hijo(a), padres y/o apoderados en su base de datos en un tiempo indefinido para fines de la actividad que desarrolla, según la ley n.° 29733".
+              <br><br><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="py-0 my-0"/>
+<footer class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>© <span id="year"></span> Trilce. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.getElementById("year").innerText = currentYear;
+    </script>
+    <script type="text/javascript">     
+      function isNumber(evt) 
+      {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if ( (charCode > 31 && charCode < 48) || charCode > 57)
+        {
+          return false;
+        }
+        return true;
+      }
+    </script>
+    <script>
+      $('a').click(function()
+      {
+          $('html, body').animate({scrollTop: $( $(this).attr('href') ).offset().top}, 500);
+          return false;
+      });
+    </script>
+    <script>
+        $(document).ready(function(){
+           // Add minus icon for collapse element which is open by default
+           $(".collapse.show").each(function(){
+             $(this).prev(".card-header").find(".fa").addClass("la-angle-up").removeClass("la-angle-down");
+           });
+           
+           // Toggle plus minus icon on show hide of collapse element
+           $(".collapse").on('show.bs.collapse', function(){
+             $(this).prev(".card-header").find(".fa").removeClass("la-angle-down").addClass("la-angle-up");
+           }).on('hide.bs.collapse', function(){
+             $(this).prev(".card-header").find(".fa").removeClass("la-angle-up").addClass("la-angle-down");
+           });
+       });
+    </script>
+</body>
+</html>

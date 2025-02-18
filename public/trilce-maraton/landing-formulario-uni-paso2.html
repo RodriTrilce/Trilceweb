@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Trilce Maratón UNI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Formulario para el registro de Trilce Maratón UNI" />
+  <meta name="keywords" content="Trilce Maratón UNI" />
+  <meta content="Themesbrand" name="author" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Font Awesome -->
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/line-awesome.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+	
+  <style>
+    checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .checkbox_form {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 2px solid #FF4E0E !important;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+  }
+  .checkbox_form:checked::after {
+    content: '✔';
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+  </style>
+</head>
+
+<body>
+  
+  <section class="section2 fondo_primeros_puestos pad0">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="fondo_registro_2021 hailitar_header">
+          <div class="row">
+            <div class="col-lg-6 col-xs-6 col-lg-6-tab contenedor_mobile_logo">
+							<a href="https://www.trilce.edu.pe/academia">
+                <img src="images/academia/logo.svg" alt="Logo Academia" class="pad_logo">
+							</a>
+						</div>
+            <div class="col-lg-6 col-xs-6 col-lg-6-tab tair contenedor_mobile_iconos pad_iconos">
+              <a href="https://www.trilce.edu.pe/academia">
+                <img src="images/academia/home.svg" alt="Logo Academia" class="icono_colegio ic_ml">
+              </a>
+              <a href="https://www.trilce.edu.pe/l/whatsapp-academias" target="_blank">
+                <img src="images/academia/whatsapp.svg" alt="Logo Academia" class="icono_colegio">
+              </a>
+              <a href="tel:016198100">
+                <img src="images/academia/telefono.svg" alt="Logo Academia" class="icono_colegio">
+              </a>
+              <br>
+              <span class="texto_telefono">6198 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 fondo_landing_interno_uni full_height">
+        </div>
+        <div class="col-lg-6 pt-4 fondo_registro_2021 full_height">
+          <div class="ml80">
+            <div class="row">
+              <div class="col-lg-2 hailitar_mobile">
+                <a href="https://www.trilce.edu.pe/academia">
+                  <img src="images/academia/logo.svg" alt="Logo Academia">
+                </a>
+              </div>
+              <div class="col-lg-10 hailitar_mobile">
+                  <ul class="ul_nav">
+                    <li style="margin-right: 20px; margin-left: 120px;">
+                      <a href="https://www.trilce.edu.pe/academia" target="_blank" class="enlace_1">
+                        Inicio
+                      </a>
+                    </li>
+                    <li style="margin-right: 20px; margin-left: 20px;">
+                      <div class="div_menu1">
+                        <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-academias" class="enlace_2">
+                          <img src="images/whatsapp.svg" alt="Trilce Academia" class="icono_header" /> 947 273 310
+                        </a>
+                      </div>
+                    </li>
+                    <li style="margin-right: 40px;">
+                      <div class="div_menu2">
+                        <a target="_blank" href="tel:016198100" class="enlace_2">
+                          <img src="images/telefono.svg" alt="Trilce Academia" class="icono_header" /> 6198 100
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="ml80">
+            <h1 class="titulo_academia_interno">Maratones Trilce</h1>
+            <p class="subtitulo_academia_interno_2 desktop">Seleccionaste: <b class="texto_preparacion interno_2b">UNI / Repaso Semestral (Cursos avanzados) / Los Olivos </b></p>
+            <p class="subtitulo_academia_interno_3 mobile">Seleccionaste: <b class="texto_preparacion interno_2b">UNI / Repaso Semestral (Cursos avanzados) / Los Olivos </b></p>
+            
+            <form class="registration-form w_form" action="landing-gracias-catolica.php" method="post">
+              <p class="paso1 ">2. Ingresa datos del apoderado:</p>
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="apellido_paterno_a" name="apellido_paterno_a" placeholder="Apellido paterno" required="required">
+              </div>
+						  <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="apellido_materno_a" name="apellido_materno_a" placeholder="Apellido materno" required="required">
+              </div>
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="nombres_a" name="nombres_a" placeholder="Nombres" required="required">
+              </div>
+              <div class="form-group mb-2 div_inputs">
+                <select class="form-control fondo_blanco icono_select input_1" id="tipo_documento_a" name="tipo_documento_a" required="required">
+                  <option value="">Tipo de documento</option>
+                  <option value="1">Carnet de extranjeria</option>
+                  <option value="2">DNI</option>
+                  <option value="3">Pasaporte</option>
+                </select>
+                <input type="text" class="form-control fondo_blanco input_2" id="dni_a" name="dni_a" placeholder="Número de documento" required="required" onkeypress="return isNumber(event)" onpaste="return false;" minlength="7" maxlength="9">
+              </div>
+
+              <div class="form-group mb-2 div_inputs">
+                <input type="email" class="form-control fondo_blanco input_1" id="email_a" name="email_a" placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required">
+              
+                <input type="text" class="form-control fondo_blanco input_2" id="celular_a" name="celular_a" placeholder="Número de documento" required="required" onkeypress="return isNumber(event)" onpaste="return false;" minlength="7" maxlength="9">
+              </div>
+
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="direccion_a" name="direccion_a" placeholder="Dirección" required="required">
+              </div>
+
+              <div class="form-group mb-2">
+                <div class="div_check">
+                  <span class="factura">¿Requieres factura?</span>
+                  <label class="custom-radio-square check_si">
+                    Sí
+                    <input type="radio" name="option" value="yes" class="input_si">
+                    <span class="checkmark-square"></span>
+                  </label>
+                  <label class="custom-radio-square check_no">
+                    No
+                    <input type="radio" name="option" value="no" class="input_si">
+                    <span class="checkmark-square"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="ruc_a" name="ruc_a" placeholder="RUC" required="required">
+              </div>
+
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="razon_social_a" name="razon_social_a" placeholder="Razón social" required="required">
+              </div>
+
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="direccion_fiscal_a" name="direccion_fiscal_a" placeholder="Dirección fiscal" required="required">
+              </div>
+
+              <div class="form-group mb-2 text_center">
+                <input type="checkbox" id="acepta" name="acepta" required="required" class="checkbox_form">
+                <!--label for="acepta" class="checkbox-label"-->
+                  <span class="texto_acepta" style="color: #000000">He leído y acepto los 
+                    <a class="check-div-a texto_acepta_b" id="myBtn" style="color: #000000; text-decoration: underline !important; font-family: 'NSB'; cursor: pointer;">
+                      términos y condiciones.
+                    </a>
+                  </span>
+                <!--/label-->
+              </div>
+
+              <div class="form-group mb-2 text_center">
+                <input type="checkbox" id="acepta2" name="acepta2" required="required" class="checkbox_form">
+                <!--label for="acepta2" class="checkbox-label"-->
+                  <span class="texto_acepta" style="color: #000000">He leído y acepto
+                    <a class="check-div-a texto_acepta_b" id="myBtn2" style="color: #000000; text-decoration: underline !important; font-family: 'NSB'; cursor: pointer;">
+                      la política de protección de datos personales.
+                    </a>
+                  </span>
+                <!--/label-->
+              </div>
+
+              <div style="text-align: center;">
+                <button type="button" onclick="url_anterior_paso2_uni()" class="texto_solicita anterior">Anterior</button>
+                <button type="button" onclick="url_siguiente_paso2_uni()" class="texto_solicita siguiente">¡Registrar!</button>
+              </div>
+
+            </form>
+            <p class="texto_footer mb_80">© 2024 Trilce. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div id="myModal" class="modal modal_bottom">
+    <div class="modal-content">
+      <span class="close"><img src="images/icono_cerrar.svg" alt="Trilce Maratón"></span>
+      <div class="col-md-12 text-justify">
+        <p class="p_terminos titulo_datos_adiional adicional_css" style="text-align:center">
+          <strong class="titulo_datos">CONDICIONES DEL SERVICIO DE MARATÓN ACADÉMICA</strong>
+        </p>
+        <p><hr></p>
+        <p class="p_terminos">
+          <strong>1.</strong>	La maratón académica que realiza la ACADEMIA PREUNIVERISTARIA TRILCE consiste en el servicio continuo de clases y actividades académicas desde las ….:00 am hasta las ……:00 pm del día………………. para el ciclo…………</p>
+        <p class="p_terminos">
+          <strong>2.</strong>	La inscripción de la maratón académica tendrá un costo de s/………. El cual deberá ser cancelado previamente al inicio del servicio en mención y la inscripción se realiza únicamente por el siguiente link:…………. ……………………………………o de manera presencial en cualquiera de nuestros locales ubicados en la Av. Arequipa 1250, Cercado de Lima o en la Av. Tomás Valle 841, San Martín de Porres, los datos llenados son verdaderos por lo que se les considera declaración jurada sujeta a los efectos legales correspondientes.</p>
+        <p class="p_terminos">
+          <strong>3.</strong>	El pago realizado es por el servicio completo el cual incluye material de estudios y clases virtuales o presenciales, según la propuesta diseñada, por lo tanto, no hay descuento si el/la estudiante ya no desea contar con el servicio de la Maratón por motivos que excluyen a la Organización Educativa Trilce, no habrá devolución de dinero alguno, situación que acepta El/La estudiante.</p>
+        <p class="p_terminos">
+          <strong>4.</strong>	El/La estudiante reconoce que el titular de dichos materiales de estudio y de las clases virtuales es la Organización Educativa Trilce representada por cualquiera de sus promotoras.</p>
+        <p class="p_terminos">
+          <strong>5.</strong>	El servicio de maratón académica no incluye el servicio de almuerzo, el cual tiene costo aparte, y; cuyo horario será comunicado el día del servicio de maratón académica.</p>
+        <p class="p_terminos">
+          <strong>6.</strong>	El/La estudiante se compromete a asistir puntualmente a la maratón académica según el horario establecido, con la finalidad de garantizar el desarrollo efectivo del programa académico y el aprovechamiento óptimo del mismo.</p>
+        <p class="p_terminos">
+          <strong>7.</strong>	Se llevará a cabo un registro de asistencia sobre la presencia de los estudiantes. Este registro se utilizará para verificar la asistencia y gestionar cualquier incidencia relacionada con ausencias.</p>
+        <p class="p_terminos">
+          <strong>8.</strong>	El / La estudiante que decida participar de la maratón académica deberán de presentar un consentimiento firmado por su apoderado. (Cualquier documento adicional requerido será especificado por la Academia Preuniversitaria Trilce).</p>
+        <p class="p_terminos">
+          <strong>9.</strong>	En caso de cancelación del servicio por parte del/la estudiante sin justificación algunos días previos del inicio de la maratón no está sujeto (a) a reembolsos.</p>
+        <p class="p_terminos">
+          <strong>10.</strong>	La ACADEMIA PREUNIVERSITARIA TRILCE se reserva el derecho de modificar el horario, fecha o formato del servicio de maratón académica, informando a los estudiantes con la debida antelación.</p>
+        <p class="p_terminos">
+          <strong>11.</strong>	El/La estudiante declara conocer, entender y manifiesta cumplir con el reglamento interno de la Academia Preuniversitaria Trilce durante la prestación del servicio, ya que cualquier incumplimiento puede resultar en la exclusión del servicio sin derecho a reembolso.</p>
+        <p class="p_terminos_b">
+          <button type="button" class="texto_solicita btn_modal cerrar1">Aceptar</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal2" class="modal modal_bottom">
+    <div class="modal-content">
+      <span class="close2"><img src="images/icono_cerrar.svg" alt="Trilce Maratón"></span>
+      <div class="col-md-12 text-justify">
+        <p class="p_terminos titulo_datos_adiional adicional_css" style="text-align:center">
+          <strong class="titulo_datos">Política de protección de datos personales</strong>
+        </p>
+        <p><hr></p>
+        <p>
+          <strong class="subtitulo_datos">I. Introducción</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>1.</strong> La presente Política de Protección de Datos Personales Trilce describe el tratamiento que nuestra institución (en adelante Trilce) brinda a los datos personales que recopila de los usuarios en su portal web. Dicha Política se ajusta a las disposiciones contenidas en la Ley de Protección de Datos Personales (Ley N.° 29733), su Reglamento y normas complementarias. Para ello, adoptará las medidas técnicas y organizativas necesarias a fin de evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los datos personales facilitados por los titulares de datos personales.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">II. Definiciones</strong>
+        </p>
+        <p class="p_terminos">
+        <strong>2.</strong> De acuerdo con la Ley N.° 29733 (Ley de Protección de Datos Personales) y su Reglamento aprobado por el Decreto Supremo N.° 003-2013-JUS, se define lo siguiente:
+        </p>
+        <p class="p_terminos">
+          <strong>a) Datos personales:</strong> toda información sobre una persona natural que la identifica o hace identificable a través de medios que pueden ser razonablemente utilizados.
+        </p>
+        <p class="p_terminos">
+          <strong>b) Tratamiento de datos personales:</strong> cualquier operación o procedimiento técnico, automatizado o no, que permite la recopilación, registro, organización, almacenamiento, conservación, elaboración, modificación, extracción, consulta, utilización, bloqueo, supresión, comunicación por transferencia o por difusión o cualquier otra forma de procesamiento que facilite el acceso, correlación o interconexión de los datos personales.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">III. Consentimiento del Usuario</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>3.</strong> Trilce se obliga a que los datos personales obtenidos a través de formularios del portal web cuenten previamente con el consentimiento expreso del titular para recopilar su información. Estos datos serán tratados única y específicamente para la finalidad solicitada.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">IV. Tratamientos de datos personales</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>4.</strong> Los datos personales facilitados por el Usuario se almacenarán en los bancos de datos que forman parte del sistema de información de Trilce; además, serán tratados para poder llevar a cabo sus finalidades.
+        </p>
+        <p class="p_terminos">
+          <strong>5.</strong> Trilce no empleará los datos personales del Usuario para ninguna finalidad distinta a la que fueron suministrados, a no ser que se trate de una finalidad expresamente permitida o exigida por la normativa vigente aplicable, por orden judicial o una autoridad competente.
+        </p>
+        <p class="p_terminos">
+          <strong>6.</strong> Trilce no compartirá ni cederá a terceros algún dato personal del Usuario sin su consentimiento previo y expreso, salvo cuando dicha comunicación sea exigida por la legislación vigente, por orden judicial o por una autoridad competente.
+        </p>
+        <p class="p_terminos">
+          <strong>7.</strong> El portal web de Trilce puede ofrecer enlaces (links) para acceder a otros portales web que no son parte de aquellos. Es responsabilidad del Usuario revisar las políticas de privacidad en dichos portales web para verificar el nivel de protección de sus datos personales en ese ambiente, lo que es ajeno a la responsabilidad de Trilce.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">V. Medidas de seguridad</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>8.</strong> Trilce se compromete a brindar todas las medidas técnicas, legales y administrativas necesarias para garantizar la seguridad y confidencialidad de los datos personales del Usuario. Estos serán tratados considerando los principios de legalidad, consentimiento, proporcionalidad, calidad, seguridad y los demás presentes en la normativa vigente referida a protección de datos personales. Para ello, se evitará que sean filtrados, difundidos o sujetos a cualquier acción que ponga en peligro la información personal del Usuario.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">VI. Responsabilidades</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>9.</strong> Trilce asume que los datos personales proporcionados por el Usuario deben ser verdaderos, completos, exactos, vigentes y corresponder a su verdadera identidad. Ante cualquier modificación, el Usuario será responsable de comunicarlo inmediatamente a Trilce.
+        </p>
+        <p class="p_terminos">
+          <strong>10.</strong> El Usuario asumirá las responsabilidades por los daños y perjuicios, directos o indirectos, que genere a Trilce y/o terceros por incumplir total o parcialmente lo señalado en el punto anterior.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">VII. Ejercicio de los derechos de Acceso, Rectificación, Cancelación y Oposición (derechos ARCO)</strong>
+        </p>
+        <p class="p_terminos">
+          <strong>11.</strong> Trilce debe garantizar la atención de los derechos protegidos que pueda ejercer el Titular de los Datos Personales. Para ello, debe mantener disponibles canales, procedimientos e información a fin de atender la solicitud del Usuario en los plazos establecidos por las normas de protección de datos personales.
+        </p>
+        <p class="p_terminos">
+          <strong>12.</strong> El Usuario podrá ejercitar sus derechos de Información, Acceso, Rectificación, Cancelación, Revocación, Oposición, etc. (derechos ARCO) al uso de sus datos personales, de conformidad con la Ley de Protección de Datos Personales (Ley N.° 29733). En ese sentido, el Usuario tiene derecho, entre otros, a acceder a su información personal, a solicitar la rectificación de datos inexactos y a revocar su consentimiento para su tratamiento. Asimismo, podrá solicitar la supresión de sus datos u oponerse a su tratamiento, incluso cuando estos ya no resulten necesarios para los fines que motivaron su recopilación.
+        </p>
+        <p class="p_terminos">
+          <strong>13.</strong> El ejercicio de estos derechos es gratuito. Para ello, el Usuario puede dirigirse por correo electrónico a datospersonales@trilce.edu.pe, adjuntando una solicitud y copia de su documento de identidad (DNI/CE/Pasaporte) que acredite su titularidad sobre los datos personales respecto de los cuales ejercerá su derecho. También podrá hacerlo en cualquiera de nuestras oficinas ubicadas en el país. Si utiliza un representante legal, este deberá acreditarse como tal.
+        </p>
+        <p class="p_terminos">
+          <strong>14.</strong> La atención de la solicitud será efectuada de acuerdo a los plazos previstos en la normatividad de protección de datos personales.
+        </p>
+        <p>
+          <strong class="subtitulo_datos">VIII. Cambios de Política de Privacidad </strong>
+        </p>
+        <p class="p_terminos">
+          <strong>15.</strong> Trilce se reserva el derecho de modificar y/o actualizar la presente Política de Privacidad con fines de mejora, ya sea para adaptarla a futuros cambios que pueda requerir el marco normativo vigente, brindar una mejor calidad de servicio o comunicar nuevas alternativas relacionadas con la presente Política. Es responsabilidad del Usuario mantenerse informado sobre los cambios que se introduzcan en esta Política de Privacidad publicando en este sitio su versión actualizada o modificada.
+        </p>
+        <p class="p_terminos_b">
+          <button type="button" class="texto_solicita btn_modal cerrar2">Aceptar</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/smooth-scroll.polyfills.min.js"></script>
+<script src="js/gumshoe.polyfills.min.js"></script>
+<!-- feather icon -->
+<script src="js/feather.js"></script>
+<!-- unicons icon -->
+<script src="js/unicons.js"></script>
+<!-- Main Js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  var modal1 = document.getElementById("myModal");
+  var btn1 = document.getElementById("myBtn");
+  var span1 = document.getElementsByClassName("close")[0];
+  var enlace1 = document.getElementsByClassName("cerrar1")[0];
+  var checkbox1 = document.getElementById("acepta");
+
+  btn1.onclick = function() {
+    modal1.style.display = "block";
+  }
+
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+
+  enlace1.onclick = function() {
+    modal1.style.display = "none";
+    checkbox1.checked = true;
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+  }
+</script>
+
+<script>
+  var modal2 = document.getElementById("myModal2");
+  var btn2 = document.getElementById("myBtn2");
+  var span2 = document.getElementsByClassName("close2")[0];
+  var enlace2 = document.getElementsByClassName("cerrar2")[0];
+  var checkbox2 = document.getElementById("acepta2");
+
+  btn2.onclick = function() {
+    modal2.style.display = "block";
+  }
+
+  span2.onclick = function() {
+    modal2.style.display = "none";
+  }
+
+  enlace2.onclick = function() {
+    modal2.style.display = "none";
+    checkbox2.checked = true;
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+</script>
+
+<script src="js/opciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/// Color Trilce
+$orange            : hsl(13.2, 89.4%, 59.2%);
+$orange_uri        : unquote('%23' + str-replace(unquote(''+$orange+''), '#', '')); // chrome replace # for %23
+$gray              : hsl(214.3, 4%, 33.9%);
+$gray_border       : #D6D7DB;
+$toggle_color      : blue;
+$background-form   : #ededed;
+$disable_link      : transparentize($gray, 0.4);
+$color_interblock  : rgba(83, 86, 90, 0.3);
+
+$colegio_blue      : #0087bf;
+$colegio_yellow    : #ff902a;
+$colegio_gray      : #d0d0d0;
+$colegio_gray_gray : #ededed;
+
+$gray_slider_nav   : #d0d0d0;
+$gray_opaque: transparentize($gray, 0.8);
+
+$orange_candy      : transparentize($orange, 0.6);
+$gray_candy        : transparentize($gray, 0.6);
+
+$table_gray_one    : #dedede;
+$table_gray_two    : #cccccc;
+
+$twitter: #4099FF;
+$facebook: #3B5998;
+
+$state_active : #39bb39;
+$state_alert : #dc4c4c;
+
+
+// Fonts alias
+$font_icon         : 'FontAwesome';
+
+$font_cae_reg      : 'CaeciliaLTPro-45Light';
+$font_cae_rom      : 'CaeciliaLTPro-55Roman';
+$font_cae_litei    : 'CaeciliaLTPro-46LightItalic';
+$font_cae_i        : 'CaeciliaLTPro-56Italic';
+$font_cae_bold     : 'CaeciliaLTPro-75Bold';
+$font_cae_boldi    : 'CaeciliaLTPro-76BoldItalic';
+$font_cae_heavy    : 'CaeciliaLTPro-85Heavy';
+$font_cae_heavyi   : 'CaeciliaLTPro-86HeavyItalic';
+
+$font_geo_boldi    : 'Geogrotesque-BdIt';
+$font_geo_lite     : 'Geogrotesque-Lt';
+$font_geo_litei    : 'Geogrotesque-LtIt';
+$font_geo_md       : 'Geogrotesque-Md';
+$font_geo_boldbold : 'Geogrotesque-Bd';
+$font_geo_bold     : 'Geogrotesque-Bd';
+$font_geo_mdi      : 'Geogrotesque-MdIt';
+$font_geo_reg      : 'Geogrotesque-Rg';
+$font_geo_regi     : 'Geogrotesque-RgIt';
+$font_geo_smboldi  : 'Geogrotesque-SmBdIt';
+$font_geo_smbold   : 'Geogrotesque-SmBd';
+$font_geo_th       : 'Geogrotesque-Th';
+$font_geo_thi      : 'Geogrotesque-ThIt';
+$font_geo_ulitei   : 'Geogrotesque-UltLtIt';
+$font_geo_ulite    : 'Geogrotesque-UltLt';

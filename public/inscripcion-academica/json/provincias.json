@@ -1,0 +1,1050 @@
+    {
+        "id": "Provincia Chachapoyas",
+        "name": "Chachapoyas",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Bagua",
+        "name": "Bagua",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Bongará",
+        "name": "Bongará",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Condorcanqui",
+        "name": "Condorcanqui",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Luya",
+        "name": "Luya",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Rodríguez de Mendoza",
+        "name": "Rodríguez de Mendoza",
+        "department_id": "Amazonas"
+    },
+    {
+        "id": "Provincia Utcubamba",
+        "name": "Utcubamba",
+        "department_id": "Amazonas"
+    },
+
+
+
+    {
+        "id": "Provincia Huaraz",
+        "name": "Huaraz",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Aija",
+        "name": "Aija",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Antonio Raymondi",
+        "name": "Antonio Raymondi",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Asunción",
+        "name": "Asunción",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Bolognesi",
+        "name": "Bolognesi",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Carhuaz",
+        "name": "Carhuaz",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Carlos Fermín Fitzcarrald",
+        "name": "Carlos Fermín Fitzcarrald",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Casma",
+        "name": "Casma",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Corongo",
+        "name": "Corongo",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Huari",
+        "name": "Huari",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Huarmey",
+        "name": "Huarmey",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Huaylas",
+        "name": "Huaylas",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Mariscal Luzuriaga",
+        "name": "Mariscal Luzuriaga",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Ocros",
+        "name": "Ocros",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Pallasca",
+        "name": "Pallasca",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Pomabamba",
+        "name": "Pomabamba",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Recuay",
+        "name": "Recuay",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Santa",
+        "name": "Santa",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Sihuas",
+        "name": "Sihuas",
+        "department_id": "Áncash"
+    },
+    {
+        "id": "Provincia Yungay",
+        "name": "Yungay",
+        "department_id": "Áncash"
+    },
+
+
+
+    {
+        "id": "Provincia Abancay",
+        "name": "Abancay",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Andahuaylas",
+        "name": "Andahuaylas",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Antabamba",
+        "name": "Antabamba",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Aymaraes",
+        "name": "Aymaraes",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Cotabambas",
+        "name": "Cotabambas",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Chincheros",
+        "name": "Chincheros",
+        "department_id": "Apurímac"
+    },
+    {
+        "id": "Provincia Grau",
+        "name": "Grau",
+        "department_id": "Apurímac"
+    },
+
+
+
+    {
+        "id": "Provincia Arequipa",
+        "name": "Arequipa",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Camaná",
+        "name": "Camaná",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Caravelí",
+        "name": "Caravelí",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Castilla",
+        "name": "Castilla",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Caylloma",
+        "name": "Caylloma",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Condesuyos",
+        "name": "Condesuyos",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia Islay",
+        "name": "Islay",
+        "department_id": "Arequipa"
+    },
+    {
+        "id": "Provincia La Unión",
+        "name": "La Unión",
+        "department_id": "Arequipa"
+    },
+
+
+
+    {
+        "id": "Provincia Huamanga",
+        "name": "Huamanga",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Cangallo",
+        "name": "Cangallo",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Huanca Sancos",
+        "name": "Huanca Sancos",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Huanta",
+        "name": "Huanta",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia La Mar",
+        "name": "La Mar",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Lucanas",
+        "name": "Lucanas",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Parinacochas",
+        "name": "Parinacochas",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Páucar del Sara Sara",
+        "name": "Pàucar del Sara Sara",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Sucre",
+        "name": "Sucre",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Víctor Fajardo",
+        "name": "Víctor Fajardo",
+        "department_id": "Ayacucho"
+    },
+    {
+        "id": "Provincia Vilcas Huamán",
+        "name": "Vilcas Huamán",
+        "department_id": "Ayacucho"
+    },
+
+
+
+    {
+        "id": "Provincia Cajamarca",
+        "name": "Cajamarca",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Cajabamba",
+        "name": "Cajabamba",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Celendín",
+        "name": "Celendín",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Chota",
+        "name": "Chota",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Contumazá",
+        "name": "Contumazá",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Cutervo",
+        "name": "Cutervo",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Hualgayoc",
+        "name": "Hualgayoc",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Jaén",
+        "name": "Jaén",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia San Ignacio",
+        "name": "San Ignacio",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia San Marcos",
+        "name": "San Marcos",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia San Miguel",
+        "name": "San Miguel",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia San Pablo",
+        "name": "San Pablo",
+        "department_id": "Cajamarca"
+    },
+    {
+        "id": "Provincia Santa Cruz",
+        "name": "Santa Cruz",
+        "department_id": "Cajamarca"
+    },
+
+
+    {
+        "id": "Provincia Prov. Const. del Callao",
+        "name": "Prov. Const. del Callao",
+        "department_id": "Callao"
+    },
+
+
+    {
+        "id": "Provincia Cusco",
+        "name": "Cusco",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Acomayo",
+        "name": "Acomayo",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Anta",
+        "name": "Anta",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Calca",
+        "name": "Calca",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Canas",
+        "name": "Canas",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Canchis",
+        "name": "Canchis",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Chumbivilcas",
+        "name": "Chumbivilcas",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Espinar",
+        "name": "Espinar",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia La Convención",
+        "name": "La Convención",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Paruro",
+        "name": "Paruro",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Paucartambo",
+        "name": "Paucartambo",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Quispicanchi",
+        "name": "Quispicanchi",
+        "department_id": "Cusco"
+    },
+    {
+        "id": "Provincia Urubamba",
+        "name": "Urubamba",
+        "department_id": "Cusco"
+    },
+
+
+
+    {
+        "id": "Provincia Huancavelica",
+        "name": "Huancavelica",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Acobamba",
+        "name": "Acobamba",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Angaraes",
+        "name": "Angaraes",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Castrovirreyna",
+        "name": "Castrovirreyna",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Churcampa",
+        "name": "Churcampa",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Huaytará",
+        "name": "Huaytará",
+        "department_id": "Huancavelica"
+    },
+    {
+        "id": "Provincia Tayacaja",
+        "name": "Tayacaja",
+        "department_id": "Huancavelica"
+    },
+
+
+
+    {
+        "id": "Provincia Huánuco",
+        "name": "Huánuco",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Ambo",
+        "name": "Ambo",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Dos de Mayo",
+        "name": "Dos de Mayo",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Huacaybamba",
+        "name": "Huacaybamba",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Huamalíes",
+        "name": "Huamalíes",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Leoncio Prado",
+        "name": "Leoncio Prado",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Marañón",
+        "name": "Marañón",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Pachitea",
+        "name": "Pachitea",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Puerto Inca",
+        "name": "Puerto Inca",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Lauricocha",
+        "name": "Lauricocha",
+        "department_id": "Huánuco"
+    },
+    {
+        "id": "Provincia Yarowilca",
+        "name": "Yarowilca",
+        "department_id": "Huánuco"
+    },
+
+
+
+    {
+        "id": "Provincia Ica",
+        "name": "Ica",
+        "department_id": "Ica"
+    },
+    {
+        "id": "Provincia Chincha",
+        "name": "Chincha",
+        "department_id": "Ica"
+    },
+    {
+        "id": "Provincia Nazca",
+        "name": "Nazca",
+        "department_id": "Ica"
+    },
+    {
+        "id": "Provincia Palpa",
+        "name": "Palpa",
+        "department_id": "Ica"
+    },
+    {
+        "id": "Provincia Pisco",
+        "name": "Pisco",
+        "department_id": "Ica"
+    },
+
+
+
+    {
+        "id": "Provincia Huancayo",
+        "name": "Huancayo",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Concepción",
+        "name": "Concepción",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Chanchamayo",
+        "name": "Chanchamayo",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Jauja",
+        "name": "Jauja",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Junín",
+        "name": "Junín",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Satipo",
+        "name": "Satipo",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Tarma",
+        "name": "Tarma",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Yauli",
+        "name": "Yauli",
+        "department_id": "Junín"
+    },
+    {
+        "id": "Provincia Chupaca",
+        "name": "Chupaca",
+        "department_id": "Junín"
+    },
+
+
+
+    {
+        "id": "Provincia Trujillo",
+        "name": "Trujillo",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Ascope",
+        "name": "Ascope",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Bolívar",
+        "name": "Bolívar",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Chepén",
+        "name": "Chepén",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Julcán",
+        "name": "Julcán",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Otuzco",
+        "name": "Otuzco",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Pacasmayo",
+        "name": "Pacasmayo",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Pataz",
+        "name": "Pataz",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Sánchez Carrión",
+        "name": "Sánchez Carrión",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Santiago de Chuco",
+        "name": "Santiago de Chuco",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Gran Chimú",
+        "name": "Gran Chimú",
+        "department_id": "La Libertad"
+    },
+    {
+        "id": "Provincia Virú",
+        "name": "Virú",
+        "department_id": "La Libertad"
+    },
+
+
+
+    {
+        "id": "Provincia Chiclayo",
+        "name": "Chiclayo",
+        "department_id": "Lambayeque"
+    },
+    {
+        "id": "Provincia Ferreñafe",
+        "name": "Ferreñafe",
+        "department_id": "Lambayeque"
+    },
+    {
+        "id": "Provincia Lambayeque",
+        "name": "Lambayeque",
+        "department_id": "Lambayeque"
+    },
+
+
+
+    {
+        "id": "Provincia Lima",
+        "name": "Lima",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Barranca",
+        "name": "Barranca",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Cajatambo",
+        "name": "Cajatambo",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Canta",
+        "name": "Canta",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Cañete",
+        "name": "Cañete",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Huaral",
+        "name": "Huaral",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Huarochirí",
+        "name": "Huarochirí",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Huaura",
+        "name": "Huaura",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Oyón",
+        "name": "Oyón",
+        "department_id": "Lima"
+    },
+    {
+        "id": "Provincia Yauyos",
+        "name": "Yauyos",
+        "department_id": "Lima"
+    },
+
+
+
+    {
+        "id": "Provincia Maynas",
+        "name": "Maynas",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Alto Amazonas",
+        "name": "Alto Amazonas",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Loreto",
+        "name": "Loreto",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Mariscal Ramón Castilla",
+        "name": "Mariscal Ramón Castilla",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Requena",
+        "name": "Requena",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Ucayali",
+        "name": "Ucayali",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Datem del Marañón",
+        "name": "Datem del Marañón",
+        "department_id": "Loreto"
+    },
+    {
+        "id": "Provincia Putumayo",
+        "name": "Putumayo",
+        "department_id": "Loreto"
+    },
+
+
+
+    {
+        "id": "Provincia Tambopata",
+        "name": "Tambopata",
+        "department_id": "Madre de Dios"
+    },
+    {
+        "id": "Provincia Manu",
+        "name": "Manu",
+        "department_id": "Madre de Dios"
+    },
+    {
+        "id": "Provincia Tahuamanu",
+        "name": "Tahuamanu",
+        "department_id": "Madre de Dios"
+    },
+
+
+
+    {
+        "id": "Provincia Mariscal Nieto",
+        "name": "Mariscal Nieto",
+        "department_id": "Moquegua"
+    },
+    {
+        "id": "Provincia General Sánchez Cerro",
+        "name": "General Sánchez Cerro",
+        "department_id": "Moquegua"
+    },
+    {
+        "id": "Provincia Ilo",
+        "name": "Ilo",
+        "department_id": "Moquegua"
+    },
+
+
+
+    {
+        "id": "Provincia Pasco",
+        "name": "Pasco",
+        "department_id": "Pasco"
+    },
+    {
+        "id": "Provincia Daniel Alcides Carrión",
+        "name": "Daniel Alcides Carrión",
+        "department_id": "Pasco"
+    },
+    {
+        "id": "Provincia Oxapampa",
+        "name": "Oxapampa",
+        "department_id": "Pasco"
+    },
+
+
+
+    {
+        "id": "Provincia Piura",
+        "name": "Piura",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Ayabaca",
+        "name": "Ayabaca",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Huancabamba",
+        "name": "Huancabamba",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Morropón",
+        "name": "Morropón",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Paita",
+        "name": "Paita",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Sullana",
+        "name": "Sullana",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Talara",
+        "name": "Talara",
+        "department_id": "Piura"
+    },
+    {
+        "id": "Provincia Sechura",
+        "name": "Sechura",
+        "department_id": "Piura"
+    },
+
+
+
+    {
+        "id": "Provincia Puno",
+        "name": "Puno",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Azángaro",
+        "name": "Azángaro",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Carabaya",
+        "name": "Carabaya",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Chucuito",
+        "name": "Chucuito",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia El Collao",
+        "name": "El Collao",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Huancané",
+        "name": "Huancané",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Lampa",
+        "name": "Lampa",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Melgar",
+        "name": "Melgar",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Moho",
+        "name": "Moho",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia San Antonio de Putina",
+        "name": "San Antonio de Putina",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia San Román",
+        "name": "San Román",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Sandia",
+        "name": "Sandia",
+        "department_id": "Puno"
+    },
+    {
+        "id": "Provincia Yunguyo",
+        "name": "Yunguyo",
+        "department_id": "Puno"
+    },
+
+
+
+    {
+        "id": "Provincia Moyobamba",
+        "name": "Moyobamba",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Bellavista",
+        "name": "Bellavista",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia El Dorado",
+        "name": "El Dorado",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Huallaga",
+        "name": "Huallaga",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Lamas",
+        "name": "Lamas",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Mariscal Cáceres",
+        "name": "Mariscal Cáceres",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Picota",
+        "name": "Picota",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Rioja",
+        "name": "Rioja",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia San Martín",
+        "name": "San Martín",
+        "department_id": "San Martín"
+    },
+    {
+        "id": "Provincia Tocache",
+        "name": "Tocache",
+        "department_id": "San Martín"
+    },
+
+
+
+    {
+        "id": "Provincia Tacna",
+        "name": "Tacna",
+        "department_id": "Tacna"
+    },
+    {
+        "id": "Provincia Candarave",
+        "name": "Candarave",
+        "department_id": "Tacna"
+    },
+    {
+        "id": "Provincia Jorge Basadre",
+        "name": "Jorge Basadre",
+        "department_id": "Tacna"
+    },
+    {
+        "id": "Provincia Tarata",
+        "name": "Tarata",
+        "department_id": "Tacna"
+    },
+
+
+
+    {
+        "id": "Provincia Tumbes",
+        "name": "Tumbes",
+        "department_id": "Tumbes"
+    },
+    {
+        "id": "Provincia Contralmirante Villar",
+        "name": "Contralmirante Villar",
+        "department_id": "Tumbes"
+    },
+    {
+        "id": "Provincia Zarumilla",
+        "name": "Zarumilla",
+        "department_id": "Tumbes"
+    },
+
+
+
+    {
+        "id": "Provincia Coronel Portillo",
+        "name": "Coronel Portillo",
+        "department_id": "Ucayali"
+    },
+    {
+        "id": "Provincia Atalaya",
+        "name": "Atalaya",
+        "department_id": "Ucayali"
+    },
+    {
+        "id": "Provincia Padre Abad",
+        "name": "Padre Abad",
+        "department_id": "Ucayali"
+    },
+    {
+        "id": "Provincia Purús",
+        "name": "Purús",
+        "department_id": "Ucayali"
+    },

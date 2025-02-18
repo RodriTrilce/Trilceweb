@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Academias - Trilce</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/presincripcion.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">1 -->
+    <style>
+        @media (max-width: 768px){
+        section.hr {
+            height: 4em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="trilce-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-trilce-academia-white.svg" alt="Trilce">
+            </a>
+
+            <!-- Menu Mobile -->
+            <div class="navbar-toggler">
+                <ul>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-home 32"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="lab la-whatsapp"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-phone"></i></a></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle-movil">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu Sticky -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ciclos.html">CICLOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preinscripcion.html">PREINSCRIPCION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sedes.html">SEDES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">¡REGÍSTRATE!</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COLEGIO</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-link2">
+                            <a href="index.html">
+                                <i class="las la-home"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"><i
+                                    class="lab la-whatsapp"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a href="tel:6198100">
+                                <i class="las la-phone"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="preinscripcion.html">Preinscripción</a></li>
+                        <li><a href="ciclos.html">Ciclos</a></li>
+                        <li><a href="olimpiadas.html">Olimpiadas M.</a></li>
+                        <li><a href="simulacros.html">Simulacros</a></li>
+                        <li><a href="solucionarios.hml">Solucionarios</a></li>
+                        <li><a href="sedes.html">Sedes</a></li>
+                        <li><a href="faqs.html">Preguntas frecuentes</a></li>
+                        <li><a href="error404.html">Menú Trilce</a></li>
+                        <li><a href="error404.html">¡Regístrate!</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Colegio</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="preinscripcion-internal">
+        <div class="container">
+
+                    <form class="row msf" id="form-preinscription">
+
+                        <div class="col-sm-12 col-md-6 box-flex">
+                            <h1>Preinscripción</h1>
+                            <h2>¡Regístrate en solo 3 pasos!</h2>
+
+                            <!-- Header -->
+                            <div class="msf-header mt-5">
+                                <div class="row text-center msf-movil-bar">
+                                    <div class="msf-step col-xs-3 col-sm-3 col-md-3">
+                                        <i class="las la-square-full"></i>
+                                        <span class="mt-2">Paso 1</span>
+                                    </div>
+                                    <div class="msf-step col-xs-3 col-sm-3 col-md-3">
+                                        <i class="las la-square-full"></i>
+                                        <div class="bar-header"></div>
+                                        <span class="mt-2">Paso 2</span>
+                                    </div>
+                                    <div class="msf-step col-xs-3 col-sm-3 col-md-3">
+                                        <i class="las la-square-full"></i>
+                                        <div class="bar-header"></div>
+                                        <span class="mt-2">Paso 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+
+                            <article class="box-msf-internal">
+                                <!-- Body -->
+                                <div class="msf-content">
+
+                                    <!-- STEP 1 -->
+                                    <div class="msf-view">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 mb-4">
+                                                <p class="title">Ficha de preinscripcion</p>
+                                                <span class="subtitle">Para ayudarte a realizar este proceso rápidamente.
+                                                    Ingresa los siguientes datos.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" maxlength="8" minlength="8"
+                                                        id="dni" name="dni" data-bind="value: Dni" data-val="true"
+                                                        data-val-required="DNI estudiante es requerido">
+                                                    <label for="input" class="input-label">DNI estudiante</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <select id="type" name="type" class="form-control"
+                                                        data-bind="options: availableTypes, optionsCaption: 'Tipo de preparación'"
+                                                        data-val="true"
+                                                        data-val-required="Tipo de preparación es requerido">
+                                                    </select>
+                                                    <label for="select" class="input-label"></label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <select id="type" name="type" class="form-control"
+                                                        data-bind="options: availableTypes2, optionsCaption: 'Ciclo'"
+                                                        data-val="true" data-val-required="Ciclo es requerido">
+                                                    </select>
+                                                    <label for="select" class="input-label"></label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12">
+                                                <div class="form-group">
+                                                    <select id="type" name="type" class="form-control"
+                                                        data-bind="options: availableTypes3, optionsCaption: 'Sede'"
+                                                        data-val="true" data-val-required="Sede es requerido">
+                                                    </select>
+                                                    <label for="select" class="input-label"></label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- STEP 2 -->
+                                    <div class="msf-view">
+                                         <div class="row">
+                                             <div class="col-sm-12 col-md-12">
+                                                 <p class="title">Datos generales del alumno</p>
+                                             </div>
+                                         </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input
+                                                        type="text" 
+                                                        required="required"
+                                                        id="nombres" 
+                                                        name="nombres" 
+                                                        data-bind="value: Nombres" 
+                                                        data-val="true"
+                                                        data-val-required="Nombres es requerido"
+                                                        >
+                                                    <label for="input" class="input-label">Nombres</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-12 col-md-6">
+                                                 <div class="form-group">
+                                                     <input type="text" required="required" id="apellidopaterno" name="apellidopaterno"
+                                                         data-bind="value: Apellidopaterno" data-val="true"
+                                                         data-val-required="Apelido paterno es requerido">
+                                                     <label for="input" class="input-label">Apellido paterno</label>
+                                                     <i class="bar"></i>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                         <div class="row">
+                                             <div class="col-sm-12 col-md-6">
+                                                 <div class="form-group">
+                                                     <input type="text" required="required" id="apellidomaterno"
+                                                         name="apellidomaterno" data-bind="value: Apellidomaterno"
+                                                         data-val="true"
+                                                         data-val-required="Apelido materno es requerido">
+                                                     <label for="input" class="input-label">Apellido materno</label>
+                                                     <i class="bar"></i>
+                                                 </div>
+                                             </div>
+                                             <div class="col-sm-12 col-md-6">
+                                                 <div class="form-group">
+                                                     <input type="text" required="required" id="fechanacimiento"
+                                                         name="fechanacimiento" data-bind="value: Fechanacimiento"
+                                                         data-val="true"
+                                                         data-val-required="Fecha de nacimiento es requerido">
+                                                     <label for="input" class="input-label">Fecha de nacimiento</label>
+                                                     <i class="bar"></i>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                          <div class="row">
+                                              <div class="col-sm-12 col-md-6">
+                                                   <div class="form-group">
+                                                       <select id="type" name="type" class="form-control"
+                                                           data-bind="options: availableTypes4, optionsCaption: 'Distrito'"
+                                                           data-val="true" data-val-required="Distrito es requerido">
+                                                       </select>
+                                                       <label for="select" class="input-label"></label>
+                                                       <i class="bar"></i>
+                                                   </div>
+                                              </div>
+                                              <div class="col-sm-12 col-md-6">
+                                                  <div class="form-group">
+                                                      <input type="text" required="required" id="direccion"
+                                                          name="direccion" data-bind="value: Direccion"
+                                                          data-val="true"
+                                                          data-val-required="Dirección es requerido">
+                                                      <label for="input" class="input-label">Dirección</label>
+                                                      <i class="bar"></i>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                           <div class="row">
+                                               <div class="col-sm-12 col-md-6">
+                                                   <div class="form-group">
+                                                       <input type="text" required="required" id="telefono"
+                                                           name="telefono" data-bind="value: Telefono" data-val="true"
+                                                           data-val-required="Teléfono es requerido">
+                                                       <label for="input" class="input-label">Teléfono</label>
+                                                       <i class="bar"></i>
+                                                   </div>
+                                               </div>
+                                               <div class="col-sm-12 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" required="required" id="celular"
+                                                            name="celular" data-bind="value: Celular" data-val="true"
+                                                            data-val-required="Celular es requerido">
+                                                        <label for="input" class="input-label">Celular</label>
+                                                        <i class="bar"></i>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" required="required" id="correo"
+                                                            name="correo" data-bind="value: Correo" data-val="true"
+                                                            data-val-required="Correo electrónico es requerido">
+                                                        <label for="input" class="input-label">Correo electrónico</label>
+                                                        <i class="bar"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group d-flex align-items-center">
+                                                        <input class="radio" type="radio" id="genero" name="genero" data-bind="value: Genero" data-val="true"
+                                                            data-val-required="El campo es requerido">
+                                                        <label for="genero" class="genero">Hombre</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group d-flex align-items-center">
+                                                        <input class="radio" type="radio" id="genero" name="genero" data-bind="value: Genero" data-val="true"
+                                                            data-val-required="El campo es requerido">
+                                                        <label for="genero" class="genero">Mujer</label>
+                                                    </div>
+                                                 </div>
+                                             </div>
+                                              <div class="row">
+                                                  <div class="col-sm-12 col-md-12 text-left mt-2">
+                                                      <b>Datos académicos</b>
+                                                  </div>
+                                              </div>
+                                               <div class="row">
+                                                   <div class="col-sm-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" required="required" id="Anoterminocolegio"
+                                                                name="Anoterminocolegio" data-bind="value:
+                                                                Anoterminocolegio"
+                                                                data-val="true"
+                                                                data-val-required="El campo es requerido">
+                                                            <label for="input" class="input-label">Año en que termino el colegio</label>
+                                                            <i class="bar"></i>
+                                                        </div>
+                                                   </div>
+                                                   <div class="col-sm-12 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" required="required" id="colegio"
+                                                                name="colegio" data-bind="value: Colegio"
+                                                                data-val="true"
+                                                                data-val-required="El campo es requerido">
+                                                            <label for="input" class="input-label">Colegio</label>
+                                                            <i class="bar"></i>
+                                                        </div>
+                                                   </div>
+                                               </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-6">
+                                                         <div class="form-group">
+                                                             <input type="text" required="required" id="universidadpostula"
+                                                                 name="u    niversidadpostula" data-bind="value: Universidadpostula"
+                                                                 data-val="true"
+                                                                 data-val-required="El campo es requerido">
+                                                             <label for="input" class="input-label">Universidad a la postula</label>
+                                                             <i class="bar"></i>
+                                                         </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                         <div class="form-group">
+                                                             <input type="text" required="required" id="carrera"
+                                                                 name="carrera" data-bind="value: Carrera"
+                                                                 data-val="true"
+                                                                 data-val-required="El campo es requerido">
+                                                             <label for="input" class="input-label">Carrera</label>
+                                                             <i class="bar"></i>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="row">
+                                                     <div class="col-sm-12 col-md-12">
+                                                          <div class="form-group">
+                                                              <input type="text" required="required" id="academiapreparacion"
+                                                                  name="academiapreparacion" data-bind="value: Academiapreparacion"
+                                                                  data-val="true"
+                                                                  data-val-required="El campo es requerido">
+                                                              <label for="input" class="input-label">Academia de preparación anterior</label>
+                                                              <i class="bar"></i>
+                                                          </div>
+                                                     </div>
+                                                 </div>
+                                    </div>
+
+                                    <!-- STEP 3 -->
+                                    <div class="msf-view">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="title">Datos generales del padre y/o apoderado</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group d-flex align-items-center">
+                                                    <input class="radio" type="radio" id="apoderado" name="apoderado" data-bind="value: Apoderado" data-val="true"
+                                                        data-val-required="Apoderado es requerido">
+                                                    <label for="apoderado">Apoderado</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group d-flex align-items-center">
+                                                    <input class="radio" type="radio" id="apoderado" name="apoderado" data-bind="value: apoderado" data-val="true"
+                                                        data-val-required="Apoderado es requerido">
+                                                    <label for="apoderado">Ninguno</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="nombresapellidosapoderado"
+                                                        name="nombresapellidosapoderado" data-bind="value: Nombresapellidosapoderado"
+                                                        data-val="true" data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Nombres y apellidos</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="dniapoderado"
+                                                        name="dniapoderado"
+                                                        data-bind="value: Dniapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">DNI</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="telefonoapoderado"
+                                                        name="telefonoapoderado"
+                                                        data-bind="value: Telefonoapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Telf. casa</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="celularapoderado"
+                                                        name="celularapoderado"
+                                                        data-bind="value: Celularapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Celular</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="correoapoderado"
+                                                        name="correoapoderado"
+                                                        data-bind="value: Correoapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Correo electrónico</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="centrotrabajoapoderado"
+                                                        name="centrotrabajoapoderado"
+                                                        data-bind="value: Centrotrabajoapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Centro de trabajo</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="telefonocentrotrabajoapoderado"
+                                                        name="telefonocentrotrabajoapoderado"
+                                                        data-bind="value: Telefonocentrotrabajoapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Teléfono centro de trabajo</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="ocupacionapoderado"
+                                                        name="ocupacionapoderado"
+                                                        data-bind="value: Ocupacionapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">Ocupación</label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" required="required" id="telefonoemergenciaapoderado"
+                                                        name="telefonoemergenciaapoderado"
+                                                        data-bind="value: Telefonoemergenciaapoderado" data-val="true"
+                                                        data-val-required="El campo es requerido">
+                                                    <label for="input" class="input-label">En caso de emergencia: </label>
+                                                    <i class="bar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Footer -->
+                                <div class="msf-navigation">
+                                    <div class="row">
+                                        <div class="col-md-12 mt-4">
+                                            <button type="button" data-type="next"
+                                                class="btn msf-nav-button">SIGUIENTE</button>
+                                            <button type="submit" data-type="submit"
+                                                class="btn msf-nav-button">ENVIAR</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </form>
+
+            </div>
+    </div>
+
+    <section class="presincripcion mb-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 mb-5">
+                    <h3>¿POR QUE SOMOS TU MEJOR OPCIÓN?</h3>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-trophy"></i>
+                        <p>Más de 40 años de experiencia</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-lightbulb"></i>
+                        <p>Exigencia y disciplina</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-user"></i>
+                        <p>Tutoría personalizada</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-paperclip"></i>
+                        <p>Material académico gratuito</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-book-open"></i>
+                        <p>Maratones dominicales</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-graduation-cap"></i>
+                        <p>La mejor plana docente</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-edit"></i>
+                        <p>Simulacros tipo examen de admisión
+                        </p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-map-signs"></i>
+                        <p>Asesorías</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <article>
+                        <i class="las la-star"></i>
+                        <p>Talleres especiales </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <div class="row box">
+                        <div class="col-sm-12 col-md-8 box-div">
+                                <h5>¡No te quedes <br><b>sin vacante</b>!</h5>
+                                <span>Nuevos ciclos disponibles</span>
+                                <button class="btn">Registrate aquí</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <img src="img/cycles/calltoaction.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hr">
+        <p>&nbsp;</p>
+    </section>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <a href="simulacros.html">
+                        <i class="las la-bullhorn"></i>
+                        <p>Simulacros</p>
+                        <span>Inscripciones y resultados</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="solucionarios.html">
+                        <i class="las la-paperclip"></i>
+                        <p>Solucionarios</p>
+                        <span>Área de descarga</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="faqs.html">
+                        <i class="las la-question"></i>
+                        <p>Preguntas frecuentes </p>
+                        <span>Resolvemos tus dudas</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="olimpiadas.html">
+                        <i class="las la-bell"></i>
+                        <p>Olimpiadas de Matemática</p>
+                        <span>Fechas y lugares</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row menu-movil">
+                <div class="col-sm-12">
+                    <p>
+                        <a>SIGAMOS CONECTADOS</a>
+                    </p>
+                    <p>
+                        <a>CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                    <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                    </p>
+                </div>
+            </div>
+            <div class="row menu">
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="preinscripcion.html">PREINSCRIPCIÓN</a>
+                    </p>
+                    <p>
+                        <a href="ciclos.html">CICLOS</a>
+                    </p>
+                    <p>
+                        <a href="sedes.html">SEDES</a>
+                    </p>
+                    <p>
+                        <a href="blog.html">BLOG</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="error404.html">¡REGISTRATE!</a>
+                    </p>
+                    <p>
+                        <a href="menu.html">MENÚ TRILCE</a>
+                    </p>
+                    <p>
+                        <a href="nosotros.html">NOSOTROS</a>
+                    </p>
+                    <p>
+                        <a href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="#">COLEGIO </a>
+                    </p>
+                    <p>
+                        <a href="index.html">INICIO </a>
+                    </p>
+                    <p>
+                        <a href="#">CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center mt-4 mb-5">© 2020 Academia Trilce.Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/plugins/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+        $('#toggle-movil').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
+    <script>
+        (function (factory) {
+            'use strict';
+            if (typeof define === 'function' && define.amd) {
+                // AMD is used - Register as an anonymous module.
+                define(['jquery', 'jquery-validation'], factory);
+            } else if (typeof exports === 'object') {
+                factory(require('jquery'), require('jquery-validation'));
+            } else {    
+                // Neither AMD nor CommonJS used. Use global variables.
+                if (typeof jQuery === 'undefined') {
+                    throw 'multi-step-form-js requires jQuery to be loaded first';
+                }
+                if (typeof jQuery.validator === 'undefined') {
+                    throw 'multi-step-form-js requires requires jquery.validation.js to be loaded first';
+                }
+                factory(jQuery);
+            }
+        }(function ($) {
+            'use strict';
+
+            const msfCssClasses = {
+                header: "msf-header",
+                step: "msf-step",
+                stepComplete: "msf-step-complete",
+                stepActive: "msf-step-active",
+                content: "msf-content",
+                view: "msf-view",
+                navigation: "msf-navigation",
+                navButton: "msf-nav-button"
+            };
+
+            const msfNavTypes = {
+                //back: "back",
+                next: "next",
+                submit: "submit"
+
+            };
+
+            const msfEventTypes = {
+                viewChanged : "msf:viewChanged"
+            };
+
+            $.fn.multiStepForm = function (options) {
+                var form = this;
+
+                var defaults = {
+                    activeIndex: 0,
+                    validate: {}
+                };
+
+                var settings = $.extend({}, defaults, options);
+
+                //find the msf-content object
+                form.content = this.find("." + msfCssClasses.content).first();
+
+                if (form.content.length === 0) {
+                    throw new Error('Multi-Step Form requires a child element of class \'' + msfCssClasses.content + '\'');
+                }
+
+                //find the msf-views within the content object
+                form.views = $(this.content).find("." + msfCssClasses.view);
+
+                if (form.views.length === 0) {
+                    throw new Error('Multi-Step Form\'s element of class \'' + msfCssClasses.content + '\' requires n elements of class \'' + msfCssClasses.view + '\'');
+                }
+
+                form.header = this.find("." + msfCssClasses.header).first();
+                form.navigation = this.find("." + msfCssClasses.navigation).first();
+                form.steps = [];
+
+                form.getActiveView = function() {
+                    return form.views.filter(function () { return this.style && this.style.display !== '' && this.style.display !== 'none' });
+                };
+
+                form.setActiveView = function(index) {
+                    var view = form.getActiveView();
+                    var previousIndex = form.views.index(view);
+
+                    view = form.views.eq(index);
+                    view.show();
+                    view.find(':input').first().focus();
+
+                    //trigger the 'view has changed' event
+                    form.trigger(msfEventTypes.viewChanged, {
+                        currentIndex : index, 
+                        previousIndex : previousIndex,
+                        totalSteps : form.steps.length
+                    });    
+                }
+
+                form.init = function () {
+
+                    this.initHeader = function () {
+                        if (form.header.length === 0) {
+                            form.header = $("<div/>", {
+                                "class": msfCssClasses.header,
+                                "display": "none"
+                            });
+
+                            $(form).prepend(form.header);
+                        }
+
+                        form.steps = $(form.header).find("." + msfCssClasses.step);
+
+                        this.initStep = function (index, view) {
+
+                            if (form.steps.length < index + 1) {
+                                $(form.header).append($("<div/>", {
+                                    "class": msfCssClasses.step,
+                                    "display": "none"
+                                }));
+                            }
+                        }
+
+                        $.each(form.views, this.initStep);
+
+                        form.steps = $(form.header).find("." + msfCssClasses.step);
+                    };
+
+
+                    this.initNavigation = function () {
+
+                        if (form.navigation.length === 0) {
+                            form.navigation = $("<div/>", {
+                                "class": msfCssClasses.navigation
+                            });
+
+                            $(form.content).after(form.navigation);
+                        }
+
+                        this.initNavButton = function (type) {
+                            var element = this.navigation.find("button[data-type='" + type + "'], input[type='button']"), type;
+                            if (element.length === 0) {
+                                element = $("<button/>", {
+                                    "class": msfCssClasses.navButton,
+                                    "data-type": type,
+                                    "html": type
+                                });
+                                element.appendTo(form.navigation);
+                            }
+
+                            return element;
+                        };
+
+                        //form.backNavButton = this.initNavButton(msfNavTypes.back);
+                        form.nextNavButton = this.initNavButton(msfNavTypes.next);
+                        form.submitNavButton = this.initNavButton(msfNavTypes.submit);
+                    };
+
+
+                    this.initHeader();
+                    this.initNavigation();
+
+                    this.views.each(function (index, element) {
+
+                        var view = element,
+                            $view = $(element);
+
+                        $view.on('show', function (e) {
+                            if (this !== e.target)
+                                return;
+
+                            //hide whichever view is currently showing
+                            form.getActiveView().hide();
+                    
+                            //choose which navigation buttons should be displayed based on index of view 
+                            if (index > 0) {
+                                //form.backNavButton.show();
+                            }
+
+                            if (index == form.views.length - 1) {
+                                form.nextNavButton.hide();
+                                form.submitNavButton.show();
+                            }
+                            else {
+                                form.submitNavButton.hide();
+                                form.nextNavButton.show();
+
+                                //if this is not the last view do not allow the enter key to submit the form as it is not completed yet
+                                $(this).find(':input').keypress(function (e) {
+                                    if (e.which == 13) // Enter key = keycode 13
+                                    {
+                                        form.nextNavButton.click();
+                                        return false;
+                                    }
+                                });
+                            }
+
+                            //determine if each step is completed or active based in index
+                            $.each(form.steps, function (i, element) {
+                                if (i < index) {
+                                    $(element).removeClass(msfCssClasses.stepActive);
+                                    $(element).addClass(msfCssClasses.stepComplete);
+                                }
+
+                                else if (i === index) {
+                                    $(element).removeClass(msfCssClasses.stepComplete);
+                                    $(element).addClass(msfCssClasses.stepActive);
+                                }
+                                else {
+                                    $(element).removeClass(msfCssClasses.stepComplete);
+                                    $(element).removeClass(msfCssClasses.stepActive);
+                                }
+                            });
+                        });
+
+                        $view.on('hide', function (e) {
+                            if (this !== e.target)
+                                return;
+
+                            //hide all navigation buttons, display choices will be set on show event
+                            //form.backNavButton.hide();
+                            form.nextNavButton.hide();
+                            form.submitNavButton.hide();
+                        });
+                    });
+
+                    form.setActiveView(settings.activeIndex);
+                };
+
+                form.init();
+
+                form.nextNavButton.click(function () {
+                    var view = form.getActiveView();
+
+                    //validate the input in the current view
+                    if (form.validate(settings.validate).subset(view)) {
+                        var i = form.views.index(view);
+
+                        form.setActiveView(i+1);
+                    }
+                });
+
+                form.backNavButton.click(function () {
+                    var view = form.getActiveView();
+                    var i = form.views.index(view);
+                    
+                    form.setActiveView(i-1);
+                });
+
+            };
+
+            $.validator.prototype.subset = function (container) {
+                var ok = true;
+                var self = this;
+                $(container).find(':input').each(function () {
+                    if (!self.element($(this))) ok = false;
+                });
+                return ok;
+            };
+
+            $.each(['show', 'hide'], function (i, ev) {
+                var el = $.fn[ev];
+                $.fn[ev] = function () {
+                    this.trigger(ev);
+                    return el.apply(this, arguments);
+                };
+            });
+        }));
+
+
+
+
+
+        function ViewModel() {
+        var self = this;
+
+        self.Dni = ko.observable('');
+        self.AdditionalDetails = ko.observable('');
+        self.availableTypes = ko.observableArray(['UNI', 'SAN MARCOS', 'CATÓLICA']);
+        self.availableTypes2 = ko.observableArray(['Anual', 'Semestral', 'Repaso']);
+        self.availableTypes3 = ko.observableArray(['Santa Beatriz', 'Villa el Salvador', 'Marsano', 'Los Olivos',
+        'Comas']);
+
+         self.Nombres = ko.observable('');
+         self.Apellidopaterno = ko.observable('');
+         self.Apellidomaterno = ko.observable('');
+         self.Fechanacimiento = ko.observable('');
+         self.availableTypes4 = ko.observableArray(['Distrito 1', 'Distrito 2', 'Distrito 3', 'Distrito 4',
+         'Distrito 5']);
+         self.Direccion = ko.observable('');
+         self.Telefono = ko.observable('');
+         self.Celular = ko.observable('');
+         self.Correo = ko.observable('');
+         self.Genero = ko.observable('');
+        self.Anoterminocolegio = ko.observable('');
+        self.Colegio = ko.observable('');
+        self.Universidadpostula = ko.observable('');
+        self.Carrera = ko.observable('');
+        self.Academiapreparacion = ko.observable('');
+
+        self.Apoderado = ko.observable('');
+        self.Nombresapellidosapoderado = ko.observable('');
+        self.Dniapoderado = ko.observable('');
+        self.Telefonoapoderado = ko.observable('');
+        self.Celularapoderado = ko.observable('');
+        self.Correoapoderado = ko.observable('');
+        self.Centrotrabajoapoderado = ko.observable('');
+        self.Telefonocentrotrabajoapoderado = ko.observable('');
+        self.Ocupacionapoderado = ko.observable('');
+        self.Telefonoemergenciaapoderado = ko.observable('');
+
+        self.chosenType = ko.observable('');
+
+        }
+
+        var viewModel = new ViewModel();
+
+        ko.applyBindings(viewModel);
+
+
+        $(document).on("msf:viewChanged", function(event, data){
+
+                var progress = Math.round((data.currentIndex / data.totalSteps)*100);
+
+                    $(".progress-bar").css("width", progress + "%").attr('aria-valuenow', progress);   ;
+                });
+                
+                
+        $(".msf:first").multiStepForm();
+
+    </script>
+</body>
+
+</html>

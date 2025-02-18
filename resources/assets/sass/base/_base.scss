@@ -1,0 +1,121 @@
+body {
+  font-family: $font_cae_reg;
+  color: $gray;
+}
+
+@media screen and (min-width: 500px){
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 570px){
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 620px){
+  html{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 680px){
+  html{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 720px){
+  html{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  html{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 860px){
+  html{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 920px){
+  html{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1650px){
+  html{
+    font-size: 16px;
+  }
+}
+
+
+a,a:link{
+  text-decoration: none;
+  color: $orange;
+}
+
+a:visited{
+  color: $orange
+}
+
+a:active{
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: $orange;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 1.4rem;
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+h3{
+  font-size: 1.2rem;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+a,li{
+  transition:0.3s ease-in;
+}
+
+a:hover,li:hover{
+  transition:0.3s ease-out;
+}
+
+*{
+  outline: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+// Safari text ajust fix
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: 100%;
+  }
+}

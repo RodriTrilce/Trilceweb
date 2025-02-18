@@ -1,0 +1,228 @@
+/* MOBILE */
+
+ @media (min-width: 769px){
+
+    .web {
+        display: block;
+    }
+
+    .movil {
+        display: none;
+    }
+
+ }
+
+@media (max-width:768px){
+
+    .web{
+        display: none;
+    }
+
+    .movil {
+        display: block;
+    }
+
+    .overlay ul {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .overlay ul li {
+        width: 100%;
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.2em auto;
+    }
+
+    .toggle-overlay-button span:nth-of-type(1) {
+        top: -1px;
+    }
+
+    .toggle-overlay-button {
+        position: relative;
+        top: 2px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .navbar-toggler {
+        padding: 0px;
+        border-color: transparent !important;
+    }
+
+    .navbar-toggler .nav-link {
+        padding: 0px 5px;
+    }
+
+    .navbar-toggler .nav-link:nth-child(2) {
+        padding: 0px 5px 0px 10px;
+    }
+
+    .navbar-toggler .nav-link i {
+        color: white !important;
+        font-size: 1.2em;
+    }
+
+    .navbar-toggler ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    .navbar-toggler ul li {
+        display: inline-block;
+    }
+
+    .banner,
+    section,
+    .owl-demo,
+    .owl-carousel,
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item,
+    .item {
+        height: 100%;
+    }
+
+    .banner .item {
+        background-color: #FF6334;
+    }
+
+    .banner article img {
+        max-width: 250px;
+        margin: 1em auto;
+    }
+
+    .navbar-dark .navbar-brand {
+        margin: 2px 10px;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+        height: 100vh;
+    }
+
+    .owl-carousel .bg-item-1 {
+        background-image: url('../img/home/BG-SIMULACRO-CATO-MOBILE.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .owl-carousel .bg-item-2 {
+        background-image: url('../img/home/BG-CICLO-SM-MOBILE.png') !important;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .owl-carousel .bg-item-3 {
+        background-image: url('../img/home/BG-SOLUCIONARIO-SM-MOBILE.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .owl-carousel .item .item-internal {
+        margin-top: 80px;
+    }
+
+    .owl-carousel h1 {
+        font-size: 2em;
+    }
+
+    .owl-carousel h2,
+    .owl-carousel button {
+        font-size: 1em;
+    }
+
+    .registry h3 {
+        margin-top: 0em;
+    }
+
+    section.sidebar a {
+        margin: 1.5em auto;
+        display: block
+    }
+
+    section.sidebar {
+        padding: 0em 0em;
+    }
+
+    section.sidebar a,
+    section.sidebar p,
+    section.sidebar span,
+    section.sidebar i {
+        color: #fff;
+    }
+
+    section.sidebar .container .row div:nth-child(1) {
+        background-color: #FF6334;
+        padding: 2em 2em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    section.sidebar .container .row div:nth-child(2) {
+        background-color: #F2532E;
+        padding: 2em 2em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    section.sidebar .container .row div:nth-child(3) {
+        background-color: #E3411A;
+        padding: 2em 2em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    section.sidebar .container .row div:nth-child(4) {
+        background-color: #C43513;
+        padding: 2em 2em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    section.hr {
+        height: 0vh;
+    }
+
+    footer .menu {
+        display: none;
+    }
+
+    footer .menu-movil {
+        display: block;
+        padding: 2em 0em 2em 2em;
+    }
+
+    footer .menu-movil p {
+        margin: 2em 0em;
+    }
+
+    section.cycles figure {
+    margin: 1em auto;
+    }
+
+    section.calltoaction .box-div {
+        margin-top: 2em;
+    }
+    
+    section.calltoaction .box img{
+        margin-top: 2em;
+    }
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Trilce Maratón SAN MARCOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Formulario para el registro de Trilce Maratón SAN MARCOS" />
+  <meta name="keywords" content="Trilce Maratón SAN MARCOS" />
+  <meta content="Themesbrand" name="author" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Font Awesome -->
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/line-awesome.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>  
+  <section class="section2 fondo_primeros_puestos pad0">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="fondo_registro_2021 hailitar_header">
+          <div class="row">
+            <div class="col-lg-6 col-xs-6 col-lg-6-tab contenedor_mobile_logo">
+							<a href="https://www.trilce.edu.pe/academia">
+                <img src="images/academia/logo.svg" alt="Logo Academia" class="pad_logo">
+							</a>
+						</div>
+            <div class="col-lg-6 col-xs-6 col-lg-6-tab tair contenedor_mobile_iconos pad_iconos">
+              <a href="https://www.trilce.edu.pe/academia">
+                <img src="images/academia/home.svg" alt="Logo Academia" class="icono_colegio ic_ml">
+              </a>
+              <a href="https://www.trilce.edu.pe/l/whatsapp-academias" target="_blank">
+                <img src="images/academia/whatsapp.svg" alt="Logo Academia" class="icono_colegio">
+              </a>
+              <a href="tel:016198100">
+                <img src="images/academia/telefono.svg" alt="Logo Academia" class="icono_colegio">
+              </a>
+              <br>
+              <span class="texto_telefono">6198 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 fondo_landing_interno_san_marcos full_height">
+        </div>
+        <div class="col-lg-6 pt-4 fondo_registro_2021 full_height">
+          <div class="ml80">
+            <div class="row">
+              <div class="col-lg-2 hailitar_mobile">
+                <a href="https://www.trilce.edu.pe/academia">
+                  <img src="images/academia/logo.svg" alt="Logo Academia">
+                </a>
+              </div>
+              <div class="col-lg-10 hailitar_mobile">
+                  <ul class="ul_nav">
+                    <li style="margin-right: 20px; margin-left: 120px;">
+                      <a href="https://www.trilce.edu.pe/academia" target="_blank" class="enlace_1">
+                        Inicio
+                      </a>
+                    </li>
+                    <li style="margin-right: 20px; margin-left: 20px;">
+                      <div class="div_menu1">
+                        <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-academias" class="enlace_2">
+                          <img src="images/whatsapp.svg" alt="Trilce Academia" class="icono_header" /> 947 273 310
+                        </a>
+                      </div>
+                    </li>
+                    <li style="margin-right: 40px;">
+                      <div class="div_menu2">
+                        <a target="_blank" href="tel:016198100" class="enlace_2">
+                          <img src="images/telefono.svg" alt="Trilce Academia" class="icono_header" /> 6198 100
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="ml80">
+            <h1 class="titulo_academia_interno">Maratones Trilce</h1>
+            <p class="subtitulo_academia_interno">Selecciona ciclo / sede:</p>
+            <form class="registration-form w_form" action="landing-gracias-catolica.php" method="post">
+              <div class="form-group mb-2">
+                <select class="form-control fondo_blanco icono_select" id="ciclo" name="ciclo" required="required">
+                  <option value="">Ciclo</option>
+                  <option value="1">Anual (Cursos básicos)</option>
+                  <option value="2">Repaso Semestral (Cursos avanzados)</option>
+                </select>
+              </div>
+              <div class="form-group mb-2">
+                <select class="form-control fondo_blanco icono_select" id="turno" name="turno" required="required">
+                  <option value="">Sede</option>
+                  <option value="1">Los Olivos</option>
+                  <option value="2">Santa Beatriz</option>
+                </select>
+              </div>
+              <p class="subtitulo_academia_interno_2">Seleccionaste: <b class="texto_preparacion interno_2b">San Marcos / </b></p>
+              <p class="paso1 ">1. Ingresa datos del alumno:</p>
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="apellido_paterno" name="apellido_paterno" placeholder="Apellido paterno" required="required">
+              </div>
+						  <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="apellido_materno" name="apellido_materno" placeholder="Apellido materno" required="required">
+              </div>
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="nombres" name="nombres" placeholder="Nombres" required="required">
+              </div>
+              <div class="form-group mb-2 div_inputs">
+                <select class="form-control fondo_blanco icono_select input_1" id="tipo_documento" name="tipo_documento" required="required">
+                  <option value="">Tipo de documento</option>
+                  <option value="1">Carnet de extranjeria</option>
+                  <option value="2">DNI</option>
+                  <option value="3">Pasaporte</option>
+                </select>
+                <input type="text" class="form-control fondo_blanco input_2" id="dni" name="dni" placeholder="Número de documento" required="required" onkeypress="return isNumber(event)" onpaste="return false;" minlength="7" maxlength="9">
+              </div>
+              <div class="form-group mb-2">
+                <input type="text" class="form-control fondo_blanco" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required="required">
+              </div>
+              <div class="form-group mb-2">
+                <input type="email" class="form-control fondo_blanco" id="email" name="email" placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required">
+              </div>
+              <div class="form-group mb-2">
+                <div class="div_check">
+                  <span class="mayor">Soy mayor de edad (sin apoderado)</span>
+                  <label class="custom-radio-square check_si">
+                    Sí
+                    <input type="radio" name="option" value="yes" class="input_si">
+                    <span class="checkmark-square"></span>
+                  </label>
+                  <label class="custom-radio-square check_no">
+                    No
+                    <input type="radio" name="option" value="no" class="input_si">
+                    <span class="checkmark-square"></span>
+                  </label>
+                </div>
+              </div>
+              <div style="text-align: center;">
+                <button type="button" onclick="url_anterior_paso1_san_marcos()" class="texto_solicita anterior">Anterior</button>
+                <button type="button" onclick="url_siguiente_paso1_san_marcos()" class="texto_solicita siguiente">Siguiente</button>
+              </div>
+            </form>
+            <p class="texto_footer mb_80">© 2024 Trilce. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/smooth-scroll.polyfills.min.js"></script>
+<script src="js/gumshoe.polyfills.min.js"></script>
+<!-- feather icon -->
+<script src="js/feather.js"></script>
+<!-- unicons icon -->
+<script src="js/unicons.js"></script>
+<!-- Main Js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/opciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: NunitoSans-Black;
+	src: url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Geogrotesque-Rg;
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot);
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_B_0.cb0abdf7.woff2) format("woff2"), url(../fonts/33FA0F_B_0.9b7aba9c.woff) format("woff"), url(../fonts/33FA0F_B_0.2c4f6c17.ttf) format("truetype")
+}
+
+
+@font-face {
+	font-family: Geogrotesque-Md;
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot);
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_B_0.cb0abdf7.woff2) format("woff2"), url(../fonts/33FA0F_B_0.9b7aba9c.woff) format("woff"), url(../fonts/33FA0F_B_0.2c4f6c17.ttf) format("truetype")
+}
+
+
+@font-face {
+	font-family: CaeciliaLTPro-85Heavy;
+	src: url(../fonts/33FA0F_6_0.96f5936e.eot);
+	src: url(../fonts/33FA0F_6_0.96f5936e.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_6_0.f91771e0.woff2) format("woff2"), url(../fonts/33FA0F_6_0.ae74ca83.woff) format("woff"), url(../fonts/33FA0F_6_0.18cdaf22.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: CaeciliaLTPro-75Bold;
+	src: url(../fonts/33FA0F_4_0.6a1d30e4.eot);
+	src: url(../fonts/33FA0F_4_0.6a1d30e4.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_4_0.51adff53.woff2) format("woff2"), url(../fonts/33FA0F_4_0.9f6a7263.woff) format("woff"), url(../fonts/33FA0F_4_0.19c1da34.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: CaeciliaLTPro-55Roman;
+	src: url(../fonts/33FA0F_1_0.93cbd33b.eot);
+	src: url(../fonts/33FA0F_1_0.93cbd33b.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_1_0.a5937328.woff2) format("woff2"), url(../fonts/33FA0F_1_0.efa5d768.woff) format("woff"), url(../fonts/33FA0F_1_0.19e936df.ttf) format("truetype")
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	color: #fff;
+	font-family:  CaeciliaLTPro-55Roman;
+}
+
+nav {
+	position: absolute !important;
+}
+
+nav li a {
+	position: relative;
+}
+
+nav .phone {
+	position: relative;
+    bottom: -25px;
+    left: -35px;
+    font-weight: normal;
+    font-family: Geogrotesque-Rg !important;
+}
+
+nav i {
+	font-size: 1.5em !important;
+}
+
+.fixed-banner {
+	background: #f4633a;
+    min-height: 60px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	z-index: 999;
+}
+
+.fixed-banner a {
+	color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Geogrotesque-Rg;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+}
+
+.section#one {
+	padding-top: 100px;
+	background-image: url(../images/BG.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section#one h1 {
+	text-align: center;
+    font-size: 4.5rem;
+    font-family: CaeciliaLTPro-75Bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.section#one p {
+	text-align: center;
+	margin: 0;
+	font-family: Geogrotesque-Rg;
+	font-size: 1.1rem;
+}
+
+
+.section#two {
+	padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.section#two  h2 {
+	color: #f4633a;
+    font-size: 1.5rem;
+    font-family:  CaeciliaLTPro-55Roman;
+    margin-bottom: 10px;
+}
+
+.section#two  h3 {
+	text-align: center;
+	color: #f4633a;
+	font-size: 1.25rem;
+}
+
+.section#two p {
+	color:  #5C6064;
+    font-size: 1rem;
+    font-family:  CaeciliaLTPro-55Roman;
+	margin-bottom: 10px;
+	max-width: 700px;
+	text-align: center;
+}
+
+.btn {
+	cursor: pointer;
+    border: 0;
+    background: #fff;
+    color: #f4633a;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 4px 20px 4px 20px;
+    border-radius: 5px;
+}
+
+.checkbox {
+	text-align: center;
+}
+
+.checkbox a{
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.radio {
+	text-align: center;
+}
+
+
+.calltoaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background-color: #F5F5F5;
+}
+
+.box {
+    padding: 1em 0em 0em;
+}
+
+.calltoaction .box-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calltoaction h5 {
+    text-align: center;
+    color: #FF6334 !important;
+    font-size: 2em;
+}
+
+.calltoaction span {
+	text-align: center;
+	color: #5C6064;
+}
+
+.calltoaction .button {
+    background-color: #FF6334;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 1px;
+    margin: 0.8em auto;
+    font-size: 1em;
+    letter-spacing: 1px;
+    width: 200px;
+    padding: 0.5em 0em;
+}
+
+.calltoaction .box img {
+    width: 200px;
+}
+
+
+.parsley-errors-list .parsley-required,
+.parsley-errors-list .parsley-length {
+    display: none;
+}
+
+.parsley-custom-error-message {
+	list-style: none;
+}
+
+@media (max-width: 768px) {
+	nav .ml-4 {
+		margin-left: 0.5rem !important;
+	}
+	.section#one {
+		height: 100%;
+	}
+
+	.section#one h1 {
+		font-size: 2.5rem;
+	}
+
+	.fixed-banner a {
+		font-size: 1.4rem;
+	}
+	
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title id="title">Aniversario Trilce</title>
+		<meta name="description" content="Aniversario Trilce" />
+		<meta name="keywords" content="Aniversario Trilce" />
+		<meta name="author" content="Hencework"/>
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!--Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Lora:400,400i,700,700i' rel='stylesheet' type='text/css'>
+		
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	
+	<body data-ng-app="contactApp">
+	
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="la-anim-1"></div>
+		</div>
+		<!--/Preloader-->
+		
+		<!--Container-->
+		<div class="pad-zero">
+			
+			<!--Splitlayout -->
+			<div id="splitlayout" class="splitlayout reset-layout">
+				
+				<!--Intro-->
+				<div class="intro">
+					
+					<!--Left Content Intro-->
+					<div class="side side-left text-center">
+						
+						<!--Main Content-->
+						<section class="col-lg-9 col-md-10 col-sm-11 col-xs-11 content-wrap align-center sec-pad">
+							<div class="table-wrap">
+								<div class="table-cell vertical-align-middle">
+									<header class="logo margin-bottom-25">
+										<img src="img/logo-45-desktop.svg" alt="logo" style="width: 86%;" class="desktop">
+										<img src="img/logo-45-mobile.svg" alt="logo" style="margin-top: 80px;" class="mobile">
+									</header>
+								</div>	
+							</div>	
+							<!--left overlay-->
+						</section>
+						
+						<!--Left overlay-->
+						<div class="side-left-overlay"></div>
+						<!--/Left overlay-->
+						
+						<!--Background Effect-->
+						<canvas id="fireworks"></canvas>
+						<!--/Background Effect-->
+						
+					</div>
+					<!--/Left Content Intro-->
+					
+					<!--Right Content Intro-->
+					<div class="side side-right text-center bg-pattern">
+						
+						<section class="col-lg-12 content-wrap sec-pad">
+							<div class="table-wrap">
+								<div class="table-cell vertical-align-middle">
+									<div class="main-content">
+										<!--main content-->
+										<section class="col-lg-8 col-md-8 col-sm-9 col-xs-11 intro-text hide-overflow align-center">
+											<div id="slide_out" class="relative">
+												<img class="inline-block margin-bottom-5 desktop" src="img/texto-cambio-desktop.svg" alt="chrismas" style="width: 86%;"/>
+												<img class="inline-block margin-bottom-5 mobile" src="img/texto-cambio-mobile.svg" alt="chrismas" style="margin-bottom: 50px;"/>
+											</div>
+										</section>
+										<!--/main content-->
+									</div>
+								</div>
+							</div>
+						</section>			
+						<div class="container-fluid pad-zero social-wrpper">
+														
+							<!--Footer-->
+							<footer class="copyright-text margin-sm-30 margin-top-xs-0">								
+								<p>© 2024 Trilce. Todos los derechos reservados.</p>
+							</footer>
+							<!--/Footer-->
+							
+						</div>	
+						
+						<!--Right overlay-->
+						<div class="side-right-overlay"></div>
+						<!--/Right overlay-->
+						
+					</div>
+					<!--/Right Content Intro-->
+					
+				</div>
+				<!--/Intro-->
+				
+				
+			</div>
+			<!-- /Splitlayout -->
+		
+		</div>
+		<!-- /Container -->
+		
+		<!--PhotoSwipe Popup-->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pswp__bg"></div>
+			<div class="pswp__scroll-wrap">
+
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+
+				<div class="pswp__ui pswp__ui--hidden">
+
+					<div class="pswp__top-bar">
+
+						<div class="pswp__counter"></div>
+
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+							  <div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							  </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div> 
+					</div>
+
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+					</button>
+
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+					</button>
+
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+
+				  </div>
+
+			</div>
+		</div>
+		<!--/PhotoSwipe Popup-->
+		
+		<!-- Scripts -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/cbpSplitLayout.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/notifyMe.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/photoswipe.min.js"></script>
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery.nicescroll.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/fireworks.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+		<script src="js/init.js"></script>
+		
+	</body>
+</html>

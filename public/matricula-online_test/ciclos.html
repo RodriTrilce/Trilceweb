@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Matrícula Online - Trilce</title>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <style>
+    #ciclo-default,
+    #turno-default,
+    #sede-default,
+    #sesion-default,
+    #seccion-default{
+      display: block;
+    }
+
+    #ciclo-uni,
+    #ciclo-sanmarcos,
+    #ciclo-catolica,
+    #turno-uni-anual,
+    #turno-uni-semestral,
+    #turno-sanmarcos-anual,
+    #turno-sanmarcos-semestral,
+    #turno-catolica-semestral,
+    #turno-catolica-primeraopcion,
+    #sede-uni-repaso,
+    #sede-uni-verano,
+    #sede-uni-anual,
+    #sede-uni-verano-especial,
+    #sede-uni-semestral,
+    #sede-uni-seleccion,
+    #sede-uni-ciclo-escolar,
+    #sede-uni-semestraldos,
+    #sesion-uni-repaso,
+    #sesion-uni-verano,
+    #sesion-uni-anual,
+    #sesion-uni-verano-especial,
+    #sesion-uni-semestral,
+    #sesion-uni-seleccion,
+    #sesion-uni-ciclo-escolar,
+    #sesion-uni-semestraldos,
+    #seccion-uni-repaso,
+    #seccion-uni-verano,
+    #seccion-uni-anual,
+    #seccion-uni-verano-especial,
+    #seccion-uni-semestral,
+    #seccion-uni-semestral-manana,
+    #seccion-uni-semestral-tarde,
+    #seccion-uni-seleccion,
+    #seccion-uni-ciclo-escolar,
+    #seccion-uni-semestraldos,
+    #seccion-uni-semestraldos-manana,
+    #seccion-uni-semestraldos-tarde,
+    #ciclo-sanamarcos,
+    #sede-sanmarcos-anual, 
+    #sede-sanmarcos-semestral,
+    #sede-sanmarcos-verano,
+    #sede-sanmarcos-repaso1,
+    #sede-sanmarcos-anual-tarde,
+    #sede-sanmarcos-semestral-tarde,
+    #sede-sanmarcos-semestral2{
+      display: none;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="box-form offset-md-1 col-md-10 offset-md-1 mb-4">
+
+    <div class="container">
+       <div class="row">
+          <div class="col-xs-12 col-md-6"><h2 class="mb-4">3. Registro académico</i></h2></div>
+          <div class="col-xs-12 col-md-6"><small class="required">(*) Campos obligatorios</small></div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-xs-12 col-md-5 box-img-1">
+          <img class="px-4" src="img/img-enrollment-01.png">
+        </div> -->
+        <div class="col-xs-12 col-md-12 box-data-1">
+
+              <div class="row">
+
+                <!-- /****************/ FECHA DE INICIO /***************/ -->
+
+                <div class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <input class="form-control" type="text"  name="fecha_inicio" id="fecha_inicio" placeholder="Fecha de inicio *" onfocus="(this.type='date')" onblur="(this.value == '' ? this.type='text' : this.type='date')" onfocus="(this.type='date')" onblur="(this.value == '' ? this.type='text' : this.type='date')" >
+                    </fieldset>
+                </div>
+
+                <!-- /****************/ AÑO /***************/ --> 
+
+                <div class="col-xs-12 col-md-4">
+                      <fieldset class="form-group">
+                          <select name="sexo" id="sexo" class="form-control" required>
+                              <option value="" selected disabled>Año académico *</option>
+                              <option value="2020">2020</option>
+                          </select>
+                      </fieldset>
+                </div>
+
+                <!-- /****************/ SERVICIOS /***************/ -->
+
+                <div class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="servicio" id="servicio"
+                        aria-label="Universidad" required="">
+                            <option value="" selected="" disabled="">Tipo de preparación *</option>
+                            <option value="ACAUN">Pre UNI</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <!-- /****************/ CICLOS /***************/ -->
+
+                <div id="ciclo-default" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="ciclo" aria-label="Ciclo" >
+                        <option value="" selected="" disabled="">Ciclo *</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="ciclo-uni" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="ciclo" id="ciclos-suni" aria-label="Ciclo">
+                      <option value="" selected="" disabled="">Ciclo *</option>
+                      <option value="00111">Repaso Uni 1</option>
+                      <option value="00112">Verano Uni</option> 
+                      <option value="00116">Anual</option>
+                      <option value="00127">Verano Especial</option>
+                      <option value="00163">Semestral</option>
+                      <option value="00166">Selección</option>
+                      <option value="00177">Ciclo especial escolar</option>
+                      <option value="SEMU2">Semestral II</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <!-- /****************/ SEDES /***************/ -->
+
+                <div id="sede-default" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="edificio" id="edificio" aria-label="Sede" required="">
+                          <option value="" selected="" disabled="">Sede *</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sede-uni-repaso" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="edificio" id="edificio-uni-repaso" aria-label="Sede" required="">
+                          <option value="" selected="" disabled="">Sede *</option>
+                          <option value="ISACADSB">Online</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sede-uni-verano" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-verano" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="sede-uni-anual" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-anual" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="sede-uni-verano-especial" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-verano-especial" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="sede-uni-semestral" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-semestral" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="sede-uni-seleccion" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-seleccion" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="sede-uni-ciclo-escolar" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-ciclo-escolar" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div> 
+
+                <div id="sede-uni-semestraldos" class="col-xs-12 col-md-4">
+                    <fieldset class="form-group">
+                        <select class="form-control" name="edificio" id="edificio-uni-semestraldos" aria-label="Sede" required="">
+                            <option value="" selected="" disabled="">Sede *</option>
+                            <option value="ISACADSB">Online</option>
+                        </select>
+                    </fieldset>
+                </div>
+                
+
+
+                <!-- SESION DEFAULT -->
+                <div id="sesion-default" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <!-- SECCION DEFAULT -->
+                <div id="seccion-default" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+
+                <div id="sesion-uni-repaso" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1089" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-repaso" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1089" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sesion-uni-verano" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1090" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-verano" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1090" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+
+                <div id="sesion-uni-anual" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1137" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-anual" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1137" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+
+                <div id="sesion-uni-verano-especial" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1108" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-verano-especial" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1108" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sesion-uni-semestral" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion-uni-semestral-select" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1138" >Único - Regular - Mañana</option>
+                          <option value="1162" >Primer semestral - Regular - Tarde</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestral" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="seccion" id="" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestral-manana" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1138" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestral-tarde" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1162" >Primer semestral - Regular - Tarde</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sesion-uni-seleccion" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-seleccion" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sesion-uni-ciclo-escolar" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-ciclo-escolar" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="" >Único - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div id="sesion-uni-semestraldos" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="sesion" id="sesion-uni-semestraldos-select" aria-label="Sesión" required="">
+                          <option value="" selected="" disabled="">Sesión *</option>
+                          <option value="1180" >Segundo semestral - Regular - Mañana
+                          </option>
+                          <option value="1181" >Segundo semestral - Regular - Tarde
+                          </option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestraldos" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="seccion" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestraldos-manana" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1180" >Segundo semestral - Regular - Mañana</option>
+                      </select>
+                  </fieldset>
+                </div>
+                <div id="seccion-uni-semestraldos-tarde" class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                    <select class="form-control" name="seccion" id="" aria-label="Sección" required="">
+                          <option value="" selected="" disabled="">Sección *</option>
+                          <option value="1181" >Segundo semestral - Regular - Tarde</option>
+                      </select>
+                  </fieldset>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                  <fieldset class="form-group">
+                      <select class="form-control" name="origen_admision" id="origen_admision" aria-label="Origen admisión" required="">
+                          <option value="" selected="" disabled="">Origen admisión *</option>
+                          <option value="ORITV">TV</option>
+                          <option value="CABLE">Cable</option>
+                          <option value="RADIO">Radio</option>
+                          <option value="DIARE">Diario / Revistas</option>
+                          <option value="INTER">Internet</option>
+                          <option value="PANEL">Paneles</option>
+                          <option value="PUBLI">Publicidad</option>
+                          <option value="RECOM">Recomendación</option>
+                          <option value="CERCA">Cercanía</option>
+                      </select>
+                  </fieldset>
+                </div>
+              </div>
+
+            </div>
+                
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <script>
+
+    //  CICLO UNI
+    
+    $("#servicio").change(function () {
+      if ($(this).val() == 'ACAUN') {
+        $("#ciclo-uni").show();
+        $("#ciclo-default").hide();
+        $("#ciclo-sanmarcos").hide();
+        $("#ciclo-catolica").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00111') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").show();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00112') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").show();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00116') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").show();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00127') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").show();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00163') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").show();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00166') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").show();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == '00177') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").show();
+        $("#sede-uni-semestraldos").hide();
+      }
+    });
+
+    $("#ciclos-uni").change(function () {
+      if ($(this).val() == 'SEMU2') {
+        $("#sede-default").hide();
+        $("#sede-uni-repaso").hide();
+        $("#sede-uni-verano").hide();
+        $("#sede-uni-anual").hide();
+        $("#sede-uni-verano-especial").hide();
+        $("#sede-uni-semestral").hide();
+        $("#sede-uni-seleccion").hide();
+        $("#sede-uni-ciclo-escolar").hide();
+        $("#sede-uni-semestraldos").show();
+      }
+    });
+
+    $("#edificio-uni-repaso").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").show();
+        $("#seccion-uni-repaso").show();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-verano").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").show();
+        $("#seccion-uni-verano").show();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-anual").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").show();
+        $("#seccion-uni-anual").show();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-verano-especial").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").show();
+        $("#seccion-uni-verano-especial").show();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-semestral").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").show();
+        $("#seccion-uni-semestral").show();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+      }
+    });
+
+    $("#sesion-uni-semestral-select").change(function () {
+      if ($(this).val() == '1138') {
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").show();
+        $("#seccion-uni-semestral-tarde").hide();
+      }
+    });
+
+    $("#sesion-uni-semestral-select ").change(function () {
+      if ($(this).val() == '1162') {
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").show();
+      }
+    });
+
+    $("#edificio-uni-seleccion").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").show();
+        $("#seccion-uni-seleccion").show();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-ciclo-escolar").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").show();
+        $("#seccion-uni-ciclo-escolar").show();
+        $("#sesion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#edificio-uni-semestraldos").change(function () {
+      if ($(this).val() == 'ISACADSB') {
+        $("#sesion-default").hide();
+        $("#seccion-default").hide();
+        $("#sesion-uni-repaso").hide();
+        $("#seccion-uni-repaso").hide();
+        $("#sesion-uni-verano").hide();
+        $("#seccion-uni-verano").hide();
+        $("#sesion-uni-anual").hide();
+        $("#seccion-uni-anual").hide();
+        $("#sesion-uni-verano-especial").hide();
+        $("#seccion-uni-verano-especial").hide();
+        $("#sesion-uni-semestral").hide();
+        $("#seccion-uni-semestral").hide();
+        $("#seccion-uni-semestral-manana").hide();
+        $("#seccion-uni-semestral-tarde").hide();
+        $("#sesion-uni-seleccion").hide();
+        $("#seccion-uni-seleccion").hide();
+        $("#sesion-uni-ciclo-escolar").hide();
+        $("#seccion-uni-ciclo-escolar").hide();
+        $("#sesion-uni-semestraldos").show();
+        $("#seccion-uni-semestraldos").show();
+      }
+    });
+
+    $("#sesion-uni-semestraldos-select").change(function () {
+      if ($(this).val() == '1180') {
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").show();
+        $("#seccion-uni-semestraldos-tarde").hide();
+      }
+    });
+
+    $("#sesion-uni-semestraldos-select ").change(function () {
+      if ($(this).val() == '1181') {
+        $("#seccion-uni-semestraldos").hide();
+        $("#seccion-uni-semestraldos-manana").hide();
+        $("#seccion-uni-semestraldos-tarde").show();
+      }
+    });
+
+
+  </script>
+  
+</body>
+
+</html>

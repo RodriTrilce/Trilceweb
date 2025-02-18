@@ -1,0 +1,145 @@
+.simulacrum-info-title-bottom{
+  margin-bottom: 10px;
+}
+
+.simulacrum-form{
+  background: $simulacrum-form-background;
+
+  @include breakpoint(baby){
+    background: white;
+    margin-top: 20px;
+
+    button{
+      background: white !important;
+    }
+  }
+
+  h2{
+    color: $gray;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: $font_cae_bold;
+    width: 100%;
+  }
+
+  ul{
+    margin-bottom: 20px;
+  }
+
+  ul li{
+    font-family: $font_geo_lite;
+  }
+
+  button{
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  div.step-2{
+  }
+
+  fieldset{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+
+    label{
+      width: auto;
+      float: left;
+      margin: 0.8rem;
+    }
+
+    >div{
+      overflow: hidden;
+      width: auto;
+      select{
+        width: 100%;
+      }
+    }
+
+  }
+
+  button{
+    background: $simulacrum-form-background;
+    font-family: $font_geo_reg;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2{
+      font-size: 1rem;
+    }
+    ul > li{
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.step-container{
+  padding: 35px;
+  padding-bottom: 0;
+
+  @include breakpoint(mom){
+    padding: 15px;
+  }
+
+  @include breakpoint(baby){
+    padding: 0;
+  }
+}
+.simulacrum-step1-steps{
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after{
+    content: "";
+    width: 98%;
+    height: 1px;
+    background: transparentize($gray, 0.8);
+    bottom: -8px;
+    position: absolute;
+  }
+
+  >div{
+    padding: 10px;
+
+    &:not(:last-child){
+      border-right: 1px solid transparentize($gray, 0.8);
+    }
+  }
+
+  .number{
+    font-size: 2.5rem;
+    font-family: $font_geo_bold;
+    color: $colegio_gray;
+    position: relative;
+    padding: 5px 0;
+
+    @include breakpoint(dad){
+      font-size: 2.3rem;
+    }
+
+    @include breakpoint(mom){
+      font-size: 1.8rem;
+    }
+
+    @include breakpoint(baby){
+      font-size: 1.5rem;
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background: $orange;
+      bottom: 0;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .text{
+    font-family: $font_geo_reg;
+    font-size: .9rem;
+  }
+}

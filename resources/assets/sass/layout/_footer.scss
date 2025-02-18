@@ -1,0 +1,120 @@
+footer{
+  background: $gray;
+  height: 100%;
+  width: 100%;
+  color: lighten($gray, 50%);
+  font-size: 0.8rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  @include breakpoint(baby){
+    margin-bottom: 65px;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 11px;
+  }
+
+  a{
+    color: white;
+  }
+
+  .footer-menu{
+    width: 100%;
+  }
+
+  .footer-top{
+    border-bottom: 1px solid lighten($gray, 20%);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+
+    span{
+      @media screen and (max-width: 768px) {
+        font-size: 11px;
+      }
+    }
+  }
+
+  @include breakpoint(baby){
+    .footer-bottom{
+      margin-top: 20px;
+    }
+  }
+
+.links{
+  ul{
+    margin-top: 15px;
+
+    li{
+      display: inline;
+
+      a,a:link{
+        text-decoration: none;
+        color: lighten($gray, 50%);
+      }
+
+      &::after{
+        padding-left: 5px;
+        padding-right: 5px;
+        content:"|";
+      }
+
+      &:last-child{
+        &::after{
+          content: "";
+        }
+      }
+      a:hover{
+        color: white;
+      }
+    }// end  li
+
+    @media screen and (max-width: 768px) {
+      text-align: left;
+
+      li{
+        margin-top: 6%;
+        display: block;
+
+        &::after{
+          padding-left: 0;
+          content:"";
+        }// end after
+
+      }// end li
+
+    }// end media ul
+
+  }//end ul
+}
+
+.footer-right-icons {
+  @media screen and (max-width: 768px) {
+  }
+
+  li{
+    display: inline-block;
+
+    a{
+      font-size: 1.5rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    a:link,a:visited{
+      color: white
+    }
+
+    &::after{
+      content:"";
+      padding-left: 10px;
+    }
+  }
+}
+}
+
+.followconnect{
+  padding: 0.5rem;
+}

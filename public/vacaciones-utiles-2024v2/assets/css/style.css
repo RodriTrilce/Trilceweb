@@ -1,0 +1,1575 @@
+@font-face {
+	font-family: GR;
+	src: url(../fonts/Geogrotesque-Regular.eot);
+	src: url(../fonts/Geogrotesque-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Regular.woff2) format("woff2"), url(../fonts/Geogrotesque-Regular.woff) format("woff"), url(../fonts/Geogrotesque-Regular.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: CLTP;
+	src: url(../fonts/CaeciliaLTPro75Bold.eot);
+	src: url(../fonts/CaeciliaLTPro75Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTPro75Bold.woff2) format("woff2"), url(../fonts/CaeciliaLTPro75Bold.woff) format("woff"), url(../fonts/CaeciliaLTPro75Bold.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: NSB;
+	src: url(../fonts/NunitoSans-Black.eot);
+	src: url(../fonts/NunitoSans-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Black.woff2) format("woff2"), url(../fonts/NunitoSans-Black.woff) format("woff"), url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+html, body {
+    height: 100%
+}
+body {
+    color: #777;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 75px;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+p {
+    letter-spacing: 0px;
+}
+a {
+    /*
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    */
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+.btn, input[type='submit'] {
+    font-family: GR;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    color: #fff;
+    background-color: #FF5023;
+    max-width: 260px;
+    border-radius: 50px;
+    border-color: #FF5023 !important;
+    margin: 0 auto;
+}
+.btn:hover, input[type="submit"]:hover {
+    color: #fff;
+    background: #FF5023;
+    border: 1px solid #FF5023;
+    margin: 0 auto;
+}
+.btn-white {
+    color: #8da7f4;
+    background: #fff;
+}
+.btn-white:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.btn-trnsp {
+    border: 1px solid #fff;
+    background: transparent;
+}
+.btn-trnsp:hover {
+    border: 1px solid #fff;
+    background: #fff;
+}
+.btn-gry {
+    color: #222;
+    background: #f9f9ff;
+    border: 1px solid #ececec;
+}
+.btn-gry:hover {
+    color: #8da7f4;
+    background: #fff;
+    border: 1px solid #8da7f4;
+}
+.section-big {
+    padding: 50px 0px;
+}
+.section-small {
+    padding: 70px 0px;
+}
+.section-title {
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.section-title.white h2 {
+    color: #fff;
+}
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    margin-top: 0;
+}
+.section-title p {
+
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.menu-area {
+    background: #fff;
+    height: 75px;
+}
+.sticky-menu {
+    box-shadow: 0px 3px 4.7px 0.3px rgba(141, 167, 244, 0.3);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+.mainmenu {
+    margin-top: 12px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+}
+.nav.navbar-nav.navbar-right {
+    margin-right: 0;
+}
+.navbar-brand {
+    display: block;
+    color: #8da7f4;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding: 0;
+}
+.navbar-brand span {
+    color: #f45e58;
+}
+.navbar-brand:hover {
+    color: #8da7f4;
+}
+.navbar-nav  li {
+    float: none;
+    display: inline-block;
+}
+.navbar-nav li a {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+.navbar-nav a.btn {
+    color: #fff;
+    padding: 10px 25px;
+    margin-left: 20px;
+}
+.navbar-nav a.btn:hover {
+    color: #8da7f4;
+}
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+    background: none;
+}
+.mainmenu .navbar-nav li.active a {
+    color: #8da7f4;
+}
+/* Mobile Nav css */
+.navbar-toggle .icon-bar {
+    background: #8da7f4;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Slider area css
+* -------------------------------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+}
+
+.intro-text {
+    text-align: left;
+    color: #fff;
+}
+
+.intro-text h1 {
+    color: inherit;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.intro-text p {
+    color: inherit;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.intro-text .btn {
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+@media(max-width: 991px) {
+    .intro-text {
+        margin: 80px auto;
+        text-align: center;
+    }
+    .hero-overlay h2 {
+        margin-top: 0px;
+        font-size: 1.5em;
+    }
+}
+
+
+#carousel-example-generic .animated {
+    animation-delay: .5s;
+}
+
+#slider .carousel-indicators li {
+    width: 30px;
+    height: 3px;
+    border: none;
+    background: #eee;
+    border-radius: 0px;
+    margin: 2px 2px;
+}
+
+#slider .carousel-indicators li.active {
+    width: 30px;
+    height: 8px;
+    border: none;
+    background: #fff;
+    border-radius: 0px;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                               04. Hero area css
+* ---------------------------------------------------------------------------------------*/
+
+.hero-box {
+    position: relative;
+    margin-top: 30px;
+    padding: 50px 30px; 
+    border: 1px solid #ececec;
+}
+    
+.hero-box:hover {
+    color: #fff;
+    border: none;
+    transition: 0.3s ease-out;
+    transform: scale(1.02, 1.02);
+    box-shadow: 0px 20px 50px 0px rgba(141, 167, 244, 0.5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8da7f4+0,8da7f4+13,80aef2+32,47cde9+84,38d5e7+100 */
+    background: #8da7f4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #8da7f4 0%, #8da7f4 13%, #80aef2 32%, #47cde9 84%, #38d5e7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #8da7f4 0%,#8da7f4 13%,#80aef2 32%,#47cde9 84%,#38d5e7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #8da7f4 0%,#8da7f4 13%,#80aef2 32%,#47cde9 84%,#38d5e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8da7f4', endColorstr='#38d5e7',GradientType=1 ); /* IE6-9 */
+}
+
+.hero-box img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-box i.fa,
+.hero-box span {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #8da7f4;
+}
+
+.hero-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-box p {
+    margin-bottom: 0px;
+}
+
+.hero-box:hover i.fa,
+.hero-box:hover span,
+.hero-box:hover h3,
+.hero-box:hover p {
+    color: #fff;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                08. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+.testimonial-area {
+    background-color: #5E69AB;
+}
+
+.testimonial-content {
+    text-align: right;
+}
+
+.testimonial-area h3 {
+    margin-top: 0px;
+}
+
+.form-control {
+    display: block;
+    width: 168px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #F2F2F2;
+    font-family: GR;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #333333 !important;
+    ;
+}
+
+.form-control:focus {
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form textarea#message {
+    padding-top: 10px;
+    height: 130px;
+}
+
+#submitButton {
+    float: right;
+    background: #fff;
+    color: #222;
+}
+
+#submitButton:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.success {
+    color: #50B948;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.address span.lnr, .address i.fa {
+    font-size: 20px;
+    line-height: 30px;
+    float: left;
+    display: inline-block;
+    width: 40px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    color: #8da7f4;
+}
+
+.address a {
+    color: #777;
+}
+
+.address a:hover {
+    color: #8da7f4;
+}
+
+/* ----------------------------------------------------------------------------------------
+*                                   20. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #f9f9ff;
+    padding: 0px 0px 20px 0px;
+}
+
+.footer-area p {
+    margin: 0px;
+}
+
+@media (min-width: 768px) {
+    .social-links{
+        float: right;
+    }
+}
+
+.social-links li {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+}
+
+.social-links li a i {
+    color: #777;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-links li a:hover i {
+    color: #8da7f4;
+}
+
+@media (max-width: 767px) {
+    .footer-area {
+        text-align: center;
+    }
+    .footer-area .social-links {
+        float:none;
+        display:table;
+        margin: auto;
+    }
+}
+
+/* Media Queries */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) 
+{
+	.btn_aceptar{
+		width: 220px !important;
+        height: 33px !important;
+	}
+	.btn_whatsapp{
+		width: 290px !important;
+	}
+	.tamanio_btn{
+		width: 290px !important;
+		margin-bottom: 10px !important;
+	}
+	.tamanio_btn_aceptar{
+		width: 220px !important;
+		margin-bottom: 10px !important;
+	}
+	.gracias_contenedor{
+		
+	}
+	.gracias_titulo{
+		font-family: GR;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 31px;
+		color: #333;
+		text-align: center;
+		padding: 0px 40px 0px 40px;
+	}
+	.gracias_descripcion{
+		font-family: GR;
+		font-size: 10px;
+		line-height: 13px;
+		text-align: center;
+		padding: 0px 20px 0px 20px;
+	}
+	.icono_colegio{
+		width: 30px;
+		margin-right: 22px;
+	}
+	.hailitar_mobile{
+		display: none;
+	}
+	.texto_telefono {
+		color: #000;
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+		display: none;
+	}
+	.contenedor_descripcion_colegio{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 20px;
+		color: #333;
+		padding: 0px 30px 0px 16px;
+		margin-bottom: 0px;
+	}
+	.vista_home_foto{
+		display: none;
+	}
+	.vista_home_boton1{
+		display: none !important;
+	}
+	.vista_home_boton2{
+		display: block;
+	}
+    .vista_home_boton3{
+		display: none !important;
+	}
+	.texto_acepta{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 20px;
+		text-align: center;
+		margin: 10px 0px 10px 0px;
+	}
+    .div_flex{
+        display: flex; 
+        flex-direction: column;
+    }
+    .first{
+        order: 2;
+        margin: 0px 20px 0px 20px;
+    }
+    .second{
+        order: 1;
+        margin: 0 auto;
+    }
+    .slider-bg {
+        height: 821px;
+        background-image: url("../img/bg/fondo-mobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .nav_mobile{
+        text-align: right;
+        margin-top: 5px;
+    }
+    .div_form {
+        background-color: #fff; 
+        width: 100%; 
+        height: 540px; 
+        border-radius: 12px;
+        padding: 30px;
+        margin: 0 auto;
+    }
+    .titulo_form {
+        font-family: GR; 
+        color: #FF5023; 
+        font-size: 22px; 
+        font-weight: 600; 
+        line-height: 29px;
+        margin: 0px 0px 0px 0px;
+    }
+    .subtitulo_form {
+        font-family: GR;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 13px;
+        margin: 7px 0px 14px 0px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #F2F2F2;
+        font-family: GR;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        color: #333333 !important;
+    }
+    .icono_select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 4px;
+	}
+    .text_center {
+        text-align: center;
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        background-color: #FF6334;
+    }
+    /* Start Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 90%;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .titulo_modal {
+        font-family: CLTP; 
+        font-size: 20px; 
+        font-weight: bold
+    }
+    .padding_moal {
+        padding: 0px 30px 0px 30px;
+    }
+    .texto_modal {
+        font-family: GR;
+        font-size: 14px;
+    }
+    .p_terminos {
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+    /* End Modal */
+
+    /* Seccion 02 */
+    .seccion_trilce_01{
+        margin: 40px 0px 30px 40px;
+    }
+    .texto_color {
+        color: #fff;
+    }
+    .texto_h1 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-right: 52px;
+    }
+    .texto_b_h1 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 850;
+        line-height: 21px;
+    }
+    .parrafo_01 {
+        font-family: GR;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-right: 20px;
+    }
+    .bg_01 {
+        background: url('../img/banner-bienvenido-mobile.png');
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 168px;
+    }
+
+    /* Seccion 03 */
+    .texto_02 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 850;
+        line-height: 21px;
+        text-align: center;
+        color: #333;
+        margin: 0px 20px 8px 20px;
+    }
+    .parrafo_02 {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 13px;
+        text-align: center;
+        color: #333;
+    }
+    .sub_texto_02 {
+        font-family: CLTP;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        color: #333;
+    }
+    .div_descarga{
+        width: 100%; 
+        text-align: left; 
+        padding: 0px 10px 0px 50px;
+    }
+    .div_descarga_2{
+        width: 100%; 
+        text-align: left; 
+        padding: 0px 10px 0px 50px;
+    }
+    .btn_enlace {
+        display: inline-block;
+        width: 135px; 
+        height: 32px; 
+        border-radius: 50px; 
+        border: 1px solid #000; 
+        padding: 10px; color: #333 !important; 
+        font-family: GR; 
+        font-size: 12px; 
+        font-weight: 500; 
+        line-height: 12px;
+        text-align: center; 
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .btn_enlace:hover {
+        color: #fff !important;
+        font-family: GR;
+        border: 1px solid #FF5023; 
+        background-color: #FF5023;
+        font-weight: 600;
+    }
+    .espacio{
+        display: none;
+    }
+    .fondo_footer{
+        background-color: #F2F2F2;
+    }
+
+    /* Seccion 04 */
+    .texto_03 {
+        font-family: CLTP;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #0DBA42;
+        text-align: center;
+        margin: 0px 45px 0px 45px;
+        margin-top: 36px !important;
+    }
+    .parrafo_03 {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .btn_whatsapp {
+        display: block;
+        width: 220px !important;
+        height: 33px;
+        border-radius: 50px;
+        background-color: #0DBA42;
+        color: #fff;
+        font-family: GR;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 6px !important;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    /* Seccion 05 */
+    .texto_04 {
+        font-family: GR;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: #333;
+    }
+    .imagen_04 {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) 
+{
+    .section-big{
+        padding: 40px 0px;
+    }
+	.section_form{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 400px;
+    }
+    .div_form {
+        background-color: #fff; 
+        width: 338px; 
+        height: 338px; 
+        border-radius: 12px;
+        padding: 30px;
+    }
+    .titulo_form {
+        font-family: GR; 
+        color: #FF5023; 
+        font-size: 24px; 
+        font-weight: 600; 
+        line-height: 36px;
+        margin: 0px 0px 0px 0px;
+    }
+    .subtitulo_form {
+        font-family: GR;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 7px 0px 14px 0px;
+    }
+    .btn_registro_1 {
+        font-family: GR;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        background-color: #FF6334;
+    }
+    .texto_acepta {
+        font-family: GR;
+        font-size: 9px;
+        font-weight: 400;
+    }
+    .texto_acepta_b {
+        color: #333; 
+        text-decoration: underline !important;
+        font-family: 'GR';
+        cursor: pointer;
+        font-family: NSB;
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .text_center {
+        text-align: center;
+    }
+    .slider-bg {
+        height: 400px;
+        background-image: url("../img/bg/fondo-tablet.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .btn_enlace {
+        display: inline-block;
+        width: 125px; 
+        height: 32px; 
+        border-radius: 50px; 
+        border: 1px solid #000; 
+        padding: 10px; color: #333 !important; 
+        font-family: GR; 
+        font-size: 12px; 
+        font-weight: 500; 
+        line-height: 12px;
+        text-align: center; 
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .btn_enlace:hover {
+        color: #fff !important;
+        font-family: GR;
+        border: 1px solid #FF5023; 
+        background-color: #FF5023;
+        font-weight: 600;
+    }
+    .icono_colegio {
+        width: 25px;
+        margin-right: 20px;
+    }
+    .texto_telefono {
+        color: #000;
+        font-family: GR;
+        margin: 0px 0px 0px 84px;
+    }
+    .div_flex{
+        /*display: flex; 
+        flex-direction: column;*/
+    }
+    .first{
+        order: 1;
+        float: right !important;
+    }
+    .second{
+        order: 2;
+        float: left !important;
+    }
+    
+    /* Seccion 02 */
+    .seccion_trilce_01 {
+        padding: 20px 0px 20px 90px;
+    }
+    .texto_color {
+        color: #fff;
+    }
+    .texto_h1 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        margin-right: 120px;
+    }
+    .texto_b_h1 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 850;
+        line-height: 14px;
+    }
+    .parrafo_01 {
+        font-family: GR;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        margin-right: 60px;
+    }
+    .bg_01 {
+        background: url('../img/banner-bienvenido-tablet.png');
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 180px;
+    }
+    
+    /* Seccion 03 */
+    .texto_02 {
+        font-family: CLTP;
+        font-size: 22px;
+        font-weight: 850;
+        line-height: 40px;
+        text-align: center;
+        color: #333;
+    }
+    .parrafo_02 {
+        font-family: GR;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: #333;
+    }
+    .sub_texto_02 {
+        font-family: CLTP;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        color: #333;
+    }
+    .div_descarga{
+        width: 100%; 
+        text-align: left; 
+        padding: 0px 10px 0px 10px;
+    }
+    .div_descarga_2{
+        width: 100%; 
+        text-align: center; 
+        padding: 0px 10px 0px 10px;
+    }
+    .mt_01 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* Seccion 04 */
+    .texto_03 {
+        font-family: CLTP;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #0DBA42;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .parrafo_03 {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 13px;
+        color: #333;
+        text-align: center;
+    }
+    
+    /* Seccion 05 */
+    .texto_04 {
+        font-family: GR;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: #333;
+    }
+    .imagen_04 {
+        margin: 30px 0px 30px 0px;
+        width: 152px;
+    }
+    .div_04 {
+        margin: 70px 0px 70px 0px;
+    }
+    .btn_whatsapp {
+        display: block;
+        width: 167px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #0DBA42;
+        color: #fff;
+        font-family: GR;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 6px;
+        margin: 0 auto;
+    }
+    
+    /* Start Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 1600px;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .titulo_modal {
+        font-family: CLTP; 
+        font-size: 20px; 
+        font-weight: bold
+    }
+    .padding_moal {
+        padding: 0px 30px 0px 30px;
+    }
+    .texto_modal {
+        font-family: GR;
+        font-size: 14px;
+    }
+    .p_terminos {
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+    /* End Modal */
+
+	.habilitar_header{
+		display: none;
+	}
+	.gracias_contenedor{
+		border-radius: 20px; 
+		padding: 80px 10px 40px 10px;
+	}
+	.gracias_titulo{
+		color: #333;
+		margin-top: 10px;
+		padding: 0px 25px 0px 25px;
+        text-align: center;
+        font-family: GR;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        margin-bottom: 0px;
+	}
+	.gracias_descripcion{
+		font-family: GR;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 13px;
+		padding: 6px 25px 0px 25px;
+        text-align: center;
+	}
+    .btn_gracias_aceptar{
+        font-family: GR;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+	.texto_telefono{
+		color: #000; 
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+	}
+	.vista_home_foto{
+		display: block;
+	}
+	.vista_home_boton1{
+		display: none;
+	}
+	.vista_home_boton2{
+		display: none;
+	}
+    .vista_home_boton3{
+		display: block;
+	}
+    .fondo_footer{
+        background-color: #F2F2F2;
+    }
+    .icono_select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 4px;
+	}
+    .db{
+        display: block;
+    }
+    .espacio{
+        display: none;
+    }
+    .form-control{
+        width: 135px !important;
+        height: 24px !important;
+    }
+    .form-group{
+        margin-bottom: 6.5px !important;
+    }
+}
+  
+/* Estilos para escritorios */
+@media only screen and (min-width: 1024px) 
+{
+    .section_form{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 500px;
+    }
+    .div_form {
+        background-color: #fff; 
+        width: 420px; 
+        height: 420px; 
+        border-radius: 12px;
+        padding: 30px;
+    }
+    .titulo_form {
+        font-family: GR; 
+        color: #FF5023; 
+        font-size: 28px; 
+        font-weight: 600; 
+        line-height: 36px;
+        margin: 0px 0px 0px 0px;
+    }
+    .subtitulo_form {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 7px 0px 14px 0px;
+    }
+    .btn_registro_1 {
+        font-family: GR;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        background-color: #FF6334;
+    }
+    .texto_acepta {
+        font-family: GR;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .texto_acepta_b {
+        color: #333; 
+        text-decoration: underline !important;
+        font-family: 'GR';
+        cursor: pointer;
+        font-family: NSB;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .text_center {
+        text-align: center;
+    }
+    .slider-bg {
+        height: 500px;
+        background-image: url("../img/bg/fondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .btn_enlace {
+        display: inline-block;
+        width: 125px; 
+        height: 32px; 
+        border-radius: 50px; 
+        border: 1px solid #000; 
+        padding: 10px; color: #333 !important; 
+        font-family: GR; 
+        font-size: 12px; 
+        font-weight: 500; 
+        line-height: 12px;
+        text-align: center; 
+        margin-right: 10px;
+    }
+    .btn_enlace:hover {
+        color: #fff !important;
+        font-family: GR;
+        border: 1px solid #FF5023; 
+        background-color: #FF5023;
+        font-weight: 600;
+    }
+    .icono_colegio {
+        width: 25px;
+        margin-right: 20px;
+    }
+    .texto_telefono {
+        color: #000;
+        font-family: GR;
+        margin: 0px 0px 0px 84px;
+    }
+    .div_flex{
+        
+    }
+    .first{
+        order: 1;
+    }
+    .second{
+        order: 2;
+    }
+    
+    /* Seccion 02 */
+    .seccion_trilce_01 {
+        padding: 82px 0px 82px 200px;
+    }
+    .texto_color {
+        color: #fff;
+    }
+    .texto_h1 {
+        font-family: CLTP;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        margin-right: 200px;
+    }
+    .texto_b_h1 {
+        font-family: CLTP;
+        font-size: 30px;
+        font-weight: 850;
+        line-height: 34px;
+    }
+    .parrafo_01 {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-right: 300px;
+    }
+    .bg_01 {
+        background: url('../img/banner-bienvenido.png');
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        height: 356px;
+    }
+    
+    /* Seccion 03 */
+    .texto_02 {
+        font-family: CLTP;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        color: #333;
+    }
+    .parrafo_02 {
+        font-family: GR;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: #333;
+    }
+    .sub_texto_02 {
+        font-family: CLTP;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: #333;
+    }
+    .div_descarga{
+        width: 100%; 
+        text-align: left; 
+        padding: 0px 80px 0px 80px;
+    }
+    .div_descarga_2{
+        width: 100%; 
+        text-align: center; 
+        padding: 0px 80px 0px 80px;
+    }
+    .mt_01 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    /* Seccion 04 */
+    .texto_03 {
+        font-family: CLTP;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 34px;
+        color: #0DBA42;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .parrafo_03 {
+        font-family: GR;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #333;
+        text-align: center;
+    }
+    
+    /* Seccion 05 */
+    .texto_04 {
+        font-family: GR;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: #333;
+    }
+    .imagen_04 {
+        margin: 30px 0px 30px 0px;
+    }
+    .div_04 {
+        margin: 70px 0px 70px 0px;
+    }
+    .btn_whatsapp {
+        display: block;
+        width: 189px;
+        height: 33px;
+        border-radius: 50px;
+        background-color: #0DBA42;
+        color: #fff;
+        font-family: GR;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 6px;
+        margin: 0 auto;
+    }
+    
+    /* Start Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        height: 1600px;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .titulo_modal {
+        font-family: CLTP; 
+        font-size: 20px; 
+        font-weight: bold
+    }
+    .padding_moal {
+        padding: 0px 30px 0px 30px;
+    }
+    .texto_modal {
+        font-family: GR;
+        font-size: 14px;
+    }
+    .p_terminos {
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+    /* End Modal */
+
+	.habilitar_header{
+		display: none;
+	}
+	.gracias_contenedor{
+		border-radius: 20px; 
+		padding: 100px 10px 40px 10px;
+	}
+	.gracias_titulo{
+		color: #333;
+		margin-top: 10px;
+		padding: 0px 25px 0px 25px;
+        text-align: center;
+        font-family: GR;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 0px;
+	}
+	.gracias_descripcion{
+		font-family: GR;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 6px 25px 0px 25px;
+        text-align: center;
+	}
+    .btn_gracias_aceptar{
+        font-family: GR;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+	.texto_telefono{
+		color: #000; 
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+	}
+	.vista_home_foto{
+		display: block;
+	}
+	.vista_home_boton1{
+		display: block;
+	}
+	.vista_home_boton2{
+		display: none;
+	}
+    .vista_home_boton3{
+		display: none;
+	}
+    .fondo_footer{
+        background-color: #F2F2F2;
+    }
+    .icono_select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23333333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 4px;
+	}
+    .db{
+        display: block;
+    }
+    .espacio{
+        margin: 0 0 0 10px;
+    }
+}

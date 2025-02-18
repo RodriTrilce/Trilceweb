@@ -1,0 +1,18 @@
+.button-a{
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4633a;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-a-gray{
+  color: $gray !important;
+}
+
+.button-a:active{
+  transform: translateY(.5px);
+}

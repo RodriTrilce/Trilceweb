@@ -1,0 +1,2708 @@
+@font-face 
+{
+	font-family: GR;
+	src: url(../fonts/Geogrotesque-Regular.eot);
+	src: url(../fonts/Geogrotesque-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Regular.woff2) format("woff2"), url(../fonts/Geogrotesque-Regular.woff) format("woff"), url(../fonts/Geogrotesque-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: CLTPL;
+	src: url(../fonts/CaeciliaLTPro45Light.eot);
+	src: url(../fonts/CaeciliaLTPro45Light.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTPro45Light.woff2) format("woff2"), url(../fonts/CaeciliaLTPro45Light.woff) format("woff"), url(../fonts/CaeciliaLTPro45Light.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: CLTPR;
+	src: url(../fonts/CaeciliaLTPro55Roman.eot);
+	src: url(../fonts/CaeciliaLTPro55Roman.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTPro55Roman.woff2) format("woff2"), url(../fonts/CaeciliaLTPro55Roman.woff) format("woff"), url(../fonts/CaeciliaLTPro55Roman.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: CLTPB;
+	src: url(../fonts/CaeciliaLTPro75Bold.eot);
+	src: url(../fonts/CaeciliaLTPro75Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTPro75Bold.woff2) format("woff2"), url(../fonts/CaeciliaLTPro75Bold.woff) format("woff"), url(../fonts/CaeciliaLTPro75Bold.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: CLTPH;
+	src: url(../fonts/CaeciliaLTPro85Heavy.eot);
+	src: url(../fonts/CaeciliaLTPro85Heavy.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTPro85Heavy.woff2) format("woff2"), url(../fonts/CaeciliaLTPro85Heavy.woff) format("woff"), url(../fonts/CaeciliaLTPro85Heavy.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSR;
+	src: url(../fonts/NunitoSans-Regular.eot);
+	src: url(../fonts/NunitoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Regular.woff2) format("woff2"), url(../fonts/NunitoSans-Regular.woff) format("woff"), url(../fonts/NunitoSans-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSB;
+	src: url(../fonts/NunitoSans-Black.eot);
+	src: url(../fonts/NunitoSans-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Black.woff2) format("woff2"), url(../fonts/NunitoSans-Black.woff) format("woff"), url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+/* NUEVO MATRICULA */
+.iniciar_matricula_btn
+{
+	border: 2px solid #F3744A !important; 
+	width: 246px !important; 
+	font-family: GR; 
+	margin-bottom: 50px; 
+	font-style: normal; 
+	font-weight: 600; 
+	font-size: 20px !important; 
+	line-height: 18px; 
+	align-items: center; 
+	text-align: center;
+}
+/*hom1*/
+.capa1
+{
+  background-image: url('../images/imagen_matricula.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center
+}
+.padlr60
+{
+	padding: 0px 60px 0px 60px;
+}
+.espacio_logo
+{
+	margin-top: 90px;
+}
+.btn_iniciar_matricula
+{
+	width: 299px;
+	height: 46px;
+	border: 2px solid #FFFFFF;
+	border-radius: 30px; 
+	font-weight: 600;
+	font-size: 24px !important;
+	line-height: 18px;
+	font-family: GR;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 11px 40px 11px 40px;
+	margin-bottom: 16px;
+}
+.btn_iniciar_matricula:hover
+{
+	background-color: #fff;
+	color: #F3744A;
+}
+.select_tipo
+{
+	width: 163px;
+	height: 37px;
+	border: 1px solid #53565A !important;
+	border-radius: 30px !important;
+	margin: 31px 11px 0px 0px;
+	font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	opacity: 0.6;
+	padding-left: 18px;
+}
+.input_nro
+{
+	width: 163px;
+	height: 37px;
+	border: 1px solid #53565A !important;
+	border-radius: 30px !important;
+	padding-left: 18px;
+}
+.input_nro::placeholder 
+{
+    font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	opacity: 0.6;
+}
+.input_fecha
+{
+	width: 337px;
+	height: 37px;
+	border: 1px solid #53565A !important;
+	border-radius: 30px !important;
+	padding-left: 18px;
+}
+.input_fecha::placeholder 
+{
+    font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	opacity: 0.6;
+}
+
+/* iniciar matricula */
+.titulo_iniciar
+{
+	font-family: GR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.titulo_iniciar2
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+.titulo_iniciar_italic1
+{
+	font-family: 'GR';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+.titulo_iniciar_italic2
+{
+	font-family: 'GR';
+	font-style: italic;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+.titulo_iniciar_italic3
+{
+	font-family: 'GR';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+.titulo_iniciar_italic4
+{
+	font-family: 'GR';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+}
+.select_iniciar
+{
+	width: 288px;
+	height: 32px;
+	border-radius: 30px !important;
+	font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	padding-left: 18px;
+}
+.select_tipo_iniciar
+{
+	width: 142px;
+	height: 32px;
+	border-radius: 30px !important;
+	font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	padding-left: 18px;
+}
+.input_iniciar
+{
+	width: 288px;
+	height: 32px;
+	border: 1px solid #53565A !important;
+	border-radius: 30px !important;
+	padding-left: 18px;
+}
+.input_nro_iniciar
+{
+	width: 142px;
+	height: 32px;
+	border: 1px solid #53565A !important;
+	border-radius: 30px !important;
+	padding-left: 18px;
+}
+.titulo_requiere
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.acepto1
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+.btn_iniciar_matricula2
+{
+	width: 142px;
+	height: 32px;
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px !important;
+	line-height: 16px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 5px 20px 7px 20px;
+	display: inline-block;
+}
+.titulo_terminos
+{
+	font-family: 'CLTPr';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #000000;
+	padding-top: 46px;
+}
+.subtitulo_terminos
+{
+	font-family: 'CLTPr';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 28px;
+	color: #000000;
+	text-align: left;
+}
+.parrafo_terminos
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: justify;
+	color: #53565A;
+}
+.parrafo_terminos_i
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: justify;
+	color: #53565A;
+	font-style: italic;
+}
+.btn_aceptar_terminos
+{
+	width: 246px;
+	height: 37px;
+	left: 610px;
+	top: 701px;
+	border: 2px solid #F3744A;
+	border-radius: 30px;
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	color: #F3744A;
+	padding: 6px 0px 11px 0px;
+	margin-bottom: 34px;
+}
+.btn_guia_pagos
+{
+	width: 246px;
+	height: 37px;
+	left: 610px;
+	top: 701px;
+	border: 2px solid #F3744A;
+	border-radius: 30px;
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	color: #F3744A;
+	padding: 6px 0px 11px 0px;
+	margin-bottom: 10px;
+}
+.btn_nueva_matricula
+{
+	width: 246px;
+	height: 37px;
+	left: 610px;
+	top: 701px;
+	border: 2px solid #F3744A;
+	border-radius: 30px;
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 18px;
+	align-items: center;
+	text-align: center;
+	color: #F3744A;
+	padding: 6px 0px 11px 0px;
+	margin-bottom: 10px;
+}
+.mt70
+{
+	margin-top: 70px;
+}
+.mt21
+{
+	margin-top: 21px;
+}
+.mt19
+{
+	margin-top: 19px;
+}
+.mt18
+{
+	margin-top: 18px;
+}
+.mt16
+{
+	margin-top: 16px;
+}
+.mt15
+{
+	margin-top: 15px;
+}
+.mt13
+{
+	margin-top: 13px;
+}
+.mt12
+{
+	margin-top: 12px;
+}
+.mt8
+{
+	margin-top: 8px;
+}
+.mt7
+{
+	margin-top: 7px;
+}
+.mt6
+{
+	margin-top: 6px;
+}
+.mb8
+{
+	margin-bottom: 8px;
+}
+.mb10
+{
+	margin-bottom: 10px;
+}
+.mb36
+{
+	margin-bottom: 36px;
+}
+.titulo_datos_alumno
+{
+	font-family: 'CLTPr';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+.titulos_radiob
+{
+	font-family: 'GR';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.titulo_apoderado
+{
+	margin-top: 34px;
+	font-family: GR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	padding: 0px 20px 0px 0px;
+	margin-bottom: 0px;
+}
+.checkbox-round 
+{
+	width: .75em;
+	height: .75em;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 2px solid #ddd;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.checkbox-round:checked 
+{
+	background-color: #000;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+.fondo_landing
+{
+	background-image: url('../images/foto_landing.png');
+}
+
+.fondo_slider
+{
+	background-color: #ff4f00;
+}
+
+.icono_slider
+{
+	width: 80px;
+	margin-bottom: 26px
+}
+
+.cab_formulario_slider
+{
+	background-color: #F93300; 
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px; 
+	padding: 20px 50px 10px 50px !important;
+}
+
+.texto_solicita
+{
+	border-radius: 20px; 
+	padding: 6px 40px 6px 40px !important;
+}
+
+.bod_formulario_slider
+{
+	padding: 30px 60px 20px 60px !important; 
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px; 
+	text-align: center;
+}
+
+.caja_preparacion
+{
+	padding: 0px 40px 0px 40px;
+}
+
+.contenido1_preparacion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.contenido2_preparacion
+{
+	font-family: NSB;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.fondo_gris
+{
+	background-color: #f6f6f6;
+}
+
+.contenido1_opcion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px;
+	color: #333 !important;
+	padding: 0px 24px 0px 24px;
+}
+
+.video_fondo
+{
+	background-color: #fff; 
+	border-radius: 20px
+}
+
+.p-5
+{
+	padding: 50px;
+}
+
+
+.fondo_herramientas
+{
+	background-color: #f6f6f6;
+}
+
+.fondo_caja_herramientas
+{
+	background-color: #fff;
+}
+
+.imagen_herramientas
+{
+	width: 100%;
+}
+
+
+.titulo_herramientas
+{
+	color: #333 !important; 
+	font-weight: 400; 
+	margin-bottom: 20px !important;
+	font-family: 'GR';
+}
+
+.fondo_resultados
+{
+	background-color: #fff;
+}
+
+.subtitulo_participante_resultado
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.subtitulo_participante_resultado2
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.subtitulo_participante_resultado3
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.fondo_primeros_puestos
+{
+	background-color: #f6f6f6;
+}
+
+.fondo_primeros_puestos2
+{
+	background-color: #E3E3E3;
+}
+
+.espacio_primeros_puestos
+{
+	padding: 20px 0px 0px 0px;
+}
+
+.titulos_seccion
+{
+	font-family: NSB;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 22px;
+	color: #FFFFFF !important;
+}
+
+.subtitulos_seccion
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.fondo_1
+{
+	background-color: #FF6740;
+}
+.fondo_2
+{
+	background-color: #FF5023;
+}
+.fondo_3
+{
+	background-color: #FF3400;
+}
+.fondo_4
+{
+	background-color: #F93300;
+}
+.fondo_landing_2021
+{
+	background-color: #FF4F00;
+}
+
+.contenedor_descripcion_colegio
+{
+	font-family: GR;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    padding: 20px 300px 20px 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.fondo_footer
+{
+	background-color: #f6f6f6;
+}
+
+.titulo_footer
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+.espacio_menu_footer
+{
+	padding-top: 1.25rem !important;
+}
+.espacio_redes
+{
+	padding-top: 2rem !important;
+}
+
+.copyright
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	color: #333333;
+}
+
+.fondo_copyright
+{
+	background-color: #f6f6f6;
+}
+
+#scrollTop
+{ 
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.gotop
+{
+	background: #FFF;
+	color: #F3744A;
+	padding: 8px 12px;
+	border-radius: 50%;
+}
+
+.gotop i
+{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.logo_charlas
+{
+	width: 250px;
+	 margin-top: 40px
+}
+
+.pleft
+{
+	padding-left: 10px;
+}
+/* Media Queries */
+@media (max-width: 576px) 
+{
+	.logo_charlas
+	{
+		width: 270px;
+	 	margin-top: 30px;
+	 	margin-bottom: 20px;
+	}
+
+	.p_terminos
+	{
+		text-align: justify;
+    	padding: 0px 20px 0px 20px;
+	}
+	.full_height
+	{
+		height: 100%;
+	}
+	/* Start Modal */
+	.modal
+	{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.6);
+	}
+	.modal-content
+	{
+		background-color: #fefefe;
+		margin: 15% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	.close
+	{
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: right;
+	}
+	.close:hover, .close:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.close_2
+	{
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: right;
+	}
+	.close_2:hover, .close_2:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.close_3
+	{
+		color: #FF4240;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: right;
+	}
+	.close_3:hover, .close_3:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	/* End Modal */
+
+	.icono_select
+	{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23F3744A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 8px;
+	}
+	.form-control
+	{
+		padding: 8px 30px !important;
+	}
+	.fondo_blanco
+	{
+		background-color: #fff;
+		border-radius: 20px;
+		margin: 25px 0px 0px 25px;
+    	width: 88%;
+	}
+	.section2
+	{
+		position: relative;
+	}
+	.gracias_contenedor 
+	{
+		background-color: #fff;
+		border-radius: 20px;
+		padding: 20px 10px 20px 10px;
+    	margin: 24px 30px 0px 30px;
+	}
+	.gracias_titulo 
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 22px;
+		line-height: 20px;
+		color: #F3744A;
+		text-align: left;
+		padding: 0px 20px 0px 25px;
+	}
+	.gracias_descripcion 
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+		padding: 0px 25px 0px 25px;
+	}
+	.icono_colegio
+	{
+		width: 30px;
+		margin-right: 20px;
+	}
+	.contenedor_mobile_logo
+	{
+		width: 50%; 
+		padding: 16px 0px 20px 0px
+	}
+	.contenedor_mobile_iconos
+	{
+		width: 50%; 
+		padding: 26px 0px 20px 0px
+	}
+	.hailitar_mobile
+	{
+		display: none;
+	}
+	.texto_telefono 
+	{
+		color: #fff;
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+		display: none;
+	}
+	.fondo_colegio
+	{
+		background-image: url('../images/foto_colegio_mobile.png');
+		height: 400px;
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.btn.btn-primary 
+	{
+		font-family: 'GR';
+		background-color: #fff !important;
+		border: 1px solid #F3744A !important;
+		color: #F3744A;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.fondo_registro_2021
+	{
+		background-color: #F3744A;
+		text-align: center;
+	}
+	.w_form
+	{
+		width: 100%;
+		padding: 0px 20px 0px 20px;
+	}
+	.pie
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: center; 
+		padding:14px 0px 20px 0px; 
+		margin:0px;
+		font-size: 13px;
+	}
+	.pie_2
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: center; 
+		padding:24px 0px 0px 0px; 
+		margin:0px; 
+		margin-top: 36px;
+		font-size: 13px;
+	}
+	.pleft
+	{
+		padding-left: 0px;
+	}
+	.contenedor_descripcion_colegio
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 20px;
+		color: #fff;
+		padding: 20px 30px 0px 30px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.menu_activo
+	{
+		color: #FF4F00 !important;
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR' !important; 
+		font-weight: 600; 
+		font-size: 20px;
+	}
+
+	.menu
+	{
+		color: #000 !important;
+		font-family: 'GR' !important; 
+		font-weight: 600; 
+		font-size: 18px;
+	}
+
+	.vista_home_foto
+	{
+		display: none;
+	}
+
+	.vista_home_boton1
+	{
+		display: none !important;
+	}
+
+	.vista_home_boton2
+	{
+		display: block;
+	}
+
+	.texto_slider
+	{
+		font-family: NSB !important;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px !important;
+		line-height: 32px;
+		text-align: center;
+		color: #fff;
+		padding: 0px 26px 0px 26px;
+	}
+
+	.parrafo_slider
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.titulo_formulario
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 20px;
+		color: #fff;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00;
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		margin: 10px 0px 10px 0px;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+		float: left;
+		width: 30%;
+	}
+
+	.mt-4
+	{
+		margin-top: 1rem!important;
+	}
+
+	.t_a_left
+	{
+		text-align: left !important;
+		margin: 0px 0px 0px 90px;
+	}
+
+	.p-4
+	{
+		padding: 30px !important;
+	}
+
+	.titulo_opcion
+	{
+		font-size: 26px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 28px;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.icono_opcion
+	{
+		width: 70%;
+	}
+
+	.opcion_mobile
+	{
+		display: block !important;
+	}
+
+	.opcion_web
+	{
+		display: none !important;
+	}
+
+	.img_video
+	{
+		margin-top: 34%;
+		width: 30%;
+	}
+
+	.margen_opcion
+	{
+		padding: 0px 20px 0px 20px;
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.p-5
+	{
+		padding: 2rem!important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		height: 460px;
+		background-size: contain;
+	}
+
+	.vista_herramientas
+	{
+		display: none;
+	}
+
+	.vista_primeros_web
+	{
+		display: none
+	}
+
+	.vista_primeros_mobile
+	{
+		display: block
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+		padding: 20px;
+	}
+
+	.subtitulo_resultados
+	{
+		display: none;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		color: #333 !important;
+	}
+
+	.vista_icono
+	{
+		display: block;
+	}
+	
+	/* CICLOS UNI */
+	.foto_width
+	{
+		max-width: 100%
+	}
+}
+
+@media (min-width: 1200px) 
+{
+	.mt_10
+	{
+		margin-top: 20px;
+	}
+	.ml_cab_i
+	{
+		margin-left: 145px;
+	}
+	.ml_cab_d
+	{
+		padding-right: 160px !important;
+	}
+	.texto_aceptar_fin
+	{
+		font-family: Geogrotesque;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF !important;
+		padding: 5px 65px 5px 65px;
+	}
+	.btn_aceptar_fin
+	{
+		border: 1px solid #FFFFFF;
+		box-sizing: border-box;
+		border-radius: 30px;
+	}
+	.texto_div_fin1
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.texto_div_fin2
+	{
+		font-family: Caecilia LT Pro;
+		font-style: normal;
+		font-weight: 850;
+		font-size: 34px;
+		line-height: 41px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.texto_div_fin3
+	{
+		font-family: Geogrotesque;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 0px 90px 0px 90px;
+	}
+	.icono_carita
+	{
+		width: 56px;
+		margin-bottom: 14px;
+	}
+	.titulo_fin
+	{
+		font-family: GR;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+		margin-top: 20px;
+	}
+	.div_fin
+	{
+		background: #F3744A;
+		border-radius: 16px;
+		width: 368px;
+		height: 320px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 50px 0px 50px 0px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.texto_documentos
+	{
+		font-family: CLTPR;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: #000000;
+		margin-top: 14px;
+	}
+	.texto_valida_paso021
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+		padding: 16px 0px 0px 20px !important;
+	}
+	.validar_pago_paso02
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #F3744A;
+	}
+	.cip_paso02
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #53565A;
+	}
+	.pie_paso02
+	{
+		font-family: GR;
+		font-style: italic;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #000000;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	.pad120
+	{
+		padding: 0px 120px 0px 120px;
+	}
+	.titulo_paso02
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000000;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.subtitulo_paso02
+	{
+		font-family: GR;
+		font-style: italic;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #FFCC00;
+		margin-bottom: 20px;
+	}
+	.bg_paso021
+	{
+		background-color: #FFCC00;
+	}
+	.bg_paso022
+	{
+		background-color: #000000;
+	}
+	.bg_paso023
+	{
+		background: #E8E8E8;
+	}
+	.titulo_cip_blanco
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 6px;
+		margin-top: 20px;
+	}
+	.subtitulo_cip_blanco
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 0px;
+	}
+	.titulo_cip
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 6px;
+		margin-top: 20px;
+	}
+	.subtitulo_cip
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 0px;
+	}
+	.pad20
+	{
+		padding: 0px 20px 0px 20px;
+	}
+	.h_form
+	{
+		height: 480px !important;
+	}
+	.ml10
+	{
+		margin-left: 10px;
+	}
+	.mr10
+	{
+		margin-right: 10px;
+	}
+	.icono_flecha
+	{
+		width: 8px;
+	}
+	.texto_boton
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600 !important;
+		font-size: 16px !important;
+		line-height: 20px;
+		text-align: center;
+		color: #F3744A !important;
+		
+		border: 1px solid #F3744A !important;
+		box-sizing: border-box;
+		border-radius: 30px !important;
+		width: 184px;
+		height: 30px;
+		line-height: 0px !important;
+	}
+	.ml20
+	{
+		margin-left: 20px;
+	}
+	.texto_terminos
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		text-decoration-line: underline !important;
+		color: #F3744A !important;
+	}
+	.checkbox-round
+	{
+		width: 1em;
+		height: 1em;
+		background-color: white;
+		border-radius: 50%;
+		vertical-align: middle;
+		border: 1px solid #ddd;
+		appearance: none;
+		-webkit-appearance: none;
+		outline: none;
+		cursor: pointer;
+	}
+	.checkbox-round:checked 
+	{
+		background-color: #F3744A;
+	}
+	.texto_check
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+	}
+	.mt10
+	{
+		margin-top: 10px;
+	}
+	.texto_colegio
+	{
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
+	.input_largo_paso1
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 450px;
+		height: 34px;
+		margin-top: 10px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+	}
+	.input_largo_paso3
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 440px;
+		height: 34px;
+		margin-top: 10px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+	}
+	.input_largo_paso3_sup
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 450px;
+		height: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+	}
+	.select_corto_paso1
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 181px;
+		height: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+	}
+	.select_corto_paso3
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 110px;
+		height: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+	.select_corto_paso31
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 181px;
+		height: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+	.input_paso1
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 181px;
+		height: 34px;
+		padding-left: 10px;
+	}
+	.input_paso3
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 181px;
+		height: 34px;
+		padding-left: 10px;
+		margin-top: 10px;
+	}
+	.titulos_datos
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.titulos_datos_final
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 0px;
+	}
+	.titulos_datos_final_paso3
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	.div_paso1
+	{
+		display: flex;
+		align-items: center;
+	}
+	.select_paso1
+	{
+		border: 0.5px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 248px;
+		height: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		padding-left: 10px;
+	}
+	.titulo_select
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		color: #53565A;
+		margin-bottom: 0px;
+	}
+	.color_hr
+	{
+		background: #E8E8E8;
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+	}
+	.color_hr_fin
+	{
+		background: #E8E8E8;
+		margin-top: 30px;
+		margin-bottom: .5rem;
+	}
+	.paso1
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 20px;
+		color: #000000;
+		margin-bottom: 0rem;
+	}
+	.titulo_progress
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 14px;
+		text-align: center;
+		padding: 20px 56px 0px 56px;
+	}
+	.margin_progress
+	{
+		margin: 60px 0px 0px 0px;
+	}
+	.icono_pago_efectivo
+	{
+		width: 167px;
+		margin-top: -24px;
+	}
+	.icono_proceso
+	{
+		width: 134px;
+		margin: 20px 0px 0px 40px;
+	}
+	.icono_hora
+	{
+		width: 24px;
+	}
+	.icono_valida
+	{
+		width: 220px;
+	}
+	.contenedor_proceso
+	{
+		background: #FFFFFF;
+		border-radius: 16px;
+	}
+	.header_right
+	{
+		text-align: right;
+	}
+	.espacio_top
+	{
+		margin-top: 180px;
+	}
+	.espacio_top_matricula
+	{
+		margin-top: 32px;
+	}
+	.espacio_top_matricula_2
+	{
+		margin-top: 137px;
+	}
+	.espacio_imagen
+	{
+		margin-top: 80px;
+	}
+	.espacio_pie_proceso
+	{
+		margin-top: 10px;
+	}
+	.espacio_pie
+	{
+		margin-top: 60px;
+	}
+	.logo_matricula
+	{
+		width: 315.8px;
+		height: 174.8px;
+	}
+	.logo_nuevo_matricula
+	{
+		width: 126px;
+	}
+	.h1_matricula
+	{
+		color: #F3744A;
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 28px;
+	}
+	.titulo_matricula
+	{
+		margin-top: 34px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+		padding: 0px 20px 0px 0px;
+	}
+	.titulo_b
+	{
+		font-weight: 600;
+	}
+	.pie_matricula
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 16px;
+		color: #fff;
+		height: calc(29vh - 90px);
+		display: flex;
+		flex-direction: column;
+		align-content: end;
+		justify-content: flex-end;
+	}
+	.pie_matricula_home
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 16px;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-content: end;
+		justify-content: flex-end;
+	}
+	.titulo_img_1
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 28px;
+		color: #F3744A;
+		padding: 40px 40px 20px 40px;
+	}
+	.titulo_img_2
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 28px;
+		color: #F3744A;
+		padding: 40px 70px 20px 40px;
+	}
+	.b_270
+	{
+		width: 270px;
+		border-radius: 30px;
+		font-size: 16px !important;
+	}
+	.b_184
+	{
+		width: 184px !important;
+		border-radius: 30px !important;
+		font-size: 16px !important;
+	}
+	.fondo_btn_naranja
+	{
+		background-color: #F3744A !important;
+		color: #FFF important;
+	}
+	.border_imagen
+	{
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+	}
+	.div_imagen
+	{
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		width: 354px; 
+		height: 210px; 
+		background-color: #fff
+	}
+	.pad160
+	{
+		padding: 0px 160px 0 160px;
+	}
+	.select_width
+	{
+		width: 50%;
+	}
+	.p_terminos
+	{
+		text-align: justify;
+    	padding: 0px 20px 0px 20px;
+	}
+	.p_terminos_centrado
+	{
+		text-align: left;
+    	padding: 43px 0px 0px 60px;
+		margin-bottom: 0px;
+	}
+	.parrafo_01
+	{
+		font-family: CLTPR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 24px;
+		color: #FFFFFF;
+		padding: 12px 0px 0px 60px;
+	}
+	.parrafo_02
+	{
+		font-family: GR;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+		color: #000000;
+	}
+	.parrafo_03
+	{
+		font-family: Geogrotesque;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+		text-decoration-line: underline;
+		color: #000000;
+	}
+	.full_height
+	{
+		height: 100vh;
+	}
+	/* Start Modal */
+	.modal
+	{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.6);
+	}
+	.modal-content 
+	{
+		background-color: #fefefe;
+		margin: 9% auto;
+		/*padding: 20px;
+		border: 1px solid #888;*/
+		width: 30%;
+		border-radius: 18px;
+	}
+	.modal-content2 
+	{
+		background-color: #fefefe;
+		margin: 9% auto;
+		width: 60%;
+		border-radius: 18px;
+		padding: 0px 54px 0px 54px;
+	}
+	.modal-content3 
+	{
+		background-color: #fefefe;
+		margin: 9% auto;
+		/*padding: 20px;
+		border: 1px solid #888;*/
+		width: 80%;
+		border-radius: 18px;
+	}
+	.close
+	{
+		color: #FFF;
+		float: right;
+		font-size: 36px;
+		font-weight: bold;
+		text-align: right;
+		padding: 22px 20px 0px 0px;
+	}
+	.close:hover, .close:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.close_2
+	{
+		color: #FFF;
+		float: right;
+		font-size: 32px;
+		font-weight: bold;
+		text-align: right;
+		padding: 22px 20px 0px 0px;
+	}
+	.close_2:hover, .close_2:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.close_3
+	{
+		color: #FF4240;
+		float: right;
+		font-size: 32px;
+		font-weight: bold;
+		text-align: right;
+		padding: 22px 20px 0px 0px;
+	}
+	.close_3:hover, .close_3:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	/* End Modal */
+
+	.icono_select
+	{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23F3744A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 8px;
+		color : #333333;
+	}
+	.form-control
+	{
+		padding: 6px 30px !important;
+	}
+	.section2
+	{
+		padding-top: 10px;
+    	padding-bottom: 10px;
+    	position: relative;
+	}
+	.icono_colegio
+	{
+		width: 25px;
+		margin-right: 20px;
+	}
+	.icono_colegio_modal
+	{
+		width: 50px;
+	}
+	.icono_check_modal
+	{
+		width: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.icono_check_modal_paso02
+	{
+		width: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding: 28px 0px 0px 0px;
+	}
+	.input_modal
+	{
+		border: 1px solid #E8E8E8;
+		box-sizing: border-box;
+		border-radius: 8px;
+	}
+	.mb_14
+	{
+		margin-bottom: 14px;
+	}
+	.mt_14
+	{
+		margin-top: 14px;
+	}
+	.validar_0
+	{
+		background: #E8E8E8;
+		height: 60px;
+		width: 184px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.validar_1
+	{
+		background: #FF3838;
+		height: 60px;
+		width: 184px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.validar_2
+	{
+		background: #F3744A;
+		height: 60px;
+		width: 184px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.validar_3
+	{
+		background: #15D55E;
+		height: 60px;
+		width: 184px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.texto_validar
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 15px;
+		color: #FFFFFF;
+	}
+	.centrado
+	{
+		text-align: center;
+	}
+	.hailitar_header
+	{
+		display: none;
+	}
+	.fondo_registro_2021
+	{
+		background-color: #F3744A;
+	}
+	.w_form
+	{
+		width: 50%;
+	}
+	.gracias_contenedor
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		width: 44%; 
+		padding: 40px 30px 40px 30px;
+	}
+	.gracias_titulo
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 22px;
+		line-height: 20px;
+		color: #FF7738;
+		text-align: left;
+		margin-top: 10px;
+		padding: 0px 25px 0px 25px;
+	}
+	.gracias_descripcion
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+		padding: 6px 25px 0px 25px;
+	}
+	.pie
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: left; 
+		padding:14px 0px 0px 0px; 
+		margin:0px
+	}
+	.pie_2
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: left; 
+		padding:24px 0px 0px 0px; 
+		margin:0px;
+		margin-left: 15px; 
+		margin-top: 46px
+	}
+	.fondo_blanco
+	{
+		background-color: #fff;
+		border-radius: 20px;
+	}
+	.texto_telefono
+	{
+		color: #fff; 
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+	}
+	.pad0
+	{
+		padding: 0px 0px 0px 0px !important;
+	}
+	.ml80
+	{
+		margin: 0px 0px 0px 80px;
+	}
+	.mt40
+	{
+		margin-top: 10px;
+	}
+	.fondo_landing
+	{
+		background-image: url('../images/foto_landing.png');
+		height: 752px;
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	
+	.fondo_colegio
+	{
+		background-image: url('../images/foto_colegio.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+
+	.navbar-custom
+	{
+		padding: 40px 0px 0px 0px !important;
+	}
+	.foto_width
+	{
+		max-width: 100%
+	}
+	.menu_activo
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR'; 
+		font-weight: 600; 
+		font-size: 15px;
+	}
+
+	.menu
+	{
+		border-radius: 20px; 
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR'; 
+		font-weight: 600; 
+		font-size: 15px;
+	}
+
+	.titulo_video2
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.titulo_video3
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.titulo_video4
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 34px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.mb-6
+	{
+		margin-bottom: 2.5rem!important;
+	}
+
+	.vista_home_foto
+	{
+		display: block;
+	}
+
+	.vista_home_boton1
+	{
+		display: block;
+	}
+
+	.vista_home_boton2
+	{
+		display: none;
+	}
+
+	.texto_slider
+	{
+		color: #fff !important; 
+		font-size: 46px !important; 
+		line-height: 46px;
+		font-weight: 900;
+		font-family: NSB !important;
+	}
+
+	.parrafo_slider
+	{
+		color: #fff !important; 
+		font-size: 24px !important; 
+		line-height: 20px;
+		font-weight: 500;
+		font-family: GR !important;
+	}
+
+	.titulo_formulario
+	{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 26px; 
+		color: #fff;
+		font-family: GR !important;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00; 
+		font-weight: 600; 
+		font-size: 14px;
+		line-height: 26px; 
+		font-family: GR !important;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+
+	}
+
+	.titulo_opcion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.opcion_mobile
+	{
+		display: none;
+	}
+
+	.opcion_web
+	{
+		display: block;
+	}
+
+	.p-4
+	{
+		padding: 0px !important;
+	}
+
+	.img_video
+	{
+		margin-top: 32%
+	}
+
+	.margen_opcion
+	{
+		
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 28px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.vista_herramientas
+	{
+		display: block;
+	}
+
+	.vista_primeros_web
+	{
+		display: block
+	}
+
+	.vista_primeros_mobile
+	{
+		display: none
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+	}
+
+	.subtitulo_resultados
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+		text-align: center;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		margin-right: 20px;
+		color: #333 !important;
+	}
+
+	.vista_icono
+	{
+		display: none;
+	}
+
+	.accordion-button, .accordion-item
+	{
+		background-color: #f6f6f6;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.accordion-button:not(.collapsed)
+	{
+    	background-color: #f6f6f6;
+    	box-shadow: none;
+	}
+
+	.accordion-button:not(.collapsed)::after
+	{
+		background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e) !important;
+	}
+
+	.accordion-button:focus
+	{
+		border-color: none;
+		box-shadow: none;
+	}
+	
+	/* CICLOS UNI */
+	.titulo_preparacion_ciclos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px 0px 30px;
+		color: #FF4F00 !important;
+	}
+	
+	.foto_video_uni
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_pucp
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_pucp/pucp_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_pucp_pop
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_pucp/pucp_pop2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_anual2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_tarde
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_anual_tarde2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_semestral
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_reforzamiento
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_reforzamiento2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+	
+	.foto_video_uni_semestral
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+	
+	.foto_video_uni_escolar
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni_escolar2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.fs15
+	{
+		font-size: 15px !important;
+		font-family: 'GR';
+	}
+	.fs14
+	{
+		font-size: 14px !important;
+		font-family: 'GR';
+	}
+	.fs13
+	{
+		font-size: 13px !important;
+		font-family: 'GR';
+	}
+}

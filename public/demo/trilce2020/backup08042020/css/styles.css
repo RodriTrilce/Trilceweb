@@ -1,0 +1,23 @@
+/* HEADER */
+@import 'header.css';
+
+/* BANNERS */
+@import 'banners.css';
+
+/* SIDEBAR */
+@import 'sidebar.css';
+
+/* FOOTER */
+@import 'footer.css';
+
+/* UTILS */
+@import 'fonts.css';
+
+/* MOBILE */
+@import 'responsive.css';
+
+* {
+    box-sizing: content-box !important;
+    box-sizing: border-box !important;
+    font-family: Geogrotesque-Rg;
+}

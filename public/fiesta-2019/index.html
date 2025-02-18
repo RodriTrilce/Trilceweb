@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>..:: TRILCE ::..</title>
+  <meta name="description"
+    content="La organización educativa TRILCE tiene el agrado  de invitarte  a la FIESTA de fin de año">
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui,user-scalable=0" /> -->
+  <meta name="author" content="Asociación Educativa TRILCE">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+<body>
+  <main>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/1.svg" />
+        <a class="gotobottom animated infinite bounce delay-2s" href="#inicio">
+          <img class="wow fadeInUp" src="svg/nave.svg" width="50" />
+          <span class="wow fadeInUp">¡VER MÁS!</span>
+        </a>
+      </article>
+    </section>
+    <section id="inicio">
+      <article>
+        <img class="wow zoomInUp" src="svg/2.svg" />
+      </article>
+    </section>
+    <section>
+      <article>
+        <div class="starwars-demo">
+          <img src="svg/star.svg" alt="Star" class="star">
+          <img src="svg/war.svg" alt="Wars" class="wars">
+          <h2 class="byline" id="byline">TRILCE, EL ASCENSO DE CUATRO DÉCADAS</h2>
+        </div>
+      </article>
+    </section>
+    <!--     <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/3.svg" />
+      </article>
+    </section> -->
+  </main>
+  <main>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/4.svg" />
+      </article>
+    </section>
+    <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/5.svg" />
+    </section>
+    <section>
+      <a href="https://www.google.com/maps/place/Puericultorio+P%C3%A9rez+Aran%C3%ADbar/@-12.0994829,-77.0679951,17z/data=!3m1!4b1!4m5!3m4!1s0x9105c9b030abdf2b:0x24fb456e1301f545!8m2!3d-12.0994829!4d-77.0658064"
+        target="_blank">
+        <article>
+          <img class="wow zoomInUp" src="svg/6.svg" />
+        </article>
+      </a>
+    </section>
+  </main>
+  <main>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/7.svg" />
+      </article>
+    </section>
+    <section>
+      <article>
+        <img class="wow zoomInUp" src="svg/8.svg" />
+      </article>
+    </section>
+  </main>
+</body>
+<script>
+  var byline = document.getElementById('byline');  	
+  bylineText = byline.innerHTML;										
+  bylineArr = bylineText.split('');									
+  byline.innerHTML = '';														
+
+  var span;					
+  var letter;
+
+  for (i = 0; i < bylineArr.length; i++) {									
+    span = document.createElement("span");					
+    letter = document.createTextNode(bylineArr[i]);	
+    if (bylineArr[i] == ' ') {												
+      byline.appendChild(letter);					
+    } else {
+      span.appendChild(letter);						
+      byline.appendChild(span); 					
+    }
+  }
+</script>
+</html>

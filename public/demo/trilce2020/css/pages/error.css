@@ -1,0 +1,108 @@
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+    border-bottom: 1.2px solid white;
+}
+
+.error-superior {
+    text-align: center;
+    height: 60vh;
+    background-image: url("../../img/venues/BG-errorS-2-EJEMPLO.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+section.error {
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.error article h5 {
+    color: #FF6334;
+    font-weight: bold;
+}
+
+.error article {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center
+}
+
+.error article i {
+    font-size: 3em;
+    color: #fff;
+    margin: 0.2em 0.2em 0em;
+}
+
+.error article p {
+   margin: 0.2em;
+}
+
+.error article a{
+    margin: 0.5em auto;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+     font-weight: bold;
+}
+
+.error article a:hover {
+    background-color: #fff;
+    color: #FF6334;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px){
+     section.error {
+         height: 100%;
+     }
+
+     .error article {
+         padding: 2em;
+         flex-direction: column;
+    }
+
+     .error-superior {
+             padding-top: 4em;
+         height: 100%;
+         background-image: url("../../img/venues/BG-MOBILE-errorS-2-EJEMPLO.png");
+     }
+
+     .error article {
+         padding: 1.5em;
+    }
+}

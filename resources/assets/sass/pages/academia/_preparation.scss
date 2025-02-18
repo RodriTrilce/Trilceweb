@@ -1,0 +1,426 @@
+.beginning{
+  margin: 40px 0;
+
+  @include breakpoint(mama){
+  }
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+}
+
+.beginning-container{
+  position: relative;
+}
+
+.beginning-breakline{
+  position: relative;
+  width: 1px;
+  height: 50%;
+  background: transparentize($gray, 0.8);
+  margin-top: 5%;
+
+  @include breakpoint(baby){
+    margin-top: 8%;
+  }
+}
+
+.beginning--item{
+  position: relative;
+  top: 0;
+  transition: all .3s;
+
+  &:hover{
+    top: -15px;
+
+    .item-a-preparation, .item-a-university{
+      color: $gray !important;
+    }
+
+    .item-a-img{
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  }
+
+  @include breakpoint(baby){
+    padding: 5px;
+  }
+}
+
+.beginning--item--activecolors{
+  .item-a-img{
+    opacity: 1 !important;
+  }
+
+  .item-a-university{
+    color: $gray !important;
+  }
+}
+
+.beginning--item .item-a{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  .item-a-img{
+    width: 60px;
+    height: 60px;
+    transition: all .3s ease-in-out;
+
+    @include breakpoint(baby){
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .item-a-preparation, .item-a-university{
+    font-family: $font_geo_reg;
+    color: $gray;
+    transition: all .3s ease-in-out;
+  }
+
+  .item-a-preparation{
+    font-size: 1rem;
+
+    @include breakpoint(baby){
+      font-size: .8rem;
+      letter-spacing: 0;
+    }
+
+  }
+
+  .item-a-university{
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+
+    @include breakpoint(dad){
+      font-size: 1.7rem;
+    }
+
+    @include breakpoint(mom){
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint(baby){
+      font-size: 1.1rem;
+    }
+
+    @include breakpoint(minibaby){
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+  }
+}
+
+.beginning-opacity-hover:hover > .beginning--item:not(:hover){
+      .item-a-preparation, .item-a-university{
+        color: transparentize($gray, 0.4);
+      }
+
+      .item-a-img{
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+      }
+}
+
+.beginning-minus{
+  .item-a-preparation, .item-a-university{
+    color: transparentize($gray, 0.4) !important;
+  }
+
+  .item-a-img{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+  }
+}
+
+.beginning--item-active{
+  position: relative;
+
+  .item-a-preparation, .item-a-university{
+    color: $gray !important;
+  }
+
+  .item-a-img{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  &::before{
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    width: 20px;
+    height: 8px;
+    background: $orange;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    @include breakpoint(baby){
+      bottom: -15px;
+      width: 20px;
+      height: 5px;
+    }
+
+  }
+}
+
+.nuevos-i-list{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+// Page
+.nuevos-i-list-selects{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  select{
+      max-width: 90%;
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+  }
+
+  div:nth-child(3){
+    select{
+      max-width: 100% !important;
+    }
+  }
+}
+
+.preparation-table{
+
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+
+  thead{
+    th{
+      font-family: $font_cae_bold;
+    }
+  }
+
+  tbody{
+    tr:nth-child(odd){
+
+    }
+
+    tr{
+      &:nth-child(odd){
+        @include breakpoint(baby){
+          font-weight: bold;
+        }
+      }
+
+
+      td{
+
+        @media (max-width: 757px){
+          position: relative;
+          padding-left: 100px;
+
+          &::before{
+            position: absolute;
+            left: 0;
+            padding-left: 5px;
+          }
+        }
+
+        &:first-child{
+          font-weight: bold;
+        }
+
+        &:not(:first-child){
+          font-family: $font_geo_lite;
+        }
+
+        a, a:link, a:visited{
+          color: $gray;
+        }
+
+        i{
+          color: $orange;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+
+.beginning-no-results{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.button-register-academia{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+}
+
+.preparation-overflow{
+  max-height: 500px;
+  overflow-y: scroll;
+
+  @include breakpoint(baby){
+    overflow-x: visible;
+    max-height: none;
+  }
+}
+
+
+.preparation__section{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.preparation__title{
+
+}
+
+.preparation__title{
+  display: block;
+  font-size: 3rem;
+  font-family: $font_cae_heavy;
+
+  @include breakpoint(baby){
+    font-size: 1.3rem;
+  }
+
+  &.preparation__title--and{
+    color: $gray;
+    font-size: 1.5rem;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.preparation__subtitle{
+  display: block;
+  margin-top: 10px;
+  font-family: $font_geo_md;
+  color: $gray;
+  letter-spacing: 2px;
+
+  @include breakpoint(baby){
+    font-size: 1rem;
+  }
+}
+
+.preparation_tabs{
+
+  .js-tabs__content{
+    padding-top: 20px;
+
+    @include breakpoint(baby){
+      padding-top: 10px;
+    }
+  }
+}
+
+.preparation__courses-list{
+  padding-top: 70px;
+
+  @include breakpoint(baby){
+    padding-top: 0;
+  }
+}
+
+.ul-li-squared{
+  text-align: start;
+
+  li{
+    &::before{
+      content: "\F323";
+      color: $orange;
+      font-family: $font_icon;
+      font-size: 12px;
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+
+.preparation__list-ul{
+  li{
+    text-align: start;
+    font-family: $font_geo_reg;
+    margin-bottom: 10px;
+  }
+}
+
+.preparation__courses-list-ul{
+  display: inline-block;
+
+   li{
+     float: left;
+     list-style: outside none none;
+     width: 50%;
+   }
+
+}
+
+.preparation__courses-list{
+  h1.sub-title{
+    margin-bottom: 10px;
+  }
+
+}
+
+
+.preparation__cicles{
+
+  p{
+    margin-bottom: 30px;
+    padding-right: 5px;
+    text-align: justify;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.preparation__cicles__section{
+  margin-top: 70px;
+
+  @include breakpoint(baby){
+    margin-top: 0;
+  }
+
+  strong.orange{
+    color: $orange;
+  }
+
+  &.preparation__cicles__section--double{
+    padding-right: 40px;
+
+    @include breakpoint(baby){
+      padding-right: 0;
+    }
+  }
+}

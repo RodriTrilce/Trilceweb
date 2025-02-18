@@ -1,0 +1,2880 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Edusphere\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-31 11:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: learnpress/addons/course-review/course-rate.php:25
+#, php-format
+msgid " %1.2f  "
+msgstr ""
+
+#: learnpress/addons/course-review/course-rate.php:30
+#, php-format
+msgid " %d rating"
+msgid_plural "%d ratings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. used between list items, there is a space after the comma
+#: inc/single/single-default.php:59
+msgid " / About Author"
+msgstr ""
+
+#: inc/footer/footer-style-default.php:26
+msgid " Edusphere Theme. RadiantThemes "
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:18
+#: inc/radiantthemes-dashboard/welcome.php:16
+msgid " is now installed and ready to use!"
+msgstr ""
+
+#: template-parts/content-lms-one.php:77 template-parts/content-lms-four.php:51
+#: template-parts/content-lms-three.php:77 template-parts/content-lms.php:79
+#: learnpress/content-single-course.php:109
+#: learnpress/content-single-course.php:279
+#: learnpress/content-archive-course.php:126
+#: learnpress/content-archive-course.php:430
+#: learnpress/content-archive-course.php:532 learnpress/content-course.php:94
+#, php-format
+msgid "%d student"
+msgstr ""
+
+#: template-parts/content-lms-one.php:76 template-parts/content-lms-four.php:50
+#: template-parts/content-lms-three.php:76 template-parts/content-lms.php:78
+#: learnpress/content-single-course.php:108
+#: learnpress/content-single-course.php:278
+#: learnpress/content-archive-course.php:125
+#: learnpress/content-archive-course.php:429
+#: learnpress/content-archive-course.php:531 learnpress/content-course.php:93
+#, php-format
+msgid "%d students"
+msgstr ""
+
+#: learnpress/addons/course-review/rating-stars.php:17
+#, php-format
+msgid "%s out of 5 stars"
+msgstr ""
+
+#. %s location.
+#: woocommerce/cart/cart-totals.php:72
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:156
+msgid "(min:1000)"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:145
+msgid "(min:2000)"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:99
+msgid "(min:256M)"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:133
+msgid "(min:300)"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:110
+#: inc/radiantthemes-dashboard/welcome.php:121
+msgid "(min:64M)"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: template-parts/content-default.php:23 template-parts/content-default.php:32
+#: inc/template-tags.php:93
+msgid ", "
+msgstr ""
+
+#: template-parts/content-lms-four.php:128
+#: learnpress/content-single-course.php:73
+#: learnpress/content-archive-course.php:305
+#: learnpress/content-archive-course.php:606
+msgid "..."
+msgstr ""
+
+#: template-parts/content-default.php:26
+msgid "/"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2183
+#: inc/redux-framework/options-init.php:2247
+#: inc/redux-framework/options-init.php:2311
+msgid "404 Error Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2163
+#: inc/redux-framework/options-init.php:2229
+#: inc/redux-framework/options-init.php:2293
+#: inc/redux-framework/options-init.php:2357
+msgid "404 Error Button Link"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2154
+#: inc/redux-framework/options-init.php:2220
+#: inc/redux-framework/options-init.php:2284
+#: inc/redux-framework/options-init.php:2348
+msgid "404 Error Button Text"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2142
+#: inc/redux-framework/options-init.php:2208
+#: inc/redux-framework/options-init.php:2272
+#: inc/redux-framework/options-init.php:2336
+msgid "404 Error Content"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2197
+#: inc/redux-framework/options-init.php:2261
+#: inc/redux-framework/options-init.php:2325
+msgid "404 Error Image"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2303
+msgid "404 Error Style Four Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2134
+msgid "404 Error Style One Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2239
+msgid "404 Error Style Three Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2175
+msgid "404 Error Style Two Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2117
+msgid "404 Page Style"
+msgstr ""
+
+#: template-parts/content-lms-four.php:129
+#: learnpress/content-single-course.php:74
+#: learnpress/content-archive-course.php:306
+#: learnpress/content-archive-course.php:607
+msgid "<i class=\"far fa-heart red\"></i><span>Wishlisted</span>"
+msgstr ""
+
+#: template-parts/content-lms-four.php:129
+#: learnpress/content-single-course.php:74
+#: learnpress/content-archive-course.php:306
+#: learnpress/content-archive-course.php:607
+msgid "<i class=\"far fa-heart\"></i><span>Add to Wishlist</span>"
+msgstr ""
+
+#: learnpress/single-course/tabs/instructor.php:86
+msgid "About Instructor"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:37
+msgid "Activate all plugins"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2525
+msgid "Activate Coming Soon"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1814
+msgid "Activate Custom Scrollbar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2379
+msgid "Activate Maintenance Mode?"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:948
+msgid "Activate Preloader"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1080
+msgid "Activate Scroll To Top"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:238
+msgid "Activate Typekit"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:56
+msgid "Activated"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:202
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:263
+#: inc/redux-framework/options-init.php:278
+msgid "Add the Typekit font family name Here."
+msgstr ""
+
+#: template-parts/content-lms-four.php:133
+#: learnpress/content-single-course.php:65
+#: learnpress/content-single-course.php:78
+msgid "Add to Wishlist"
+msgstr ""
+
+#: functions.php:387
+msgid ""
+"Add widgets for \"Hamburger\" menu from here. To turn it on/off please "
+"navigate to \"Theme Options > Header\" and select \"Hamburger\" for "
+"respetive header styles."
+msgstr ""
+
+#: functions.php:341 functions.php:355 functions.php:372
+msgid "Add widgets here."
+msgstr ""
+
+#: woocommerce/wishlist-view.php:157
+#, php-format
+msgid "Added on : %s"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:29
+msgid "Advanced Custom Fields"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:41
+msgid "AJAX Login and Registration modal popup"
+msgstr ""
+
+#: functions.php:1190
+msgid "All Courses"
+msgstr ""
+
+#. 1: dashboard link.
+#: inc/tgmpa/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. Author Name.
+#: inc/header/banner.php:935 inc/header/theme-banner.php:1024
+#, php-format
+msgid "All posts by %s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1882
+msgid "Allow padding for buttons."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1158
+msgid "Analytics Code"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:122
+msgid "Anywhere Elementor"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:214
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:215
+msgid "apple-touch-icon.png 192x192 pixels"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2349
+#: inc/redux-framework/options-init.php:2358
+msgid "Applicable only for 404 Error \"Style Four\"."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2155
+#: inc/redux-framework/options-init.php:2164
+msgid "Applicable only for 404 Error \"Style One\"."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2285
+#: inc/redux-framework/options-init.php:2294
+msgid "Applicable only for 404 Error \"Style Three\"."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2221
+#: inc/redux-framework/options-init.php:2230
+msgid "Applicable only for 404 Error \"Style Two\"."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:157
+msgid ""
+"Applies for Boxed layout. (Please Note: This can be overright by setting "
+"section background color.)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2048
+#: inc/redux-framework/options-init.php:2063
+msgid ""
+"Applies only if Icon is present. (Please Note: This option will work only "
+"for \"Theme Button\" element.)"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Apply coupon"
+msgstr ""
+
+#: functions.php:1196
+msgid "Archive by category \""
+msgstr ""
+
+#: inc/header/banner.php:986 inc/header/theme-banner.php:1075
+msgid "Archives"
+msgstr ""
+
+#: functions.php:1278
+msgid "Articles posted by "
+msgstr ""
+
+#: woocommerce/wishlist-view.php:251
+msgid "Ask for an estimate"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2992
+msgid "Author Information Box"
+msgstr ""
+
+#: woocommerce/cart/cart.php:93
+msgid "Available on backorder"
+msgstr ""
+
+#: learnpress/single-course/content-item/header.php:36
+msgid "Back to Course"
+msgstr ""
+
+#: 404.php:124 inc/redux-framework/options-init.php:2156
+msgid "Back To Home"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2222
+#: inc/redux-framework/options-init.php:2286
+#: inc/redux-framework/options-init.php:2350
+msgid "Back To Home Page"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1111
+#: inc/redux-framework/options-init.php:1899
+msgid "Background Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1305
+msgid "Banner & Breadcrumb"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2721
+msgid "Banner Details"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1318
+#: inc/redux-framework/options-init.php:1320
+msgid "Banner None"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1308
+#: inc/redux-framework/options-init.php:1310
+msgid "Banner Only"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1303
+msgid "Banner-With-Breadcrumb"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3414
+msgid "Behance"
+msgstr ""
+
+#: template-parts/content-lms-one.php:16 template-parts/content-lms-one.php:93
+#: template-parts/content-lms-four.php:9 template-parts/content-lms-two.php:22
+#: template-parts/content-lms-three.php:14
+#: template-parts/content-lms-three.php:93 template-parts/content-lms.php:16
+#: template-parts/content-lms.php:95 learnpress/content-single-course.php:294
+#: learnpress/content-archive-course.php:66
+#: learnpress/content-archive-course.php:140
+#: learnpress/content-archive-course.php:198
+#: learnpress/content-archive-course.php:370
+#: learnpress/content-archive-course.php:444
+#: learnpress/content-archive-course.php:494 learnpress/content-course.php:110
+#: learnpress/single-course/tabs/instructor.php:137
+msgid "blank-image"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2796
+msgid "Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Blog Default"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2805
+#: inc/redux-framework/options-init.php:2847
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2975
+msgid "Blog Options"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2903
+msgid "Blog Posts loading"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2815
+msgid "Blog Style"
+msgstr ""
+
+#. Name of the template
+msgid "Blog Style Morden"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:265
+msgid "Blur"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:263
+msgid "Blur Radius"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:178
+msgid "Body Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1928
+msgid "Border"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1967
+msgid "Border Radius"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:156
+msgid "Boxed Background Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:136
+msgid "Boxed Width"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1467
+msgid "Breadcrumb"
+msgstr ""
+
+#: functions.php:1176
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1534
+msgid "Breadcrumb Alignment"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1474
+msgid "Breadcrumb Arrow Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1315
+msgid "Breadcrumb Only"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1513
+msgid "Breadcrumb Padding"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1313
+msgid "Breadcrumb-Only"
+msgstr ""
+
+#: inc/redux-framework/extensions/upload/upload/field_upload.php:113
+msgid "Browse"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1868
+msgid "Button"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1881
+msgid "Button Padding"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:133
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:184
+msgid "Button Title"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2007
+msgid "Button Typography"
+msgstr ""
+
+#: inc/template-tags.php:84
+msgid "By"
+msgstr ""
+
+#: template-parts/content-two.php:73
+msgid "by"
+msgstr ""
+
+#: learnpress/checkout/form-register.php:40
+msgid ""
+"By creating an account you will be able to keep track of the course's "
+"progress you have previously enrolled."
+msgstr ""
+
+#: learnpress/checkout/form-login.php:109
+msgid "Cancel"
+msgstr ""
+
+#: inc/template-functions.php:64
+msgid "Career"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:25
+msgid "Cart total"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:916
+msgid "Case Study"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3002
+msgid "Categories"
+msgstr ""
+
+#. category name.
+#: inc/header/banner.php:917 inc/header/theme-banner.php:1006
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:134
+msgid "CF7 Widget Elementor"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:892
+msgid "Change Custom Post Type Slug"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:179
+msgid ""
+"Choose a background for the theme. (Please Note: This can be overright by "
+"setting section background color.)"
+msgstr ""
+
+#: inc/redux-framework/extensions/upload/upload/field_upload.php:113
+msgid "Choose a File"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1815
+msgid ""
+"Choose if Custom Scrollbar will be activate or not. (Please Note: This will "
+"take effect on infinity scroll areas but not for entire website.)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2526
+msgid "Choose if want to activate Coming Soon mode."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2380
+msgid "Choose if want to Activate Maintenance Mode."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:949
+msgid "Choose if want to activate Preloader or not."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1081
+msgid "Choose if want to activate Scroll To Top or not."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:239
+msgid "Choose if want to activate typekit or not."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1268
+msgid "Choose if you want the header to be floated (position:absolute) or not."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1774
+msgid "Choose if you want the stucking effect on footer or not."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1300
+msgid "Choose what kind of short header you want to set."
+msgstr ""
+
+#. Name of the template
+#: inc/redux-framework/options-init.php:2826
+msgid "Classic"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:72
+msgid "Click Here to continue with Demo Import process."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2515
+msgid "Coming Soon"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2568
+#: inc/redux-framework/options-init.php:2606
+#: inc/redux-framework/options-init.php:2644
+msgid "Coming Soon Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2585
+#: inc/redux-framework/options-init.php:2623
+#: inc/redux-framework/options-init.php:2661
+msgid "Coming Soon Content"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2545
+msgid "Coming Soon Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2560
+msgid "Coming Soon Style One Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2636
+msgid "Coming Soon Style Three Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2598
+msgid "Coming Soon Style Two Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3042
+msgid "Comments"
+msgstr ""
+
+#: comments.php:106
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:42
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: learnpress/profile/tabs/settings/change-password.php:56
+msgid "Confirmation password"
+msgstr ""
+
+#: learnpress/profile/profile-cover.php:54
+msgid "Contact"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:128
+msgid "Contact Form 7"
+msgstr ""
+
+#: template-parts/team-single-one.php:34
+msgid "Contact Info"
+msgstr ""
+
+#. %s: Name of current post.
+#: template-parts/content-single.php:40
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1711
+msgid "Copyright Text"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Coupon:"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3056
+msgid "Course"
+msgstr ""
+
+#: learnpress/content-archive-course.php:18
+msgid "Course Archives"
+msgstr ""
+
+#: functions.php:1187
+msgid "Course category "
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3083
+msgid "Course layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3065
+msgid "Course Style"
+msgstr ""
+
+#: learnpress/content-single-course.php:89
+msgid "course value"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3074
+msgid "Courses Category Prefix Text"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:65
+msgid "Courses Completed"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3076
+msgid "Courses in"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:71
+msgid "Courses In Progress"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:103
+msgid "Courses progress"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:98
+#: inc/radiantthemes-dashboard/welcome.php:101
+#: inc/radiantthemes-dashboard/welcome.php:109
+#: inc/radiantthemes-dashboard/welcome.php:112
+#: inc/radiantthemes-dashboard/welcome.php:120
+#: inc/radiantthemes-dashboard/welcome.php:123
+#: inc/radiantthemes-dashboard/welcome.php:135
+#: inc/radiantthemes-dashboard/welcome.php:144
+#: inc/radiantthemes-dashboard/welcome.php:147
+#: inc/radiantthemes-dashboard/welcome.php:155
+#: inc/radiantthemes-dashboard/welcome.php:158
+msgid "Currently:"
+msgstr ""
+
+#: learnpress/single-course/tabs/curriculum.php:49
+msgid "Curriculum is empty"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:752
+#: inc/redux-framework/options-init.php:759
+msgid "Custom Font "
+msgstr ""
+
+#: functions.php:1563 inc/redux-framework/options-init.php:870
+msgid "Custom Fonts"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1578
+msgid "Custom Footer"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1580
+msgid "Custom Footer "
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1732
+msgid "Custom Footer Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:882
+msgid "Custom Slug"
+msgstr ""
+
+#. Date.
+#: inc/header/banner.php:970 inc/header/theme-banner.php:1059
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:22
+#: inc/radiantthemes-dashboard/welcome.php:20
+msgid "Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2706
+#, php-format
+msgid "Deactivate %2$s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2821
+#: inc/redux-framework/options-init.php:2952
+msgid "Default"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1573
+#: inc/redux-framework/options-init.php:1575
+msgid "Default Footer"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:148
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:199
+msgid "Delete"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:25
+#: inc/radiantthemes-dashboard/welcome.php:23
+msgid "Demo Importer"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:125
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:176
+msgid "Description"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1091
+msgid "Direction"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:66
+msgid "DOCUMENTATION"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3430
+msgid "Dribbble"
+msgstr ""
+
+#: learnpress/content-single-course.php:121
+#: learnpress/content-single-course.php:137
+msgid "Duration"
+msgstr ""
+
+#: learnpress/content-single-course.php:138
+msgid "duration"
+msgstr ""
+
+#. Name of the theme
+msgid "Edusphere"
+msgstr ""
+
+#: functions.php:2041
+msgid "edusphere"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"EduSphere is Education WordPress Theme made for Educational Website, LMS, "
+"Training Center, School, Academy, University. EduSphere uses LearnPress #1 "
+"LMS plugin for WordPress website. If you’re planning to create an online "
+"education portal then EduSphere is right choice as it’s modern looking clean "
+"Education WP Theme with lots of LMS features."
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:116
+msgid "Elementor"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1744
+msgid "Elementor Section Template"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1795
+msgid "Elements"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:161
+msgid "Email: "
+msgstr ""
+
+#: learnpress/content-single-course.php:105
+msgid "Enrolled"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:262
+msgid "Enter Body typography"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2337
+msgid ""
+"Enter content to show on 404 page body. (Applicable only for 404 Error "
+"\"Style Four\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2143
+msgid ""
+"Enter content to show on 404 page body. (Applicable only for 404 Error "
+"\"Style One\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2273
+msgid ""
+"Enter content to show on 404 page body. (Applicable only for 404 Error "
+"\"Style Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2209
+msgid ""
+"Enter content to show on 404 page body. (Applicable only for 404 Error "
+"\"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2586
+msgid ""
+"Enter content to show on Coming Soon page body. (Applicable only for Coming "
+"Soon \"Style One\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2662
+msgid ""
+"Enter content to show on Coming Soon page body. (Applicable only for Coming "
+"Soon \"Style Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2624
+msgid ""
+"Enter content to show on Coming Soon page body. (Applicable only for Coming "
+"Soon \"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2429
+msgid ""
+"Enter content to show on Maintenance Mode body. (Applicable only for "
+"Maintenance Mode \"Style One\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2501
+msgid ""
+"Enter content to show on Maintenance Mode body. (Applicable only for "
+"Maintenance Mode \"Style Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2465
+msgid ""
+"Enter content to show on Maintenance Mode body. (Applicable only for "
+"Maintenance Mode \"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1712
+msgid "Enter Copyright Text."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3075
+msgid "Enter courses category page title prefix text."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2773
+msgid "Enter event banner subtitle"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2754
+msgid "Enter event banner title"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:277
+msgid "Enter Headings typography"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2537
+msgid "Enter Launch Date & Time."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2702
+msgid "Enter search page banner subtitle"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2694
+msgid "Enter search page banner title"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:248
+msgid "Enter Typekit ID Here"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:841
+msgid "EOT "
+msgstr ""
+
+#: functions.php:1280 inc/redux-framework/options-init.php:2107
+msgid "Error 404"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2713
+msgid "Event"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2735
+msgid "Event Banner Image"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2772
+msgid "Event Subtitle"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2753
+msgid "Event Title"
+msgstr ""
+
+#: inc/header/banner.php:746 inc/header/theme-banner.php:837
+msgid "Events"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:105
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:158
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:158
+msgid "external"
+msgstr ""
+
+#: inc/template-functions.php:68 inc/redux-framework/options-init.php:3315
+#: inc/learnpress/lp-template-hooks.php:187
+msgid "Facebook"
+msgstr ""
+
+#: learnpress/single-course/tabs/tabs.php:46
+msgid "Faq"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:195
+#: inc/redux-framework/options-init.php:204
+msgid "Favicon"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1182
+msgid "FB Pixel Code"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3350
+msgid "Flickr"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1267
+msgid "Floating Option"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:777
+msgid "Font Name"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:296
+msgid "Fonts"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1550
+msgid "Footer"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1622
+msgid "Footer Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1690
+msgid "Footer Copyright Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1592
+msgid "Footer Default Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1647
+msgid "Footer Main Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1668
+msgid "Footer Main Border Bottom Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1562
+#: inc/redux-framework/options-init.php:1569
+msgid "Footer Style"
+msgstr ""
+
+#: functions.php:370
+msgid "Footer | #"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:141
+msgid "Free!"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:105
+#: inc/redux-framework/options-init.php:304
+#: inc/redux-framework/options-init.php:331
+#: inc/redux-framework/options-init.php:1203
+msgid "General"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:778
+msgid "Give this any custom Name"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3306
+msgid "Google +"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1174
+msgid "Google Analytics Code"
+msgstr ""
+
+#: functions.php:266 functions.php:473 functions.php:497
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1166
+msgid "Google Site Verification Code"
+msgstr ""
+
+#: learnpress/content-single-course.php:63
+msgid "Graphic Design Instruments for Communication"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:359
+#: inc/redux-framework/options-init.php:387
+msgid "H1"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:423
+#: inc/redux-framework/options-init.php:450
+msgid "H2"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:486
+#: inc/redux-framework/options-init.php:513
+msgid "H3"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:549
+#: inc/redux-framework/options-init.php:576
+msgid "H4"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:612
+#: inc/redux-framework/options-init.php:639
+msgid "H5"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:675
+#: inc/redux-framework/options-init.php:704
+msgid "H6"
+msgstr ""
+
+#: functions.php:385
+msgid "Hamburger | Sidebar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1194
+msgid "Header"
+msgstr ""
+
+#: learnpress/profile/dashboard-logged-in.php:26
+#, php-format
+msgid "Hello <strong>%1$s</strong> (not %2$s? %3$s)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1607
+msgid "Hide footer widget area"
+msgstr ""
+
+#: functions.php:1145 functions.php:1156 functions.php:1183
+msgid "Home"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1914
+msgid "Hover Background Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1946
+msgid "Hover Border Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2035
+msgid "Hover Font Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2062
+msgid "Hover Icon Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2904
+msgid "How to load blog"
+msgstr ""
+
+#. URI of the theme
+msgid "https://edusphere.radiantthemes.com/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://radiantthemes.com"
+msgstr ""
+
+#: learnpress/checkout/form-login.php:39
+msgid "I am a returning customer."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1133
+#: inc/redux-framework/options-init.php:2047
+msgid "Icon Color"
+msgstr ""
+
+#: learnpress/profile/get-back-order.php:23
+#: learnpress/profile/tabs/orders/recover-my-order.php:24
+msgid ""
+"If the order is made for another one, you can send the code below to them."
+msgstr ""
+
+#: learnpress/profile/get-back-order.php:24
+#: learnpress/profile/tabs/orders/recover-my-order.php:25
+msgid "If the order is made for yourself, you can assign it to you here."
+msgstr ""
+
+#: learnpress/profile/tabs/orders/recover-order.php:20
+msgid "If you have a valid order key you can recover it here."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1212
+msgid "If you want to disable header, then choose \"Blank Header\"."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1233
+msgid "If you want to disable sticky header, then choose \"No Sticky\"."
+msgstr ""
+
+#: template-parts/content-three.php:36 template-parts/content-list.php:36
+#: inc/template-tags.php:96
+msgid "In"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:148
+msgid "In Stock"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1333
+msgid "Inner Page Banner"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1451
+msgid "Inner Page Banner Alignment"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1340
+msgid "Inner Page Banner Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1358
+msgid "Inner Page Banner Border Bottom"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1484
+msgid "Inner Page Banner Breadcrumb Font"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1375
+msgid "Inner Page Banner Padding"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1424
+msgid "Inner Page Banner Subtitle Font"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1396
+msgid "Inner Page Banner Title Font"
+msgstr ""
+
+#: inc/template-functions.php:76 inc/redux-framework/options-init.php:3422
+#: inc/learnpress/lp-template-hooks.php:193
+msgid "Instagram"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:335
+#: inc/radiantthemes-dashboard/install-plugins.php:23
+#: inc/radiantthemes-dashboard/welcome.php:21
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. If there are characters in your language that are not
+#. supported by Jost, translate this to 'off'. Do not translate
+#. into your own language.
+#: functions.php:176
+msgctxt "Jost font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2536
+msgid "Launch Date & Time"
+msgstr ""
+
+#: learnpress/content-single-course.php:146
+msgid "lavel"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:114
+msgid "Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:123
+msgid "Layout Type"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:47
+msgid "LearnPress"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:53
+msgid "LearnPress - Course Review"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:59
+msgid "LearnPress - Course Wishlist"
+msgstr ""
+
+#: learnpress/content-single-course.php:130
+msgid "lecture"
+msgstr ""
+
+#: learnpress/content-single-course.php:129
+msgid "Lectures"
+msgstr ""
+
+#: template-parts/content-lms-four.php:89 template-parts/content-lms-two.php:97
+msgid "Lectures "
+msgstr ""
+
+#: template-parts/content-lms-one.php:62
+#: template-parts/content-lms-three.php:62 template-parts/content-lms.php:64
+#: learnpress/content-single-course.php:264
+#: learnpress/content-archive-course.php:112
+#: learnpress/content-archive-course.php:416 learnpress/content-course.php:79
+msgid "Lessons"
+msgstr ""
+
+#: learnpress/content-single-course.php:145
+msgid "Level"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3307
+#: inc/redux-framework/options-init.php:3316
+#: inc/redux-framework/options-init.php:3325
+#: inc/redux-framework/options-init.php:3334
+#: inc/redux-framework/options-init.php:3343
+#: inc/redux-framework/options-init.php:3351
+#: inc/redux-framework/options-init.php:3359
+#: inc/redux-framework/options-init.php:3367
+#: inc/redux-framework/options-init.php:3375
+#: inc/redux-framework/options-init.php:3383
+#: inc/redux-framework/options-init.php:3391
+#: inc/redux-framework/options-init.php:3399
+#: inc/redux-framework/options-init.php:3407
+#: inc/redux-framework/options-init.php:3415
+#: inc/redux-framework/options-init.php:3423
+#: inc/redux-framework/options-init.php:3431
+msgid "Link to the profile page"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3358
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/template-functions.php:80 inc/learnpress/lp-template-hooks.php:199
+msgid "Linkedin"
+msgstr ""
+
+#: page-templates/template-loadmore.php:29
+#: learnpress/content-archive-course.php:166
+#: learnpress/content-archive-course.php:342
+#: learnpress/content-archive-course.php:472
+#: learnpress/content-archive-course.php:648 inc/blog/blog-two.php:36
+#: inc/blog/blog-two.php:38 inc/blog/blog-three.php:69
+#: inc/blog/blog-three.php:72 inc/blog/blog-one.php:63 inc/blog/blog-one.php:65
+msgid "Load More"
+msgstr ""
+
+#. Name of the template
+msgid "Loadmore"
+msgstr ""
+
+#: learnpress/checkout/form-login.php:108
+#: learnpress/checkout/form-login.php:118
+msgid "Login"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2369
+msgid "Maintenance Mode"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2413
+#: inc/redux-framework/options-init.php:2449
+#: inc/redux-framework/options-init.php:2485
+msgid "Maintenance Mode Background"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2428
+#: inc/redux-framework/options-init.php:2464
+#: inc/redux-framework/options-init.php:2500
+msgid "Maintenance Mode Content"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2390
+msgid "Maintenance Mode Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2405
+msgid "Maintenance Mode Style One Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2477
+msgid "Maintenance Mode Style Three Settings"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2441
+msgid "Maintenance Mode Style Two Settings"
+msgstr ""
+
+#: template-parts/team-single-one.php:38
+msgid "Make a Call"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2831
+msgid "Masonry One"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:127
+msgid "Max. Execution Time"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:116
+msgid "Max. Post Size"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1278
+msgid "Mobile Logo"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2836
+msgid "Modern Style"
+msgstr ""
+
+#: inc/header/banner.php:977 inc/header/theme-banner.php:1066
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#. Month and Date.
+#: inc/header/banner.php:976 inc/header/theme-banner.php:1065
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:169
+msgid "Move"
+msgstr ""
+
+#: learnpress/profile/tabs/courses/owned.php:25
+msgid "My Courses"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:51
+msgid "My courses"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:39
+msgid "My dashboard"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:62
+msgid "My quizzes"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3022
+msgid "Navigation"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:69
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:154
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: learnpress/checkout/form-register.php:36
+msgid "New Customer"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/change-password.php:50
+msgid "New password"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/change-password.php:60
+msgid "New password does not match!"
+msgstr ""
+
+#: comments.php:60 comments.php:91
+msgid "Newer Comments"
+msgstr ""
+
+#: inc/single/single-two.php:195
+msgid "Newer Post"
+msgstr ""
+
+#: single-portfolio.php:47 single-case-studies.php:48
+#: inc/single/single-one.php:185
+msgid "Next Post"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:241
+#: inc/redux-framework/options-init.php:951
+#: inc/redux-framework/options-init.php:1083
+#: inc/redux-framework/options-init.php:1270
+#: inc/redux-framework/options-init.php:1776
+#: inc/redux-framework/options-init.php:1817
+#: inc/redux-framework/options-init.php:2382
+#: inc/redux-framework/options-init.php:2528
+#: inc/redux-framework/options-init.php:2986
+#: inc/redux-framework/options-init.php:2995
+#: inc/redux-framework/options-init.php:3005
+#: inc/redux-framework/options-init.php:3015
+#: inc/redux-framework/options-init.php:3025
+#: inc/redux-framework/options-init.php:3035
+#: inc/redux-framework/options-init.php:3045
+msgid "No"
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: learnpress/content-archive-course.php:154
+#: learnpress/content-archive-course.php:332
+#: learnpress/content-archive-course.php:458
+#: learnpress/content-archive-course.php:636
+msgid "No course found."
+msgstr ""
+
+#: learnpress/addons/wishlist/user-wishlist.php:27
+msgid "No courses in your wishlist!"
+msgstr ""
+
+#: learnpress/profile/tabs/courses/owned.php:51
+msgid "No courses!"
+msgstr ""
+
+#: template-parts/content-three.php:16 template-parts/content-list.php:16
+#: template-parts/content.php:28
+msgid "No Image Found"
+msgstr ""
+
+#: page-templates/template-loadmore.php:30 inc/blog/blog-two.php:40
+msgid "No More Post to Display"
+msgstr ""
+
+#: inc/blog/blog-three.php:74 inc/blog/blog-one.php:67
+msgid "No more post to display."
+msgstr ""
+
+#: woocommerce/wishlist-view.php:210
+msgid "No products were added to the wishlist"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:227
+msgid "Offset X"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:245
+msgid "Offset Y"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/change-password.php:44
+msgid "Old password"
+msgstr ""
+
+#: comments.php:57 comments.php:88
+msgid "Older Comments"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/single/single-two.php:177
+msgid "Older Post"
+msgstr ""
+
+#. 1: title.
+#: comments.php:36
+msgid "One Comment"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Oops! Nothing Found"
+msgstr ""
+
+#: 404.php:121
+msgid "Oops! Page is not available"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:302
+msgid "Opacity"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:300
+msgid "Opacity .1 - 1"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3297
+msgid "Open links in new window"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3298
+msgid "Open social links in new window"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:78
+msgid "OPEN SUPPORT TICKET"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:148
+msgid "Out of Stock"
+msgstr ""
+
+#: functions.php:1287
+msgid "Page"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2098
+msgid "Pages"
+msgstr ""
+
+#: template-parts/content-single.php:51 template-parts/content-page.php:28
+#: page-templates/common-page.php:24
+msgid "Pages:"
+msgstr ""
+
+#: learnpress/checkout/form-login.php:76
+msgid "Password"
+msgstr ""
+
+#: inc/template-functions.php:60
+msgid "Phone Number"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:145
+msgid "Phone number: "
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:151
+msgid "PHP Max. Input Time"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:139
+msgid "PHP Max. Input Vars"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1915
+msgid "Pick a background color for buttons hover."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1900
+msgid "Pick a background color for buttons."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1691
+msgid "Pick a background color for the Footer Copyright Background."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1648
+msgid "Pick a background color for the Footer Main Section."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:991
+msgid "Pick a background color for the Preloader."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1112
+msgid "Pick a background color for the Scroll To Top."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1826
+msgid "Pick a color for Scroll Bar."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1013
+msgid "Pick a color for the Preloader."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1134
+msgid "Pick a icon color for the Scroll To Top."
+msgstr ""
+
+#: inc/template-functions.php:84 inc/redux-framework/options-init.php:3366
+#: inc/learnpress/lp-template-hooks.php:205
+msgid "Pinterest"
+msgstr ""
+
+#: learnpress/profile/not-logged-in.php:19
+#, php-format
+msgid "Please <a href=\"%s\">login</a> to see your profile content"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. 1: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:900
+msgid "Portfolio"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:62
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:85
+msgid "Post Ratings"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:83
+msgid "Posted on"
+msgstr ""
+
+#: functions.php:1274
+msgid "Posts tagged \""
+msgstr ""
+
+#: inc/redux-framework/options-init.php:27
+msgid "Powered By: RadiantThemes Customizer"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:928
+msgid "Preloader"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:990
+msgid "Preloader Background Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1012
+msgid "Preloader Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:938
+msgid "Preloader Options"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:959
+msgid "Preloader Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1037
+msgid "Preloader Timeout"
+msgstr ""
+
+#: template-parts/content-lms-four.php:92
+msgid "Preview this course "
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: single-portfolio.php:30 single-case-studies.php:31
+#: inc/single/single-one.php:163
+msgid "Previous Post"
+msgstr ""
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:98
+msgid "Price"
+msgstr ""
+
+#: functions.php:93
+msgid "Primary"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:183
+msgid "Private"
+msgstr ""
+
+#: woocommerce/cart/cart.php:34 woocommerce/cart/cart.php:78
+msgid "Product"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3223
+msgid "Product Details"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3233
+msgid "Product Details Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3128
+msgid "Product Listing"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3138
+msgid "Product Listing Layout"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:51
+msgid "Product Name"
+msgstr ""
+
+#: functions.php:353
+msgid "Product | Sidebar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3169
+msgid "Products Per Page"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:185
+msgid "Public"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:44
+msgid ""
+"Public user profile content, if this option is turn off then other sections "
+"in profile also become invisible."
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:55
+msgid "Public your profile courses"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:66
+msgid "Public your profile quizzes"
+msgstr ""
+
+#: inc/single/single-two.php:69 inc/single/single-one.php:54
+msgid "Published By:"
+msgstr ""
+
+#: inc/single/single-two.php:83 inc/single/single-one.php:69
+msgid "Published In:"
+msgstr ""
+
+#: template-parts/content-three.php:33 template-parts/content-list.php:33
+msgid "Published On"
+msgstr ""
+
+#: inc/single/single-two.php:76 inc/single/single-one.php:61
+msgid "Published On:"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1183
+msgid "Put FB Pixel Code code here."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1175
+msgid ""
+"Put Google Analytics code here ( Put the whole code including UA i.e. UA-"
+"XXXXX-Y)."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1167
+msgid ""
+"Put Google Site Verification Content. i.e. "
+"+2nxGUDJ4QpAZ5l9Bs4jdiLVC21AIh5d1Nl23908vVuFHs34="
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3170
+msgid "Put number of products you wants to show per page"
+msgstr ""
+
+#: template-parts/team-single-one.php:30
+msgid "Qualification"
+msgstr ""
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:104
+msgid "Quantity"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:83
+msgid "Quizzes  In Progress"
+msgstr ""
+
+#: inc/learnpress/lp-template-hooks.php:77
+msgid "Quizzes Completed"
+msgstr ""
+
+#. Author of the theme
+msgid "RadiantThemes"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/rt-admin.php:48
+#: inc/radiantthemes-dashboard/rt-admin.php:158
+msgid "radiantthemes"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:147
+msgid "RadiantThemes Addons"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:140
+msgid "RadiantThemes Custom Post Type"
+msgstr ""
+
+#: functions.php:1418 functions.php:1419
+msgid "RadiantThemes Dashboard"
+msgstr ""
+
+#: functions.php:1446 functions.php:1447
+msgid "Radiantthemes Install Plugins"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: template-parts/content-blog-three.php:25 template-parts/content-two.php:98
+#: template-parts/content-default.php:88 template-parts/content-default.php:88
+#: template-parts/content-blog-one.php:60
+#: template-parts/content-blog-one.php:60
+msgid "Read More"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:110
+msgid "Redux Framework"
+msgstr ""
+
+#: learnpress/checkout/form-register.php:50
+msgid "Register"
+msgstr ""
+
+#: learnpress/checkout/form-register.php:38
+msgid "Register Account"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3032
+msgid "Related Article"
+msgstr ""
+
+#: inc/single/single-two.php:261 inc/single/single-one.php:250
+msgid "Related Articles"
+msgstr ""
+
+#: learnpress/content-single-course.php:175
+msgid "Related Instructor Courses"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:199
+#: learnpress/profile/tabs/settings/avatar.php:63
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:114
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:165
+msgid "Remove"
+msgstr ""
+
+#: woocommerce/cart/cart.php:59
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:121 woocommerce/wishlist-view.php:199
+msgid "Remove this product"
+msgstr ""
+
+#: inc/redux-framework/extensions/upload/upload/field_upload.php:114
+msgid "Remove Upload"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: learnpress/checkout/form-login.php:38
+msgid "Returning customer"
+msgstr ""
+
+#: woocommerce/shop-box/shop-box-style-six.php:14
+msgid "Sale!"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/publicity.php:89
+#: learnpress/profile/tabs/settings/change-password.php:88
+#: learnpress/profile/tabs/settings/avatar.php:77
+msgid "Save changes"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1804
+msgid "Scroll Bar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1825
+msgid "Scroll Bar Color"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1846
+msgid "Scroll Bar Width"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1060
+msgid "Scroll To Top"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1070
+msgid "Scroll To Top Options"
+msgstr ""
+
+#: inc/header/banner.php:1103 inc/header/theme-banner.php:1192
+#: inc/redux-framework/options-init.php:2676
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-none.php:22
+msgid "Search Here..."
+msgstr ""
+
+#: learnpress/single-course/content-item/header.php:24
+msgid "Search item"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2686
+msgid "Search Page Banner Image"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2701
+msgid "Search Page Subtitle"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2693
+msgid "Search Page Title"
+msgstr ""
+
+#: functions.php:1198
+msgid "Search results for \""
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:65
+msgid "SearchWP Live Ajax Search"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2118
+msgid "Select 404 Page Style of the website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1475
+msgid "Select an icon for breadcrumb arrow."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2722
+msgid "Select Banner options"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2848
+msgid "Select blog layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2947
+msgid "Select blog single page style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2816
+msgid "Select blog style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:137
+msgid "Select Boxed width. Min is 1000px, Max is 1400px and Default is 1200px."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2036
+msgid "Select button hover font color."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2546
+msgid "Select Coming Soon Style of the website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3084
+msgid "Select Course style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1092
+msgid "Select Direction of the Scroll To Top."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2736
+msgid "Select event banner image"
+msgstr ""
+
+#: inc/redux-framework/extensions/upload/upload/field_upload.php:113
+msgid "Select File"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1570
+msgid ""
+"Select footer style. (N.B.: Please set style for individual footer on their "
+"respective settings below.)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1211
+msgid "Select Header Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2077
+msgid "Select Hover Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2078
+msgid ""
+"Select Hover Style of the \"Button\". (Please Note: This option will work "
+"only for \"Theme Button\" element.)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3023
+msgid ""
+"Select if you want to previous and next navigation the Previous/Next "
+"Navigation on Blog Details Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2993
+msgid "Select if you want to show author information on Blog Details Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3043
+msgid "Select if you want to show comments on Blog Details Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3033
+msgid "Select if you want to show related article on Blog Details Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2984
+msgid ""
+"Select if you want to show Social Sharing icons on Blog Page (applicable for "
+"default structure)."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3003
+msgid ""
+"Select if you want to show the categories on both Blog Page and Blog Details "
+"Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3013
+msgid ""
+"Select if you want to show the tags on both Blog Page and Blog Details Page."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:124
+msgid "Select layout type."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2391
+msgid "Select Maintenance Mode Style of the website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1038
+msgid ""
+"Select preloader timeout after successful page load. Min is 100ms, Max is "
+"5000ms and Default is 500ms."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3234
+msgid "Select Product Details Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3139
+msgid "Select Product Listing Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2687
+msgid "Select search page banner image"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1299
+msgid "Select Short Header"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3180
+#: inc/redux-framework/options-init.php:3257
+msgid "Select Sidebar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2883
+msgid "Select sidebar width for blog pages."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1254
+msgid ""
+"Select sticky delay value. Min is 200px, Max is 2000px and Default is 500px."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1232
+msgid "Select Sticky Header Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:960
+msgid "Select Style of the Preloader. (Powered By: \"Loading.io\")"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3203
+msgid "Select Style of the Shop Box."
+msgstr ""
+
+#: template-parts/team-single-one.php:41
+msgid "Send an Email"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2312
+msgid ""
+"Set Background for 404 Error. (Applicable only for 404 Error \"Style Four\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2248
+msgid ""
+"Set Background for 404 Error. (Applicable only for 404 Error \"Style Three\"."
+")"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2184
+msgid ""
+"Set Background for 404 Error. (Applicable only for 404 Error \"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2569
+msgid ""
+"Set Background for 404 Error. (Applicable only for Coming Soon \"Style One\"."
+")"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2645
+msgid ""
+"Set Background for 404 Error. (Applicable only for Coming Soon \"Style "
+"Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2607
+msgid ""
+"Set Background for 404 Error. (Applicable only for Coming Soon \"Style Two\"."
+")"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1623
+msgid "Set Background for Footer."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1341
+msgid ""
+"Set Background for Inner Page Banner. (Please Note: This is the default "
+"image of Inner Page Banner section. You can change background image on "
+"respective pages.)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2414
+msgid ""
+"Set Background for Maintenance Mode. (Applicable only for Maintenance Mode "
+"\"Style One\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2486
+msgid ""
+"Set Background for Maintenance Mode. (Applicable only for Maintenance Mode "
+"\"Style Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2450
+msgid ""
+"Set Background for Maintenance Mode. (Applicable only for Maintenance Mode "
+"\"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1669
+msgid "Set Border Bottom Color for Footer Main section."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1359
+msgid "Set Border Bottom for Inner Page Banner."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1514
+msgid "Set padding for breadcrumb area."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1376
+msgid "Set padding for inner page banner area."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1847
+msgid "Set width for Scroll Bar."
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:343
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:345
+msgid "Shadow Color"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:387
+msgid "Shadow Preview"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:363
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:364
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:365
+msgid "Shadow Type"
+msgstr ""
+
+#: learnpress/content-single-course.php:153
+msgid "Share This Course"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:181
+msgid "Shared"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:52 woocommerce/cart/cart-totals.php:53
+msgid "Shipping"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3119
+msgid "Shop"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3202
+msgid "Shop Box Style"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:24
+msgid "Shop order"
+msgstr ""
+
+#. Name of the template
+msgid "shop Page"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1289
+msgid "Short Header"
+msgstr ""
+
+#: functions.php:339 inc/redux-framework/options-init.php:3256
+msgid "Sidebar"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2882
+msgid "Sidebar Width"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3179
+msgid "Sidebar."
+msgstr ""
+
+#: learnpress/profile/dashboard-logged-in.php:26
+msgid "Sign out"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2936
+msgid "Single Page Layout"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2946
+msgid "Single Page Style"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3438
+msgid "Skype"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:66
+msgid "Slide"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:71
+msgid "Slider Revolution"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:91
+msgid "Smart Compare for WooCommerce"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3287
+msgid "Social Icons"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2983
+msgid "Social Sharing Box"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid ""
+"Sorry! but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:283
+msgid "Spread"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:281
+msgid "Spread Radius"
+msgstr ""
+
+#: learnpress/addons/course-review/rating-stars.php:23
+#: learnpress/addons/course-review/rating-stars.php:31
+#: learnpress/addons/course-review/rating-stars.php:34
+#: learnpress/addons/course-review/rating-stars.php:39
+#: learnpress/addons/course-review/course-rate.php:44
+#: learnpress/addons/course-review/course-rate.php:47
+msgid "star"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1253
+msgid "Sticky Delay"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:71
+msgid "Stock Status"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1773
+msgid "Stucking Option"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3104
+msgid "Style Four"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2957
+#: inc/redux-framework/options-init.php:3089
+msgid "Style One"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3099
+msgid "Style Three"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2962
+#: inc/redux-framework/options-init.php:3094
+msgid "Style Two"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
+msgid "Subtotal"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:828
+msgid "SVG "
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:88
+msgid "System Status"
+msgstr ""
+
+#. Tag Name.
+#: inc/header/banner.php:951 inc/header/theme-banner.php:1040
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3012
+msgid "Tags"
+msgstr ""
+
+#: learnpress/single-course/tabs/instructor.php:92
+msgid "Teacher Courses"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:908
+msgid "Team"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:901
+#: inc/redux-framework/options-init.php:909
+#: inc/redux-framework/options-init.php:917
+msgid ""
+"The slug name cannot be the same as a page name. Make sure to regenerate "
+"permalinks, after making changes."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1983
+msgid "Theme Button Box Shadow"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:62
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:28
+#: inc/radiantthemes-dashboard/welcome.php:26
+#: inc/redux-framework/options-init.php:30
+#: inc/redux-framework/options-init.php:31
+msgid "Theme Options"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:74
+msgid "Theme Support"
+msgstr ""
+
+#: functions.php:1968
+msgid "Themify Icons"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:36
+msgid "These below plugins are required"
+msgstr ""
+
+#: learnpress/profile/tabs/orders/order-message.php:25
+#, php-format
+msgid "This order is paid by %s"
+msgstr ""
+
+#: learnpress/profile/tabs/orders/order-message.php:19
+#, php-format
+msgid "This order is paid for %s"
+msgstr ""
+
+#: learnpress/profile/get-back-order.php:22
+#: learnpress/profile/tabs/orders/recover-my-order.php:23
+msgid "This order was checked out by you but there is no user was assigned to."
+msgstr ""
+
+#: learnpress/profile/profile.php:51
+msgid "This user does not public their profile."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:360
+#: inc/redux-framework/options-init.php:388
+msgid "This will be the default font for all H1 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:424
+#: inc/redux-framework/options-init.php:451
+msgid "This will be the default font for all H2 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:487
+#: inc/redux-framework/options-init.php:514
+msgid "This will be the default font for all H3 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:550
+#: inc/redux-framework/options-init.php:577
+msgid "This will be the default font for all H4 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:613
+#: inc/redux-framework/options-init.php:640
+msgid "This will be the default font for all H5 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:676
+#: inc/redux-framework/options-init.php:705
+msgid "This will be the default font for all H6 tags of your website."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1485
+msgid "This will be the default font of your Inner Page Banner Breadcrumb."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1425
+msgid "This will be the default font of your inner page banner subtitle."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1397
+msgid "This will be the default font of your inner page banner title."
+msgstr ""
+
+#: inc/redux-framework/options-init.php:305
+#: inc/redux-framework/options-init.php:332
+msgid "This will be the default font of your website."
+msgstr ""
+
+#: learnpress/content-single-course.php:122
+msgid "time"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:78
+msgid "Timetable and Event Schedule"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:122
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:173
+msgid "Title"
+msgstr ""
+
+#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:122
+#: woocommerce/cart/cart-totals.php:100 woocommerce/cart/cart-totals.php:101
+msgid "Total"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3398
+msgid "Tripadvisor"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:815
+msgid "TTF "
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3406
+msgid "Tumblr"
+msgstr ""
+
+#: inc/template-functions.php:72 inc/redux-framework/options-init.php:3324
+#: inc/learnpress/lp-template-hooks.php:181
+msgid "Twitter"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:228
+msgid "Typekit Fonts"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2008
+msgid ""
+"Typography options for buttons. Remember, this will effect all buttons of "
+"this theme. (Please Note: This change will effect all theme buttons, "
+"including Radiants Buttons, Radiant Contact Form Button, Radiant Fancy Text "
+"Box Button.)"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:58
+msgid "Unit Price"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:313
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:314
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:315
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:315
+msgid "Units"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:154
+msgid "Unyson"
+msgstr ""
+
+#: woocommerce/cart/cart.php:145
+msgid "Update cart"
+msgstr ""
+
+#. %s: plugin name.
+#: inc/tgmpa/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: learnpress/profile/tabs/settings/avatar.php:61
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:109
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:164
+msgid "Upload"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:873
+msgid "Upload Custom Fonts."
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:105
+msgid "Upload Max. Filesize"
+msgstr ""
+
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:135
+#: inc/redux-framework/extensions/slides/slides/field_slides.php:186
+msgid "URL"
+msgstr ""
+
+#: learnpress/content-single-course.php:115
+msgid "user"
+msgstr ""
+
+#: learnpress/checkout/form-login.php:69
+msgid "Username"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1968
+msgid "Users can change the Border Radius for Buttons."
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:19
+#: inc/radiantthemes-dashboard/welcome.php:17
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3382
+msgid "Viadeo"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:35
+msgid "Video Conferencing with Zoom"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3333
+msgid "Vimeo"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3390
+msgid "Vkontakte"
+msgstr ""
+
+#: 404.php:122
+msgid "We're not being able to find the page you're looking for"
+msgstr ""
+
+#: comments.php:121
+msgid "Website"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/install-plugins.php:17
+#: inc/radiantthemes-dashboard/welcome.php:15
+msgid "Welcome to "
+msgstr ""
+
+#: learnpress/content-single-course.php:65
+msgid "Wishlisted"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:787
+msgid "WOFF "
+msgstr ""
+
+#: inc/redux-framework/options-init.php:801
+msgid "WOFF2 "
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:160
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/radiantthemes-dashboard/welcome.php:92
+msgid "WP Memory Limit"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:97
+msgid "WPC Smart Quick View for WooCommerce"
+msgstr ""
+
+#: inc/tgmpa/tgmpa.php:103
+msgid "WPC Smart Wishlist for WooCommerce"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:229
+msgid "X"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3374
+msgid "Xing"
+msgstr ""
+
+#: inc/redux-framework/extensions/box_shadow/box_shadow/field_box_shadow.php:247
+msgid "Y"
+msgstr ""
+
+#: inc/header/banner.php:983 inc/header/theme-banner.php:1072
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#. Month Date, Year.
+#: inc/header/banner.php:982 inc/header/theme-banner.php:1071
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:240
+#: inc/redux-framework/options-init.php:950
+#: inc/redux-framework/options-init.php:1082
+#: inc/redux-framework/options-init.php:1269
+#: inc/redux-framework/options-init.php:1775
+#: inc/redux-framework/options-init.php:1816
+#: inc/redux-framework/options-init.php:2381
+#: inc/redux-framework/options-init.php:2527
+#: inc/redux-framework/options-init.php:2985
+#: inc/redux-framework/options-init.php:2994
+#: inc/redux-framework/options-init.php:3004
+#: inc/redux-framework/options-init.php:3014
+#: inc/redux-framework/options-init.php:3024
+#: inc/redux-framework/options-init.php:3034
+#: inc/redux-framework/options-init.php:3044
+msgid "Yes"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2326
+msgid ""
+"You can 404 error image for your website. (Applicable only for 404 Error "
+"\"Style Four\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2262
+msgid ""
+"You can 404 error image for your website. (Applicable only for 404 Error "
+"\"Style Three\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:2198
+msgid ""
+"You can 404 error image for your website. (Applicable only for 404 Error "
+"\"Style Two\".)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:205
+msgid "You can upload Favicon on your website. (.ico 32x32 pixels)"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1279
+msgid "You can upload mobile logo under hamburger menu"
+msgstr ""
+
+#: comments.php:124
+msgid "Your Comment *"
+msgstr ""
+
+#: woocommerce/wishlist-view.php:241
+msgid "Your email"
+msgstr ""
+
+#: comments.php:120
+msgid "Your Email *"
+msgstr ""
+
+#: comments.php:119
+msgid "Your Name *"
+msgstr ""
+
+#: inc/redux-framework/options-init.php:3342
+msgid "YouTube"
+msgstr ""
+
+#: inc/template-functions.php:88 inc/learnpress/lp-template-hooks.php:211
+msgid "Youtube"
+msgstr ""
+
+#: inc/footer/footer-style-default.php:26
+msgid "© "
+msgstr ""
+
+#: inc/redux-framework/options-init.php:1713
+msgid "© 2020 Edusphere Theme. RadiantThemes"
+msgstr ""

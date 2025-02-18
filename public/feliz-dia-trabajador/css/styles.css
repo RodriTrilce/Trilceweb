@@ -1,0 +1,106 @@
+/*!
+
+Proyect Name: TemplateStarterHTML
+Proyect URI: https://github.com/javiereat/TemplateStarterHTML
+Version: 1.0
+Description: Template Starter HTML5
+Author: Javiereat
+Author URI: https://github.com/javiereat
+*/
+
+* {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  background: #ffffff;
+  overflow-y: hidden;
+}
+
+.landing-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing-column-left {
+  height: 100vh;
+  width: 50vw;
+}
+
+.landing-column-right {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-column-right img:nth-child(1) {
+  width: 450px;
+}
+.landing-column-right img:nth-child(2) {
+  width: 450px;
+} 
+
+/* @media (min-width: 1440px) {
+  .landing-column-right img:nth-child(1) {
+    width: 400px;
+  }
+  .landing-column-right img:nth-child(2) {
+    width: 400px;
+  }
+}
+ */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.web {
+  display: block;
+}
+
+.movil {
+  display: none;
+}
+
+.landing-column-right figure:nth-child(1) {
+  margin-bottom: 75px;
+}
+
+@media (max-width: 991px) {
+  body {
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .landing-column-left,
+  .landing-column-right {
+    height: 100%;
+  }
+  .web {
+    display: none;
+  }
+
+  .movil {
+    display: block;
+  }
+  .landing-column-right img.movil:nth-child(1) {
+    width: 320px
+  }
+  .landing-column-right img.movil:nth-child(2) {
+    width: 320px;
+  }
+  .landing-column-right figure:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

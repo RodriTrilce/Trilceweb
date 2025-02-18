@@ -1,0 +1,1945 @@
+@font-face 
+{
+	font-family: GR;
+	src: url(../fonts/Geogrotesque-Regular.eot);
+	src: url(../fonts/Geogrotesque-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Regular.woff2) format("woff2"), url(../fonts/Geogrotesque-Regular.woff) format("woff"), url(../fonts/Geogrotesque-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSR;
+	src: url(../fonts/NunitoSans-Regular.eot);
+	src: url(../fonts/NunitoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Regular.woff2) format("woff2"), url(../fonts/NunitoSans-Regular.woff) format("woff"), url(../fonts/NunitoSans-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSB;
+	src: url(../fonts/NunitoSans-Black.eot);
+	src: url(../fonts/NunitoSans-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Black.woff2) format("woff2"), url(../fonts/NunitoSans-Black.woff) format("woff"), url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+.fondo_slider
+{
+	background-color: #ff4f00;
+}
+
+.icono_slider
+{
+	width: 80px;
+	margin-bottom: 26px
+}
+
+.cab_formulario_slider
+{
+	background-color: #F93300; 
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px; 
+	padding: 20px 50px 10px 50px !important;
+}
+
+.texto_solicita
+{
+	border-radius: 20px; 
+	padding: 6px 40px 6px 40px !important;
+}
+
+.bod_formulario_slider
+{
+	padding: 30px 60px 20px 60px !important; 
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px; 
+	text-align: center;
+}
+
+.caja_preparacion
+{
+	padding: 0px 40px 0px 40px;
+}
+
+.fondo_blanco
+{
+	background-color: #fff;
+}
+
+
+.contenido1_preparacion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.contenido2_preparacion
+{
+	font-family: NSB;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.fondo_gris
+{
+	background-color: #f6f6f6;
+}
+
+.contenido1_opcion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px;
+	color: #333 !important;
+	padding: 0px 24px 0px 24px;
+}
+
+.video_fondo
+{
+	background-color: #fff; 
+	border-radius: 20px
+}
+
+.p-5
+{
+	padding: 50px;
+}
+
+
+.fondo_herramientas
+{
+	background-color: #f6f6f6;
+}
+
+.fondo_caja_herramientas
+{
+	background-color: #fff;
+}
+
+.imagen_herramientas
+{
+	width: 100%;
+}
+
+
+.titulo_herramientas
+{
+	color: #333 !important; 
+	font-weight: 400; 
+	margin-bottom: 20px !important;
+	font-family: 'GR';
+}
+
+.fondo_resultados
+{
+	background-color: #fff;
+}
+
+.subtitulo_participante_resultado
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.subtitulo_participante_resultado2
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.subtitulo_participante_resultado3
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.fondo_primeros_puestos
+{
+	background-color: #f6f6f6;
+}
+
+.fondo_primeros_puestos2
+{
+	background-color: #E3E3E3;
+}
+
+.espacio_primeros_puestos
+{
+	padding: 20px 0px 0px 0px;
+}
+
+.titulos_seccion
+{
+	font-family: NSB;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 22px;
+	color: #FFFFFF !important;
+}
+
+.subtitulos_seccion
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.fondo_1
+{
+	background-color: #FF6740;
+}
+.fondo_2
+{
+	background-color: #FF5023;
+}
+.fondo_3
+{
+	background-color: #FF3400;
+}
+.fondo_4
+{
+	background-color: #F93300;
+}
+.fondo_landing_2021
+{
+	background-color: #FF4F00;
+}
+
+.contenedor_descripcion_colegio
+{
+	font-family: GR;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding: 20px 380px 20px 0px;
+	margin-bottom: 0px;
+}
+
+.fondo_footer
+{
+	background-color: #f6f6f6;
+}
+
+.titulo_footer
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+.espacio_menu_footer
+{
+	padding-top: 1.25rem !important;
+}
+.espacio_redes
+{
+	padding-top: 2rem !important;
+}
+
+.copyright
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	color: #333333;
+}
+
+.fondo_copyright
+{
+	background-color: #f6f6f6;
+}
+
+#scrollTop
+{ 
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.gotop
+{
+	background: #fff;
+	color: #F3744A;
+	padding: 8px 12px;
+	border-radius: 50%;
+}
+
+.gotop i
+{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 576px) 
+{	
+	.botones_enlaces
+	{
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 40px 6px 40px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 300px;
+	}
+	.botones_enlaces:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.texto_sinvacante
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: GR;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+	}
+	.enviado
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+	}
+	.matricula_aqui
+	{
+		margin-top:  30px; 
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #fff
+	}
+	.comunicate
+	{
+		margin-top:  14px; 
+		font-family: GR; 
+		color:  #fff;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0px 80px 0px 80px;
+	}
+	.contenedor_gracias_registro
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		width: 80%; 
+		padding: 40px 30px 40px 30px;
+		margin-top: 20px;
+		margin: 0 auto;
+	}
+	.usted_eligio
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #FF4F00;
+		text-align: left;
+	}
+	.icono_academia
+	{
+		width: 35px;
+		margin-right: 20px;
+	}
+	.texto_icono_academia
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 11px;
+		line-height: 10px;
+		color: #fff !important;
+	}
+	.w40
+	{
+		width: 80%;
+    	margin: 0 auto;
+	}
+	.col-xs-5
+	{
+		flex: 0 0 auto;
+    	width: 41.6666666667%;
+	}
+	.col-xs-7
+	{
+		flex: 0 0 auto;
+    	width: 58.3333333333%;
+    	text-align: left;
+	}
+	.h1_ciclo
+	{
+		font-family: GR; 
+		color: #FF4F00; 
+		font-weight: normal; 
+		font-size: 16px; 
+		line-height: 10px;
+		margin-bottom: 0px;
+		margin-top: 16px;
+	}
+	.p_ciclo
+	{
+		font-family: NSB;
+		font-weight: 900; 
+		font-size: 16px; 
+		line-height: 30px; 
+		align-items: center; 
+		color: #f2744a;
+	}
+	.contenedor_ciclo
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		padding: 15px 0px 10px 0px;
+		margin-bottom: 8px;
+	}
+	.tar
+	{
+		text-align: right;
+	}
+	.subtitulo_academia
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 20px 0px 0px 40px;
+    	text-align: left;
+	}
+	.subtitulo_fecha
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 20px 0px 0px 0px;
+    	text-align: left;
+	}
+	.subtitulo_academia2
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 20px 0px 0px 38px;
+		text-align: left;
+	}
+	.titulo_academia
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 40px; 
+		color: #fff;
+		padding: 0px 40px 0px 40px;
+		margin-bottom: 20px;
+	}
+	.col-xs-4
+	{
+		flex: 0 0 auto;
+    	width: 33.3333333333%;
+		margin-bottom: 40px;
+		margin-top: 10px;
+	}
+	.centrado
+	{
+		text-align: center;
+	}
+	.centrado_imagen
+	{
+		margin: 0 auto;
+	}
+	.fondo_landing
+	{
+		background-image: url('../images/foto_landing.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 400px;
+	}
+	.fondo_landing_externo
+	{
+		background-image: url('../images/foto_landing_externo.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	height: 400px;
+	}
+	/* Start Modal */
+	.modal
+	{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.6);
+	}
+	.modal-content
+	{
+		background-color: #fefefe;
+		margin: 15% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	.close
+	{
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: right;
+	}
+	.close:hover, .close:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	/* End Modal */
+
+	.icono_select
+	{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23F3744A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 8px;
+	}
+	.form-control
+	{
+		padding: 8px 30px !important;
+	}
+	.fondo_blanco
+	{
+		background-color: #fff;
+		border-radius: 20px;
+	}
+	.section2
+	{
+		position: relative;
+	}
+	.pad0
+	{
+		padding: 0px 0px 0px 0px !important;
+	}
+	.gracias_contenedor 
+	{
+		background-color: #fff;
+		border-radius: 20px;
+		padding: 20px 10px 20px 10px;
+    	margin: 0px 30px 0px 30px;
+	}
+	.gracias_titulo 
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #FF4F00;
+		text-align: center;
+	}
+	.gracias_descripcion 
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+		padding: 0px 25px 0px 25px;
+	}
+	.icono_colegio
+	{
+		width: 30px;
+		margin-right: 20px;
+	}
+	.contenedor_mobile_logo
+	{
+		width: 50%; 
+		padding: 16px 0px 20px 0px
+	}
+	.contenedor_mobile_iconos
+	{
+		width: 50%; 
+		padding: 26px 0px 20px 0px
+	}
+	.hailitar_mobile
+	{
+		display: none;
+	}
+	.texto_telefono 
+	{
+		color: #fff;
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+		display: none;
+	}
+	.fondo_colegio
+	{
+		background-image: url('../images/foto_colegio_mobile.png');
+		height: 400px;
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.btn.btn-primary 
+	{
+		font-family: 'NSB';
+		background-color: #fff !important;
+		border: 2px solid #FF4F00 !important;
+		color: #FF4F00;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.fondo_registro_2021
+	{
+		background-color: #f2744a;
+		text-align: center;
+	}
+	.w_form
+	{
+		width: 100%;
+		padding: 0px 30px 0px 30px;
+	}
+	.pie
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: center; 
+		padding:24px 0px 20px 0px; 
+		margin:0px;
+		font-size: 13px;
+	}
+	.pie_2
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: center; 
+		padding:24px 0px 0px 0px; 
+		margin:0px; 
+		margin-top: 116px;
+		font-size: 13px;
+	}
+	.contenedor_descripcion_colegio
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: #fff;
+		padding: 20px 30px 20px 30px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.menu_activo
+	{
+		color: #FF4F00 !important;
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR' !important; 
+		font-weight: 600; 
+		font-size: 20px;
+	}
+
+	.menu
+	{
+		color: #000 !important;
+		font-family: 'GR' !important; 
+		font-weight: 600; 
+		font-size: 18px;
+	}
+
+	.vista_home_foto
+	{
+		display: none;
+	}
+
+	.vista_home_boton1
+	{
+		display: none;
+	}
+
+	.vista_home_boton2
+	{
+		display: block;
+	}
+
+	.texto_slider
+	{
+		font-family: NSB !important;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px !important;
+		line-height: 32px;
+		text-align: center;
+		color: #fff;
+		padding: 0px 26px 0px 26px;
+	}
+
+	.parrafo_slider
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.titulo_formulario
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 20px;
+		color: #fff;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00;
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+		float: left;
+		width: 30%;
+	}
+
+	.mt-4
+	{
+		margin-top: 1rem!important;
+	}
+
+	.t_a_left
+	{
+		text-align: left !important;
+		margin: 0px 0px 0px 90px;
+	}
+
+	.p-4
+	{
+		padding: 30px !important;
+	}
+
+	.titulo_opcion
+	{
+		font-size: 26px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 28px;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.icono_opcion
+	{
+		width: 70%;
+	}
+
+	.opcion_mobile
+	{
+		display: block !important;
+	}
+
+	.opcion_web
+	{
+		display: none !important;
+	}
+
+	.img_video
+	{
+		margin-top: 34%;
+		width: 30%;
+	}
+
+	.margen_opcion
+	{
+		padding: 0px 20px 0px 20px;
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.p-5
+	{
+		padding: 2rem!important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		height: 460px;
+		background-size: contain;
+	}
+
+	.vista_herramientas
+	{
+		display: none;
+	}
+
+	.vista_primeros_web
+	{
+		display: none
+	}
+
+	.vista_primeros_mobile
+	{
+		display: block
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+		padding: 20px;
+	}
+
+	.subtitulo_resultados
+	{
+		display: none;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		color: #333 !important;
+	}
+
+	.vista_icono
+	{
+		display: block;
+	}
+	
+	/* CICLOS UNI */
+	.foto_width
+	{
+		max-width: 100%
+	}
+
+	.subtitulo_academia_n
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 600; 
+		font-size: 20px; 
+		line-height: 20px; 
+		color: #fff;
+		padding: 18px 0px 20px 38px;
+    	margin: 0px;
+    	text-align: left;
+	}
+	.botones_enlaces_redux2
+	{
+		background: #F3744A;
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 10px 6px 10px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 150px;
+	}
+	.botones_enlaces_redux2:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.botones_enlaces_redux
+	{
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 10px 6px 10px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 150px;
+	}
+	.botones_enlaces_redux:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.icono_redux
+	{
+		width: 80%;
+	}
+	.icono_redux2
+	{
+		width: 80%;
+	}
+	.no_simulacros
+	{
+		font-family: GR;
+		font-size: 19px;
+		line-height: 22px;
+		color: #53565A;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+	.botones_enlaces_volver
+	{
+		border: 2px solid #F3744A;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #F3744A;
+		padding: 6px 40px 6px 40px;
+    	display: inline-block;
+    	width: 100%;
+	}
+	.botones_enlaces_volver:hover
+	{
+		background: #F3744A;
+		color: #fff;
+	}
+	.no_registro
+	{
+		font-family: GR;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 22px;
+		color: #53565A;
+		margin: 0px 0px 20px 0px;
+		text-align: justify;
+	}
+	.enlace_no_registro
+	{
+		font-family: GR;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 22px;
+		color: #53565A;
+		text-decoration: none;
+	}
+	.registrado
+	{
+		font-family: GR;
+		font-size: 15px;
+		line-height: 22px;
+		color: #53565A;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+@media (min-width: 1200px) 
+{	
+	.subtitulo_fecha
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 20px 0px 0px 40px;
+    	text-align: left;
+	}
+	.fondo_landing_externo
+	{
+		background-image: url('../images/foto_landing_externo.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	.subtitulo_academia2
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 20px 106px 0px 0px;
+	}
+	.icono_redux
+	{
+		width: 30%
+	}
+	.icono_redux2
+	{
+		
+	}
+	.sin_p
+	{
+		margin: 0px;
+	}
+	.botones_enlaces_volver
+	{
+		border: 2px solid #F3744A;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #F3744A;
+		padding: 6px 20px 6px 20px;
+    	display: inline-block;
+    	width: 100%;
+    	margin-bottom: 10px;
+	}
+	.botones_enlaces_volver:hover
+	{
+		background: #F3744A;
+		color: #fff;
+	}
+	.botones_enlaces_redux2
+	{
+		background: #F3744A;
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 10px 6px 10px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 160px;
+	}
+	.botones_enlaces_redux2:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.botones_enlaces_redux
+	{
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 40px 6px 40px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 160px;
+	}
+	.botones_enlaces_redux:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.botones_enlaces
+	{
+		border: 2px solid #FFFFFF;
+		border-radius: 30px; 
+		font-family: 'GR';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		padding: 6px 40px 6px 40px;
+    	margin-bottom: 20px;
+    	display: inline-block;
+    	width: 280px;
+	}
+	.botones_enlaces:hover
+	{
+		background: #FFFFFF;
+		color: #F3744A;
+	}
+	.contenedor_gracias_registro
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		width: 50%; 
+		padding: 40px 60px 40px 60px;
+		margin-top: 20px;
+	}
+	.usted_eligio
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #F3744A;
+	}
+	.no_simulacros
+	{
+		font-family: GR;
+		font-size: 18px;
+		line-height: 22px;
+		color: #53565A;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+	.registrado
+	{
+		font-family: GR;
+		font-size: 14px;
+		line-height: 22px;
+		color: #53565A;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+	.no_registro
+	{
+		font-family: GR;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 22px;
+		color: #53565A;
+		margin: 0px 0px 20px 0px;
+		text-align: justify;
+	}
+	.enlace_no_registro
+	{
+		font-family: GR;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 22px;
+		color: #53565A;
+		text-decoration: none;
+	}
+	.enviado
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+	}
+	.matricula_aqui
+	{
+		margin-top:  30px; 
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #fff
+	}
+	.comunicate
+	{
+		margin-top:  14px; 
+		font-family: GR; 
+		color:  #fff;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.h1_ciclo
+	{
+		font-family: GR; 
+		color: #F3744A; 
+		font-weight: normal; 
+		font-size: 16px; 
+		line-height: 10px;
+		margin-bottom: 0px;
+		margin-top: 16px;
+	}
+	.p_ciclo
+	{
+		font-family: NSB;
+		font-weight: 900; 
+		font-size: 16px; 
+		line-height: 30px; 
+		align-items: center; 
+		color: #F3744A;
+	}
+	.contenedor_ciclo
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		padding: 15px 0px 10px 0px;
+		margin-bottom: 8px;
+	}
+	.tar
+	{
+		text-align: right;
+	}
+	.w40
+	{
+		width: 42%;
+	}
+	.subtitulo_academia
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 500; 
+		font-size: 16px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 18px 0px 0px 0px;
+	}
+	.subtitulo_academia_n
+	{
+		font-family: GR; 
+		font-style: normal; 
+		font-weight: 600; 
+		font-size: 20px; 
+		line-height: 20px; 
+		color: #fff; 
+		padding: 18px 0px 0px 0px;
+		margin: 0px;
+	}
+	.titulo_academia
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 40px; 
+		color: #fff;
+		padding: 20px 320px 0px 0px;
+	}
+	.p_terminos
+	{
+		text-align: justify;
+    	padding: 0px 20px 0px 20px;
+	}
+	.full_height
+	{
+		height: 110vh;
+	}
+	.full_height_2
+	{
+		height: 100vh;
+	}
+	/* Start Modal */
+	.modal
+	{
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.6);
+	}
+	.modal-content 
+	{
+		background-color: #fefefe;
+		margin: 15% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	.close
+	{
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		text-align: right;
+	}
+	.close:hover, .close:focus
+	{
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	/* End Modal */
+
+	.icono_select
+	{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='%23F3744A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		background-repeat: no-repeat;
+		background-position-x: 96%;
+		background-position-y: 8px;
+	}
+	.form-control
+	{
+		padding: 8px 30px !important;
+	}
+	.section2
+	{
+		padding-top: 10px;
+    	padding-bottom: 10px;
+    	position: relative;
+	}
+	.hailitar_header
+	{
+		display: none;
+	}
+	.pad0
+	{
+		padding: 0px 0px 0px 0px !important;
+	}
+	.icono_colegio
+	{
+		width: 25px;
+		margin-right: 20px;
+	}
+	.icono_academia
+	{
+		width: 35px;
+		margin-right: 20px;
+	}
+	.texto_icono_academia
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 11px;
+		line-height: 10px;
+		color: #fff !important;
+	}
+	.texto_sinvacante
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: GR;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+	}
+	.centrado
+	{
+		text-align: center;
+	}
+	.centrado_imagen
+	{
+		margin: 0 auto;
+	}
+	.fondo_registro_2021
+	{
+		background-color: #F3744A;
+	}
+	.w_form
+	{
+		width: 50%;
+	}
+	.gracias_contenedor
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		width: 50%; 
+		padding: 40px 30px 40px 30px;
+	}
+	.gracias_titulo
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 20px;
+		color: #FF4F00;
+		text-align: center
+	}
+	.gracias_descripcion
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: justify;
+		padding: 0px 25px 0px 25px;
+	}
+	.pie
+	{
+		color: #fff; 
+		font-family: GR;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: left; 
+		padding: 24px 0px 0px 0px; 
+		margin: 0px;
+		position: absolute;
+		bottom: 10px;
+	}
+	.pie_2
+	{
+		color: #fff; 
+		font-family: GR; 
+		text-align: left; 
+		padding:24px 0px 0px 0px; 
+		margin:0px;
+		margin-left: 15px; 
+		margin-top: 116px
+	}
+	.fondo_blanco
+	{
+		background-color: #fff;
+		border-radius: 20px;
+	}
+	.texto_telefono
+	{
+		color: #fff; 
+		font-family: GR;
+		margin: 0px 0px 0px 84px;
+	}
+	.pad0
+	{
+		padding: 0px 0px 0px 0px !important;
+	}
+	.ml80
+	{
+		margin: 0px 0px 0px 80px;
+	}
+	.mt40
+	{
+		margin-top: 40px;
+	}
+	.fondo_landing
+	{
+		background-image: url('../images/foto_landing.png');
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+	
+	.fondo_colegio
+	{
+		background-image: url('../images/foto_colegio.png');
+		height: 752px;
+		background-repeat: no-repeat;
+    	background-size: cover;
+	}
+
+	.navbar-custom
+	{
+		padding: 40px 0px 0px 0px !important;
+	}
+	.foto_width
+	{
+		max-width: 100%
+	}
+	.menu_activo
+	{
+		background-color: #fff; 
+		border-radius: 20px; 
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR'; 
+		font-weight: 600; 
+		font-size: 15px;
+	}
+
+	.menu
+	{
+		border-radius: 20px; 
+		padding: 2px 8px 2px 8px; 
+		font-family: 'GR'; 
+		font-weight: 600; 
+		font-size: 15px;
+	}
+
+	.titulo_video2
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.titulo_video3
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.titulo_video4
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 34px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #000;
+		padding-bottom: 2rem!important;
+	}
+
+	.mb-6
+	{
+		margin-bottom: 2.5rem!important;
+	}
+
+	.vista_home_foto
+	{
+		display: block;
+	}
+
+	.vista_home_boton1
+	{
+		display: block;
+	}
+
+	.vista_home_boton2
+	{
+		display: none;
+	}
+
+	.texto_slider
+	{
+		color: #fff !important; 
+		font-size: 46px !important; 
+		line-height: 46px;
+		font-weight: 900;
+		font-family: NSB !important;
+	}
+
+	.parrafo_slider
+	{
+		color: #fff !important; 
+		font-size: 24px !important; 
+		line-height: 20px;
+		font-weight: 500;
+		font-family: GR !important;
+	}
+
+	.titulo_formulario
+	{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 26px; 
+		color: #fff;
+		font-family: GR !important;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00; 
+		font-weight: 600; 
+		font-size: 14px;
+		line-height: 26px; 
+		font-family: GR !important;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+
+	}
+
+	.titulo_opcion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.opcion_mobile
+	{
+		display: none;
+	}
+
+	.opcion_web
+	{
+		display: block;
+	}
+
+	.p-4
+	{
+		padding: 0px !important;
+	}
+
+	.img_video
+	{
+		margin-top: 32%
+	}
+
+	.margen_opcion
+	{
+		
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 28px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.vista_herramientas
+	{
+		display: block;
+	}
+
+	.vista_primeros_web
+	{
+		display: block
+	}
+
+	.vista_primeros_mobile
+	{
+		display: none
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+	}
+
+	.subtitulo_resultados
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+		text-align: center;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		margin-right: 20px;
+		color: #333 !important;
+	}
+
+	.vista_icono
+	{
+		display: none;
+	}
+
+	.accordion-button, .accordion-item
+	{
+		background-color: #f6f6f6;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.accordion-button:not(.collapsed)
+	{
+    	background-color: #f6f6f6;
+    	box-shadow: none;
+	}
+
+	.accordion-button:not(.collapsed)::after
+	{
+		background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e) !important;
+	}
+
+	.accordion-button:focus
+	{
+		border-color: none;
+		box-shadow: none;
+	}
+	
+	/* CICLOS UNI */
+	.titulo_preparacion_ciclos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px 0px 30px;
+		color: #FF4F00 !important;
+	}
+	
+	.foto_video_uni
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_pucp
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_pucp/pucp_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_pucp_pop
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_pucp/pucp_pop2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_anual2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_tarde
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_anual_tarde2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_semestral
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.foto_video_sanmarcos_reforzamiento
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_san_marcos/sanmarcos_reforzamiento2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+	
+	.foto_video_uni_semestral
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni_semestral2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+	
+	.foto_video_uni_escolar
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/ciclos_uni/uni_escolar2021.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.fs15
+	{
+		font-size: 15px !important;
+		font-family: 'GR';
+	}
+	.fs14
+	{
+		font-size: 14px !important;
+		font-family: 'GR';
+	}
+	.fs13
+	{
+		font-size: 13px !important;
+		font-family: 'GR';
+	}
+}

@@ -1,0 +1,88 @@
+.solution-table{
+  margin: 40px 0;
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.solution-table-pucp{
+  tbody{
+    tr{
+      &:nth-child(odd){
+        td:first-child{
+          color:  $orange;
+          font-weight: bold;
+        }
+      }
+
+
+    tr{
+      &:nth-child(4n+1), &:nth-child(4n+2){
+        td:first-child{
+          color: $gray !important;
+          font-weight: normal !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.solution-table-double{
+  tbody{
+
+    tr{
+      &:nth-child(4n+1), &:nth-child(4n+2){
+        td:first-child{
+          color:  $orange;
+          font-weight: bold;
+        }
+
+        @include breakpoint(baby){
+          td:first-child{
+            color:  $gray;
+            font-weight: normal;
+          }
+        }
+      }
+
+    }}
+  }
+
+
+.solution-table-content{
+  thead{
+    th{
+      font-family: $font_cae_bold;
+    }
+  }
+
+  tbody{
+
+    tr{
+
+      @include breakpoint(baby){
+        td:first-child{
+          color: $orange;
+        }
+      }
+
+      td{
+        &:not(:first-child){
+          font-family: $font_geo_reg;
+        }
+
+        a, a:link, a:visited{
+          color: $gray;
+        }
+
+        i{
+          color: $orange;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

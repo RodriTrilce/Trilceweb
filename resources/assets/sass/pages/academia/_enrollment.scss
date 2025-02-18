@@ -1,0 +1,368 @@
+// Header double background
+.header-double-w-2{
+  background-image: url('/static/images/academia/img-titulo-matriculaen-linea.jpg');
+}
+
+// Setps guide
+.enrollment-steps{
+  display: flex;
+  margin: 3rem auto 1rem;
+  width: 85%;
+  height: 110px;
+  background: linear-gradient(white 4%, transparentize($gray, 0.7) 6%, white 1%);
+  background-position-y: 45px;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem auto 1rem;
+  }
+
+  >div{
+    width: 30px;
+    height: 30px;
+    background: $gray;
+    color: $gray;
+    font-weight: bold;
+    font-size: 1px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-right: 3%;
+    transition: ease-in-out 0.5s;
+  }
+
+  .active{
+    background: $orange;
+    color: white;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 100px;
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      height: 60px;
+      font-size: 1rem;
+    }
+  }
+
+  .visited{
+    background: $orange;
+    color: $orange;
+  }
+
+}
+
+.enrollment-img{
+  img{
+    padding: 5px;
+    padding-top: 20px;
+    max-width: 80%;
+  }
+}
+
+
+// Block of forms
+.enrollment-forms {
+  margin-bottom: 30px;
+
+  fieldset{
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    [class*="col-xs"] {
+      margin-right: 0px;
+    }
+    fieldset{
+      margin-right: 0;
+    }
+  }
+
+  /*
+    [class*="col-xs"] {
+      padding-right: 0.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      [class*="col-xs"] {
+        padding-right: 0rem;
+      }
+    }
+  */
+
+  //  Step 1
+  .tab1{
+    .blockb{
+      padding-top: 30px;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    h3, h2{
+      font-weight: bold;
+    }
+
+    h2{
+      color: $gray;
+      font-size: 2rem;
+      margin-bottom: .2rem;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.35rem;
+      }
+
+      span{
+        color: $orange;
+      }
+    }
+
+    p{
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .condition{
+      cursor: not-allowed;
+    }
+
+    .formats{
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      max-width: 80%;
+      font-size: 0.8rem;
+    }
+
+}
+
+
+  //  Step 2,3
+  .tab2, .tab3{
+    h2,h4{
+      font-family: $font_cae_heavy;
+    }
+
+    h2{
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      i{
+        color: $gray;
+      }
+    }
+
+    h4{
+      color: $gray;
+    }
+
+    .radio-inline{
+      border: 1px solid transparentize($gray, .7);
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 15%;
+      padding: 8px 5px;
+      user-select: none;
+
+      @media screen and (max-width: 768px) {
+        width: 30%;
+      }
+
+      input{
+        width: auto;
+      }
+
+      span{
+        display: inline-block;
+        font-family: $font_geo_md;
+      }
+    }
+
+  }
+
+  .checkterms{
+    display: inline-block;
+    width:5%;
+  }
+
+  .terms{
+    display: none;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background: transparentize($gray, 0.9);
+    overflow: auto;
+    padding: 1rem;
+    font-size: 0.9rem;
+
+    .list{
+      padding: 1rem;
+      li{
+        padding: 0.5rem;
+      }
+    }
+
+    div{
+      display: inline-block;
+    }
+
+    .terms-9{
+      width: auto;
+      padding: 2px;
+      padding-right: 1.6rem;
+    }
+
+  }
+
+  .captcha_enrollment{
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+
+  #termsActive{
+    color: $orange;
+    background: none;
+    border:0;
+    padding-bottom: 2rem;
+    cursor: pointer;
+  }
+
+}
+
+.tab{
+  display: none;
+  margin-top: 20px;
+}
+
+.stepsarrows{
+  margin: 20px auto;
+}
+
+.enrollment-finish{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .finish-title{
+    font-family: $font_geo_smbold;
+    display: block;
+    font-size: 2.8rem;
+  }
+
+  .finish-thanks{
+    width: 100%;
+    max-width: 80px;
+    margin-left: 5px;
+
+    @include breakpoint(baby){
+      max-width: 50px;
+    }
+  }
+
+  .finish-text{
+    font-family: $font_geo_reg;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+
+    @include breakpoint(baby){
+      font-size: 1rem;
+    }
+  }
+
+  .finish-button-container{
+    margin-top: 25px;
+  }
+
+  .enrollment-finish--button{
+    border: 0;
+    background: transparent;
+    color: white;
+    font-family: $font_cae_rom;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    width: 280px;
+
+    @include breakpoint(baby){
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.enrollment-forms--dnidownload{
+  display: none;
+  padding: 20px;
+  padding-left: 0;
+  font-size: 1rem;
+  transition: all 0.3s ease-in;
+
+  a{
+    color: $gray;
+  }
+
+  b{
+    color: $orange;
+  }
+}
+
+.form-group-gender{
+
+  input[type=radio] {
+    visibility: hidden;
+    width: 10px;
+  }
+
+  label.radio {
+    cursor: pointer;
+    text-indent: 35px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px; 
+    color: transparent;
+  }
+
+  label.radio:before {
+    background: $orange;
+    content:'';
+    position: absolute;
+    top:2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+
+  label.radio:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 0.25em;
+    background: transparent;
+    top: 7.5px;
+    left: 2.5px;
+    border: 1.5px solid #ffffff;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+  }
+
+  input[type=radio]:checked + label:after {
+    opacity: 1;
+  }
+
+  .gender_span{
+    position: relative;
+    left: -45px;
+    top: 3px;
+    z-index: -1;
+  }
+
+}

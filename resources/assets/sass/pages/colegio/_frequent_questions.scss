@@ -1,0 +1,148 @@
+.frequentquestions{
+  margin: 40px 0;
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+
+  color: $gray;
+}
+
+.frequentquestions .frequentquestions-title{
+  font-size: 2.3rem;
+  @media screen and (max-width: 700px){
+    font-size: 1.3rem;
+  }
+}
+
+.frequentquestions-block{
+  margin-top: 1rem;
+
+  // >div:nth-child(odd){
+  //   background: #efefef;
+  //   border-radius: 5px;
+  // }
+}
+
+.frequentquestions-question{
+  margin-bottom: 10px;
+  counter-increment: item;
+  color: $gray;
+  background: #efefef;
+  padding: 10px;
+
+  .question-number{
+    justify-content: center;
+    font-family: $font_geo_reg;
+    font-size: 2rem;
+
+    @include breakpoint(baby){
+      font-size: 1.4rem;
+    }
+
+    &::before{
+      color: $gray;
+      content: counter(item);
+    }
+  }
+
+  .question-content{
+    margin-bottom: 10px;
+    font-family: $font_geo_reg !important;
+    p{
+      font-family: inherit;
+    }
+    &:first-child{
+      margin-top: 10px;
+    }
+  }
+
+  .question-title{
+    font-family: $font_cae_rom;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: $gray;
+    cursor: pointer;
+    line-height: 150%;
+
+    @media screen and (max-width: 700px){
+      font-size: 1.05rem;
+    }
+  }
+
+  .question-answer{
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  ul{
+    list-style: square;
+  }
+  ul,ol{
+    margin-left: 1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+}
+
+.question-title__signe{
+  display: inline-block;
+  margin-right: 3px;
+  padding: 3px;
+
+  &::before{
+    content: "\f2c4";
+    font-family: $font_icon;
+    font-size: 1.6rem;
+    color: $gray;
+  }
+}
+
+// Acordion
+.js-badger-accordion-header.-ba-is-active{
+  color: $orange !important;
+
+  .question-title__signe::before{
+    content: "\f290";
+    color: $orange;
+  }
+}
+
+.-ba-is-active{
+  overflow: visible;
+}
+
+
+// Tabs
+.frequent_questions__tabs{
+  @include breakpoint(baby){
+    .js-tabs__header{
+      border-radius: 5px;
+    }
+    // border-top-right-radius: 5px;
+    // border-top-left-radius: 5px;
+  }
+
+  .js-tabs__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >li{
+      min-width: 25%;
+
+      @include breakpoint(baby){
+        width: 100%;
+      }
+
+      >a{
+        min-height: 80px;
+        font-size: 1.5rem;
+
+        @include breakpoint(baby){
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+/* SLIDER CAROUSEL */
+
+.banner {
+    text-align: center;
+    height: 80vh;
+    background-color: #FF6334;
+}
+
+.banner .item {
+    background-color: #FF6334;
+}
+
+.owl-demo,
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.item {
+    height: 80vh;
+}
+
+.owl-dots {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 78.08px);
+    display: flex;
+    flex-direction: column;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.owl-dots .owl-dot span {
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 8px 10px !important;
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #fff !important;
+}
+
+.owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slide-progress {
+    width: 0;
+    max-width: 100%;
+    height: 1.5px;
+    background: rgba(255, 255, 255, 0.2);
+    top: 80px;
+    position: relative;
+    z-index: 99;
+}
+
+.banner article img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+.owl-carousel .bg-item-1 {
+    background-image: url('../img/home/BG-SIMULACRO-CATO.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .bg-item-2 {
+    background-image: url('../img/home/BG-SOLUCIONARIO-SM.png') !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .bg-item-3 {
+    background-image: url('../img/home/BG-CICLO-SM.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.owl-carousel h1,
+.owl-carousel .las {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.owl-carousel h2 {}
+
+.owl-carousel button {
+    color: #FF6334;
+    font-size: 1.2em;
+    border-radius: 2px;
+    padding: 8px 25px;
+    margin: 1em auto;
+    font-weight: bolder;
+}
+
+.owl-carousel button:hover,
+.owl-carousel button:focus {
+    color: #FF6334;
+    box-shadow: 0px 0px 5px #000;
+}

@@ -1,0 +1,217 @@
+.colegio-cardsv2{
+  padding: 40px 0px;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+
+  @media (max-width: 1160px){
+    padding: 30px 0;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+  }
+
+  @include breakpoint(baby){
+    padding: 10px 0;
+  }
+}
+
+.colegio-cardsv2__title{
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+
+  @media (max-width: 1160px){
+    max-width: none;
+    padding: 0;
+  }
+}
+
+.colegio-cardsv2__herotitle{
+  font-family: $font_geo_smbold;
+  color: $orange;
+  font-size: 3.7rem;
+  text-align: left;
+  line-height: 65px;
+  margin-bottom: 15px;
+
+  @media (max-width: 1160px){
+    text-align: center;
+    margin: 0;
+  }
+
+  @include breakpoint(baby){
+    font-size: 2.1rem;
+    line-height: unset;
+  }
+
+  .salt{
+    display: block;
+
+    @media (max-width: 1160px){
+      display: none;
+    }
+  }
+}
+
+.colegio-cardsv2__herosubtitle{
+  font-family: $font_geo_reg;
+  text-align: left;
+  font-size: 1.15rem;
+  color: $gray;
+
+  @media (max-width: 1160px){
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  @include breakpoint(baby){
+    font-size: 1rem;
+  }
+
+  .salt{
+    display: block;
+
+    @media (max-width: 1160px){
+     // display: none;
+    }
+  }
+}
+
+
+.colegio-cardsv2-items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(baby){
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.colegio-cardsv2-items--hovereffect{
+  &:hover{
+    .colegio-cardsv2-items__item:not(:hover){
+      border: 1px solid transparentize($gray, .7);
+
+      .colegio-cardsv2-items__symbol i{
+        color: transparentize($gray, .7);
+      }
+
+      .colegio-cardsv2-items__text span{
+        color: transparentize($gray, .7);
+      }
+    }
+  }
+}
+
+.colegio-cardsv2-items__item{
+  width: 100%;
+  max-width: 220px;
+  min-width: 170px;
+  height: 175px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  transition: all .2s ease-in-out;
+  border: 1px solid $gray;
+
+  margin-right: 15px;
+
+
+  &:hover{
+    border: 1px solid $orange;
+
+    .colegio-cardsv2-items__symbol i{
+      color: $orange;
+    }
+
+    .colegio-cardsv2-items__text span{
+      color: $orange;
+    }
+  }
+
+
+  @media (max-width: 1160px){
+    height: 230px;
+  }
+
+  @include breakpoint(baby){
+    width: 100%;
+    height: 140px;
+    padding: 8px;
+  }
+
+}
+
+.colegio-cardsv2-items__symbol{
+  margin-bottom: 20px;
+
+  @include breakpoint(baby){
+    margin-bottom: 10px;
+  }
+
+  i{
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $gray;
+  }
+}
+
+.colegio-cardsv2-items__text{
+  position: relative;
+
+  span{
+    width: 100%;
+    display: block;
+    transition: all .2s ease-in-out;
+    color: $gray;
+  }
+
+  span.alumno, span.modality{
+    font-family: $font_geo_smbold;
+  }
+
+  span.alumno{
+    font-size: 1.1rem;
+  }
+
+  span.modality{
+    font-size: 1.8rem;
+  }
+
+  span.op{
+    position: absolute;
+    font-family: $font_geo_reg;
+  }
+
+  @include breakpoint(baby){
+    span.alumno{
+      font-family: $font_geo_lite;
+      font-size: 1.1rem;
+    }
+
+    span.modality{
+      font-size: 1.55rem;
+      font-family: $font_geo_reg;
+    }
+
+    span.op{
+      font-family: $font_geo_reg;
+      bottom: -15px;
+    }
+  }
+}

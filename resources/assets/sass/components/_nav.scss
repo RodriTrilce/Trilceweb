@@ -1,0 +1,817 @@
+/**
+  *  Nav
+*/
+
+// Variables
+$nav-li-hover-transition : unquote("all .1s ease-in");
+
+%dropdown-desk-active {
+  display: block;
+  line-height: initial;
+  padding-top: 1%;
+  z-index: 50;
+  text-align: left;
+  transition: 0.3s all;
+  visibility: visible;
+}
+
+.dropdown-desk{
+  right: 0;
+  position: absolute;
+  visibility: hidden;
+
+  .dropdown-desk-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-family: $font_geo_reg;
+    a,li{ transition: none; }
+
+    &:hover{
+      >div li > a:link{
+        transition: all 0.3s ease-in;
+      }
+    }
+
+  }
+
+}// End .dropdown-desk
+
+// dropdown-desk-academia
+.dropdown-desk-academia{
+  padding: 3vw;
+  border-top: 8px solid $orange;
+  background: white;
+  justify-content: space-around;
+
+  &:hover{
+    >div ul li::before{
+      transition: $nav-li-hover-transition;
+    }
+  }
+
+  >div{
+
+    h3{
+      color: $gray;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    ul{
+      display: inline-block;
+
+      li{
+        font-size: 1.3rem;
+        position: relative;
+
+        &::before{
+          position: absolute;
+          top: 5px;
+          content: "\f112";
+          color: transparentize($gray, 0.5);
+          font-family: $font_icon;
+          font-size: 15px;
+          margin-right: 5px;
+        }
+
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          margin-left: 17px;
+          color: $gray;
+          transition: all 0.25s;
+        }
+
+        &:hover{
+          a,a:link{
+            color: $orange;
+          }
+          &::before{
+            color: $orange;
+          }
+        }
+
+      }// end li
+
+    }//  end ul
+
+    // Line right
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 1px;
+      height: 85%;
+      margin-left: -3%;
+      background: transparentize($gray, 0.8);
+    }
+
+    &:first-child::before{
+      width: 0px;
+    }
+
+  }// end div
+}// end .dropdown-desk-academia
+
+// dropdown-desk-colegio
+.dropdown-desk-colegio{
+  border-top: 2px solid $gray;
+  border-bottom: 1px solid $gray;
+  background: white;
+  min-height: 37vh;
+  justify-content: space-between;
+
+  a:hover{
+  }
+
+  a:link,a:visited{
+    color: $gray;
+  }
+
+  .linkslima a:hover{
+      color: $orange;
+  }
+
+  .linksprovincia{
+    margin-top: 1rem;
+
+    a:hover{
+      color: $gray;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .titleblockprovincia{
+      margin-left: 0;
+      padding-left: 0;
+
+    }
+  }
+
+  .venues-in{
+    display: flex;
+    margin-left: 3rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+
+    @media screen and (max-width: 1000px) {
+      margin-left: 2rem;
+      padding-left: .5rem;
+    }
+
+    @media screen and (max-width: 750px) {
+      margin-left: 1rem;
+      padding-left: .5rem;
+    }
+
+    .title{
+      font-size: 2rem;
+      padding-top: 9vh;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 700px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .provincia{
+      color: $gray;
+    }
+
+    .marker{
+      font-weight: bold;
+    }
+  }
+
+  .ul-venue{
+    .item{
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+
+      &:hover{
+        &::before{
+          transition: $nav-li-hover-transition;
+        }
+      }
+
+      &::before{
+        content: "\f112";
+        color: transparentize($gray, 0.5);
+        font-family: $font_icon;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      &:hover::before{
+          color: $orange;
+      }
+
+      @media screen and (max-width: 1000px) {
+        font-size: 0.9rem;
+      }
+
+      >a,a:link,a:visited{
+        color: $gray;
+      }
+
+      >a:hover{
+        color: $orange;
+      }
+    }
+
+    .item2:hover::before{
+      color: $orange;
+    }
+  }
+
+  .block-capital{
+    padding: 1vw;
+  }
+
+  .block-province{
+    background: #f3f3f3;
+  }
+
+}
+// end .dropdown-desk-colegio
+
+.dropdown-desk-colegio-aboutus{
+  border-top: 2px solid $gray;
+  border-bottom: 1px solid $gray;
+  min-height: 15vh;
+  justify-content: space-between;
+  background: $orange;
+
+  a:hover{
+    font-weight: bold;
+  }
+
+  a:link,a:visited{
+    color: $gray;
+  }
+
+  .dd-colegio-aboutus-link{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .dd-colegio-aboutus-rocket{
+    background: $colegio_gray;
+    background-image: url('/static/images/colegio/svg/img-menu-pe.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.0, 1.0);
+    filter: blur(0);
+  }
+
+  .dd-colegio-aboutus-textleft{
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4.5rem;
+
+    h2{
+      color: white;
+      font-size: 1.8vmax;
+    }
+  }
+
+  .dd-colegio-aboutus-textright{
+    background: $colegio_gray;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+
+    h2{
+      color: $gray;
+      font-size: 1.6vmax;
+    }
+  }
+
+}
+// end .dropdown-desk-colegio-aboutus
+
+
+// ================================================================
+
+
+.nav-info{
+  position: relative;
+
+  a:link,a:visited{
+    color: white;
+  }
+
+  .nav-info-content{
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+    background-color: $orange;
+    position: absolute;
+    top: -30px;
+    right: 0;
+
+    span{
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+
+  .fa-home{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+
+  @include breakpoint(baby){
+    display: none;
+  }
+}
+
+.nav-info-responsive{
+  display: none;
+
+  @include breakpoint(baby){
+    display: block !important;
+    background-color: $orange;
+    color: white;
+    padding: .5rem;
+    border-top: 0;
+  }
+}
+
+.nav-info-responsive > a{
+  display: contents;
+}
+
+.nav-info-colegio{
+  background-color: #e5e7e7;
+  color: $gray;
+
+  a:link,a:visited{
+    color: white;
+  }
+
+  .nav-info-colegio__phone, .nav-info-colegio__intranet{
+    color: white;
+
+    @include breakpoint(baby){
+      color: $gray !important;
+    }
+  }
+}
+
+
+.nav-info-academia{
+
+  .nav-info-academia__phone, .nav-info-academia__intranet{
+    color: white !important;
+  }
+}
+
+.nav-info-responsive.nav-info-colegio{
+
+  div{
+    margin-top: 5px;
+  }
+
+  a{
+    padding: 0;
+    display: inline;
+  }
+}
+
+
+.nav-info-responsive.nav-info-academia{
+  color: white;
+
+  div{
+    margin-top: 5px;
+  }
+
+  a,a:hover,a:visited{
+    color: white;
+    padding: 0;
+  }
+}
+
+nav{
+    .toogle-content{
+      display: none;
+    }
+
+    // menu desktop Sedes
+    .nav-venues{
+      &:hover > .dropdown-desk{
+        @extend %dropdown-desk-active;
+        width: 100vw;
+        height: 100px;
+      }
+    }
+
+    .nav-colegio-aboutus{
+      &:hover > .dropdown-desk{
+        @extend %dropdown-desk-active;
+        width: 100vw;
+      }
+    }
+
+    // ul no responsive
+    > ul{
+      display: flex;
+      justify-content: flex-end;
+
+      .menu-click-sedes{
+        display: none;
+      }
+
+      .disable{
+        cursor: default;
+        pointer-events: none;
+
+        a,a:link{
+          color: $disable_link;
+          &:hover{
+            color: $disable_link;
+            a{
+              color: $disable_link;
+            }
+            &::after{
+              display: none;
+            }
+          }
+        }
+      }
+
+
+
+      > li{
+        display: inline-block;
+        margin-right: 1.2rem;
+        font-size: 1.15rem;
+
+        @media screen and (max-width: 900px) {
+          font-size: 1rem;
+          margin-right: 1rem;
+        }
+
+        >a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: $gray;
+          font-family: $font_geo_reg;
+          transition: ease-out 0.01s;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        >a:link,a:visited{
+          color: $gray;
+        }
+
+
+        &:nth-last-child(1){
+          margin-right: 0px;
+        }
+
+
+        // Hover de li menu
+        @media screen and (min-width: 768px) {
+          &:hover{
+            >a{
+              color: $orange;
+            }
+          }
+
+        }//end mediascreen
+
+
+      }
+    }
+
+
+    // Sedes ul
+
+    .label-toggle{
+      color: $orange;
+      font-size: 15px;
+      background-color: white;
+      border-radius: 2px;
+      border: 1px solid $orange;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      transition: all .1s ease-in-out;
+    }
+
+
+    /**
+      * UL > responsive
+    */
+    @include breakpoint(baby){
+      .toogle-content{
+        display: block;
+      }
+
+      >ul{
+        display: block;
+        position: absolute;
+        z-index: 99999;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+        margin-top: 70px;
+        top: 0;
+        opacity: 0;
+        overflow: hidden;
+        height: 0;
+        transition: all .1s ease-in-out;
+        box-shadow: 0px 0px 2px #000;
+        //right: 5px;
+        left: 0px;
+
+        .menu-click-sedes{
+          display: block;
+        }
+
+        >li{
+          display: block;
+          border-top: 0.4px solid transparentize($gray, 0.2);
+          margin-right: 0;
+          font-size: 0.9rem;
+          height: auto;
+
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+
+            i{
+              color: $orange
+            }
+
+            &:hover{
+              color: $orange;
+              i{
+                color: white;
+              }
+
+              &::after{
+                width: 0;
+                height: 0;
+              }
+
+            }
+          }// Fin > a
+
+        }
+
+
+      }
+
+    }
+
+    #menu-toggle:checked ~ .toogle-content {
+      .label-toggle{
+        background: $orange;
+      }
+      .fa-bars{
+        color: white;
+      }
+    }//end ul
+
+    #menu-toggle:checked ~ ul {
+      height: 100vh;
+      opacity: 1;
+    }//end ul
+
+    #menu-toggle{
+      display: none;
+    }
+
+    /**
+      * Submenu Sedes >UL
+    */
+    .menu-sedes-ul{
+      display: none;
+      >li{
+        background-color: white !important;
+        display: block;
+        border:0px;
+        margin-right: 0;
+        font-size: 0.8rem;
+        height: auto;
+
+        a{
+          color: $gray;
+
+          &:link{
+            text-transform: none;
+            padding: 0.2rem;
+            color: $gray
+          }
+          &:visited{
+            color: $gray !important;
+          }
+        }//end a
+      }//en li
+    }
+}
+
+
+
+
+.menu-click-sedes{
+  &:hover .menu-sedes-ul{
+    display: block;
+  }
+
+  >a{
+    &::after{
+      font-family: $font_icon;
+      content: "\f110";
+      font-size: 15px;
+      color: $orange;
+      position: absolute;
+      margin-left: 6px;
+      background: white;
+    }
+
+    &:hover::after{
+      content: "";
+    }
+
+  }
+
+  >li > a,a:hover,a:link,a:visited{
+    color: $gray;
+  }
+}// Fin li.menu-click-sedes
+
+
+.nav-colegio-structure{
+  @include breakpoint(baby){
+
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+    >ul{
+      >li{
+        border: 0;
+      }
+
+      >li a{
+        text-align: left;
+      }
+
+      >li::after{
+        content: "";
+        width: 90%;
+        height: 1px;
+        background: $colegio_gray;
+        position: absolute;
+        left: 5%;
+      }
+    }
+
+    .nav-info-responsive::after{
+      display: none;
+    }
+  }
+}
+
+.nav-colegio-aboutusmobile{
+  display: none;
+  @include breakpoint(baby){
+    display: block;
+  }
+  &::after{
+    display: none;
+  }
+
+  .aboutusmobile-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.menu-colegio-sedes{
+  display: none;
+
+}
+
+.menu-click-sedes:hover > .menu-colegio-sedes{
+  display: block !important;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.menu-colegio-sedes-select{
+  margin-bottom: 0.5rem;
+}
+
+.nav-item-active{
+  a,a:link,a:visited{
+
+  }
+  color: $orange !important;
+  &:hover{
+    color: $orange !important;
+  }
+  &::before{
+    color: $orange !important;
+  }
+
+}
+
+.nav-item-active--indeskblock{
+  a,a:link,a:visited,a:hover{
+    color: $orange !important;
+  }
+
+  &::before{
+    color: $orange !important;
+  }
+}
+
+.nav-item-noclick--indeskblock{
+  a{
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.nav-item-noclick{
+  cursor: default;
+  pointer-events: none;
+}
+
+.nav-burger{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__highlight{
+  padding-right: 15px;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: $orange;
+    left: 100%;
+    top: 3px;
+  }
+
+  &.nav__highlight--left{
+    padding-right: 0;
+    padding-left: 15px;
+    
+    &::before{
+      left: auto;
+      right: 100%;
+    }
+  }
+}
+//active_ever
+.active_ever{
+  font-weight: bold !important;
+}
+
+//Pulse Escríbenos academia
+.pulse a{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1)};
+  100% { transform: scale(1); }
+}

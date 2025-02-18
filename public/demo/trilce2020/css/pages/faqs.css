@@ -1,0 +1,289 @@
+
+.faqs-superior {
+    text-align: center;
+    height: 60vh;
+    background-image: url("../../img/faqs/BG.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+section.faqs {
+    height: 100%    ;
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.faqs article h3 {
+    color: #FF6334;
+    font-weight: bold;
+    margin: 2em auto;
+    text-align: left;
+    font-size: 2.2em;
+}
+
+.faqs article {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center
+}
+
+.faqs article i {
+    font-size: 3em;
+    color: #fff;
+    margin: 0.2em 0.2em 0em;
+}
+
+.faqs article p {
+   margin: 0.2em;
+}
+
+.faqs article a{
+    margin: 0.5em auto;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+     font-weight: bold;
+}
+
+.faqs article a:hover {
+    background-color: #fff;
+    color: #FF6334;
+}
+
+.faqs select {
+    color: #FF6334;
+    border-color: transparent;
+        border-bottom: 2px solid #FF6334 !important;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+
+.accordion .card-header:after {
+    content: "-";
+    float: left;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.accordion .card-header.collapsed:after {
+    content: "+";
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+ul.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 0px solid transparent;
+}
+
+.card-header,
+.collapse {
+    max-width: 1024px;
+}
+
+.accordion>.card .card-header {
+    border: 0px solid transparent;
+}
+
+.tab-content .card{
+    border: 0px solid transparent;
+}
+
+.nav-tabs .nav-link {
+  color: #52555A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-tabs .nav-link i {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.nav-tabs .nav-link.active {
+    color: #FF6334;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+
+.tab-pane {
+    border: 0px solid transparent
+}
+
+.tab-pane .accordion {
+    border: 0px solid transparent
+}
+
+.card-header{
+    background-color: transparent;
+    text-align: left;
+    font-weight: bold;
+}
+
+.accordion aside:nth-child(2){
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(4) {
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(6) {
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(8) {
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(10) {
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(12) {
+    background-color: #f5f5f5;
+}
+.accordion aside:nth-child(14) {
+    background-color: #f5f5f5;
+}
+
+.accordion .card-header {
+    color: #FF6334;
+    cursor: pointer;
+}
+.accordion .card-header.collapsed {
+    margin-right: 0.5em;
+    color: #52555A;
+    border: 0px solid transparent;
+}
+
+.accordion .card-header.collapsed:after,
+.accordion .card-header:after {
+    line-height: 25px;
+    margin-right: 0.5em;
+}
+
+.card-body {
+    min-height: 100px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    color: #FF6334;
+    border-color: transparent;
+}
+
+
+ @media (max-width: 768px){
+     section.faqs {
+         height: 100%;
+     }
+
+     .faqs article {
+         padding: 2em;
+         flex-direction: column;
+    }
+
+     .faqs-superior {
+         height: 100vh;
+         background-image: url("../../img/faqs/BG-MOBILE.png");
+     }
+
+     .faqs article {
+         padding: 1.5em;
+     }
+
+    ul.nav-tabs li.nav-item {
+        width: 100%;
+    }
+
+    .nav-tabs .nav-link,
+    .nav-tabs .nav-link.active {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .nav-tabs .nav-link i {
+        font-size: 1.2em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0em;
+    }
+    .nav-tabs .nav-link br {
+        display: none;
+    }
+    .nav-tabs .nav-link.active {
+        background-color: #FF6334;
+        color: #fff;
+        border-radius: 2px;
+    }
+    .nav-tabs .nav-link {
+        border-top: 1px solid rgba(82, 85, 90, 0.30);
+        border-bottom: 1px solid rgba(82, 85, 90, 0.30);
+    }
+
+    .accordion .card-header:after {
+        content: "";
+        display: none; 
+    }
+
+    .accordion .card-header.collapsed:after {
+        content: " ";
+        display: none;
+    }
+
+    .accordion .card-header:before {
+        content: "+";
+        font-size: 1.5em;
+        font-weight: bolder;
+        margin-right: 0.1em;
+        width: 1em !important;
+            top: 0.1em;
+            position: relative;
+    }
+
+    .accordion .card-header.collapsed:before {
+        content: "-";
+         font-size: 1.5em;
+        font-weight: bolder;
+        margin-right: 0.1em;
+        width: 1em !important;
+            top: 0.1em;
+            position: relative;
+    }
+    .accordion .card-title {
+        width: 80%;
+        display: inline-flex;
+        margin-bottom: 0rem;
+    }
+
+}

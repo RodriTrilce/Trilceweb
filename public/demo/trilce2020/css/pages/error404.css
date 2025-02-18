@@ -1,0 +1,130 @@
+
+.navbar{
+    background: #fff;
+}
+
+.navbar-nav i {
+    color: #52555A;
+}
+
+section.error {
+    height: calc (100vh - 72px);
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+    z-index: 1;;
+    background-color: #F5F5F5;
+}
+
+.error article h5 {
+    color: #FF6334;
+    font-weight: bold;
+}
+
+.error article {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center
+}
+
+.error article h5 {
+        color: #FF6334;
+        font-size: 8em;
+        font-weight: bold;
+}
+
+.error article b {
+    margin-left: 2px;
+}
+
+
+.error article i {
+    font-size: 3em;
+    color: #52555A;
+    margin: 0.2em 0.2em 0em;
+}
+
+.error article p {
+   margin: 0.2em;
+   color: #52555A;
+}
+
+.error article a{
+    background-color: transparent;
+    color: #52555A;
+    margin: 0.8em 0em;
+    
+     
+}
+
+.error article a:hover {
+    color: #FF6334;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    color: #52555A;
+    text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #52555A;
+    text-align: left;
+}
+
+footer {
+    background-color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px){
+     section.error {
+         height: 100%;
+     }
+
+     .error article {
+         padding: 2em;
+         flex-direction: column;
+    }
+
+     .error {
+             padding-top: 4em;
+         height: 100%;
+         background-image: url("../../img/venues/BG-MOBILE-errorS-2-EJEMPLO.png");
+     }
+
+     .error article {
+         padding: 1.5em;
+    }
+
+    .navbar-toggler .nav-link i {
+        color: #52555A !important;
+        font-size: 1.2em;
+    }
+
+    .toggle-overlay-button span {
+        background: #52555A !important;
+    }
+    
+    .error article{
+        align-items: center;
+    }
+
+    
+}

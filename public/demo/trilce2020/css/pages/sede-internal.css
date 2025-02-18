@@ -1,0 +1,107 @@
+.navbar-nav .nav-item:nth-child(4) .nav-link {
+    border-bottom: 1.2px solid white;
+}
+
+.sede-superior {
+    text-align: center;
+    height: 60vh;
+    background-image: url("../../img/venues/BG-SEDES-2-EJEMPLO.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+section.sede {
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.sede article h5 {
+    color: #FF6334;
+    font-weight: bold;
+}
+
+.sede article {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: center
+}
+
+.sede article i {
+    font-size: 3em;
+    color: #fff;
+    margin: 0.2em 0.2em 0em;
+}
+
+.sede article p {
+   margin: 0.2em;
+}
+
+.sede article a{
+    margin: 0.5em auto;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+     font-weight: bold;
+}
+
+.sede article a:hover {
+    background-color: #fff;
+    color: #FF6334;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px){
+     section.sede {
+         height: 100%;
+     }
+
+     .sede article {
+         padding: 2em;
+         flex-direction: column;
+    }
+
+     .sede-superior {
+         height: 100vh;
+         background-image: url("../../img/venues/BG-MOBILE-SEDES-2-EJEMPLO.png");
+     }
+
+     .sede article {
+         padding: 1.5em;
+    }
+}

@@ -1,0 +1,463 @@
+/* 1. INPUT TYPE TEXT */
+
+.form-group {
+    position: relative;
+    margin: 3em;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.form-group input {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+
+.form-group .control-label {
+    position: absolute;
+    top: 0.25rem;
+    pointer-events: none;
+    padding-left: 0.125rem;
+    z-index: 1;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+}
+
+.form-group .bar {
+    position: relative;
+    border-bottom: 0.0625rem solid #fff;
+    display: block;
+}
+
+.form-group .bar::before {
+    content: '';
+    height: 0.125rem;
+    width: 0;
+    left: 50%;
+    bottom: -0.0625rem;
+    position: absolute;
+    background: brown;
+    -webkit-transition: left 0.28s ease, width 0.28s ease;
+    transition: left 0.28s ease, width 0.28s ease;
+    z-index: 2;
+}
+
+.form-group input {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    color: #333;
+}
+
+.form-group input:focus~.control-label,
+.form-group input:valid~.control-label {
+    font-size: 0.8rem;
+    color: brown;
+    top: -1rem;
+    left: 0;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.form-group input:focus~.control-label {
+    color: brown;
+}
+
+.form-group input:focus~.bar::before {
+    width: 100%;
+    left: 0;
+}
+
+
+/* 2. SELECT */
+
+.form-group .select {
+    position: relative;
+    width: 100%;
+}
+
+.form-group .select-text {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    font-size: 1rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+        margin-top: -10px;
+}
+
+.form-group .select-text:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.form-group .select .select-text {
+    appearance: none;
+    -webkit-appearance: none
+}
+
+.form-group .select:after {
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    pointer-events: none;
+}
+
+.form-group .select-label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.form-group .select-text:focus~.select-label,
+.form-group .select-text:valid~.select-label {
+    color: brown;
+    top: -20px;
+    transition: 0.2s ease all;
+    font-size: 0.8rem
+}
+
+
+.form-group .select-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.form-group .select-bar:before,
+.form-group .select-bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: brown;
+    transition: 0.2s ease all;
+}
+
+.form-group .select-bar:before {
+    left: 50%;
+}
+
+.form-group .select-bar:after {
+    right: 50%;
+}
+
+.form-group .select-text:focus~.select-bar:before,
+.form-group .select-text:focus~.select-bar:after {
+    width: 50%;
+}
+
+.form-group .select-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+
+/* 3. INPUT TYPE TEXTAREA */
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+
+.form-group textarea:focus,
+.form-group textarea:valid {
+    color: #fff;
+}
+
+.form-group textarea:focus~.control-label,
+.form-group textarea:valid~.control-label {
+    font-size: 0.8rem;
+    color: brown;
+    top: -1rem;
+    left: 0;
+}
+
+.form-group textarea:focus {
+    outline: none;
+}
+
+.form-group textarea:focus~.control-label {
+    color: brown;
+}
+
+.form-group textarea:focus~.bar::before {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* 4. CHECKBOX */
+
+.form-group .checkbox {
+    width: 100%;
+}
+
+.form-group .checkbox label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    text-align: left;
+    color: #fff;
+    display: block;
+}
+
+.form-group .checkbox input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+
+.form-group .checkbox .helper {
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    z-index: 0;
+    border: 0.125rem solid #fff;
+    border-radius: 0.0625rem;
+    -webkit-transition: border-color 0.28s ease;
+    transition: border-color 0.28s ease;
+}
+
+.form-group .checkbox .helper::before,
+.form-group .checkbox .helper::after {
+    position: absolute;
+    height: 0;
+    width: 0.2rem;
+    background-color: brown;
+    display: block;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 0.25rem;
+    content: '';
+    -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+    transition: opacity 0.28s ease, height 0s linear 0.28s;
+    opacity: 0;
+}
+
+.form-group .checkbox .helper::before {
+    background-color: brown;
+    top: 0.65rem;
+    left: 0.38rem;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    box-shadow: 0 0 0 0.0625rem #fff;
+}
+
+.form-group .checkbox .helper::after {
+    background-color: brown;
+    top: 0.3rem;
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.form-group .checkbox label:hover .helper {
+    color: brown;
+    border: 0.125rem solid brown;
+}
+
+.form-group .checkbox input:checked~.helper {
+    border: 0.125rem solid brown;
+    color: brown;
+}
+
+.form-group .checkbox input:checked~.helper::after,
+.form-group .checkbox input:checked~.helper::before {
+    opacity: 1;
+    -webkit-transition: height 0.28s ease;
+    transition: height 0.28s ease;
+}
+
+.form-group .checkbox input:checked~.helper::after {
+    height: 0.5rem;
+}
+
+.form-group .checkbox input:checked~.helper::before {
+    height: 1.2rem;
+    -webkit-transition-delay: 0.28s;
+    transition-delay: 0.28s;
+}
+
+.form-group .checkbox+.checkbox {
+    margin-top: 1rem;
+}
+
+
+
+/* 5. INPUT TYPE RADIO */
+
+.form-radio {
+    position: relative;
+    margin: .5em auto
+}
+
+.form-radio label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    text-align: left;
+    color: #fff;
+    display: block;
+}
+
+.form-radio input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+
+.form-radio .radio {
+    /* margin-bottom: 1rem; */
+}
+
+.form-radio .radio .helper {
+    position: absolute;
+    top: 0rem;
+    left: -0.25rem;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+}
+
+.form-radio .radio .helper::before,
+.form-radio .radio .helper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-transition: -webkit-transform 0.28s ease;
+    transition: -webkit-transform 0.28s ease;
+    transition: transform 0.28s ease;
+    transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+    border-radius: 50%;
+    border: 0.125rem solid currentColor;
+}
+
+.form-radio .radio .helper::after {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background-color: brown;
+    border-color: brown;
+}
+
+.form-radio .radio label:hove .helper {
+    color: brown;
+}
+
+.form-radio .radio input:checked~.helper::after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.form-radio .radio input:checked~.helper::before {
+    color: brown;
+}
+
+.form-radio .radio+.radio {
+   /*  margin-top: 1rem; */
+}
+
+@media (max-width: 768px){
+    .form-group {
+        margin: .5em auto;
+    }
+    .form-group input,
+    .form-group .control-label,
+    .form-group .select-text,
+    .form-group .select-label,
+    .checkbox label {
+        font-size: .8rem !important;
+    }
+
+    .form-group .checkbox .helper {
+            top: 1px !important;
+    }
+
+    .form-group .checkbox label{
+        font-size: .7rem !important;
+            margin-bottom: 0.5rem;
+                padding-left: 1.4rem;
+    }
+    .form-group .checkbox input {
+            font-size: .7rem !important;
+    }
+
+}

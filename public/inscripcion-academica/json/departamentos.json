@@ -1,0 +1,126 @@
+
+    {
+        "id": "Amazonas",
+        "name": "Amazonas",
+        "parent_id":"0"
+    },
+    {
+        "id": "Áncash",
+        "name": "Áncash",
+        "parent_id":"0"
+    },
+    {
+        "id": "Apurímac",
+        "name": "Apurímac",
+        "parent_id":"0"
+    },
+    {
+        "id": "Arequipa",
+        "name": "Arequipa",
+        "parent_id":"0"
+    },
+    {
+        "id": "Ayacucho",
+        "name": "Ayacucho",
+        "parent_id":"0"
+    },
+    {
+        "id": "Cajamarca",
+        "name": "Cajamarca",
+        "parent_id":"0"
+    },
+    {
+        "id": "Callao",
+        "name": "Callao",
+        "parent_id":"0"
+    },
+    {
+        "id": "Cusco",
+        "name": "Cusco",
+        "parent_id":"0"
+    },
+    {
+        "id": "Huancavelica",
+        "name": "Huancavelica",
+        "parent_id":"0"
+    },
+    {
+        "id": "Huánuco",
+        "name": "Huánuco",
+        "parent_id":"0"
+    },
+    {
+        "id": "Ica",
+        "name": "Ica",
+        "parent_id":"0"
+    },
+    {
+        "id": "Junín",
+        "name": "Junín",
+        "parent_id":"0"
+    },
+    {
+        "id": "La Libertad",
+        "name": "La Libertad",
+        "parent_id":"0"
+    },
+    {
+        "id": "Lambayeque",
+        "name": "Lambayeque",
+        "parent_id":"0"
+    },
+    {
+        "id": "Lima",
+        "name": "Lima",
+        "parent_id":"0"
+    },
+    {
+        "id": "Loreto",
+        "name": "Loreto",
+        "parent_id":"0"
+    },
+    {
+        "id": "Madre de Dios",
+        "name": "Madre de Dios",
+        "parent_id":"0"
+    },
+    {
+        "id": "Moquegua",
+        "name": "Moquegua",
+        "parent_id":"0"
+    },
+    {
+        "id": "Pasco",
+        "name": "Pasco",
+        "parent_id":"0"
+    },
+    {
+        "id": "Piura",
+        "name": "Piura",
+        "parent_id":"0"
+    },
+    {
+        "id": "Puno",
+        "name": "Puno",
+        "parent_id":"0"
+    },
+    {
+        "id": "San Martín",
+        "name": "San Martín",
+        "parent_id":"0"
+    },
+    {
+        "id": "Tacna",
+        "name": "Tacna",
+        "parent_id":"0"
+    },
+    {
+        "id": "Tumbes",
+        "name": "Tumbes",
+        "parent_id":"0"
+    },
+    {
+        "id": "Ucayali",
+        "name": "Ucayali",
+        "parent_id":"0"
+    },

@@ -1,0 +1,186 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: Geogrotesque-Md;
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot);
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_B_0.cb0abdf7.woff2) format("woff2"), url(../fonts/33FA0F_B_0.9b7aba9c.woff) format("woff"), url(../fonts/33FA0F_B_0.2c4f6c17.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Geogrotesque-Rg;
+	src: url(../fonts/33FA0F_E_0.43b8c5a0.eot);
+	src: url(../fonts/33FA0F_E_0.43b8c5a0.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_E_0.0249aaee.woff2) format("woff2"), url(../fonts/33FA0F_E_0.26bf101d.woff) format("woff"), url(../fonts/33FA0F_E_0.0257c368.ttf) format("truetype")
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: Geogrotesque-Md;
+	color: #fff;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+.section .intro h1 {
+	margin-bottom: 2em;
+}
+
+.section .intro .title {
+	display: flex;
+	flex-direction: column;
+	color: #fff
+}
+
+.section .intro .title h2 {
+	color: #fff;
+	font-size: 8em;
+	font-weight: bold;
+}
+
+.section .intro .title h3 {
+	font-size: 2.5em;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+.section .intro .text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.section .intro .text p {
+	text-align: center;
+	line-height: normal;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: Geogrotesque-Rg !important;
+	margin-top: 2em;
+}
+
+nav li a {
+	position: relative;
+}
+
+nav .phone {
+	position: relative;
+    bottom: -25px;
+    left: -35px;
+    font-weight: normal;
+    font-family: Geogrotesque-Rg !important;
+}
+
+
+
+#gotop{
+    POSITION: ABSOLUTE;
+    RIGHT: 2em;
+    BOTTOM: 2em;
+    Z-INDEX: 99999;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0.5em 1em;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+
+.fp-controlArrow.fp-next {
+	    right: 50px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+#box-navbar {
+	margin-top: 1.5 rem !important;
+}
+
+.web {
+	display: block;
+}
+
+.movil {
+	display: none;
+}
+
+@media (max-width: 768px){
+	.web {
+		display: none;
+	}
+
+	.movil {
+		display: block;
+	}
+	.section .intro .row {
+		display: flex;
+		flex-direction: column;
+	}
+	.section .intro .text p {
+		font-size: 1em;
+		    margin-bottom: 0px;
+	}
+	.section .intro .graphic {
+		height: 100%;
+		width: auto;
+		margin: 1em auto;
+	}
+	.section .intro .graphic img {
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.section .intro .title{
+		    width: 100%;
+		    text-align: center;
+	}
+	.section .intro h1 {
+		font-size: 2em;
+		margin-bottom: 0.8em;
+	}
+	.section .intro .title h2 {
+		font-size: 2.5em;
+	}
+	.section .intro .title h3{
+		font-size: 2em;
+	}
+	#gotop {
+		RIGHT: 1em;
+		BOTTOM: 3em;
+		padding: 0.2em 0.6em;
+	}
+
+	#gotop .fa {
+		font-size: 2em;
+	}
+	br {
+		display: none;
+	}
+
+	nav .phone {
+		display: none;
+	}
+	#box-navbar {
+		margin-top: 0.5	rem !important;
+	}
+
+	nav .logo {
+		width: 100px;
+	}
+	nav .hashtag{
+		width: 150px;
+		margin-top: 1em;
+	}
+}

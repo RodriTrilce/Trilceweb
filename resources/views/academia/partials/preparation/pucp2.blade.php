@@ -1,0 +1,1367 @@
+<head>
+   <title>Academia Trilce | Preparación para examen de admisión de la Católica</title>
+   <meta name="title" content="Academia Trilce | Preparación para examen de admisión de la Católica" />
+   <meta property="og:title" content="Academia Trilce | Preparación para examen de admisión de la Católica" />
+   <meta name="twitter:title" content="Academia Trilce | Preparación para examen de admisión de la Católica" />
+   <meta name="description" content="Preparación para el examen de admisión de la Católica (PUCP)" />
+   <meta property="og:description" content="Preparación para el examen de admisión de la Católica (PUCP)" />
+   <meta name="twitter:description" content="Preparación para el examen de admisión de la Católica (PUCP)" />
+   <meta name="robots" content="index,follow" />
+   <meta name="url" content="https://www.trilce.edu.pe/academia" />
+   <meta property="og:url" content="https://www.trilce.edu.pe/academia" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <style>
+
+.benefits-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos */
+  background-color: #F5F5F5;
+  padding: 15px;
+  padding-bottom: 0;
+  gap: 50px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Asegura que se ajusten en pantallas pequeñas */
+
+}
+
+.benefits-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 500px; /* Limita el ancho de la sección de los botones y texto */
+  padding-bottom:10px
+}
+
+.benefits-title {
+   font-family:"CaeciliaLTPro-85Heavy";
+  font-size: 2rem;
+  color: #FF4F00;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.benefits-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.benefits-right {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-img {
+  width: 100%;
+  max-width: 360px;
+  height: 300px;
+}
+
+/* Estilos de los botones */
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: #FF4F00;
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'CaeciliaLTPro-85Heavy' !important;
+   border-radius: 20px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #FF4F00;
+        font-size: 1rem;
+        padding: 7px 30px 10px 30px;
+        height: 36px;
+        width: 350px;
+        text-align: center;
+}
+
+.btn:hover {
+  background-color: #FF4F00;
+  color: #fff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .benefits-container {
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    text-align: center; /* Centra el texto */
+    gap: 20px; /* Menos espacio entre los elementos en pantallas pequeñas */
+  }
+
+  .benefits-left, .benefits-right {
+    flex: 1 1 100%; /* Ambos elementos ocupan el 100% */
+    max-width: 100%; /* Evita que los elementos se estiren */
+  }
+
+  .benefits-img {
+   width: 100%;
+   height:100%;
+   object-fit: cover;
+}
+}
+
+
+   @media (min-width: 992px) {
+      .titulo_conoce
+		{
+			font-size: 1.25rem; 
+			text-align: left; 
+			color: #FF4F00; 
+			margin: 14px 0px -40px 0px !important; 
+			line-height: 40px;
+		}
+      .boton_brochure
+		{
+			color: #FF4F00; 
+			font-family: 'CaeciliaLTPro-85Heavy'; 
+			border-radius: 20px; 
+			border-width: 2px; 
+			border-style: solid; 
+			border-color: #FF4F00; 
+			font-size: .75rem; 
+			padding: 8px 20px 10px 20px; 
+			height: 36px;
+			width: 350px;
+			position: relative;
+			text-align: center;
+		} 
+   }
+   
+   @media (min-width: 1200px) { 
+      .titulo_conoce
+		{
+			font-size: 1.5rem; 
+			text-align: left; 
+			color: #FF4F00; 
+			margin: 10px 0px -40px 0px !important; 
+			line-height: 40px;
+		}
+      .boton_brochure
+		{
+			color: #FF4F00; 
+			font-family: 'CaeciliaLTPro-85Heavy'; 
+			border-radius: 20px; 
+			border-width: 2px; 
+			border-style: solid; 
+			border-color: #FF4F00; 
+			font-size: .95rem; 
+			padding: 6px 30px 8px 30px; 
+			height: 36px;
+			width: 350px;
+			position: absolute;
+			text-align: center;
+		}
+   }
+
+   @media (min-width: 1400px) { 
+      .separador
+      {
+         height: 8px;
+      }
+      .titulo_conoce
+		{
+			font-size: 1.75rem; 
+			text-align: left; 
+			color: #FF4F00; 
+			margin: 10px 0px -40px 0px !important; 
+			line-height: 40px;
+		}
+      .boton_brochure
+		{
+			color: #FF4F00; 
+			font-family: 'CaeciliaLTPro-85Heavy'; 
+			border-radius: 20px; 
+			border-width: 2px; 
+			border-style: solid; 
+			border-color: #FF4F00; 
+			font-size: .85rem; 
+			padding: 6px 30px 8px 30px; 
+			height: 34px;
+			width: 350px;
+			position: absolute;
+			text-align: center;
+		}
+   }
+
+	@media (min-width: 1200px) 
+	{	
+		.web 
+		{
+			width: 120px;
+		}
+		.fondo_gris
+		{
+			background-color: #F5F5F5
+		}
+		.alinear
+		{
+			text-align: left;
+			width:100%;
+		}
+	}
+	
+	/* Media Queries */
+	@media (max-width: 576px) 
+	{	
+		.fondo_gris
+		{
+			background-color: #F5F5F5
+		}
+		.titulo_conoce
+		{
+			font-size: 1.75rem; 
+			text-align: left; 
+			color: #FF4F00;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.boton_brochure
+		{
+			color: #FF4F00; 
+			font-family: 'CaeciliaLTPro-85Heavy'; 
+			border-radius: 20px; 
+			border-width: 2px; 
+			border-style: solid; 
+			border-color: #FF4F00; 
+			font-size: .8rem; 
+			padding: 10px 30px 10px 30px;
+			height: 40px;
+			width: 300px;
+			text-align: center;
+			float: left;
+			margin-left: 30px;
+		}
+		.alinear
+		{
+			text-align: center;
+			width:100%;
+			position: relative;
+		}
+	}
+	
+      .text-info-web {
+      display: block;
+      }
+      .text-info-web  .span {
+      font-size: 10px;
+      position: absolute;
+      }
+      .text-info-mobile {
+      display: none;
+      }
+      .preparation__title {
+      margin: 20px auto;  
+      }
+      .preparation__subtitle {
+      margin: 20px auto;
+      }
+      .tab_subtitle {
+      display: block;
+      padding: 8px 0px 4px;
+      }
+      /* TAB CICLOS */
+      .preparation__courses-list-ul li {
+      width: 100%;
+      }
+      .preparation__courses-list {
+      padding-top: 4em;
+      }
+      .main {
+      margin: 0 5em 5em;  
+      transition: 0.3s;
+      }
+      .content {
+      background: #fff;
+      color: #53565a;
+      font-size: 1.5rem;
+      font-family: "Geogrotesque-Rg";
+      transition: 0.3s;
+      margin-top: 1.2em
+      }
+      .content>div {
+      display: none;
+      padding: 20px 5px 5px;
+      transition: 0.3s;
+      }
+      input {
+      display: none;
+      }
+      label {
+      display: inline-block;
+      padding: 15px 85px;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 2px solid #efefef;
+      margin-left: 20px;
+      margin-right: 20px;
+      transition: 0.3s;
+      font-size: 1.2rem
+      }
+      label:hover {
+      cursor: pointer;
+      background: #f4633a;
+      color: #fff;
+      border-bottom: 2px solid #f4633a;
+      transition: 0.3s;
+      }
+      input:checked+label {
+      background: #f4633a;
+      color: #fff;
+      border-bottom: 2px solid #f4633a;
+      transition: 0.3s;
+      }
+      #tab1:checked~.content #content1,
+      #tab2:checked~.content #content2,
+      #tab3:checked~.content #content3,
+      #tab4:checked~.content #content4,
+      #tab5:checked~.content #content5 {
+      display: block;
+      transition: 0.3s;
+      }
+      /* TABLA LARGE */
+      @media(min-width: 992px) {
+         .table-rest {
+         background: white;
+         color: #53565a;
+         border-collapse: collapse;
+         font-size: 16px;
+         margin: 0 auto;
+         width: 100%;
+         }
+         #table-rest.table-rest tr:nth-child(1) th {
+         border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+         position: relative;
+         }
+         .table-rest thead tr th {
+         border-bottom: 1px solid #53565a;
+         }
+         .table-rest tbody tr:nth-child(1) td {
+         padding-top: 2em;
+         }
+         .table-rest tr th {
+         
+         }
+         .table-rest tr th,
+         .table-rest tr td {
+         padding: 8px 16px;
+         margin: 0 auto;
+         text-align: center;
+         }
+
+         .trilce-benefits .tab {
+            font-size: 1.5rem;
+         }
+
+
+         .table-rest2 {
+      background: white;
+      color: #53565a;
+      border-collapse: collapse;
+      font-size: 16px;
+      margin: 0 auto;
+      width: 100%;
+   }
+   #table-rest2.table-2 tr:nth-child(1) th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+      position: relative;
+   }
+   .table-rest2 thead tr th {
+      border-bottom: 1px solid #53565a;
+   }
+   .table-rest tbody tr:nth-child(1) td {
+      padding-top: 2em;
+   }
+   .table-rest2 tr th {
+   }
+   .table-rest2 tr th,
+   .table-rest2 tr td {
+      padding: 8px 16px;
+      margin: 0 auto;
+      text-align: center;
+   }
+      }
+      /* TABLA SMALL */
+      @media (max-width: 991px) 
+	  {	
+		.web 
+		{
+			width: 120px;
+			padding-left: 269px !important;
+		}
+         .preparation__courses-list {
+            padding-top: 2em; 
+            }
+         label {
+            font-size: 1em;
+         }
+         .main {
+         margin: 0 auto 0em;
+         width: 100%;
+         }
+         .content {
+         margin-top: 0em;
+         }
+         .frequentquestions {
+         padding-left: 0px;
+         padding-right: 0px;
+         }
+         label {
+         width: 90%;
+         margin-left: 0em;
+         margin-right: 0em;
+         margin-bottom: 1em;
+         }
+         table.table-rest {
+         font-size: 16px;
+         }
+         table.table-rest,
+         .table-rest thead,
+         .table-rest tbody,
+         .table-rest th,
+         .table-rest td,
+         .table-rest tr {
+         display: block;
+         }
+         .table-rest tbody tr td:nth-child(1) {
+         font-weight: bold;
+         }
+         .table-rest thead tr {
+         position: absolute;
+         top: -9999px;
+         left: -9999px;
+         font-weight: bold;
+         }
+         .table-rest tr {
+         margin-bottom: 2em;
+         padding: 0em 1em 2em;
+         }
+         .table-rest tr:nth-child(2),
+         .table-rest tr:nth-child(4),
+         .table-rest tr:nth-child(6),
+         .table-rest tr:nth-child(8),
+         .table-rest tr:nth-child(10),
+         .table-rest tr:nth-child(12),
+         .table-rest tr:nth-child(14),
+         .table-rest tr:nth-child(16),
+         .table-rest tr:nth-child(18),
+         .table-rest tr:nth-child(20) {
+         background: #f5f5f5;
+         }
+         .table-rest td {
+         /* Behave  like a "row" */
+         border: none;
+         position: relative;
+         padding-left: 50%;
+         margin-bottom: 0.2em;
+         text-align: right;
+         padding: 0.2em;
+         }
+         .table-rest td:before {
+         /* Now like a table header */
+         position: absolute;
+         /* Top/left values mimic padding */
+         top: 1px;
+         left: 6px;
+         width: 45%;
+         padding-right: 10px;
+         /*white-space: nowrap;*/
+         text-align: left !important;
+         }
+         .table-rest td:nth-of-type(1):before {
+         content: "Inicio";
+         font-weight: bold;
+         }
+         .table-rest td:nth-of-type(2):before {
+         content: "Fin";
+         }
+         .table-rest td:nth-of-type(3):before {
+         content: "N° Semanas";
+         }
+         .table-rest td:nth-of-type(4):before {
+         content: "Precio al contado";
+         }
+         .table-rest td:nth-of-type(5):before {
+         content: "Cuota 1";
+         }
+         .table-rest td:nth-of-type(6):before {
+         content: "Cuota 2";
+         }
+         .table-rest td:nth-of-type(7):before {
+         content: "Precio Mensual (Virtual)";
+         }
+         .table-rest td:nth-of-type(8):before {
+         content: "Turno";
+         }
+         .tab-sup .table-rest tr {
+            padding: 1em !important;
+         }
+
+
+         table.table-rest2 {
+      font-size: 16px;
+   }
+   table.table-rest2,
+   .table-rest2 thead,
+   .table-rest2 tbody,
+   .table-rest2 th,
+   .table-rest2 td,
+   .table-rest2 tr {
+      display: block;
+   }
+   .table-rest2 tbody tr td:nth-child(1) {
+      font-weight: bold;
+   }
+   .table-rest2 thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      font-weight: bold;
+   }
+   .table-rest2 tr {
+      margin-bottom: 2em;
+      padding: 0em 1em 2em;
+   }
+   .table-rest2 tr:nth-child(2),
+   .table-rest2 tr:nth-child(4),
+   .table-rest2 tr:nth-child(6),
+   .table-rest2 tr:nth-child(8),
+   .table-rest2 tr:nth-child(10),
+   .table-rest2 tr:nth-child(12),
+   .table-rest2 tr:nth-child(14),
+   .table-rest2 tr:nth-child(16),
+   .table-rest2 tr:nth-child(18),
+   .table-rest2 tr:nth-child(20) {
+      background: #f5f5f5;
+   }
+   .table-rest2 td {
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      margin-bottom: 0.2em;
+      text-align: right;
+      padding: 0.2em;
+   }
+   .table-rest2 td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 1px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      /*white-space: nowrap;*/
+      text-align: left !important;
+   }
+
+   .table-rest2 td:nth-of-type(1):before {
+      content: "Inicio";
+      font-weight: bold;
+   }
+   .table-rest2 td:nth-of-type(2):before {
+      content: "Fin";
+   }
+   .table-rest2 td:nth-of-type(3):before {
+      content: "Nro. Semanas";
+   }
+   .table-rest2 td:nth-of-type(4):before {
+      content: "Pago al contado";
+   }
+   .table-rest2 td:nth-of-type(5):before {
+      content: "Cuota 1";
+   }
+   .table-rest2 td:nth-of-type(6):before {
+      content: "Cuota 2";
+   }
+   .table-rest2 td:nth-of-type(7):before {
+      content: "Modalidad";
+   }
+   .table-rest2 td:nth-of-type(8):before {
+      content: "Sedes";
+   }
+
+   .tab-sup .table-rest2 tr {
+      padding: 1em !important;
+   }
+   .margin-texto
+   {
+      margin: 1em 2em 0 2em !important;
+   }
+ }
+ .margin-texto
+ {
+   margin: 1em 9em 0 9em;
+ }
+         /* TAB SECUNDARIO */
+         .trilce-benefits {
+         position: relative;
+         }
+         .trilce-benefits .tabs_wrap {
+            width: 100%;
+            max-width: 750px;
+         }
+         .trilce-benefits label {
+         border-bottom: 0px solid #efefef;
+         }
+         .trilce-benefits .tab {
+            min-height: auto;
+         font-size: 1rem;
+         min-width: 18%;
+         }
+         .tab_check,
+         .tab_content {
+         display: none;
+         }
+         #tab_1:checked~#content_1,
+         #tab_2:checked~#content_2,
+         #tab_3:checked~#content_3,
+         #tab_4:checked~#content_4,
+         #tab_5:checked~#content_5, {
+         display: block;
+         }
+         /*customisation bonus*/
+         * {
+         box-sizing: border-box;
+         }
+         .tabs_wrap {
+         font-size: 0em;
+         }
+         .tabs_wrap label,
+         .tabs_wrap div {
+            font-size: 16px !important;
+            font-family: 'Geogrotesque-Rg' !important;
+         }
+         .tab {
+         display: inline-block;
+         padding: 10px 15px;
+         cursor: pointer;
+         }
+         .tab_check:checked+.tab {
+         cursor: auto;
+         }
+         .tab_content {
+         padding: 10px 15px;
+         min-height: 200px;
+         }
+         .trilce-benefits img {
+            height: auto;
+           /*  max-width: 350px; */
+            width: 100%;
+         }
+         @media(max-width: 991px) {
+         .text-info-web {
+         display: none !important;
+         }
+         .text-info-mobile {
+         display: block;
+         } 
+         .text-info-mobile p{
+         font-size: 10px;
+         margin-bottom: 1em;
+         }
+         td.texto-horario {
+         padding-left: 12em;
+         }
+         .trilce-benefits .tabs_wrap {
+         width: 100%;
+         }
+         .trilce-benefits .tab {
+         min-height: 51px;
+         font-size: 1rem;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         }
+
+      }
+
+
+   </style>
+</head>
+<body>
+   <div class="row col-xs-12 left-xs container-base frequentquestions">
+      <div class="margin-texto">
+         <p>&nbsp;</p>
+         <h2 style="color: #333; font-weight: bold; font-family: Geogrotesque-Rg;">Preparación para el examen de admisión de la Católica (PUCP)</h2>
+         <p>&nbsp;</p>
+         <p>Trilce es líder en la preparación preuniversitaria para estudiantes que terminaron el colegio o aún estén cursando sus últimos años de formación. Nuestra experiencia te guiará hacia el éxito en el examen de admisión de la Pontificia Universidad Católica del Perú (PUCP).</p>
+      </div>
+   </div>
+   <div class="row col-xs-12 center-xs container-base preparation__section">
+      <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-md preparation__title">
+         <h1 class="preparation__title">¡Nuevos Inicios!</h1>
+         <!--h3 class="preparation__subtitle">Encuentra todos nuestros ciclos disponibles</h3-->
+      </div>
+   </div>
+   {{--@include('academia.partials.preparation.search')--}}
+   <div class="row col-xs-12 center-xs container-base frequentquestions">
+      
+   <div class="main tab-sup">
+		<!--input id="tab1" type="radio" name="tabs" checked>
+		<label for="tab1">
+			Semestral II
+		</label-->
+
+      <input id="tab4" type="radio" name="tabs" checked>
+		<label for="tab4">
+			Semestral I 
+		</label>
+
+
+      <input id="tab5" type="radio" name="tabs">
+		<label for="tab5">
+			 POP I
+		</label>
+
+      
+      <input id="tab2" type="radio" name="tabs">
+		<label for="tab2">
+			Repaso
+		</label>
+      <input id="tab3" type="radio" name="tabs">
+		<label for="tab3">
+			Verano
+		</label>
+
+
+      <!--input id="tab2" type="radio" name="tabs">
+      <label for="tab2">
+			POP – TALENTO 2025
+      </label-->
+		<!--input id="tab3" type="radio" name="tabs">
+		<label for="tab3">
+			Semestral
+		</label>
+		<input id="tab4" type="radio" name="tabs">
+      <label for="tab4">
+			Primera Opción
+      </label-->
+      
+      <div class="content">
+            <!--div id="content1">
+               <table class="table-rest animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Inicio</th>
+			               <th>Fin</th>
+                        <th>N° Semanas</th>
+                        <th>Precio al contado</th>
+                        <th>Cuota 1</th>
+                        <th>Cuota 2</th>
+			               <th>Precio Mensual (Virtual)</th>
+                        <th>Turno</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+				            <td>22/07/2024</td>
+      				      <td>14/12/2024</td>
+				            <td>21</td>
+				            <td>S/ 1700.00</td>
+                        <td>S/ 950.00</td>
+                        <td>S/ 800.00</td>
+                        <td> --- </td>
+                        <td>Mañana</td>
+                     </tr>
+                     <tr>
+				            <td>22/07/2024</td>
+      				      <td>14/12/2024</td>
+				            <td>21</td>
+				            <td> --- </td>
+                        <td> --- </td>
+                        <td> --- </td>
+                        <td>S/ 250.00</td>
+                        <td>Mañana</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div-->
+
+            <div id="content4">
+               <table class="table-rest animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Inicio</th>
+                        <th>Fin</th>
+                        <th>Nro. Semanas</th>
+                        <th>Pago único <br>(Presencial)</th>
+                        <th>1ra cuota</th>
+                        <th>2da cuota</th>
+                        <th>Pago mensual <br>(Virtual)</th>
+                        <th>Modalidad</th>
+                        <th>Sedes</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>24/02/2025</td>
+                        <td>05/07/2025</td>
+                        <td>19</td>
+                        <td>S/ 1700.00</td>
+			               <td>S/ 900.00</td>
+                        <td>S/ 850.00</td>
+                        <td>---</td>
+                        <td>Presencial</td>
+                        <td class="texto-horario">Los Olivos y Santa Beatriz</td>
+                     </tr>
+                     <tr>
+                        <td>24/02/2025</td>
+                        <td>05/07/2025</td>
+                        <td>19</td>
+                        <td>---</td>
+			               <td>---</td>
+                        <td>---</td>
+                        <td>S/ 280.00</td>
+                        <td>Virtual</td>
+                        <td> --- </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div> 
+
+            <div id="content2">
+               <table class="table-rest2 animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Inicio</th>
+			               <th>Fin</th>
+                        <th>Nro. Semanas</th>
+                        <th>Pago al contado</th>
+                        <th>Cuota 1</th>
+                        <th>Cuota 2</th>
+                        <th>Modalidad</th>
+                        <th>Sedes</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>30/12/2024</td>
+      				      <td>15/02/2025</td>
+                        <td>7</td>
+				            <td>S/ 750.00</td>
+				            <td>S/ 500.00</td>
+                        <td>S/ 300.00</td>
+                        <td>Presencial</td>
+                        <td>Santa Beatriz, Los Olivos</td>
+                     </tr>
+
+                  </tbody>
+               </table>
+            </div>
+
+            <div id="content3">
+               <table class="table-rest2 animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Inicio</th>
+			               <th>Fin</th>
+                        <th>Nro. Semanas</th>
+                        <th>Pago  al contado</th>
+                        <th>Cuota 1</th>
+                        <th>Cuota 2</th>
+                        <th>Modalidad</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>02/01/2025</td>
+      				      <td>15/02/2025</td>
+                        <td>6</td>
+				            <td>S/ 700.00</td>
+				            <td>S/ 500.00</td>
+                        <td>S/ 250.00</td>
+                        <td>Presencial</td>
+                     </tr>
+                     <tr>
+                        <td>02/01/2025</td>
+      				      <td>15/02/2025</td>
+                        <td>6</td>
+				            <td>S/ 450.00</td>
+				            <td>S/ 300.00</td>
+                        <td>S/ 200.00</td>
+                        <td>Virtual</td>
+                     </tr>
+                     <tr>
+                        <td>13/01/2025</td>
+      				      <td>15/02/2025</td>
+                        <td>5</td>
+				            <td>S/ 600.00</td>
+				            <td>S/ 400.00</td>
+                        <td>S/ 250.00</td>
+                        <td>Presencial </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+
+            <div id="content5">
+               <table class="table-rest animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Inicio</th>
+                        <th>Fin</th>
+                        <th>Nro. Semanas</th>
+                        <th>Pago único <br>(Presencial)</th>
+                        <th>1ra cuota</th>
+                        <th>2da cuota</th>
+                        <th>Pago mensual <br>(Virtual)</th>
+                        <th>Sedes</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>17/03/2025</td>
+                        <td>19/07/2025</td>
+                        <td>09</td>
+                        <td>S/ 950.00</td>
+			               <td>S/ 600.00</td>
+                        <td>S/ 400.00</td>
+                        <td>---</td>
+                        <td class="texto-horario">Los Olivos y Santa Beatriz</td>
+                     </tr>
+                     <tr>
+                        <td>17/03/2025</td>
+                        <td>19/07/2025</td>
+                        <td>09</td>
+                        <td>---</td>
+			               <td>---</td>
+                        <td>---</td>
+                        <td>S/ 250.00</td>
+                        <td class="texto-horario">---</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div> 
+
+
+            <!--div id="content2">
+               <table class="table-rest2 animate__animated animate__fadeIn">
+                  <thead>
+                     <tr>
+                        <th>Etapa</th>
+                        <th>Inicio</th>
+			               <th>Fin</th>
+                        <th>N° Semanas</th>
+                        <th>Precio al contado</th>
+                        <th>Cuota 1</th>
+                        <th>Cuota 2</th>
+                        <th>Modalidad</th>
+                        <th>Turno</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+				            <td>1era Etapa</td>
+                        <td>28/10/2024</td>
+      				      <td>14/12/2024</td>
+				            <td></td>
+				            <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Tarde</td>
+                     </tr>
+                     <tr>
+				            <td></td>
+                        <td></td>
+      				      <td></td>
+				            <td>15</td>
+				            <td>S/ 1,400.00</td>
+                        <td>S/ 800.00</td>
+                        <td>S/ 650.00</td>
+                        <td>Presencial</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+				            <td>2da Etapa</td>
+                        <td>16/12/2024</td>
+      				      <td>08/02/2025</td>
+				            <td></td>
+				            <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mañana</td>
+                     </tr>
+                     <tr>
+				            <td> - </td>
+                        <td> - </td>
+      				      <td> - </td>
+				            <td> - </td>
+				            <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                        <td> - </td>
+                     </tr>
+                     <tr>
+                        <td>1era Etapa</td>
+				            <td>28/10/2024</td>
+      				      <td>14/12/2024</td>
+				            <td></td>
+				            <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Tarde</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+				            <td></td>
+      				      <td></td>
+				            <td>15</td>
+				            <td>S/ 950.00</td>
+                        <td>S/ 600.00</td>
+                        <td>S/ 400.00</td>
+                        <td>Virtual</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td>2da Etapa</td>
+				            <td>16/12/2024</td>
+      				      <td>08/02/2025</td>
+				            <td></td>
+				            <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mañana</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div-->
+         
+         </div>
+      </div>
+
+   </div>
+
+   <div class="benefits-container">
+  <div class="benefits-left">
+    <h1 class="benefits-title">¡Conoce nuestros<br>beneficios, horarios y más!</h1>
+    <div class="benefits-buttons">
+      <a href="https://www.trilce.edu.pe/l/brochure-semestral-pucp-2025" target="_blank" class="btn">Descargar Brochure Semestral I</a>
+      <a href="https://www.trilce.edu.pe/l/brochure-pop-pucp-2025" target="_blank" class="btn">Descargar Brochure POP I</a>
+      <a href="https://www.trilce.edu.pe/l/verano-catolica-2025" target="_blank" class="btn">Descargar Brochure Verano</a>
+      <a href="https://www.trilce.edu.pe/l/repaso-catolica-2025" target="_blank" class="btn">Descargar Brochure Repaso</a>
+    </div>
+  </div>
+
+  <div class="benefits-right">
+    <img src="/static/images/academia/preparacion/banner-brochure-desktop.png" alt="Imagen de Brochure" class="benefits-img">
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row col-xs-12 center-xs container-base trilce-benefits" style="display: none">
+      <div class="tabs_wrap">
+         <input type="radio" name="tab_gp_1" class="tab_check" id="tab_1" checked>
+         <label class="tab" for="tab_1">
+         <i class="fa fa-book"></i> Cursos
+         </label>
+         <input type="radio" name="tab_gp_1" class="tab_check" id="tab_2">
+         <label class="tab" for="tab_2">
+         <i class="fa fa-lightbulb-o"></i> Ciclos
+         </label>
+         <input type="radio" name="tab_gp_1" class="tab_check" id="tab_3">
+         <label class="tab" for="tab_3">
+         <i class="fa fa-pencil-square"></i> Beneficios
+         </label>
+         <input type="radio" name="tab_gp_1" class="tab_check" id="tab_4">
+         <label class="tab" for="tab_4">
+         <i class="fa fa-calendar"></i> Horarios
+         </label>
+         <div class="tab_content" id="content_1">
+            <div class="row col-xs-12 center-xs">
+               <div class="row col-xs-12 start-sm preparation__courses animate__animated animate__fadeIn">
+                  <div class="col-xs-12 col-sm-6 preparation__courses-list">
+                     <h1 class="sub-title"><strong>Semestral II</strong></h1>
+                     <strong class="mt-2">Cursos académicos</strong>
+                     <ul class="ul-li-squared">
+                        <li>Números y operaciones.</li>
+                        <li>Álgebra.</li>
+                        <li>Trigonometría.</li>
+                        <li>Geometría.</li>
+                        <li>Estadística.</li>
+                        <li>Vocabulario y construcción oracional.</li>
+                        <li>Ortografía y puntuación.</li>
+                        <li>Lectura crítica.</li>
+                        <li>Lectura comprensiva e interpretativa.</li>
+                     </ul>
+                     <strong class="mt-2">Cursos de desarrollo y orientación al postulante</strong>
+                     <ul class="ul-li-squared">
+                        <li>Tutoría.</li>
+                        <li>Asesoría psicológica.</li>
+                     </ul>
+                     <br><br>
+                     <h1 class="sub-title"><strong>Primera Opción II</strong></h1>
+                     <strong class="mt-2">Cursos académicos</strong>
+                     <ul class="ul-li-squared">
+                        <li>Números y operaciones.</li>
+                        <li>Álgebra.</li>
+                        <li>Trigonometría.</li>
+                        <li>Geometría.</li>
+                        <li>Estadística (Seminario).</li>
+                        <li>Vocabulario y construcción oracional.</li>
+                        <li>Ortografía y puntuación.</li>
+                        <li>Lectura crítica.</li>
+                        <li>Lectura comprensiva e interpretativa.</li>
+                     </ul>
+                     <strong class="mt-2">Cursos de desarrollo y orientación al postulante</strong>
+                     <ul class="ul-li-squared">
+                        <li>Tutoría.</li>
+                        <li>Asesoría psicológica.</li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-6 xs-hide">
+                     <img src="/static/images/academia/preparacion/pucp-1-cursos.png"
+                        class="preparation__item-image" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab_content" id="content_2">
+            <div class="row col-xs-12 center-xs">
+               <div class="row col-xs-12 start-sm preparation__cicles animate__animated animate__fadeIn">
+                  <div class="col-xs-12 col-sm-6 preparation__cicles__section">
+<!--                      <p>
+                        <strong class="orange">Primera Opción:</strong> Dirigido a alumnos que se encuentran en
+                        5.<sup>o</sup>
+                        de secundaria.
+                     </p>
+                     <p>
+                        <strong class="orange">Semestral:</strong> Dirigido a alumnos que ya egresaron de
+                        secundaria.
+                     </p> -->
+                     <p>                        
+
+                        <h1 class="sub-title"><strong>Semestral II</strong></h1>
+                        Dirigido a estudiantes que acabaron 5to año de secundaria que desean ingresar a la universidad en un próximo examen de admisión.<br>
+                        <strong class="mt-2">Nivel de trabajo en clase</strong>
+                        <ul class="preparation__list-ul ul-li-squared">
+                           <li>30% teoría y 70% práctica.</li>
+                        </ul>
+                        <strong class="mt-2">Duración</strong>
+                        <ul class="preparation__list-ul ul-li-squared">
+                           <li>18 semanas, considerando el primer inicio 09 de agosto.</li>
+                        </ul>
+                     </p>
+                     <p>
+                        <h1 class="sub-title"><strong>Primera Opción II</strong></h1>
+                        Dirigido a estudiantes que cursan el 5to año de secundaria que desean ingresar a la universidad en un próximo examen de admisión.<br>
+                        <strong class="mt-2">Nivel de trabajo en clase</strong>
+                        <ul class="preparation__list-ul ul-li-squared">
+                           <li>50% teoría y 50% práctica.</li>
+                        </ul>
+                        <strong class="mt-2">Duración</strong>
+                        <ul class="preparation__list-ul ul-li-squared">
+                           <li>16 semanas, considerando el primer inicio 09 de agosto.</li>
+                        </ul>
+                     </p>
+                  </div>
+                  <div class="col-sm-6 xs-hide">
+                     <img src="/static/images/academia/preparacion/2-ciclos.png" class="preparation__item-image"
+                        alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab_content" id="content_3">
+            <div class="row col-xs-12  center-xs">
+               <div class="row col-xs-12 start-sm preparation__courses animate__animated animate__fadeIn">
+                  <div class="col-xs-12 col-sm-6 preparation__courses-list">
+					
+						<h1 class="sub-title"><strong>Semestral II</strong></h1>
+						<strong class="mt-2">Plataformas de trabajos académico</strong>
+						<ul class="preparation__list-ul ul-li-squared">
+							<li>Acceso a los cursos en el google classroom.</li>
+							<li>Clases en vivo a través del google meet.</li>
+							<li>Contarás con tu correo corporativo vía Gmail.</li> 
+							<li>Acceso a la intranet de la academia.</li>
+						</ul>
+						<strong class="mt-2">Materiales y actividades académicas</strong>
+						<ul class="preparation__list-ul ul-li-squared">
+							<li>Guías y prácticas para cada sesión.</li>
+							<li>Seminarios finales.</li>
+							<li>Simulacros tipo admisión.</li>
+							<li>Exámenes semanales.</li>
+							<li>Videos grabados de cada clase para tu repaso constante.</li>
+							<li>Actividades académicas adicionales para reforzar tu preparación.</li>
+						</ul>
+						<br><br>
+						
+						<h1 class="sub-title"><strong>Primera Opción II</strong></h1>
+						<strong class="mt-2">Plataformas de trabajos académico</strong>
+						<ul class="preparation__list-ul ul-li-squared">
+							<li>Acceso a los cursos en el google classroom.</li>
+							<li>Clases en vivo a través del google meet.</li>
+							<li>Contarás con tu correo corporativo vía Gmail.</li> 
+							<li>Acceso a la intranet de la academia.</li>
+						</ul>
+						<strong class="mt-2">Materiales y actividades académicas</strong>
+						<ul class="preparation__list-ul ul-li-squared">
+							<li>Guías y prácticas para cada sesión.</li>
+							<li>Simulacros tipo admisión. (2 en el ciclo).</li>
+							<li>Exámenes semanales.</li>
+							<li>Videos grabados de cada clase para tu repaso constante.</li>
+							<li>Actividades académicas adicionales para reforzar tu preparación.</li>
+						</ul>
+                  </div>
+                  <div class="col-sm-6 xs-hide">
+                     <img src="/static/images/academia/preparacion/3-beneficios.png"
+                        class="preparation__item-image" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab_content" id="content_4">
+         <div class="row col-xs-12  center-xs">
+               <div class="row col-xs-12 start-sm preparation__courses  animate__animated animate__fadeIn">
+                  <div class="col-xs-12 col-sm-12 preparation__courses-list">
+                     <img src="/static/images/semestral_catolica_050221.png" class=""
+                        alt="">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 preparation__courses-list">
+                     <img src="/static/images/pop_catolica_050221.png" class=""
+                        alt="">
+                  </div>
+               </div>
+            </div>  
+      </div>
+      </div>
+   </div>
+   <div class="row col-xs-12 center-xs container-base preparation__section">
+      <div class="row col-xs-12 col-sm-9 col-md-8 center-xs center-md preparation__title">
+         <h1 class="preparation__title preparation__title--and" style="font-weight: bold">También preparamos a nuestros alumnos para ingresar a
+            estas
+            universidades:
+         </h1>
+      </div>
+   </div>
+   <div class="row col-xs-12 center-xs beginning beginning-minus container-base">
+      <div class="row col-xs-12 col-sm-3 col-md-6 start-xs start-sm start-md beginning-container beginning-minus">
+         <div class="col-xs beginning--item beginning--item--activecolors">
+            <a href="/academia/preparacion-uni" class="item-a">
+               <div class="item-a-container">
+                  <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-uni.svg') }}"
+                     alt="Nuevos Inicios">
+                  <div class="item-a-preparation"><br></div>
+                  <span class="item-a-university">UNI</span>
+               </div>
+            </a>
+         </div>
+         <div class="beginning-breakline"></div>
+         <div class="col-xs beginning--item beginning--item--activecolors">
+            <a href="/academia/preparacion-san-marcos" class="item-a">
+               <div class="item-a-container">
+                  <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-unmsm.svg') }}"
+                     alt="Nuevos Inicios">
+                  <div class="item-a-preparation"><br /></div>
+                  <span class="item-a-university">SAN MARCOS</span>
+               </div>
+            </a>
+         </div>
+		 <div class="beginning-breakline"></div>
+		  <!--div class="col-xs beginning--item beginning--item--activecolors">
+			 <a href="/academia/ciclo-escolar" class="item-a">
+				<div class="item-a-container">
+				   <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-ciclo-escolar.svg') }}"
+					  alt="Nuevos Inicios">
+				   <div class="item-a-preparation"><br /></div>
+				   <span class="item-a-university">ESCOLAR</span>
+				</div>
+			 </a>
+		  </div-->
+      </div>
+   </div>
+   <script>
+      const SERVICIO = "servicio";
+      
+      const validateType = (value, type) => typeof value === type;
+      
+      // variable que chekea si una variable tiene algo !!
+      // regresa false si es nulo el valor, regresar verdadero si tiene algo
+      const noIsNull = value => !!value && value !== "undefined" && value !== null;
+      
+      const objectToString = obj => {
+          return !!obj && validateType(obj, "object") ? JSON.stringify(obj) : obj;
+      };
+      
+      // combierte un string a objecto valido !!
+      const stringToObject = str => {
+          if (!noIsNull(str)) return str;
+          return JSON.parse(str);
+      };
+      
+      // regresa los datos del usuario !!
+      const getUserStorage = () => {
+          const serverItem = localStorage.getItem(SERVICIO);
+          return !!serverItem ? stringToObject(serverItem) : {};
+      };
+      
+      const pucp = getUserStorage();
+      console.log("/*-----------------------------------------------")
+      console.log("Variable PUCP: ")
+      console.table(pucp)
+      console.log("-----------------------------------------------*/")
+      
+      function filtro(filtro, selector) {
+          const result = pucp.ACACA.filter(v => v.NIVEL_ESTUDIO_DESCRIPCION === filtro);
+          console.log("filtros", filtro, selector)
+          if (!!result) {
+              llenado(result, selector)
+          }
+      }
+      
+      // Llenado de contenido en la tabla
+      function llenado(items, selector) {
+          const tabla = document.getElementById(selector);
+          let td = "";
+          const table = items.map(item => {
+              td += `<tr>
+        <td>${item.BLDG_DESCRIPCION}</td>
+        <td class="turno">${item.TURNO}</td>
+        <td>${item.FECHA_INICIO}</td>
+        <td>${item.FECHA_FIN}</td>
+        <td>S/ ${item.PAGO_CONTADO}</td>
+        <td>S/ ${item.PAGO_CUOTA1}</td>
+        <td>S/ ${item.PAGO_CUOTA2}</td>
+        <td>${item.HORARIO_SEMANAL1} ${item.HORARIO_SEMANAL2}</td>
+      </tr>
+      `;
+          });
+          console.log("scope", td)
+          if (!!table) {
+              document.getElementById(selector).innerHTML = td;
+          }
+      }
+      
+      filtro('Primera Opción', 'contenido-primeraopcion');
+      filtro('Semestral', 'contenido-semestral');
+   </script>
+   <script>
+      $(".turno").text(function () {
+          return $(this).text().replace("M", "Mañana");
+      });
+      $(".turno").text(function () {
+          return $(this).text().replace("T", "Tarde");
+      });
+      $("td").text(function () {
+          return $(this).text().replace("null", "");
+      });
+      $("td").text(function () {
+          return $(this).text().replace("Academia", "");
+      });
+      $("td").text(function () {
+          return $(this).text().replace("Sábado", "/ Sábado");
+      });
+   </script>
+</body> 

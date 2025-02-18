@@ -1,0 +1,917 @@
+<?php 
+
+  include 'conexion.php';
+
+?>
+
+
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5HQRN8J');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Charlas informaticas Trilce</title>
+    <meta name="author" content="Trilce" />
+    <meta name="description" content="Charlas informativas Trilce" />
+    <meta name="keywords" content="trilce, colegios, academias, mejor propuesta, educativa, mejor propuesta educativa" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="canonical" href="https://www.trilce.edu.pe/" />
+    <link rel="stylesheet" type="text/css" href="src/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+    <link rel="stylesheet" href="src/line-awesome.min.css">
+    <link rel="stylesheet" href="src/animate.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <style>
+        #select-default {
+            display: block;
+        }
+        #select-arequipa,
+        #select-ate,
+        #select-brena,
+        #select-callao,
+        #select-chanchamayo,
+        #select-chiclayo,
+        #select-chorrillos,
+        #select-comas,
+        #select-huancayo,
+        #select-jesusmaria,
+        #select-lamolina,
+        #select-losolivos,
+        #select-piura,
+        #select-pro,
+        #select-sanisidro,
+        #select-sanmiguel,
+        #select-sanjuandelurigancho,
+        #select-sanjuandeluriganchowisse,
+        #select-santabeatriz,
+        #select-santaanita,
+        #select-surco,
+        #select-trujillo,
+        #select-villaelsalvador,
+        #select-villamariadeltriunfo{
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light container">
+    <a class="navbar-brand" href="https://www.trilce.edu.pe/colegio" target="_blank">
+    <img src="images/logo-coles.svg" width="99" height="51" />
+    </a>
+    <ul class="navbar-nav ml-auto d-lg-none d-xl-none">
+    <li class="nav-item">
+        <a class="nav-link" href="https://www.trilce.edu.pe/charlas-informativas/" ><i class="las la-home text-light 32px h3"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"><i class="lab la-whatsapp text-light 32px h3"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" target="_blank" href="tel:+51016198100"><i class="las la-phone text-light 32px h3"></i></a>
+        <span class="text-light phone-trilce">6198 100</span>
+    </li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="https://www.trilce.edu.pe/charlas-informativas/" ><i class="las la-home text-light 32px h3"></i></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"><i class="lab la-whatsapp text-light 32px h3"></i></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" target="_blank" href="tel:+51016198100"><i class="las la-phone text-light 32px h3"></i></a>
+        <span class="text-light  phone-trilce">6198 100</span>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="section" id="one">    
+    <form action="./registro.php" method="post" id="form-registry">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <figure>
+                        <img class="" src="images/IMG-PRINCIPAL.png" />
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <h1 class="text-left ">Charlas informativas</h1>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <p class="text-left my-3 font-weight-bold">¡Regístrate y participa!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>
+
+<div class="section" id="two">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 text-center d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="text-center font-weight-bold my-4">¿Por qué estudiar con nosotros?</h2>
+                        <p class="text-center my-4">Somos una organización educativa con más de 40 años de experiencia, potenciando el desarrollo intelectual, personal y artístico en nuestros alumnos.</p>
+                    </div>
+                </div>
+                <div class="movil">
+            <div class="carousel slide sq-crousal4" data-ride="carousel" id="sq-crousal4">
+                <ol class="carousel-indicators">
+                <li data-target="#sq-crousal4" data-slide-to="0" class="active"></li>
+                <li data-target="#sq-crousal4" data-slide-to="1"></li>
+                <li data-target="#sq-crousal4" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <blockquote>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 d-md-flex d-block text-center text-lg-left">
+                        <img class="mb-4" src="images/1.png" >
+                        <div class="feedback-text pl-3">
+                            <p>Elevado nivel <br> académico</p>
+                        </div>
+                        </div>
+                    </div>
+                    </blockquote>
+                </div>
+                
+                <div class="carousel-item">
+                    <blockquote>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 d-md-flex d-block text-center text-lg-left">
+                        <img class="mb-4" src="images/2.png" >
+                        <div class="feedback-text pl-3">
+                            <p> Innovación y <br> tecnología</p>
+                        </div>
+                        </div>
+                    </div>
+                    </blockquote>
+                </div>
+
+                <div class="carousel-item">
+                    <blockquote>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1 d-md-flex d-block text-center text-lg-left">
+                        <img class="mb-4" src="images/3.png" >
+                        <div class="feedback-text pl-3">
+                            <p>Comprometidos con <br> el medio ambiente</p>
+                        </div>
+                        </div>
+                        </div>
+                    </blockquote>
+                </div>
+
+                </div>
+
+                </div>  
+            </div>  
+        </div>
+        <div class="web">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img src="images/1.png" />
+                    <h4 class="font-weight-bold my-3">Elevado nivel <br> académico </h4>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img src="images/2.png" />
+                    <h4 class="font-weight-bold my-3">Innovación y <br> tecnología</h4>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img src="images/3.png" />
+                    <h4 class="font-weight-bold my-3">Comprometidos con <br> el medio ambiente</h4>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="tre">
+    <div class="container-fluid">
+        <div class="row calltoaction">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="row box">
+                            <div class="col-sm-12 col-md-8 box-div animate__animated animate__fadeInUp">
+                                    <h5 class="text-left">¿Quieres <br> saber más?</h5>
+                                    <span class="text-left">Revisa nuestra <b>Propuesta Educativa</b></span>
+                                    <a class="button" target="_blank" href="https://www.trilce.edu.pe/propuesta-educativa/">
+                                        ¡Clic aquí!
+                                    </a>
+                            </div>
+                            <div class="col-sm-12 col-md-4 animate__animated animate__fadeInUp">
+                                <img class=""src="images/img-banner.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+<div class="section" id="four">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 text-center">
+                <p class="text-center gray my-4"> © 2020 Trilce. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>  
+
+<div class="modal fade" id="modalSedes"  data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center d-flex justify-content-center">
+        <h2 class="modal-title orange my-2" id="modalSedesLabel">Charlas informativas Trilce</h2>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="select mt-2 mb-4">
+                        <p class="text-left font-weight-bold gray">¡Regístrate y participa!</p>
+                        <select autofocus class="custom-select" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                <option selected disabled>Seleccione una sede</option>
+                            <!-- <option value="https://www.trilce.edu.pe/charlas-informativas/sede-arequipa">Arequipa</option> -->
+                             <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Callao</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Chanchamayo</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Chorrillos</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Comas</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Huancayo</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Jesús María (Salaverry)</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Los Olivos</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Pro</option>
+                            <!-- <option value="https://www.trilce.edu.pe/charlas-informativas/sede-san-isidro">San Isidro</option> -->
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">San Miguel (Maranga)</option>
+                            <option value="https://us02web.zoom.us/webinar/register/WN_w4ZS1AT1QkSwug9rXZoAxA">Santa Beatriz (Roma)</option>
+                            <!-- <option value="https://www.trilce.edu.pe/charlas-informativas/sede-surco-caminos-del-inca">Surco (Caminos del Inca)</option>    
+                            <option value="https://www.trilce.edu.pe/charlas-informativas/sede-surco-marsano">Surco (Marsano)</option>                          
+                            <option value="https://www.trilce.edu.pe/charlas-informativas/sede-villa-el-salvador">Villa El Salvador</option>
+                            <option value="https://www.trilce.edu.pe/charlas-informativas/sede-villa-maria-del-triunfo">Villa María del Triunfo</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+<!--       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="src/bootstrap.js"></script>
+<script type="text/javascript" src="src/parsley.min.js"></script>
+<script type="text/javascript" src="src/arrive.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
+<script src="src/script.js"></script>
+<script>
+    var onloadCallback = function() {
+        /**
+         * If we try to load page to show the congrats message we don't need to load recaptcha.
+         */
+        if ($("#botvalidator").length > 0) {
+            grecaptcha.render('botvalidator', {
+                'sitekey': '6Le4K68ZAAAAAG4kUVlhyobedxFX5xnPixuk0E1E',
+                'callback': cleanErrors
+            });
+            addCaptchaValidation();
+            /**
+             * We are going to use arrive library in order to check new google recaptcha
+             * element added after the current one is expired and then we will create new attributes for that element.
+             * Expires-callback google recaptcha is not working, probably it is executed before element creation.
+             * https://github.com/uzairfarooq/arrive/
+             */
+            $(document).arrive("#g-recaptcha-response", function() {
+                // 'this' refers to the newly created element
+                addCaptchaValidation();
+            });
+        }
+    };
+
+    /**  We are going to remove all errors from the container. */
+    var cleanErrors = function() {
+        $("#captchaerrors").empty();
+    };
+
+    var addCaptchaValidation = function() {
+        console.log("Adding captcha validation");
+
+        cleanErrors();
+
+        $('#form-registry').parsley().destroy();
+
+        $('#g-recaptcha-response').attr('required', true);
+        // We are going to create a new validator on Parsley
+        $('#g-recaptcha-response').attr('data-parsley-captcha-validation', true);
+        $('#g-recaptcha-response').attr('data-parsley-error-message', "Necesitamos que confirmes que no eres un robot. Gracias.");
+        $('#g-recaptcha-response').attr('data-parsley-errors-container', "#captchaerrors");
+        $('#form-registry').parsley();
+    };
+
+
+    /** We are going to add a new Parsley validator, this validation is called from
+     #g-recaptcha-response after clicking the submit button*/
+
+    window.Parsley.addValidator('captchaValidation', {
+
+        validateString: function(value) {
+            if (debug) console.log("Validating captcha", value);
+            if (value.length > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        messages: {
+            es: 'Necesitamos que confirmes que no eres un robot. Gracias.'
+        }
+    });
+</script>
+<script>
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Arequipa'){
+            $("#select-arequipa").show();
+            $("#select-default").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Ate'){
+            $("#select-ate").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Breña'){
+            $("#select-brena").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Callao'){
+            $("#select-callao").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Chanchamayo'){
+            $("#select-chanchamayo").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();                
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Chiclayo'){
+            $("#select-chiclayo").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Chorrillos'){
+            $("#select-chorrillos").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Comas'){
+            $("#select-comas").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Huancayo'){
+            $("#select-huancayo").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Jesús María'){
+            $("#select-jesusmaria").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'La Molina'){
+            $("#select-lamolina").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Los Olivos'){
+            $("#select-losolivos").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Piura'){
+            $("#select-piura").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Pro'){
+            $("#select-pro").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'San Isidro'){
+            $("#select-sanisidro").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'San Miguel'){
+            $("#select-sanmiguel").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'San Juan de Lurigancho'){
+            $("#select-sanjuandelurigancho").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'San Juan de Lurigancho Wisse'){
+            $("#select-sanjuandeluriganchowisse").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Santa Beatriz'){
+            $("#select-santabeatriz").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Santa Anita'){
+            $("#select-santaanita").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Surco'){
+            $("#select-surco").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide(); 
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Trujillo'){
+            $("#select-trujillo").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+            $("#select-villamariadeltriunf").hide();                
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Villa El Salvador'){
+            $("#select-villaelsalvador").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villamariadeltriunf").hide();
+        }
+    });
+
+    $("#select-sedes").change(function () {
+        if ($(this).val() == 'Villa María del Triunfo'){
+            $("#select-villamariadeltriunfo").show();
+            $("#select-default").hide();
+            $("#select-arequipa").hide();
+            $("#select-callao").hide();
+            $("#select-chanchamayo").hide();
+            $("#select-chorrillos").hide();
+            $("#select-comas").hide();
+            $("#select-huancayo").hide();
+            $("#select-jesusmaria").hide();
+            $("#select-losolivos").hide();
+            $("#select-pro").hide();
+            $("#select-sanisidro").hide();
+            $("#select-sanmiguel").hide();
+            $("#select-santabeatriz").hide();
+            $("#select-surco").hide();
+            $("#select-villaelsalvador").hide();
+        }
+    });
+
+</script>
+
+<script> 
+    function onlyNumberKey(evt) { 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+</script> 
+<script>
+    // A $( document ).ready() block.
+        $( document ).ready(function() {
+
+        var count = 0;
+
+        /*if(localStorage.getItem("modal_count")  === null) {
+        
+        } else {
+        count = localStorage.getItem("modal_count");
+
+        }*/
+
+        count = count+1;
+        //if(count <= 3) {
+        $('#modalSedes').modal('show');
+
+        // localStorage.setItem("modal_count", count);
+        //}
+
+        });     
+</script>
+
+</body>
+
+</html>

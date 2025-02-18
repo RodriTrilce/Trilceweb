@@ -1,0 +1,52 @@
+#dropZoneForm{
+	min-height: 400px;
+	width: 100%;
+	border:1px dashed $orange;
+}
+
+.dropzone-previews{
+	margin: 40px 0;
+	padding: 20px 20px;
+}
+
+.dz-clickable{
+	position: relative;
+}
+
+.dz-drag-hover{
+	border: 1px solid $orange !important;
+	opacity: .7;
+}
+
+.dz-details{
+	padding: 10px;
+	border: 1px solid #84ffab;
+	margin-bottom: 15px;
+}
+
+.dz-error{
+	position: relative;
+	opacity: .5;
+	border: 1px solid #f95e5e;
+
+	&::before{
+		position: absolute;
+		content: "ERROR, archivo no soportado";
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+}
+
+[data-dz-thumbnail]{
+	max-width: 100px;
+}
+
+.dropzone__fileurl{
+	margin-top: 20px;
+}

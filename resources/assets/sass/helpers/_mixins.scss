@@ -1,0 +1,125 @@
+// http://www.developerdrive.com/2014/11/15-essential-sass-mixins/
+
+
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin opacity($opacity)
+{
+  opacity: $opacity;
+  filter: alpha(opacity=($opacity * 100));
+}
+
+@mixin circle
+{
+  @include border-radius(100%);
+}
+
+@mixin font-size($size)
+{
+  font-size: $size;
+  font-size: ($size / 16px) * 1rem;
+}
+
+@mixin xPos($x) {
+  -webkit-transform:translateX($x);
+  -moz-transform:translateX($x);
+  -ms-transform:translateX($x);
+  transform:translateX($x);
+}
+
+@mixin gradient($start-color, $end-color, $orientation) {
+     background: $start-color;
+     @if $orientation == vertical {
+         // vertical background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+         background: -webkit-linear-gradient(top, $start-color 0%,$end-color 100%);
+         background: -o-linear-gradient(top, $start-color 0%,$end-color 100%);
+         background: -ms-linear-gradient(top, $start-color 0%,$end-color 100%);
+         background: linear-gradient(to bottom, $start-color 0%,$end-color 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+    }
+     @else if $orientation == horizontal {
+         // horizontal background: -moz-linear-gradient(left, $start-color 0%, $end-color 100%);
+         background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+         background: -webkit-linear-gradient(left, $start-color 0%,$end-color 100%);
+         background: -o-linear-gradient(left, $start-color 0%,$end-color 100%);
+         background: -ms-linear-gradient(left, $start-color 0%,$end-color 100%);
+         background: linear-gradient(to right, $start-color 0%,$end-color 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+    }
+     @else {
+         // radial background: -moz-radial-gradient(center, ellipse cover, $start-color 0%, $end-color 100%);
+         background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+         background: -webkit-radial-gradient(center, ellipse cover, $start-color 0%,$end-color 100%);
+         background: -o-radial-gradient(center, ellipse cover, $start-color 0%,$end-color 100%);
+         background: -ms-radial-gradient(center, ellipse cover, $start-color 0%,$end-color 100%);
+         background: radial-gradient(ellipse at center, $start-color 0%,$end-color 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+    }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+
+@mixin breakpoint($point) {
+  @if $point == dad {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == brother{
+    @media (max-width: 1400px) { @content; }
+  }
+  @else if $point == mom {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == uncle {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == baby {
+    @media (max-width: 767px)  { @content; }
+  }
+  @else if $point == minibaby {
+    @media (max-width: 400px)  { @content; }
+  }
+}
+
+
+@mixin reverse-breakpoint($point) {
+  @if $point == dad {
+    @media (min-width: 1600px) { @content; }
+  }
+  @if $point == brother{
+    @media (min-width: 1400px) { @content; }
+  }
+  @else if $point == mom {
+    @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == uncle {
+    @media (min-width: 900px) { @content; }
+  }
+  @else if $point == baby {
+    @media (min-width: 767px)  { @content; }
+  }
+  @else if $point == minibaby {
+    @media (min-width: 450px)  { @content; }
+  }
+}

@@ -1,0 +1,309 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+*::-moz-selection {
+    background: #FF6334;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::selection {
+    background: #FF6334;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+
+@font-face {
+    font-family: Geogrotesque-Md;
+    src: url(../fonts/33FA0F_B_0.5142c2ab.eot);
+    src: url(../fonts/33FA0F_B_0.5142c2ab.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_B_0.cb0abdf7.woff2) format("woff2"), url(../fonts/33FA0F_B_0.9b7aba9c.woff) format("woff"), url(../fonts/33FA0F_B_0.2c4f6c17.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Geogrotesque-Rg;
+    src: url(../fonts/33FA0F_E_0.43b8c5a0.eot);
+    src: url(../fonts/33FA0F_E_0.43b8c5a0.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_E_0.0249aaee.woff2) format("woff2"), url(../fonts/33FA0F_E_0.26bf101d.woff) format("woff"), url(../fonts/33FA0F_E_0.0257c368.ttf) format("truetype")
+}
+body, html, input, select, form, option {
+    font-family: Geogrotesque-Rg !important;
+}
+
+.fixed-top {
+    position: absolute;
+    background: transparent !important;
+}
+
+nav {
+    position: relative;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 0px transparent !important;
+    color: #ffffff;
+}
+
+nav li a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a .fa {
+        color: #ffffff;
+}
+
+nav ul a:hover  {
+    background-color: transparent !important;
+    color: #FF6334;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+nav aside {
+    width: 35px;
+    text-align: center;
+}
+
+nav aside p.phone {
+        position: absolute;
+        top: 45px;
+        right: 15px;
+        width: 70px;
+}
+
+
+section.banner {
+    height: 50vh;
+    background-image: url("../img/bg_inscripcionacademica.png");
+    background-position: center center;
+    background-size: cover;
+    color: #fff
+}
+
+section.banner p {
+    font-size: 2em;
+}
+
+section.banner h1 {
+    font-size: 3em;
+}
+
+section.datos h2 {
+    font-size: 2em;
+    color: #53565a
+}
+
+section.datos b.orange{
+    color: #FF6334
+}
+
+section.datos h3 {
+    font-size: 1.2em;
+    color: #53565a
+}
+
+section.formulario .box-form {
+    background-color: #f8f9fa;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+section.formulario h2 {
+    font-family: Geogrotesque-Md;
+    font-size: 1.5em;
+}
+
+section.formulario h2,
+section.formulario .text-required {
+    color: #FF6334
+}
+
+section.formulario .btn {
+    border: 1px solid #FF6334 !important;
+    box-shadow: 0 0 0 transparent !important;
+    background-color: #FF6334 !important;
+    color: #fff !important;
+}
+
+section.formulario .btn:hover,
+section.formulario .btn:focus,
+section.formulario .btn:active {
+    color: #FF6334 !important;
+    background: #fff !important;
+}
+
+section.formulario .disclaimer {
+    font-weight: bold;
+    color: #000
+}
+
+
+footer .row  {
+        margin-bottom: 0px;
+}
+
+footer p {
+    margin-bottom: 0rem;
+}
+
+
+.box-img-1 img {
+    max-width: 280px;
+        text-align: end;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+}
+
+.box-data-1 {
+    /* margin-top: 5em; */
+}
+
+#ModalInscripcionAcademia h5 {
+     color: #FF6334;
+         margin: 0 auto;
+}
+
+#ModalInscripcionAcademia  .modal-dialog {
+    width: 100%;
+    max-width: 780px;
+}
+
+#ModalInscripcionAcademia  ol.list li div {
+    display: initial;
+ }
+
+
+ #ModalInscripcionAcademia ol.list #terms-9 {
+         display: inline-block;
+ }
+
+  #ModalInscripcionAcademia  .modal-footer .btn {
+    background-color: #FF6334;
+    border-color: #FF6334;
+ }
+
+.form-control:focus {
+    background-color: rgba(255, 99, 51, 0.1) !important;
+    border-color: #FF6334 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 99, 52, 0.25);
+}
+
+
+.form-control {
+        border: 1px solid #FF6334;
+}
+
+input[type=date]:before {
+    color: #53565a;
+    /* content: attr(placeholder); */
+    width: 100%;
+}
+
+.real-date {
+    display: none;
+}
+
+#checkbox_terms {
+    top: 1.6em;
+}
+
+a#termsActive {
+    cursor: pointer;
+}
+a#termsActive:hover {
+    text-decoration: underline;
+}
+
+.required {
+    color: red;
+    position: absolute;
+    right: 4em;
+    top: 1em;
+}
+
+
+#terms p{
+    text-align: justify;
+}
+
+.paso-cuatro .form-check p{
+    height: 25px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+    
+    nav .container .box-nav {
+        display: flex;
+        flex-flow: inherit;
+    }
+
+    section.banner {
+        height: 35vh;
+    }
+
+    section.banner h1 {
+        font-size: 2em;
+    }
+
+    section.banner p {
+        font-size: 1.5em;
+    }
+    section.banner h1,
+    section.banner p{ 
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+    }
+    .required {
+        color: red;
+        position: absolute;
+        right: 4em;
+        top: 1em;
+    }
+
+    .box-data-1 {
+        margin-top: 0em;
+    }
+
+    .box-img-1{
+        display: none
+    }
+
+    nav .phone {
+       position: absolute;
+    }
+
+    .header-double-content-top, 
+    .header-double-w-enrollment {
+        background-color: #FF6334 !important;
+        background-image: none;
+    }
+
+    .header-double-border {
+            background: #FF6334;
+    }
+
+    .header-double-title h1 {
+        background: transparent;
+        padding: 2.7rem;
+    }
+
+    section.formulario h2 {
+        font-size: 1.5rem;
+    }
+
+
+    section.datos  div {
+        text-align: center !important;
+    }
+
+    section.datos .date {
+        display: flex;
+        justify-content: center;
+    }
+
+}

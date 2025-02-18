@@ -1,0 +1,137 @@
+.js-tabs {
+  width: 100%;
+}
+
+.js-tabs__header {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  li {
+    display: inline-block;
+    float: left;
+    max-width: 14%;
+
+    a{
+      color: $gray;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+
+      div{
+        width: 100%;
+        pointer-events: none;
+
+        @include breakpoint(baby){
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(baby){
+  .js-tabs__header{
+    display: flex;
+    flex-wrap: wrap;
+    background: $colegio_gray_gray;
+    border-radius: 0 0 5px 5px;
+    transition: all .3s ease-in-out;
+
+    li{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    a{
+      min-height: auto !important;
+      justify-content: unset !important;
+      font-size: .9rem;
+    }
+
+    img{
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.js-tabs__title {
+  cursor: pointer;
+  display: block;
+  margin-right: .5em;
+  padding: 1rem;
+  transition: all .25s;
+  font-family: $font_geo_reg;
+
+  @include breakpoint(baby){
+    margin-right: 0;
+    padding: .8rem;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  img{
+    max-width: 40%;
+
+    @include breakpoint(baby){
+      max-width: 100%;
+    }
+  }
+
+  i{
+    margin-right: 3px;
+  }
+}
+
+.js-tabs__title-active {
+  background: $orange;
+  color: white !important;
+
+  img{
+    filter: brightness(100) !important;
+  }
+}
+
+.js-tabs__content {
+  margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  left: -9999px;
+}
+
+.js-tab-container-active{
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  left: auto;
+}
+
+// Acordition
+.acordition-title{
+  display: none;
+  color: $orange;
+  font-size: 1.2rem;
+  font-family: $font_geo_reg;
+  padding: .8rem;
+  background: $colegio_gray_gray;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+@include breakpoint(baby){
+  .acordition-title{
+    display: flex;
+  }
+}

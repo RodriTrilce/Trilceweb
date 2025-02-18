@@ -1,0 +1,240 @@
+.navbar-nav .nav-item:nth-child(2) .nav-link {
+    border-bottom: 1.2px solid white;
+}
+.banner-internal {
+     text-align: center;
+     height: 60vh;
+     background-image: url("../../img/cycles/BG-CICLOS-DESKTOP.png");
+    background-repeat: no-repeat;
+    background-position: center center;;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+h1 {
+     font-weight: bold;
+     font-size: 4em;
+     color: #fff;
+     text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+
+section.cycles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+        padding: 5em 0em;
+}
+
+.titles {
+    margin: 0 auto 4em;
+}
+
+h3 {
+    color: #FF6334;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 0.6em;
+}
+
+p {
+    color: #5C6064;
+    font-size: 1.2em;
+}
+
+figure {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid rgba(92, 96, 100, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figure:hover {
+    border: 1px solid #5C6064;
+
+    cursor: pointer;
+}
+
+figure img {
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+
+section.calltoaction {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+   background-color: #F5F5F5;
+}
+
+section.calltoaction  h5 {
+    text-align: center;
+     color: #FF6334;
+     font-size: 2em;
+}
+
+section.calltoaction  .box-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.calltoaction .box img {
+    width: 200px;
+}
+
+section.calltoaction  span {
+   text-align: center; 
+}
+
+section.calltoaction  button {
+    background-color: #FF6334;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 1px;
+    margin: 0.8em auto;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    width: 200px;
+    padding: 0.5em 0em;
+}
+
+section.calltoaction button:hover {
+     color: #FF6334;
+    background-color: #fff;
+}
+
+.box {
+        padding: 1em 0em 0em;
+}
+
+/* Special features */
+
+.special-feature .mask-top img {
+    max-width: 150px;
+    text-align: center;
+}
+
+.special-feature .mask-bottom img {
+    max-width: 50px;
+    margin: 2em auto;
+}
+
+.special-feature .mask-bottom .small {
+    font-size: 1em;
+    padding: 0px;
+    margin: 0 auto;
+    line-height: 1em;
+}
+
+.special-feature .mask-bottom .big {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0 auto;
+    line-height: 1em;
+}
+
+
+.special-feature .mask-top {
+    width: 100%;
+    padding: 55px 0;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background-color: #fff;
+}
+
+.special-feature .mask-top h4:before {
+    top: -18px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: -2px auto;
+    position: absolute;
+    width: 40px;
+}
+
+.special-feature .s-feature-box:hover .mask-top {
+    top: -200px;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.special-feature .s-feature-box {
+    overflow: hidden;
+    position: relative;
+    height: 280px;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.special-feature .mask-bottom {
+    padding: 20px 15px 20px 15px;
+    width: 100%;
+    position: absolute;
+    bottom: -300px;
+    height: 100%;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background-color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.special-feature .mask-bottom p {
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
+.special-feature .mask-bottom h4 {
+    margin: 15px 0px 17px;
+}
+
+.special-feature .s-feature-box:hover .mask-bottom {
+    bottom: 0;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.special-feature .mask-bottom i {
+    font-size: 38px;
+    line-height: 50px;
+}
+
+/* UNI */
+
+section.cycles.internal {
+    background-color: #F5F5F5;
+}

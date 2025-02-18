@@ -1,0 +1,46 @@
+footer {
+    color: #52555A;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0em 2emx;
+}
+
+footer .menu-movil {
+    display: none;
+}
+
+footer .menu {
+    padding: 5em 0em 2em 2em;
+}
+
+footer .menu ul,
+footer .menu-movil ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer .menu ul li,
+footer .menu-movil ul li {
+    display: inline-block;
+}
+
+footer .menu ul li i,
+footer .menu-movil ul li i {
+    font-size: 1.2em;
+    color: #52555A;
+    margin: 0px 2px;
+}
+
+footer .menu a {
+    color: #52555A;
+}
+
+footer .menu a:hover,
+footer .menu a:focus {
+    color: #FF6334;
+    text-decoration: none;
+    font-weight: bolder;
+}

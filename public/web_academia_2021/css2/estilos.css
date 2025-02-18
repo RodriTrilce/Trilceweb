@@ -1,0 +1,712 @@
+@font-face 
+{
+	font-family: GR;
+	src: url(../fonts/Geogrotesque-Regular.eot);
+	src: url(../fonts/Geogrotesque-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Regular.woff2) format("woff2"), url(../fonts/Geogrotesque-Regular.woff) format("woff"), url(../fonts/Geogrotesque-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSR;
+	src: url(../fonts/NunitoSans-Regular.eot);
+	src: url(../fonts/NunitoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Regular.woff2) format("woff2"), url(../fonts/NunitoSans-Regular.woff) format("woff"), url(../fonts/NunitoSans-Regular.ttf) format("truetype")
+}
+
+@font-face 
+{
+	font-family: NSB;
+	src: url(../fonts/NunitoSans-Black.eot);
+	src: url(../fonts/NunitoSans-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Black.woff2) format("woff2"), url(../fonts/NunitoSans-Black.woff) format("woff"), url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+.menu_activo
+{
+	background-color: #fff; 
+	border-radius: 20px; 
+	padding: 2px 8px 2px 8px; 
+	font-family: 'GR'; 
+	font-weight: 600; 
+	font-size: 10px;
+}
+
+.menu
+{
+	border-radius: 20px; 
+	padding: 2px 8px 2px 8px; 
+	font-family: 'GR'; 
+	font-weight: 600; 
+	font-size: 10px;
+}
+
+.fondo_slider
+{
+	background-color: #ff4f00;
+}
+
+.icono_slider
+{
+	width: 80px;
+	margin-bottom: 26px
+}
+
+.cab_formulario_slider
+{
+	background-color: #F93300; 
+	border-top-left-radius: 20px; 
+	border-top-right-radius: 20px; 
+	padding: 20px 50px 10px 50px !important;
+}
+
+.texto_solicita
+{
+	border-radius: 20px; 
+	padding: 6px 40px 6px 40px !important;
+}
+
+.bod_formulario_slider
+{
+	padding: 30px 60px 20px 60px !important; 
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px; 
+	text-align: center;
+}
+
+.caja_preparacion
+{
+	padding: 0px 40px 0px 40px;
+}
+
+.fondo_blanco
+{
+	background-color: #fff;
+}
+
+
+.contenido1_preparacion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.contenido2_preparacion
+{
+	font-family: NSB;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.fondo_gris
+{
+	background-color: #f6f6f6;
+}
+
+.contenido1_opcion
+{
+	font-family: GR;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px;
+	color: #333 !important;
+}
+
+.section2
+{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.video_fondo
+{
+	background-color: #fff; 
+	border-radius: 20px
+}
+
+.p-5
+{
+	padding: 50px;
+}
+
+
+.fondo_herramientas
+{
+	background-color: #f6f6f6;
+}
+
+.fondo_caja_herramientas
+{
+	background-color: #fff;
+}
+
+.imagen_herramientas
+{
+	width: 100%;
+}
+
+.titulo_herramientas
+{
+	color: #333 !important; 
+	font-weight: 400; 
+	margin-bottom: 20px
+}
+
+.fondo_resultados
+{
+	background-color: #fff;
+}
+
+.subtitulo_participante_resultado
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.subtitulo_participante_resultado2
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.subtitulo_participante_resultado3
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.fondo_primeros_puestos
+{
+	background-color: #f6f6f6;
+}
+
+.espacio_primeros_puestos
+{
+	padding: 20px 0px 0px 0px;
+}
+
+.titulos_seccion
+{
+	font-family: NSB;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 22px;
+	color: #FFFFFF !important;
+}
+
+.subtitulos_seccion
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+.fondo_1
+{
+	background-color: #FF6740;
+}
+.fondo_2
+{
+	background-color: #FF5023;
+}
+.fondo_3
+{
+	background-color: #FF3400;
+}
+.fondo_4
+{
+	background-color: #F93300;
+}
+
+.fondo_footer
+{
+	background-color: #f6f6f6;
+}
+
+.titulo_footer
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+}
+.espacio_menu_footer
+{
+	padding-top: 1.25rem !important;
+}
+.espacio_redes
+{
+	padding-top: 2rem !important;
+}
+
+.copyright
+{
+	font-family: GR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	color: #333333;
+}
+
+.fondo_copyright
+{
+	background-color: #f6f6f6;
+}
+
+#scrollTop
+{ 
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.gotop
+{
+	background: #FF4F00;
+	color: white;
+	padding: 8px 12px;
+	border-radius: 50%;
+}
+
+.gotop i
+{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 576px) 
+{	
+	.vista_home_foto
+	{
+		display: none;
+	}
+
+	.vista_home_boton1
+	{
+		display: none;
+	}
+
+	.vista_home_boton2
+	{
+		display: block;
+	}
+
+	.texto_slider
+	{
+		font-family: NSB !important;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px !important;
+		line-height: 32px;
+		text-align: center;
+		color: #fff;
+		padding: 0px 26px 0px 26px;
+	}
+
+	.parrafo_slider
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.titulo_formulario
+	{
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 20px;
+		color: #fff;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00;
+		font-family: GR !important;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+		float: left;
+		width: 30%;
+	}
+
+	.mt-4
+	{
+		margin-top: 1rem!important;
+	}
+
+	.t_a_left
+	{
+		text-align: left !important;
+		margin: 0px 0px 0px 90px;
+	}
+
+	.p-4
+	{
+		padding: 30px !important;
+	}
+
+	.titulo_opcion
+	{
+		font-size: 26px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 28px;
+		padding: 0px 30px 0px 30px;
+	}
+
+	.icono_opcion
+	{
+		width: 70%;
+	}
+
+	.opcion_mobile
+	{
+		display: block;
+	}
+
+	.opcion_web
+	{
+		display: none;
+	}
+
+	.img_video
+	{
+		margin-top: 34%;
+		width: 30%;
+	}
+
+	.margen_opcion
+	{
+		padding: 0px 20px 0px 20px;
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.p-5
+	{
+		padding: 2rem!important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		height: 460px;
+		background-size: contain;
+	}
+
+	.vista_herramientas
+	{
+		display: none;
+	}
+
+	.vista_primeros_web
+	{
+		display: none
+	}
+
+	.vista_primeros_mobile
+	{
+		display: block
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+		padding: 20px;
+	}
+
+	.subtitulo_resultados
+	{
+		display: none;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 28px;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1200px) 
+{	
+	.vista_home_foto
+	{
+		display: block;
+	}
+
+	.vista_home_boton1
+	{
+		display: block;
+	}
+
+	.vista_home_boton2
+	{
+		display: none;
+	}
+
+	.texto_slider
+	{
+		color: #fff !important; 
+		font-size: 46px !important; 
+		line-height: 46px;
+		font-weight: 900;
+		font-family: NSB !important;
+	}
+
+	.parrafo_slider
+	{
+		color: #fff !important; 
+		font-size: 24px !important; 
+		line-height: 20px;
+		font-weight: 500;
+		font-family: GR !important;
+	}
+
+	.titulo_formulario
+	{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 26px; 
+		color: #fff;
+		font-family: GR !important;
+	}
+
+	.texto_acepta
+	{
+		color: #FF4F00; 
+		font-weight: 600; 
+		font-size: 14px;
+		line-height: 26px; 
+		font-family: GR !important;
+	}
+
+	.acepta_subrayado
+	{
+		text-decoration: underline;
+	}
+
+	.titulo_preparacion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.alinear_img_preparacion
+	{
+
+	}
+
+	.titulo_opcion
+	{
+		font-size: 30px;
+		font-family: NSB;
+		font-weight: 900;
+		line-height: 30px;
+	}
+
+	.opcion_mobile
+	{
+		display: none;
+	}
+
+	.opcion_web
+	{
+		display: block;
+	}
+
+	.p-4
+	{
+		padding: 0px !important;
+	}
+
+	.img_video
+	{
+		margin-top: 32%
+	}
+
+	.margen_opcion
+	{
+		
+	}
+
+	.titulo_video
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		color: #FF4F00;
+	}
+
+	.parrafo_1
+	{
+		font-size: 15px; 
+		font-weight: 400; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.parrafo_2
+	{
+		font-size: 15px; 
+		font-weight: 600; 
+		text-align: justify;
+		font-family: GR !important;
+	}
+
+	.foto_video
+	{
+		background-repeat: no-repeat; 
+		background-image: url('../images/video_trilce.png');
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px; 
+		height: 460px
+	}
+
+	.vista_herramientas
+	{
+		display: block;
+	}
+
+	.vista_primeros_web
+	{
+		display: block
+	}
+
+	.vista_primeros_mobile
+	{
+		display: none
+	}
+
+	.titulo_resultados
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		text-align: center;
+		color: #FF4F00;
+	}
+
+	.subtitulo_resultados
+	{
+		font-family: GR;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 19px;
+		text-align: center;
+	}
+
+	.titulo_primeros_puestos
+	{
+		font-family: NSB;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		align-items: center;
+		margin-right: 20px;
+	}
+}

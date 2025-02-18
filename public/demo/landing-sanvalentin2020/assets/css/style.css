@@ -1,0 +1,289 @@
+/*************************************************/
+/******* SAN VALENTIN TRILCE 2020 - CSS *********/
+/**********************************************/
+
+/* Container - Panel Front -- Panel Back */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(237, 28, 50);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  perspective: 800px;
+  -webkit-perspective: 800px;
+}
+
+.card {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.card .front {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  height: 80%;
+}
+
+.card .front .heart-shape {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  margin: -75px 0 0 -75px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: white;
+  animation: beating 0.7s ease 0s infinite normal;
+}
+
+@keyframes beating {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+
+  50% {
+    transform: scale(1.1) rotate(45deg);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+.card .front .heart-shape:before,
+.card .front .heart-shape:after {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  content: "";
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.card .front .heart-shape:before {
+  bottom: 0px;
+  left: -75px;
+}
+
+.card .front .heart-shape:after {
+  top: -75px;
+  right: 0px;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+/* Button Action Change Panel */
+
+input {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+
+input:checked ~ .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/* Second Heart Animation Graph  */
+
+#heart {
+  position: absolute;
+  top: 7em;
+  left: 0px;
+  right: 0px;
+}
+
+#heart img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: opacity 7s ease-in-out;
+  -moz-transition: opacity 7s ease-in-out;
+  -o-transition: opacity 7s ease-in-out;
+  transition: opacity 7s ease-in-out;
+}
+
+@keyframes heartFadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  14% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 0;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+}
+
+#heart img.top {
+  animation-name: heartFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  width: 100px;
+}
+
+#heart img.bottom {
+  width: 100px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  33% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.pulse {
+  animation: pulse 0.8s 0s infinite linear;
+  -webkit-animation: pulse 0.8s 0s infinite linear;
+}
+
+.svg {
+  width: 100%;
+}
+
+.svg img {
+  max-width:1200px;
+  width: 100%;
+  height: 100%;
+  height: initial;
+}
+
+.svg .movil {
+  display: none;
+  margin: 0 auto;
+}
+
+.svg .web {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .svg .movil {
+    display: block;
+  }
+
+  .svg .web {
+    display: none;
+  }
+  #heart {
+    display: none;
+  }
+
+  .card .front .heart-shape {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .card .front .heart-shape:before,
+  .card .front .heart-shape:after {
+    position: absolute;
+    width: 135px;
+    height: 135px;
+    content: "";
+  }
+
+  .card .front .heart-shape {
+    margin: -75px 0 0 -65px;
+  }
+  .back {
+    position: absolute;
+    top: 0px;
+  }
+
+  .svg {
+    position: absolute;
+    top: 0px;
+  }
+  label {
+    height: 55%;
+  }
+}

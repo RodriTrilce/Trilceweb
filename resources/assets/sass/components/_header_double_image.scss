@@ -1,0 +1,20 @@
+.header-double-image{
+  img{
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.header-double-image-desk{
+  @media screen and (max-width: 700px){
+    display: none !important;
+  }
+}
+
+.header-double-image-mobile{
+  display: none;
+  @media screen and (max-width: 700px){
+    display: flex !important;
+  }
+}

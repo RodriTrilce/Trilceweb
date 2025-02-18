@@ -1,0 +1,183 @@
+.contact{
+  margin: 40px 0;
+
+  @include breakpoint(baby){
+    margin: 20px 0;
+  }
+}
+
+.contant-info-subtitle{
+  color: $gray;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.contant-info-ul{
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+
+  li{
+    margin-bottom: 0.5rem;
+
+    a, a:link, a:visited{
+      color: $gray;
+    }
+
+    a:hover{
+      text-decoration: underline;
+      text-decoration-color: $gray;
+    }
+
+    &::before{
+      font-family: $font_icon;
+      font-size: 15px;
+      color: $orange;
+      padding-right: 0.2rem;
+    }
+
+    &:nth-child(1){
+      &::before{
+        content: "\f2b3";
+      }
+    }
+
+    &:nth-child(2){
+      &::before{
+        content: "\f1c6";
+      }
+    }
+
+    &:nth-child(3){
+      &::before{
+        content: "\f37a";
+      }
+    }
+
+  }
+}
+
+.contact-form{
+  background: $background-form;
+  padding: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  h2{
+    color: $gray;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+}
+
+.contant-form-phone{
+  width: 50%;
+}
+
+.worktrilce{
+  display: none;
+  margin-bottom: 2rem;
+
+  a{
+    display: block;
+    width: 250px;
+    height: 90px;
+    background: $orange;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-family: $font_cae_bold;
+    font-size: 1.5rem;
+    text-align: left;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: "";
+      right: -30px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 43px 0px 47px 30px;
+      border-color: transparent transparent transparent $orange;
+    }
+
+  }
+  span{
+    display: block;
+  }
+  span.about{
+    font-size: 0.9rem;
+  }
+  span.postulate{
+    font-size: 0.8rem;
+    font-family: $font_cae_reg;
+  }
+
+  i{
+    position: absolute;
+    top: -8px;
+    font-size: 5rem;
+    transform: rotate(-13deg);
+  }
+
+}
+
+.worktrilce-div{
+  position: relative;
+}
+
+.worktrilce-line::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: white;
+  height: 90%;
+  top: 0;
+  left: 45%;
+}
+
+.contact-status{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-finish{
+  font-size: 1.5rem;
+  h2{
+    color: $gray;
+  }
+  strong{
+    color: $orange;
+    text-decoration: underline;
+  }
+}
+
+.contact-error{
+  h2{
+    font-size: 1.5rem;
+    color: $gray;
+  }
+}
+
+.contact-subtitle{
+  font-family: $font_cae_bold;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle-colegio{
+  color: $gray;
+}
+
+.g-recaptcha{
+  margin-bottom: 20px;
+}

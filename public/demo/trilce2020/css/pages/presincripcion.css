@@ -1,0 +1,691 @@
+.navbar-nav .nav-item:nth-child(3) .nav-link {
+    border-bottom: 1.2px solid white;
+}
+
+.preinscripcion-internal {
+    text-align: center;
+    height: 100vh;
+    background-image: url("../../img/preinscription/PREINSCRIPCION-BG.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.presincripcion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5em 0em;
+}
+
+.presincripcion article {
+    padding: 5em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center
+}
+
+.presincripcion article i {
+    font-size: 3em;
+    color: #FF6334;
+    margin: 0px 5px
+}
+
+.presincripcion article p {
+   margin: 0 0;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 4em;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: left;
+}
+
+/* FORM TO REGISTRY MATERIAL DESIGN */
+.bar-header {
+    background: #fff;
+    width: 130px;
+    position: absolute;
+    height: 2px;
+    left: -65px;
+    top: 8px;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-registry {
+    font-family: 'Geogrotesque-Rg';
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*------------------------------input type text and textarea and other starts-----*/
+.form-inline>.form-group,
+.form-inline>.btn {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.form-help {
+    margin-top: 0.125rem;
+    margin-left: 0.125rem;
+    color: #5C6064;
+    font-size: 0.8rem;
+}
+
+.form-group input {
+    height: 1.9rem;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group select {
+    width: 100%;
+    font-size: 1rem;
+    height: 1.6rem;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    background: none;
+    border: none;
+    line-height: 1.6;
+    box-shadow: none;
+}
+
+.form-group .input-label {
+    position: absolute;
+    top: 0.25rem;
+    pointer-events: none;
+    padding-left: 0.125rem;
+    z-index: 1;
+    color: rgba(33, 37, 41, 0.5);
+    font-size: 1rem;
+    font-weight: normal;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    left: 0px;
+}
+
+.form-group .bar {
+    position: relative;
+    border-bottom: 0.0625rem solid rgba(33, 37, 41, 0.4);
+    display: block;
+}
+
+.form-group .bar::before {
+    content: '';
+    height: 0.125rem;
+    width: 0;
+    left: 50%;
+    bottom: -0.0625rem;
+    position: absolute;
+    background: #FF6334;
+    -webkit-transition: left 0.28s ease, width 0.28s ease;
+    transition: left 0.28s ease, width 0.28s ease;
+    z-index: 2;
+}
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: transparent;
+    -webkit-transition: all 0.28s ease;
+    transition: all 0.28s ease;
+    box-shadow: none;
+}
+
+.form-group input[type="file"] {
+    line-height: 1;
+}
+
+.form-group input[type="file"]~.bar {
+    display: none;
+}
+
+.form-group select,
+.form-group select:focus,
+.form-group select:valid,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value,
+.form-group label {
+    color: rgba(33, 37, 41, 0.5);
+    background: transparent;
+}
+
+.form-group select~.input-label,
+.form-group input:focus~.input-label,
+.form-group input:valid~.input-label,
+.form-group input.form-file~.input-label,
+.form-group input.has-value~.input-label,
+.form-group textarea:focus~.input-label,
+.form-group textarea:valid~.input-label,
+.form-group textarea.form-file~.input-label,
+.form-group textarea.has-value~.input-label {
+    color: rgba(33, 37, 41, 0.5);
+    top: -1rem;
+    left: 0;
+}
+
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+}
+
+.form-group select:focus~.input-label,
+.form-group input:focus~.input-label,
+.form-group textarea:focus~.input-label {
+    color: #FF6334;
+}
+
+.form-group select:focus~.bar::before,
+.form-group input:focus~.bar::before,
+.form-group textarea:focus~.bar::before {
+    width: 100%;
+    left: 0;
+}
+
+.form-registry select option {
+    background-color: #F5F5F5 !important;
+}
+
+/*------------------------------input type text and textarea and other ends-----*/
+
+
+
+/*--------------------------------Checkbox and radio button Starts --------------*/
+.form-radio,
+.form-group {
+    position: relative;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.checkbox .form-help,
+.form-radio .form-help,
+.form-group .form-help {
+    position: absolute;
+    width: 100%;
+}
+
+.checkbox .form-help {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-radio .form-help {
+    padding-top: 0.25rem;
+    margin-top: -1rem;
+}
+
+.checkbox label,
+.form-radio label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 2rem;
+    text-align: left;
+    color: #5C6064
+}
+
+.checkbox input,
+.form-radio input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+
+.checkbox small {
+    color: #FF6334;
+    font-weight: bolder;
+}
+
+.radio {
+        margin-right: 0.5em;
+        cursor: pointer;
+}
+.form-group.d-flex label {
+        margin-bottom: 0rem;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid rgba(33, 37, 41, 0.5);
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: #FF6334;
+    border: 1px solid #FF6334;
+}
+
+.checkbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox .helper {
+    color: #5C6064;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1rem;
+    height: 1rem;
+    z-index: 0;
+    border: 0.125rem solid currentColor;
+    border-radius: 0.0625rem;
+    -webkit-transition: border-color 0.28s ease;
+    transition: border-color 0.28s ease;
+}
+
+.checkbox .helper::before,
+.checkbox .helper::after {
+    position: absolute;
+    height: 0;
+    width: 0.2rem;
+    background-color: #FF6334;
+    display: block;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 0.25rem;
+    content: '';
+    -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+    transition: opacity 0.28s ease, height 0s linear 0.28s;
+    opacity: 0;
+}
+
+.checkbox .helper::before {
+    top: 0.65rem;
+    left: 0.38rem;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    box-shadow: 0 0 0 0.0625rem #FF6334;
+}
+
+.checkbox .helper::after {
+    top: 0.3rem;
+    left: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.checkbox label:hover .helper {
+    color: #5C6064;
+}
+
+.checkbox input:checked~.helper {
+    color: #5C6064;
+}
+
+.checkbox input:checked~.helper::after,
+.checkbox input:checked~.helper::before {
+    opacity: 1;
+    -webkit-transition: height 0.28s ease;
+    transition: height 0.28s ease;
+}
+
+.checkbox input:checked~.helper::after {
+    height: 0.5rem;
+}
+
+.checkbox input:checked~.helper::before {
+    height: 1.2rem;
+    -webkit-transition-delay: 0.28s;
+    transition-delay: 0.28s;
+}
+
+.checkbox a {
+    color: #5C6064;
+    font-weight: bold;
+}
+
+.radio+.radio,
+.checkbox+.checkbox {
+    margin-top: 1rem;
+}
+
+.has-error .leApoderadod.legend,
+.has-error.form-group .input-label.input-label {
+    color: #d9534f;
+}
+
+.has-error.form-group .form-help,
+.has-error.form-group .helper,
+.has-error.checkbox .form-help,
+.has-error.checkbox .helper,
+.has-error.radio .form-help,
+.has-error.radio .helper,
+.has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+    color: #d9534f;
+}
+
+.has-error .bar::before {
+    background: #d9534f;
+    left: 0;
+    width: 100%;
+}
+
+/*----------------------------Checkbox and radio button Ends-------------------*/
+
+
+/*--------------------------------Button starts--------------------------------*/
+.button-container {
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    background: transparent;
+    border: 1px solid #FF6334;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: transparent;
+    margin: 1rem 0px;
+    padding: 0.8em 0px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    overflow: hidden;
+}
+
+.button span {
+    color: #FF6334;
+    position: relative;
+    z-index: 1;
+}
+
+/* .button::before {
+    content: '';
+    position: absolute;
+    background: #FF6334;    
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+ */
+.button:hover {
+    background-color: #FF6334;
+}
+
+.button:hover span {
+    color: #fff !important;
+}
+
+.button:active::before,
+.button:focus::before {
+    -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+    transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+#form-preinscription {
+    
+}
+
+
+
+ /* FORM WIZARD */
+
+ .box-msf-internal{
+         padding: 2em;
+         background: #fff;
+         height: 600px;
+         overflow-y: scroll;
+         border-radius: 2px;
+ }
+
+ .msf-view {
+     display: none;
+     margin: 1em auto;
+ }
+
+ .msf-navigation {
+     text-align: center;
+ }
+
+ .msf-nav-button {
+     display: none;
+ }
+
+ .msf-header {
+ }
+
+  .msf-header .msf-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    opacity: 0.4;
+ }
+
+  .msf-header .msf-step i.las:before {
+      background: #fff;
+      border-radius: 50%;
+      font-size: 0.8em;
+  }
+
+ .msf-header .msf-step.msf-step-active {
+     color: #fff;
+     opacity: 1;
+ }
+
+ .msf-header .msf-step.msf-step-complete {
+     color: #fff;
+     opacity: 1;
+ }
+
+ .msf-header .msf-step.msf-step-complete i.las {
+     border-color : red;
+ }
+
+.msf-view .title {
+    color: #FF6334;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.msf-view .subtitle {
+    color: #212529;
+    font-size: 1em;
+    text-align: left;
+    display: flex;
+    line-height: 20px;
+}
+
+
+.msf-navigation button:hover {
+    box-shadow: 1px 0px 0px #F5F5F5;
+}
+
+.msf-navigation .msf-nav-button {
+    background-color: #fff;
+    border: 1px solid #FF6334;
+    border-radius: 0px;
+    color: #FF6334;
+    font-weight: bold;
+    width: 100%;
+    line-height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  .input-validation-error {
+     border-color: red;
+     outline: 0;
+     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+ }
+
+ .input-validation-error:focus {
+     border-color: red;
+     outline: 0;
+     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+ }
+ */
+
+
+ @media (max-width: 768px){
+     section.presincripcion {
+         height: 100%;
+     }
+
+     .presincripcion article {
+         padding: 2em;
+         flex-direction: column;
+    }
+
+     .preinscripcion-internal {
+         height: 100%;
+         background-image: url("../../img/preinscription/PREINSCRIPCION-MOBILE.png");
+     }
+     .preinscripcion-internal .box-flex{
+         margin-top: 85px;
+     }
+     .box-msf-internal {
+             margin-bottom: 2em;
+     }
+    .msf-movil-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-flow: row;
+    }
+    .msf-header {
+        margin-top: 3rem !important;
+         margin-bottom: 0rem;
+    }
+    .box-msf-internal{
+        background: transparent;
+    }
+    .msf-view .title, b {
+        color: #fff;
+    }
+
+    .msf-view .subtitle {
+        color: #fff;
+    }
+    .form-group .input-label {
+        color: #fff;
+    }
+
+    .form-group select,
+    .form-group select:focus,
+    .form-group select:valid,
+    .form-group input:focus,
+    .form-group input:valid,
+    .form-group input.form-file,
+    .form-group input.has-value,
+    .form-group textarea:focus,
+    .form-group textarea:valid,
+    .form-group textarea.form-file,
+    .form-group textarea.has-value,
+    .form-group label {
+        color: #fff;
+    }
+
+    .form-group select~.input-label,
+    .form-group input:focus~.input-label,
+    .form-group input:valid~.input-label,
+    .form-group input.form-file~.input-label,
+    .form-group input.has-value~.input-label,
+    .form-group textarea:focus~.input-label,
+    .form-group textarea:valid~.input-label,
+    .form-group textarea.form-file~.input-label,
+    .form-group textarea.has-value~.input-label {
+        color: #fff;
+    }
+
+    input[type="radio"] {
+        border: 1px solid #fff;
+    }
+
+    .form-group .bar {
+        border-bottom: 0.0625rem solid #fff;
+    }
+
+    input[type="radio"]:checked {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+    select.form-control option{
+        color: #fff;
+        background-color: #FF6334;
+        
+    }
+ } 

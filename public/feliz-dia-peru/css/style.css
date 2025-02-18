@@ -1,0 +1,84 @@
+/*************************************************/
+/******* FELIZ DIA PERU 2020 - CSS *********/
+/**********************************************/
+
+/* Container - Panel Front -- Panel Back */
+
+* {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.scene {
+   background-image: url("https://www.trilce.edu.pe/feliz-dia-peru/img/IMG.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card__face--front {}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.web {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .scene {
+    background-image: url("https://www.trilce.edu.pe/feliz-dia-peru/img/IMG-mobile.png");
+  }
+
+}

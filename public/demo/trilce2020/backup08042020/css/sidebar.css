@@ -1,0 +1,32 @@
+section.sidebar {
+    background-color: #F8F8F9;
+    padding: 5em 0em;
+}
+
+section.sidebar a,
+section.sidebar p,
+section.sidebar span,
+section.sidebar i {
+    color: #FF6334;
+}
+
+section.sidebar a:hover p,
+section.sidebar a:hover span,
+section.sidebar a:hover i {
+    opacity: 0.8;
+}
+
+section.sidebar p {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+section.sidebar i {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+section.sidebar a:hover {
+    color: #FF6334;
+    text-decoration: none;
+}

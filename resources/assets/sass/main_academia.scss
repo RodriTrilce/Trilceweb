@@ -1,0 +1,17 @@
+/**
+  Trilce SASS MAIN ACADEMIA
+*/
+
+// p1 include
+@import 'helpers/all';
+@import 'base/all_academia';
+
+// p2 include
+@import 'vendor/all';
+@import 'components/all';
+@import 'layout/all';
+
+// Pages
+@import 'pages/404';
+@import 'pages/other/work';
+@import 'pages/academia/all';

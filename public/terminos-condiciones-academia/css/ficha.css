@@ -1,0 +1,20 @@
+section.datos h1 {
+    font-size: 3em;
+}
+
+section.datos h2 {
+    font-size: 1.6em;
+}
+
+section.datos h3 {
+    font-size: 1.2em;
+}
+
+section.datos i {
+    font-size: 3em;
+    color: #FF6334;
+}
+
+@media (max-width: 768px){
+
+}

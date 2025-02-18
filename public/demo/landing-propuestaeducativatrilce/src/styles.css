@@ -1,0 +1,280 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: Geogrotesque-Md;
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot);
+	src: url(../fonts/33FA0F_B_0.5142c2ab.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_B_0.cb0abdf7.woff2) format("woff2"), url(../fonts/33FA0F_B_0.9b7aba9c.woff) format("woff"), url(../fonts/33FA0F_B_0.2c4f6c17.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: Geogrotesque-Rg;
+	src: url(../fonts/33FA0F_E_0.43b8c5a0.eot);
+	src: url(../fonts/33FA0F_E_0.43b8c5a0.eot?#iefix) format("embedded-opentype"), url(../fonts/33FA0F_E_0.0249aaee.woff2) format("woff2"), url(../fonts/33FA0F_E_0.26bf101d.woff) format("woff"), url(../fonts/33FA0F_E_0.0257c368.ttf) format("truetype")
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: Geogrotesque-Md;
+	color: #fff;
+}
+
+p.superior {
+	font-size: 1.5em;
+	font-weight: normal;
+	font-family: Geogrotesque-Rg !important;
+	margin: 0 auto;
+
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+.section .intro h1 {
+	margin-bottom: 1.8em;
+	font-family: Geogrotesque-Md;
+	font-weight: bold;
+}
+
+.section .intro .title {
+	display: flex;
+	flex-direction: column;
+	color: #fff
+}
+
+.section .intro .title h2 {
+	color: #fff;
+	font-size: 8em;
+	font-weight: bold;
+}
+
+.section .intro .title h3 {
+	font-size: 2.5em;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+.section .intro .text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.section .intro .text p {
+	text-align: justify;
+	line-height: normal;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: Geogrotesque-Rg !important;
+}
+
+.section#section7 .copyright {
+	position: absolute	;
+	bottom: 0px;
+	text-align: center;
+	margin: 1em auto;
+	width: 100%;
+}
+
+.section#section7 .copyright span{
+	text-align: center;
+	margin: 0px auto;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: Geogrotesque-Rg !important;
+}
+
+.section#section7 .copyright p {
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.section#section7 .copyright p.tit {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.section#section7 .copyright p.links a{
+	font-family: Geogrotesque-Rg !important;
+	text-decoration:  none;
+	color: #fff;
+}
+
+.section#section7 .copyright p.links a:hover {
+	text-decoration: underline;
+}
+
+nav li a {
+	position: relative;
+}
+
+nav .phone {
+	position: relative;
+    bottom: -25px;
+    left: -35px;
+    font-weight: normal;
+    font-family: Geogrotesque-Rg !important;
+}
+
+nav i {
+	font-size: 1.5em !important;
+}
+
+
+
+#gotop{
+    POSITION: ABSOLUTE;
+    RIGHT: 2em;
+    BOTTOM: 2em;
+    Z-INDEX: 99999;
+    background: #fff;
+    border-radius: 50%;
+    padding: .2em .5em;
+	font-size: 2em;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    align-self: center;
+	    align-content: center;
+}
+
+#gotop i{
+	color: #92c996;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+
+.fp-controlArrow.fp-next {
+	    right: 50px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+#box-navbar {
+	margin-top: 1.5 rem !important;
+}
+
+.web {
+	display: block;
+}
+
+.mobile {
+	display: none !important;
+}
+
+@media (max-width: 768px){
+
+	.web {
+		display: none !important;
+	}
+
+	.mobile {
+		display: block !important;
+	}
+
+	.section .intro .row {
+		display: flex;
+		flex-direction: column;
+	}
+	.section .intro .text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: #fff;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.section .intro .text p {
+		    font-size: 0.9em;
+			margin-bottom: 0px;
+			line-height: 1em;
+	}
+	.section .intro .graphic {
+		height: auto;
+		width: auto;
+		margin: 0.5em auto
+	}
+	.section .intro .graphic img {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.section .intro .title{
+		    width: 100%;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			justify-content: space-evenly;
+	}
+	.section .intro h1 {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+	p.superior {
+		font-size: 1em;
+	}
+	.section .intro .title h2 {	
+		font-size: 1.2em;
+		    margin: 1em auto;
+	}
+	.section .intro .title h3{
+		font-size: 1.2em;
+	}
+
+	.section p b {
+		text-align: center;
+		margin: 0 auto 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#gotop {
+		RIGHT: .5em;
+		BOTTOM: 4em;
+		padding: 0em .3em;
+	}
+
+	#gotop i{
+		font-size: .8em;
+	}
+
+	nav .phone {
+		display: none;
+	}
+	#box-navbar {
+		margin-top: 0.5	rem !important;
+	}
+	.fp-controlArrow.fp-prev {
+		left: 10px;
+		    border-width: 18.5px 14px 18.5px 0;
+	}
+	.fp-controlArrow.fp-next {
+		right: 10px;
+		border-width: 18.5px 0 18.5px 14px;
+	}
+
+	#section7 .slide .intro{
+		position: relative;
+		margin-top: -5em;
+	}
+
+	.section#section7 .copyright {
+		bottom: 1em;
+	}
+
+}

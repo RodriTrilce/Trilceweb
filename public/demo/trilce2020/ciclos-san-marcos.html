@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Academias - Trilce</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/cycles.css">
+    <style>
+        @media (max-width: 768px){
+        section.hr {
+            height: 4em;
+        }
+    }
+    .banner-internal {
+        background-image: url(img/cycles/BG-SM-DESKTOP.png) !important;
+    }
+    /* TAB CICLOS */
+    .main {
+    margin: 0  auto;
+    transition: 0.3s;
+    }
+
+    .main .content {
+    background: #fff;
+    color: #53565a;
+    font-size: 1.5rem;
+    font-family: "Geogrotesque-Rg";
+    transition: 0.3s;
+    margin-top: 2em
+    }
+
+    .main .content>div {
+    display: none;
+    padding: 20px 5px 5px;
+    transition: 0.3s;
+    }
+
+    .main input {
+    display: none;
+    }
+
+    .main label {
+    display: inline-block;
+    padding: 15px 75px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+    }
+
+    .main label:hover {
+    cursor: pointer;
+    background: #FF6334;
+    color: #fff;
+    border-bottom: 2px solid #FF6334;
+    transition: 0.3s;
+    }
+
+    .main input:checked+label {
+    background: #FF6334;
+    color: #fff;
+    border-bottom: 2px solid #FF6334;
+    transition: 0.3s;
+    }
+
+    #tab1:checked~.content #content1,
+    #tab2:checked~.content #content2,
+    #tab3:checked~.content #content3,
+    #tab4:checked~.content #content4 {
+    display: block;
+    transition: 0.3s;
+    }
+
+    /* TABLA LARGE */
+    @media(min-width: 992px) {
+        .table-rest {
+        background: white;
+        color: #53565a;
+        border-collapse: collapse;
+        font-size: 16px;
+        margin: 0 auto;
+        }
+
+        #table-rest.table-rest tr:nth-child(1) th {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+        position: relative;
+        }
+
+        .table-rest thead tr th {
+        border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest tbody tr:nth-child(1) td {
+        padding-top: 2em;
+        }
+
+        .table-rest tr th {
+        text-transform: uppercase;
+        }
+
+        .table-rest tr th,
+        .table-rest tr td {
+        padding: 8px 16px;
+        margin: 0 auto;
+        text-align: left;
+        }
+    }
+
+    /* TABLA SMALL */
+    @media (max-width: 991px) {
+        .main {
+        margin: 0 auto 0em;
+        width: 100%;
+        }
+
+        .main .content {
+        margin-top: 0em;
+        }
+
+        .main label {
+        width: 90%;
+        margin-left: 0em;
+        margin-right: 0em;
+        margin-bottom: 1em;
+        }
+
+        table.table-rest {
+        font-size: 16px;
+        }
+
+        table.table-rest,
+        .table-rest thead,
+        .table-rest tbody,
+        .table-rest th,
+        .table-rest td,
+        .table-rest tr {
+        display: block;
+        }
+
+        .table-rest tbody tr td:nth-child(1) {
+        font-weight: bold;
+        }
+
+        .table-rest thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        font-weight: bold;
+        }
+
+        .table-rest tr {
+        margin-bottom: 2em;
+        padding: 2em 1em;
+        }
+
+        .table-rest tr:nth-child(2),
+        .table-rest tr:nth-child(4),
+        .table-rest tr:nth-child(6),
+        .table-rest tr:nth-child(8),
+        .table-rest tr:nth-child(10),
+        .table-rest tr:nth-child(12),
+        .table-rest tr:nth-child(14),
+        .table-rest tr:nth-child(16),
+        .table-rest tr:nth-child(18),
+        .table-rest tr:nth-child(20) {
+        background: #f5f5f5;
+        }
+
+        .table-rest td {
+        /* Behave like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: 0.2em;
+        text-align: right;
+        }
+
+        .table-rest td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 1px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left !important;
+        }
+
+        .table-rest td:nth-of-type(1):before {
+        content: "SEDE";
+        font-weight: bold;
+        }
+
+        .table-rest td:nth-of-type(2):before {
+        content: "Turno";
+        }
+
+        .table-rest td:nth-of-type(3):before {
+        content: "Inicio";
+        }
+
+        .table-rest td:nth-of-type(4):before {
+        content: "Fin";
+        }
+
+        /* .table-rest td:nth-of-type(5):before {
+        content: "Pago único";
+        }
+
+        .table-rest td:nth-of-type(6):before {
+        content: "C1";
+        }
+
+        .table-rest td:nth-of-type(7):before {
+        content: "C2";
+        }
+
+        .table-rest td:nth-of-type(8):before {
+        content: "C3";
+        }
+
+        .table-rest td:nth-of-type(9):before {
+        content: "C4";
+        } */
+
+        .table-rest td:nth-of-type(5):before {
+        content: "Pago mensual";
+        }
+
+        .table-rest td:nth-of-type(6):before {
+        content: "Horario";
+        }
+    }
+
+    /* TAB SECUNDARIO */
+
+    .trilce-benefits {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    }
+        .trilce-benefits h3 {
+            color: #555
+        }
+
+    .trilce-benefits .tabs_wrap {
+    width: 80%;
+    }
+
+    .trilce-benefits label {
+    border-bottom: 0px solid #efefef;
+    }
+
+    .trilce-benefits .tab {
+        min-height: 51px;
+        font-size: 1.2rem;
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+     .trilce-benefits .tab i {
+             font-size: 1.5em;
+             margin: 1em auto;  
+     }
+
+    .tab_check,
+    .tab_content {
+    display: none;
+    }
+
+    #tab_1:checked~#content_1,
+    #tab_2:checked~#content_2,
+    #tab_3:checked~#content_3 {
+    display: block;
+    }
+
+    .tab_content  ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 5px;
+        line-height: 2em;
+    }
+
+    .tab_content ul li i {
+        color: #FF6334;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    /*customisation bonus*/
+    * {
+    box-sizing: border-box;
+    }
+
+    .tabs_wrap {
+    font-size: 0em;
+    }
+
+    .tabs_wrap label,
+    .tabs_wrap div {
+    font-size: 16px;
+    }
+
+    .tab {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    }
+
+    .tab_check:checked+.tab {
+    cursor: auto;
+    color: #FF6334;
+    }
+
+    .tab_content {
+    padding: 10px 15px;
+    min-height: 200px;
+    }
+
+    .tab_content .tab-internal {
+        padding-top: 4em;
+    }
+
+    .tab_content .tab-internal img {
+        max-width: 450px;
+        width: 100%;
+    }
+
+     .tab_content .tab-internal p{
+         font-size: 1em;
+         text-align: justify;
+     }
+
+     .tab_content .tab-internal p strong {
+         color: #FF6334;
+     }
+
+    @media(max-width: 991px) {
+        .banner-internal {
+        background-image: url(img/cycles/BG-SM-MOBILE.png) !important;
+        }
+        .trilce-benefits .tabs_wrap {
+        width: 100%;
+        }
+
+        .trilce-benefits .tab {
+        min-height: 51px;
+        font-size: 1.2rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+
+        .tabs_wrap div {
+        margin-top: 10px;
+        }
+        .tab_content .tab-internal {
+            padding-top: 1em;
+        }
+        .tab_content .tab-internal img {
+            display: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="trilce-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-trilce-academia-white.svg" alt="Trilce">
+            </a>
+
+            <!-- Menu Mobile -->
+            <div class="navbar-toggler">
+                <ul>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-home 32"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="lab la-whatsapp"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-phone"></i></a></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle-movil">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu Sticky -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ciclos.html">CICLOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preinscripcion.html">PREINSCRIPCION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sedes.html">SEDES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">¡REGÍSTRATE!</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COLEGIO</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-link2">
+                            <a href="index.html">
+                                <i class="las la-home"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"><i
+                                    class="lab la-whatsapp"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a href="tel:6198100">
+                                <i class="las la-phone"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="preinscripcion.html">Preinscripción</a></li>
+                        <li><a href="ciclos.html">Ciclos</a></li>
+                        <li><a href="olimpiadas.html">Olimpiadas M.</a></li>
+                        <li><a href="simulacros.html">Simulacros</a></li>
+                        <li><a href="solucionarios.hml">Solucionarios</a></li>
+                        <li><a href="sedes.html">Sedes</a></li>
+                        <li><a href="faqs.html">Preguntas frecuentes</a></li>
+                        <li><a href="error404.html">Menú Trilce</a></li>
+                        <li><a href="error404.html">¡Regístrate!</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Colegio</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="banner-internal">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Preparación San Marcos</h1>
+                    <h2>Información / inicios / costos</h2>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <section class="cycles">
+        <div class="container">
+            <div class="row titles">
+                <div class="col-md-12">
+                    <h3>¡ESTUDIA CON LOS MEJORES!</h3>
+                    <p>Encuentra todos nuestros ciclos disponibles</p>
+                </div>
+            </div>
+                <div class="main">
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1">ANUAL</label>
+
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2">SEMESTRAL</label>
+
+                    <div class="content">
+
+                        <div id="content1">
+                            <table class="table-rest">
+                                <thead>
+                                    <tr>
+                                        <th>Sede</th>
+                                        <th>Turno</th>
+                                        <th>Inicio</th>
+                                        <th>Fin</th>
+                                        <th>Pago mensual</th>
+                                        <th>Horario</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contenido-anual">
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="content2">
+                            <table class="table-rest">
+                                <thead>
+                                    <tr>
+                                        <th>Sede</th>
+                                        <th>Turno</th>
+                                        <th>Inicio</th>
+                                        <th>Fin</th>
+                                        <th>Pago mensual</th>
+                                        <th>Horario</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contenido-semestral">
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="cycles internal">
+        <div class="container">
+            <div class="row trilce-benefits">
+                <h3>¿POR QUE SOMOS TU MEJOR OPCIÓN?</h3>
+                <div class="tabs_wrap">
+
+                    <input type="radio" name="tab_gp_1" class="tab_check" id="tab_1" checked>
+                    <label class="tab" for="tab_1">
+                        <i class="las la-book-open"></i>
+                        CURSOS 
+                    </label>
+                    <input type="radio" name="tab_gp_1" class="tab_check" id="tab_2">
+                    <label class="tab" for="tab_2">
+                        <i class="las la-lightbulb"></i>
+                        CICLOS
+                    </label>
+                    <input type="radio" name="tab_gp_1" class="tab_check" id="tab_3">
+                    <label class="tab" for="tab_3">
+                        <i class="las la-edit"></i>
+                        BENEFICIOS
+                    </label>
+
+                    <div class="tab_content" id="content_1">
+                        <div class="container">
+                            <div class="row tab-internal">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
+                                                <li><strong>Conocimientos</strong></li>
+                                            </ul>
+                                        </div>
+                                         <div class="col-sm-6 col-md-6">
+                                             <ul>
+                                                <li><i class="las la-circle"></i> Aritmética</li>
+                                                <li><i class="las la-circle"></i> Geometría</li>
+                                                <li><i class="las la-circle"></i> Física</li>
+                                                <li><i class="las la-circle"></i> Ciencias Biológicas</li>
+                                                <li><i class="las la-circle"></i> Lengua</li>
+                                                <li><i class="las la-circle"></i> Historia del Perú</li>
+                                                <li><i class="las la-circle"></i> Geografía</li>
+                                                <li><i class="las la-circle"></i> Economía</li>
+                                             </ul>
+                                         </div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <ul>
+                                                <li><i class="las la-circle"></i> Álgebra</li>
+                                                <li><i class="las la-circle"></i> Trigonometría</li>
+                                                <li><i class="las la-circle"></i> Química</li>
+                                                <li><i class="las la-circle"></i> Filosofía y Lógica</li>
+                                                <li><i class="las la-circle"></i> Literatura</li>
+                                                <li><i class="las la-circle"></i> Historia Universal</li>
+                                                <li><i class="las la-circle"></i> Psicología</li>
+                                                <li><i class="las la-circle"></i> Cívica</li>
+                                            </ul>
+                                         </div>
+                                        <br>
+                                        <div class="col-md-12">
+                                            <ul>
+                                                <li><strong>Habilidades</strong></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <ul>
+                                                <li><i class="las la-circle"></i>  Habilidad Lógica Matemática (HM)</li>
+                                                <li><i class="las la-circle"></i>  Habilidad Verbal (HV)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-xs-none d-sm-none d-md-block">
+                                    <img src="img/cycles/sm/1-CURSOS-IMG.png" alt="">
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="tab_content" id="content_2">
+                        <div class="container">
+                            <div class="row tab-internal">
+                                <div class="col-sm-12 col-md-6">
+                                     <p>
+                                         <strong>Anual:</strong> Dirigido a estudiantes que no cuenten
+                                         con preparación
+                                         preuniversitaria previa y que desean postular a San Marcos en el examen de
+                                         admisión de marzo.
+                                     </p>
+
+                                     <p>
+                                         <strong>Semestral:</strong> Dirigido a estudiantes que cuenten
+                                         con preparación
+                                         preuniversitaria previa y postulen a San Marcos.
+                                     </p>
+
+                                     <p>
+                                         <strong>Repaso Semestral:</strong> Se divide en dos bloques, el
+                                         primer bloque esta compuesto por 30 % teórico y 70 % práctico; el segundo
+                                         bloque es 100% práctico. Está dirigido a los alumnos que se han preparado
+                                         anteriormente.
+                                     </p>
+
+                                     <p>
+                                         <strong>Intensivo:</strong> Dirigido a estudiantes que no
+                                         cuenten con preparación
+                                         preuniversitaria previa y postulen a San Marcos en el examen de admisión
+                                         de marzo.
+                                     </p>
+
+                                     </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <p>
+                                            <strong>Repaso:</strong> Dirigido a estudiantes que acaban
+                                            de culminar un ciclo completo
+                                            de preparación preuniversitaria y postulen a San Marcos en el examen de
+                                            admisión de marzo.
+                                        </p>
+
+                                        <p>
+                                            <strong>Reforzamiento:</strong> Dirigido a estudiantes que
+                                            acaban de culminar un ciclo
+                                            completo de preparación preuniversitaria y postulen a San Marcos en el
+                                            examen de admisión de septiembre.
+                                        </p>
+
+                                        <p>
+                                            <strong>Verano:</strong> Dirigido a estudiantes que desean
+                                            iniciar una preparación
+                                            preuniversitaria con el objetivo de postular a San Marcos.
+                                        </p>
+
+                                        <p>
+                                            <strong>Semestral Escolarizado:</strong> El Semestral
+                                            Escolarizado es 50% teórico y 50%
+                                            práctico, y es para los alumnos que se encuentran en el colegio y/o que no
+                                            han tenido preparación
+                                            anteriormente.
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" id="content_3">
+                        <div class="container">
+                            <div class="row tab-internal">
+                                <div class="col-sm-12 col-md-6">
+                                    <ul>
+                                      <li><i class="las la-circle"></i> Con 40 años de experiencia</li>
+                                      <li><i class="las la-circle"></i> Becas mensuales para nuestros alumnos más
+                                          destacados*</li>
+                                      <li><i class="las la-circle"></i> La mejor plana docente</li>
+                                      <li><i class="las la-circle"></i> Asesorías</li>
+                                      <li><i class="las la-circle"></i> Maratones dominicales de ciencias</li>
+                                      <li><i class="las la-circle"></i> Talleres especiales</li>
+                                      <li><i class="las la-circle"></i> Libros totalmente gratis</li>
+                                      <li><i class="las la-circle"></i> Tutoría personalizada</li>
+                                      <li><i class="las la-circle"></i> Exigencia y disciplina</li>
+                                      <li><i class="las la-circle"></i> Simulacros tipo examen de admisión</li>
+                                      <li><i class="las la-circle"></i> Más horas de clases por menos costo</li>
+                                      <li><i class="las la-circle"></i> Intranet (asistencias y notas)</li>
+                                    </ul>
+                                    <br>
+                                    <ul>
+                                        <li><strong>*Beca completa, media beca (según su rendimiento).</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 d-xs-none d-sm-none d-md-block">
+                                    <img src="img/cycles/sm/3-BENEFICIOS-IMG.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="cycles">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center mb-5">También preparamos a nuestros alumnos para ingresar  a estas universidades</p>
+                </div>
+            </div>
+            <div class="row links">
+                <div class="col-md-12">
+                    <div class="row special-feature d-flex justify-content-center">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="s-feature-box text-center">
+                                <a href="ciclos-uni.html">
+                                    <div class="mask-top">
+                                        <img src="img/cycles/LOGO-UNI.svg">
+                                    </div>
+                                    <div class="mask-bottom">
+                                        <img src="img/cycles/LOGO-UNI.svg">
+                                        <p class="small">PREPARACIÓN</p>
+                                        <p class="big">UNI</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="s-feature-box text-center">
+                                <a href="ciclos-pucp.html">
+                                    <div class="mask-top">
+                                        <img src="img/cycles/LOGO-CATO.svg">
+                                    </div>
+                                    <div class="mask-bottom">
+                                        <img src="img/cycles/LOGO-CATO.svg">
+                                        <p class="small">PREPARACIÓN</p>
+                                        <p class="big">CATÓLICA</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="calltoaction">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <div class="row box">
+                        <div class="col-sm-12 col-md-8 box-div">
+                                <h5>¡No te quedes <br><b>sin vacante</b>!</h5>
+                                <span>Nuevos ciclos disponibles</span>
+                                <button class="btn">Registrate aquí</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <img src="img/cycles/calltoaction.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hr">
+        <p>&nbsp;</p>
+    </section>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <a href="simulacros.html">
+                        <i class="las la-bullhorn"></i>
+                        <p>Simulacros</p>
+                        <span>Inscripciones y resultados</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="solucionarios.html">
+                        <i class="las la-paperclip"></i>
+                        <p>Solucionarios</p>
+                        <span>Área de descarga</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="faqs.html">
+                        <i class="las la-question"></i>
+                        <p>Preguntas frecuentes </p>
+                        <span>Resolvemos tus dudas</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="olimpiadas.html">
+                        <i class="las la-bell"></i>
+                        <p>Olimpiadas de Matemática</p>
+                        <span>Fechas y lugares</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row menu-movil">
+                <div class="col-sm-12">
+                    <p>
+                        <a>SIGAMOS CONECTADOS</a>
+                    </p>
+                    <p>
+                        <a>CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                    </p>
+                </div>
+            </div>
+            <div class="row menu">
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="preinscripcion.html">PREINSCRIPCIÓN</a>
+                    </p>
+                    <p>
+                        <a href="ciclos.html">CICLOS</a>
+                    </p>
+                    <p>
+                        <a href="sedes.html">SEDES</a>
+                    </p>
+                    <p>
+                        <a href="blog.html">BLOG</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="error404.html">¡REGISTRATE!</a>
+                    </p>
+                    <p>
+                        <a href="menu.html">MENÚ TRILCE</a>
+                    </p>
+                    <p>
+                        <a href="nosotros.html">NOSOTROS</a>
+                    </p>
+                    <p>
+                        <a href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="#">COLEGIO </a>
+                    </p>
+                    <p>
+                        <a href="index.html">INICIO </a>
+                    </p>
+                    <p>
+                        <a href="#">CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center mt-4 mb-5">© 2020 Academia Trilce.Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/plugins/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+        $('#toggle-movil').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        const SERVICIO = "servicio";
+
+        const validateType = (value, type) => typeof value === type;
+
+        // variable que chekea si una variable tiene algo !!
+        // regresa false si es nulo el valor, regresar verdadero si tiene algo
+        const noIsNull = value => !!value && value !== "undefined" && value !== null;
+
+        const objectToString = obj => {
+            return !!obj && validateType(obj, "object") ? JSON.stringify(obj) : obj;
+        };
+
+        // combierte un string a objecto valido !!
+        const stringToObject = str => {
+            if (!noIsNull(str)) return str;
+            return JSON.parse(str);
+        };
+
+        // regresa los datos del usuario !!
+        const getUserStorage = () => {
+            const serverItem = localStorage.getItem(SERVICIO);
+            return !!serverItem ? stringToObject(serverItem) : {};
+        };
+
+        const sanmarcos = getUserStorage();
+        console.log("/*-----------------------------------------------")
+        console.log("Variable SANMARCOS: ")
+        console.table(sanmarcos)
+        console.log("-----------------------------------------------*/")
+
+        function filtro(filtro, selector, secondSelector = null) {
+            let result = sanmarcos.ACASM.filter(v => v.NIVEL_ESTUDIO_DESCRIPCION === filtro);
+            if (!!result) {
+                if (!!secondSelector) {
+                    let secondFilter = sanmarcos.ACASM.filter(v => v.NIVEL_ESTUDIO_DESCRIPCION === secondSelector);
+                    result = result.concat(secondFilter);
+                    console.log("filtro", result)
+                }
+                llenado(result, selector)
+            }
+        }
+
+        // Llenado de contenido en la tabla
+        function llenado(items, selector) {
+            const tabla = document.getElementById(selector);
+            let td = "";
+            const table = items.map(item => {
+                td += `<tr>
+          <td>${item.BLDG_DESCRIPCION}</td>
+          <td class="turno">${item.TURNO}</td>
+          <td>${item.FECHA_INICIO}</td>
+          <td>${item.FECHA_FIN}</td>
+          <td>S/ ${item.PAGO_MENSUAL}</td>
+          <td>${item.HORARIO_SEMANAL1} ${item.HORARIO_SEMANAL2}</td>
+        </tr>
+        `;
+            });
+
+            if (!!table) {
+                document.getElementById(selector).innerHTML = td;
+            }
+        }
+        //----------
+        filtro('Anual', 'contenido-anual', 'Anual Tarde');
+        //filtro('Anual Tarde', 'contenido-anualtarde');
+        //--------------------
+        filtro('Semestral', 'contenido-semestral', 'Semestral Tarde');
+        //filtro('Semestral Tarde', 'contenido-semestraltarde');
+    </script>
+
+    <script>
+        $(".turno").text(function () {
+            return $(this).text().replace("M", "Mañana");
+        });
+        $(".turno").text(function () {
+            return $(this).text().replace("T", "Tarde");
+        });
+        $("td").text(function () {
+            return $(this).text().replace("null", "");
+        });
+        $("td").text(function () {
+            return $(this).text().replace("Academia", " ");
+        });
+        $("td").text(function () {
+            return $(this).text().replace("Sábado", "/ Sábado");
+        });
+    </script>
+</body>
+
+</html>

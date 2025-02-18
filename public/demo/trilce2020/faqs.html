@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Academias - Trilce</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages/faqs.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">1 -->
+    <style>
+        @media (max-width: 768px) {
+            section.hr {
+                height: 4em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="trilce-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-trilce-academia-white.svg" alt="Trilce">
+            </a>
+
+            <!-- Menu Mobile -->
+            <div class="navbar-toggler">
+                <ul>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-home 32"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="lab la-whatsapp"></i></a></span>
+                        <span class="nav-link nav-separation">
+                            <a href="#"><i class="las la-phone"></i></a></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle-movil">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu Sticky -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ciclos.html">CICLOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="preinscripcion.html">PREINSCRIPCION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sedes.html">SEDES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error404.html">¡REGÍSTRATE!</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">COLEGIO</a>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center flex-row">
+                        <span class="nav-link nav-link2">
+                            <a href="index.html">
+                                <i class="las la-home"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=51922336565&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"><i
+                                    class="lab la-whatsapp"></i>
+                            </a>
+                        </span>
+                        <span class="nav-link nav-link2">
+                            <a href="tel:6198100">
+                                <i class="las la-phone"></i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item d-xs-none d-sm-none d-md-block">
+                        <span class="nav-link nav-separation"></span>
+                    </li>
+                    <li class="nav-item menu-toggle">
+                        <div class="nav-link nav-separation2">
+                            <div class="toggle-overlay-button" id="toggle">
+                                <span class="top"></span>
+                                <span class="middle"></span>
+                                <span class="bottom"></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div></div> 
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="preinscripcion.html">Preinscripción</a></li>
+                        <li><a href="ciclos.html">Ciclos</a></li>
+                        <li><a href="olimpiadas.html">Olimpiadas M.</a></li>
+                        <li><a href="simulacros.html">Simulacros</a></li>
+                        <li><a href="solucionarios.hml">Solucionarios</a></li>
+                        <li><a href="sedes.html">Sedes</a></li>
+                        <li><a href="faqs.html">Preguntas frecuentes</a></li>
+                        <li><a href="error404.html">Menú Trilce</a></li>
+                        <li><a href="error404.html">¡Regístrate!</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Colegio</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="faqs-superior">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h1>Preguntas frecuentes</h1>
+                    <h2>¡Resolvemos tus dudas!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="faqs my-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 px-0">
+
+                       <ul class="nav nav-tabs" role="tablist">
+                           <li class="nav-item">
+                               <a class="nav-link active" data-toggle="tab" href="#home">
+                                   <i class="las la-graduation-cap"></i> PROPUESTA <br> ACADÉMICA
+                                </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" data-toggle="tab" href="#menu1">
+                                   <i class="las la-lightbulb"></i> INSCRIPCIÓN
+                                </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" data-toggle="tab" href="#menu2">
+                                   <i class="las la-edit"></i> SIMULACROS
+                                </a>
+                           </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu3">
+                                    <i class="las la-book-open"></i> OTROS
+                                </a>
+                            </li>
+                       </ul>
+
+                       <!-- Tab panes -->
+                       <div class="tab-content">
+                           <div id="home" class="tab-pane active"><br>
+                            
+                                <div id="accordion" class="accordion">
+                                    <div class="card mb-0">
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            href="#collapseOne">
+                                                            <a class="card-title">¿Cuentan con asesorías por las tardes?</a>
+                                                        </div>
+                                                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">Así es, contamos con
+                                                                asesorías gratuitas (generalmente, solo de los
+                                                                cursos de ciencias), cuyo horario es programado por cada
+                                                                local. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseTwo">
+                                                            <a class="card-title">¿Para qué universidades ofrecen preparación?</a>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify ">Academias Trilce ofrece preparación para
+                                                                Católica, UNI y San Marcos.
+                                                                Si deseas postular a otra universidad, te recomendamos la
+                                                                preparación San Marcos. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                data-parent="#accordion" href="#collapseThree">
+                                                <a class="card-title">¿Cuántos cursos dictan?</a>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                        <div class="card-body text-justify">La cantidad de cursos depende de la preparación
+                                                            que se elija; puedes consultar esta información aquí. </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </aside>
+
+                                                    
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFour">
+                                                            <a class="card-title">¿Cuentan con biblioteca?</a>
+                                                        </div>
+                                                        <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">Sí contamos con biblioteca en nuestra sede de
+                                                                Santa Beatriz. Todos los alumnos de Academias Trilce pueden acceder
+                                                                a ella, solo tienen que acercarse portando su carné para el ingreso,
+                                                                que es hasta las 5 p. m. La biblioteca atiende hasta las 9 p. m.
+                                                            </div>
+                                                        </div>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFive">
+                                                            <a class="card-title">¿Las academias se especializan en la preparación para ciertas carreras, como Administración e Ingeniería, etc.?</a>
+                                                        </div>
+                                                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">La preparación se realiza para el examen de
+                                                                admisión de la universidad, no para la carrera.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+
+                           </div>
+
+                           <div id="menu1" class="tab-pane fade"><br>
+                            
+                                <div id="accordion" class="accordion">
+                                    <div class="card mb-0">
+                                        <aside>
+                                            <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="card-header collapsed" data-toggle="collapse"
+                                                                href="#collapseOne2">
+                                                                <a class="card-title">¿Cuándo inicia un nuevo ciclo
+                                                                    académico?</a>
+                                                            </div>
+                                                            <div id="collapseOne2" class="collapse" data-parent="#accordion">
+                                                                <div class="card-body text-justify">Las fechas de
+                                                                    nuestros nuevos inicios se pueden consultar aquí y a
+                                                                    través de nuestras redes sociales.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseTwo2">
+                                                            <a class="card-title">¿Cuáles son los requisitos para la
+                                                                inscripción?</a>
+                                                        </div>
+                                                        <div id="collapseTwo2" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify ">Nuestros requisitos son
+                                                                los siguientes: 2 fotos tamaños carné, copia de DNI del
+                                                                alumno y apoderado, 1 mica A4 y el pago de la
+                                                                mensualidad.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseThree2">
+                                                            <a class="card-title">¿Es necesario llevar todos los
+                                                                documentos requeridos si estudié en el ciclo
+                                                                anterior?</a>
+                                                        </div>
+                                                        <div id="collapseThree2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Sí, es necesario, ya que
+                                                                se trata de un nuevo ciclo.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFour2">
+                                                            <a class="card-title">¿Debo realizar un pago adicional al
+                                                                momento de la inscripción?</a>
+                                                        </div>
+                                                        <div id="collapseFour2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">No hay pago de
+                                                                inscripción ni cuota de ingreso.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFive2">
+                                                            <a class="card-title">¿Cuál es el medio de pago?</a>
+                                                        </div>
+                                                        <div id="collapseFive2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">El pago se realiza en la
+                                                                misma sede; puede ser en efectivo o con tarjeta de
+                                                                crédito o débito (Visa o MasterCard).</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseSix2">
+                                                            <a class="card-title">¿Puedo separar una vacante?</a>
+                                                        </div>
+                                                        <div id="collapseSix2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">No hay separación de
+                                                                vacantes, por lo que te recomendamos acercarte a la
+                                                                misma sede.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseSeven2">
+                                                            <a class="card-title">¿Se puede realizar un cambio de ciclo
+                                                                si este aún no ha culminado?</a>
+                                                        </div>
+                                                        <div id="collapseSeven2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">El cambio de ciclo debe
+                                                                ser consultado en la Coordinación de la sede.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseEight2">
+                                                            <a class="card-title">¿Qué ocurre si no cuento con DNI
+                                                                porque está en proceso de renovación?</a>
+                                                        </div>
+                                                        <div id="collapseEight2" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">En ese caso, tienes que
+                                                                acercarte con el voucher entregado en Reniec.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                    </div>
+                                </div>
+
+                           </div>
+
+                           <div id="menu2" class="tab-pane fade"><br>
+                            
+                                <div id="accordion" class="accordion">
+                                    <div class="card mb-0">
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            href="#collapseOne3">
+                                                            <a class="card-title"> ¿Hay simulacros y tienen algún
+                                                                costo?</a>
+                                                        </div>
+                                                        <div id="collapseOne3" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">Sí hay simulacros en la
+                                                                academia, sus fechas se anuncian previamente por la sede
+                                                                que los organice. Son gratuitos y las inscripciones se
+                                                                realizan aquí.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseTwo3">
+                                                            <a class="card-title">¿Qué pasa si olvidé el código de
+                                                                inscripción del simulacro?</a>
+                                                        </div>
+                                                        <div id="collapseTwo3" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify ">Te recomendamos
+                                                                comunicarte con tu sede.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseThree3">
+                                                            <a class="card-title"> ¿En dónde encuentro los resultados
+                                                                del simulacro?</a>
+                                                        </div>
+                                                        <div id="collapseThree3" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">Te recomendamos ingresar
+                                                                aquí. </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFour3">
+                                                            <a class="card-title">¿En dónde encuentro los
+                                                                solucionarios?</a>
+                                                        </div>
+                                                        <div id="collapseFour3" class="collapse" data-parent="#accordion">
+                                                            <div class="card-body text-justify">Te recomendamos ingresar
+                                                                aquí.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                    </div>
+                                </div>
+
+                           </div>
+
+                           <div id="menu3" class="tab-pane fade"><br>
+
+                                <div id="accordion" class="accordion">
+                                    <div class="card mb-0">
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            href="#collapseOne4">
+                                                            <a class="card-title">¿Hay academias en provincias?</a>
+                                                        </div>
+                                                        <div id="collapseOne4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Por el momento no
+                                                                contamos con academias en provincias.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseTwo4">
+                                                            <a class="card-title">¿Por qué no hay tolerancia con la hora
+                                                                de entrada?</a>
+                                                        </div>
+                                                        <div id="collapseTwo4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify ">No se aceptan tardanzas
+                                                                consecutivas, esto está establecido en los reglamentos
+                                                                que se dan a conocer al momento de la matrícula.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseThree4">
+                                                            <a class="card-title"> ¿Hay un break durante el día?</a>
+                                                        </div>
+                                                        <div id="collapseThree4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Sí, hay dos breaks de 10
+                                                                minutos cada uno.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFour4">
+                                                            <a class="card-title"> ¿Tendré que comprar libros?</a>
+                                                        </div>
+                                                        <div id="collapseFour4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Todos los materiales
+                                                                están incluidos dentro del pago de la mensualidad.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseFive4">
+                                                            <a class="card-title">¿Cuál es el trámite para obtener el
+                                                                duplicado del carné?</a>
+                                                        </div>
+                                                        <div id="collapseFive4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Tendrás que acercarte a
+                                                                la caja de la sede para realizar el pago de S/10 por el
+                                                                duplicado del carné.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                        <aside>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="card-header collapsed" data-toggle="collapse"
+                                                            data-parent="#accordion" href="#collapseSix4">
+                                                            <a class="card-title"> ¿Cómo justificar una falta o
+                                                                tardanza?</a>
+                                                        </div>
+                                                        <div id="collapseSix4" class="collapse"
+                                                            data-parent="#accordion">
+                                                            <div class="card-body text-justify">Solo se justificarán las
+                                                                inasistencias o tardanzas por motivos médicos o trámites
+                                                                documentarios; en estos casos, deberás presentar un
+                                                                documento que lo demuestre junto con una copia del DNI
+                                                                del padre o apoderado, y llenar un formato que puedes
+                                                                solicitar en Atención al Cliente.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+
+                                    </div>
+                                </div>
+
+                           </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calltoaction">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <div class="row box">
+                        <div class="col-sm-12 col-md-8 box-div">
+                            <h5>¡No te quedes <br><b>sin vacante</b>!</h5>
+                            <span>Nuevos ciclos disponibles</span>
+                            <button class="btn">Registrate aquí</button>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <img src="img/cycles/calltoaction.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hr">
+        <p>&nbsp;</p>
+    </section>
+
+    <section class="sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <a href="simulacros.html">
+                        <i class="las la-bullhorn"></i>
+                        <p>Simulacros</p>
+                        <span>Inscripciones y resultados</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="solucionarios.html">
+                        <i class="las la-paperclip"></i>
+                        <p>Solucionarios</p>
+                        <span>Área de descarga</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="faqs.html">
+                        <i class="las la-question"></i>
+                        <p>Preguntas frecuentes </p>
+                        <span>Resolvemos tus dudas</span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <a href="olimpiadas.html">
+                        <i class="las la-bell"></i>
+                        <p>Olimpiadas de Matemática</p>
+                        <span>Fechas y lugares</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row menu-movil">
+                <div class="col-sm-12">
+                    <p>
+                        <a>SIGAMOS CONECTADOS</a>
+                    </p>
+                    <p>
+                        <a>CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                    </p>
+                </div>
+            </div>
+            <div class="row menu">
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="preinscripcion.html">PREINSCRIPCIÓN</a>
+                    </p>
+                    <p>
+                        <a href="ciclos.html">CICLOS</a>
+                    </p>
+                    <p>
+                        <a href="sedes.html">SEDES</a>
+                    </p>
+                    <p>
+                        <a href="blog.html">BLOG</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="error404.html">¡REGISTRATE!</a>
+                    </p>
+                    <p>
+                        <a href="menu.html">MENÚ TRILCE</a>
+                    </p>
+                    <p>
+                        <a href="nosotros.html">NOSOTROS</a>
+                    </p>
+                    <p>
+                        <a href="http://intranet.trilce.edu.pe/" target="_blank">INTRANET</a>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <p>
+                        <a href="#">COLEGIO </a>
+                    </p>
+                    <p>
+                        <a href="index.html">INICIO </a>
+                    </p>
+                    <p>
+                        <a href="#">CENTRAL: 6198 100 </a>
+                    </p>
+                    <p>
+                        <ul class="social">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n"
+                                    title="Chatea con nosotros" target="_blank" rel="nofollow">
+                                    <i class="lab la-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" title="Síguenos Facebook"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/trilcecolegio/" title="Síguenos en Instagram"
+                                    target="_blank" rel="nofollow">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1"
+                                    title="Suscríbete en YouTube" target="_blank" rel="nofollow">
+                                    <i class="lab la-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/TRILCEtweet" title="Síguenos en Twitter" target="_blank"
+                                    rel="nofollow">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+016198100" title="¡Estamos para tí!" target="_blank" rel="nofollow">
+                                    <i class="las la-phone"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <img class="texr-center" width="200" src="img/home/logo-40-gray.png">
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <hr>
+                    <p class="text-center mt-4 mb-5">© 2020 Academia Trilce.Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/plugins/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $('#toggle').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+
+        $('#toggle-movil').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

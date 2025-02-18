@@ -1,0 +1,519 @@
+.h-mtop{
+  margin-top: 1rem;
+}
+
+.h-mbottom{
+  margin-bottom: 1rem;
+}
+
+.nuevos-i{
+  margin-top: 34px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+
+  .nuevos-i-title{
+    margin-bottom: 1.8rem;
+
+    h2{
+      font-size: 2.4rem;
+      font-family: $font_cae_bold;
+      font-weight: bold;
+      color: $gray;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .nuevos-i-box{
+
+    >div {
+      border: 1px solid $gray;
+      margin: 2vw;
+      transition: 0.3s ease-out;
+
+      >a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 20px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        position: relative;
+      }
+
+      .nuevos-i-top{
+        font-family: $font_geo_reg;
+        position: relative;
+        transition: all .3s;
+        top: 10px;
+
+        @include breakpoint(baby){
+          top: 0;
+        }
+
+        h3{
+          font-size: 1.7rem;
+          color: transparentize($gray, 0.4);
+        }
+
+        h4{
+          font-size: 1.3rem;
+          color: transparentize($gray, 0.4);
+        }
+
+        >img{
+          opacity: 0.4;
+          filter: alpha(opacity=40);
+          width: 120px;
+          height: 120px;
+          transition: opacity .2s ease-in-out;
+        }
+      }
+
+      .nuevos-i-bottom{
+        color: $orange;
+
+        hr{
+          margin: 15px auto;
+          width: 40%;
+          border: 0.5px solid $orange;
+        }
+
+      }// end class:nuevos-i-botttom
+
+
+      position: relative;
+
+      // line down
+      &:after{
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 8px;
+        background: $orange;
+        transition: all .3s;
+        opacity: 0;
+        top: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+
+
+      &:hover{
+        border-color: $gray;
+
+        h3,h4{
+          color: $gray;
+        }
+
+        img{
+          opacity:1 !important;
+          filter: alpha(opacity=100) !important;
+        }
+
+        .nuevos-i-bottom{
+          font-weight: bold;
+        }
+
+        .nuevos-i-top{
+          color: $gray;
+        }
+
+        &:after{
+          top: 85%;
+          opacity: 1;
+        }
+
+        .nuevos-i-top{
+          top: 0px;
+        }
+
+      }
+
+
+      @media screen and (max-width: 768px) {
+        border: 0px;
+        margin-right: 0;
+
+        &:after{
+          display: none;
+        }
+
+        >a{
+          padding: 0;
+        }
+
+        .nuevos-i-top{
+
+          img{
+            width: 50px;
+            height: 50px;
+          }
+
+          h3{
+            font-size: 1.2rem;
+          }
+
+          h4{
+            letter-spacing: 0;
+            font-size: 0.8rem;
+          }
+        }
+
+        .nuevos-i-bottom{
+          display: none;
+        }
+
+        &:nth-child(1){
+          position: relative;
+        }
+
+        &:nth-child(1)::before{
+          content: "";
+          position: absolute;
+          right: 0;
+          z-index: 1;
+          top: 20%;
+          width: 1px;
+          height: 45%;
+          background: $gray;
+        }
+
+        &:nth-child(3){
+          position: relative;
+        }
+
+        &:nth-child(3)::before{
+          content: "";
+          position: absolute;
+          left: 10%;
+          z-index: 1;
+          top: 20%;
+          width: 1px;
+          height: 45%;
+          background: $gray;
+        }
+
+      }
+
+    }// end >div
+  }
+}
+
+
+.nuevos-i-force-minus{
+
+  >div{
+
+    &:after{
+      display: none;
+    }
+
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @media screen and (min-width: 768px) {
+    .nuevos-i-title{
+      display: none;
+    }
+
+    .nuevos-i-box{
+      justify-content: left;
+
+      >div{
+        border: 0px;
+        margin-right: 0;
+
+        &:after{
+          display: none;
+        }
+
+        >a{
+          padding: 0;
+        }
+
+        .nuevos-i-top{
+          text-align: left;
+
+          img{
+            width: 50px;
+            margin-bottom: 1%;
+          }
+
+          h3{
+            font-size: 2rem;
+            line-height: 1.5rem;
+          }
+
+          h4{
+            font-size: 1rem;
+          }
+        }
+
+        .nuevos-i-bottom{
+          display: none;
+        }
+
+        position: relative;
+        margin-right: -10px;
+
+        &::before{
+          content: "";
+          position: absolute;
+          left: 60%;
+          z-index: 1;
+          top: 20%;
+          width: 1px;
+          height: 45%;
+          background: $gray;
+        }
+
+        &:nth-child(3)::before{
+          display: none;
+        }
+
+
+      }//end >div
+
+    }//end .nuevos-i-box
+
+  }//end media query
+
+}//end force minus
+
+.nuevos-i-active{
+  position: relative;
+  img{
+    opacity:1 !important;
+    filter: alpha(opacity=100) !important;
+  }
+
+  .nuevos-i-top{
+    h3,h4{
+      color: $gray !important;
+    }
+
+  }
+
+  &::after{
+    position: absolute;
+    content: "";
+    background: $orange;
+    width: 1.6rem;
+    height: .7rem;
+    z-index: 1;
+    bottom: -46px;
+    left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    &::after{
+      left: 35%;
+    }
+  }
+
+}
+
+.nuevos-i-border{
+  padding-bottom: 2.5rem;
+  border-bottom: 0.5px solid $gray;
+}
+
+
+.block-effecthover-item {
+  transition: all 2s ease-out;
+
+  h3,h4{
+    color: $gray !important;
+  }
+
+  img{
+    opacity:1 !important;
+    filter: alpha(opacity=100) !important;
+  }
+
+  .nuevos-i-bottom{
+    font-weight: bold !important;
+  }
+
+  .nuevos-i-top{
+    color: $gray !important;
+  }
+}// End block-effecthover-item
+
+.block-effecthover{
+  transition: all 0.2s ease-out !important;
+  &:hover{
+    .block-effecthover-item:not(:hover){
+      border: 1px solid transparentize($gray, .7) !important;
+
+      @media screen and (max-width: 768px){
+        border: 0 !important;
+      }
+
+      h3{
+        color: transparentize($gray, 0.4) !important;
+      }
+
+      h4{
+        color: transparentize($gray, 0.4) !important;
+      }
+
+      img{
+        opacity: 0.4 !important;
+        filter: alpha(opacity=40) !important;
+      }
+
+      .nuevos-i-bottom{
+        color: transparentize($gray, 0.4) !important;
+      }
+    }
+
+  }// End block-effecthover-item not hover
+
+}
+
+//ads-incripciones
+.container-main-aca{
+  background:#f7f7f7;
+}
+.incriptions-acade-ads{
+  background:#f7f7f7;
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+  @include breakpoint(baby){
+    margin-top: 19px;
+    margin-bottom: 20px;
+  }
+}
+
+.incriptions-acade-ads__link{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	
+	@include breakpoint(baby){
+		padding: 15px;
+	}
+}
+
+.incriptions-acade-ads__container{
+    min-height: 100px;
+    color: $orange;
+    max-width: 700px;
+    /* border: 1px solid $orange; */
+   
+
+
+  h1{
+    font-size: 3rem;
+    @include breakpoint(baby){
+      font-size: 1.6rem;
+    }
+  }
+
+
+  h1,h2{
+    color: $orange;
+    font-family: $font_geo_reg;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  p{
+    color: #53565a;
+    font-size: 1rem;
+    font-family: $font_geo_reg;
+    padding-bottom: 20px; 
+
+  }
+}
+
+.incriptions-acade-ads__container-cta{
+  padding: 10px;
+  margin-bottom: 10px;
+  background:  $orange;
+  color: white;
+}
+//Title silulacrum
+
+.simulacrum__title{
+  display: block;
+  font-size: 3.5rem;
+  font-family: $font_cae_heavy;
+
+  @include breakpoint(baby){
+    font-size: 1.3rem;
+  }
+
+  &.simulacrum__title--and{
+    color: $gray;
+    font-size: 2rem;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+//Registrate Flotante
+.more_information{
+  background: $orange;
+  min-height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+
+  @include breakpoint(baby){
+    padding: 10px;
+  }
+}
+
+.more_information__call{
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+
+  @include breakpoint(baby){
+    font-size: 1.2rem;
+  }
+
+  a{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    color:white;
+    text-decoration: none;
+
+    &:visited{
+      color:white;
+    }
+  }
+}

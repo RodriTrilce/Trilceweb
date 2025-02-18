@@ -1,0 +1,1118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita scroll horizontal innecesario */
+}
+
+section.section2.fondo_primeros_puestos.pad0 {
+    height: 100vh !important;
+    height: 100%;
+}
+
+.container-fluid.mb_m {
+    height: 100vh;
+}
+
+.row.justify-content-center.clas_espe {
+    height: 100vh;
+}
+
+
+@font-face {
+    font-family: CaeciliaLTProHeavy;
+    src: url(../fonts/CaeciliaLTProHeavy.eot);
+    src: url(../fonts/CaeciliaLTProHeavy.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTProHeavy.woff2) format("woff2"), url(../fonts/CaeciliaLTProHeavy.woff) format("woff"), url(../fonts/CaeciliaLTProHeavy.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: CaeciliaLTProBold;
+    src: url(../fonts/CaeciliaLTProBold.eot);
+    src: url(../fonts/CaeciliaLTProBold.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTProBold.woff2) format("woff2"), url(../fonts/CaeciliaLTProBold.woff) format("woff"), url(../fonts/CaeciliaLTProBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: CaeciliaLTProRoman;
+    src: url(../fonts/CaeciliaLTProRoman.eot);
+    src: url(../fonts/CaeciliaLTProRoman.eot?#iefix) format("embedded-opentype"), url(../fonts/CaeciliaLTProRoman.woff2) format("woff2"), url(../fonts/CaeciliaLTProRoman.woff) format("woff"), url(../fonts/CaeciliaLTProRoman.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: GR;
+    src: url(../fonts/Geogrotesque-Regular.eot);
+    src: url(../fonts/Geogrotesque-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Regular.woff2) format("woff2"), url(../fonts/Geogrotesque-Regular.woff) format("woff"), url(../fonts/Geogrotesque-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: GRB;
+    src: url(../fonts/Geogrotesque-Bold.eot);
+    src: url(../fonts/Geogrotesque-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Geogrotesque-Bold.woff2) format("woff2"), url(../fonts/Geogrotesque-Bold.woff) format("woff"), url(../fonts/Geogrotesque-Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: NSR;
+    src: url(../fonts/NunitoSans-Regular.eot);
+    src: url(../fonts/NunitoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Regular.woff2) format("woff2"), url(../fonts/NunitoSans-Regular.woff) format("woff"), url(../fonts/NunitoSans-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: NSB;
+    src: url(../fonts/NunitoSans-Black.eot);
+    src: url(../fonts/NunitoSans-Black.eot?#iefix) format("embedded-opentype"), url(../fonts/NunitoSans-Black.woff2) format("woff2"), url(../fonts/NunitoSans-Black.woff) format("woff"), url(../fonts/NunitoSans-Black.ttf) format("truetype")
+}
+
+.fondo_slider {
+    background-color: #ff4f00;
+}
+
+.texto_solicita {
+    border-radius: 20px;
+    padding: 3px 20px 3px 20px !important;
+}
+
+.fondo_blanco {
+    background-color: #fff;
+}
+
+#scrollTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 150;
+}
+
+.gotop {
+    background: #fff;
+    color: #FF4E0E;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.gotop i {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+@media (min-width:767px) {
+    .sm-hide {
+        display: none !important;
+    }
+    .vista {
+        display: block !important
+    }
+    .mb_m {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:766px) {
+    .mb_m {
+        margin-bottom: 80px;
+    }
+    .vista {
+        display: none !important
+    }
+    .texto_foot {
+        font-family: GR;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) 
+{
+     .logo_animado{
+	width: 100px;
+     }
+    .modal_bottom{
+        padding-bottom: 40px;
+    }
+    .p_terminos {
+        text-align: justify;
+        font-size: 12px;
+    }
+    .titulo_datos_adiional{
+        padding: 0px 40px;
+        line-height: 20px;
+    }
+    .subtitulo_datos{
+        font-family: 'GRB';
+        font-size: 12px;
+    }
+    .titulo_datos{
+        font-family: 'CaeciliaLTProHeavy';
+        font-size: 16px;
+    }
+    .vista_d_m{
+        
+    }
+    .vista_tablet{
+        display: none;
+    }
+	.w_orden {
+        width: 26% !important;
+    }
+    .pd_l50{
+        padding-left: 70px;
+    }
+    .mb_80{
+        margin-bottom: 80px;
+    }
+    .ml_22{
+        margin-left: 0px;
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        border: 2px solid #fff;
+        background-color: #000;
+    }
+    .more_information {
+        background: #0DC143;
+        min-height: 65px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        z-index: 99;
+    }
+    .vista {
+        display: none !important;
+    }
+    .texto_footer {
+        color: #ffffff;
+        font-size: 13px;
+        font-family: 'GR';
+    }
+    .w40 {
+        width: 148px;
+        height: 148px;
+        opacity: .7;
+    }
+    .w40:hover {
+        opacity: 1;
+    }
+    .espacio_index {
+        margin-bottom: 0px !important; 
+        height: 0px
+    }
+    .h1_ciclo {
+        font-family: 'GR';
+        color: #FF4E0E;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0px;
+        margin-top: 6px;
+    }
+    .enviado {
+        font-family: 'GR';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .matricula_aqui {
+        margin-top: 30px;
+        font-family: 'CaeciliaLTProBold';
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff;
+        text-align: left;
+        padding: 0px 0px 0px 44px;
+    }
+    .comunicate {
+        margin-top: 8px;
+        font-family: 'GR';
+        color: #fff;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 0px 0px 0px 44px;
+        text-align: left;
+    }
+    .contenedor_gracias_registro {
+        background-color: #fff;
+        border-radius: 20px;
+        width: 306px;
+        padding: 40px 30px 40px 30px;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .usted_eligio {
+        font-family: 'GR';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FF4E0E;
+        text-align: left;
+    }
+    .usted_bold {
+        font-weight: 600 !important;
+        font-family: 'GRB';
+    }
+    .icono_academia {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .texto_icono_academia {
+        font-family: 'GRB';
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 10px;
+        color: #fff !important;
+    }
+    .p_ciclo {
+        font-family: GRB;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        align-items: center;
+        color: #FF4F00;
+    }
+    .contenedor_ciclo {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px 0px 10px 0px;
+        margin: 0 auto;
+        margin-bottom: 11px;
+    }
+    .tac {
+        text-align: center;
+    }
+    .tar {
+        text-align: right;
+    }
+    .subtitulo_academia {
+        font-family: 'GR';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        padding: 0px 0px 0px 44px;
+        text-align: left;
+    }
+    .titulo_academia {
+        font-family: 'CaeciliaLTProHeavy';
+        font-weight: 850;
+        font-size: 30px;
+        line-height: 34px;
+        color: #fff;
+        padding: 0px 44px 0px 44px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .col-xs-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .centrado {
+        text-align: center;
+    }
+    .centrado_imagen {
+        margin: 0 auto;
+    }
+    .fondo_landing_interno {
+        background-image: url('../images/mobile_lading.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 290px;
+    }
+    .fondo_landing {
+        background-image: url('../images/mobile_lading.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 290px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 16px;
+	margin-top: 20px !important;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .icono_select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23FF4E0E' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: 5px;
+    }
+    .form-control {
+        padding: 8px 30px !important;
+    }
+    .fondo_blanco {
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .section2 {
+        position: relative;
+    }
+    .pad0 {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .icono_colegio {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .contenedor_mobile_logo {
+        width: 50%;
+        padding: 16px 0px 20px 0px
+    }
+    .contenedor_mobile_iconos {
+        width: 50%;
+        padding: 26px 0px 20px 0px
+    }
+    .hailitar_mobile {
+        display: none;
+    }
+    .texto_telefono {
+        color: #fff;
+        font-family: GR;
+        margin: 0px 0px 0px 84px;
+        display: none;
+    }
+    .btn.btn-primary {
+        font-family: 'NSB';
+        background-color: #fff !important;
+        border: 2px solid #FF4F00 !important;
+        color: #FF4F00;
+        margin: 0 auto;
+        display: block;
+    }
+    .fondo_registro_2021 {
+        background-color: #FF4E0E;
+        text-align: center;
+    }
+    .w_form {
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        margin-bottom: 28px;
+    }
+    .vista_home_boton1 {
+        display: none !important;
+    }
+    .vista_mobile{
+        display: block !important;
+    }
+    .texto_acepta {
+        color: #FF4F00;
+        font-family: 'GR' !important;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+  
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) 
+{
+    .adicional_css{
+        padding: 0px 150px 0px 150px !important;
+    }
+    .modal_bottom{
+        padding-bottom: 40px;
+    }
+    .p_terminos {
+        text-align: justify;
+        font-size: 14px;
+    }
+    .titulo_datos_adiional{
+        padding: 0px 40px;
+        line-height: 20px;
+    }
+    .subtitulo_datos{
+        font-family: 'GRB';
+        font-size: 14px;
+    }
+    .titulo_datos{
+        font-family: 'CaeciliaLTProHeavy';
+        font-size: 20px;
+    }
+    .vista_d_m{
+        display: none;
+    }
+    .vista_tablet{
+        
+    }
+    .wd_30{
+        width: 30%;
+    }
+    .vista_mobile{
+        display: none;
+    }
+    .pad_logo{
+        padding: 16px 0px 16px 34px;
+    }
+    .pad_iconos{
+        padding: 24px 62px 16px 0px;
+    }
+    .tair{
+        text-align: right;
+    }
+    .col-lg-6-tab{
+        width: 50%;
+    }
+	.ml_22{
+        margin-left: 0px;
+    }
+    .btn_principal{
+        width: 296px; 
+        height: 36px; 
+        background-color: #FF4E0E !important; 
+        border: 2px solid #fff !important; 
+        color: #fff !important; 
+        font-family: 'GRB'; 
+        font-size: 18px !important
+    }
+    .wptwa-toggle {
+        background-color: #0dc152;
+        color: rgba(255,255,255,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        white-space: nowrap;
+        line-height: 100%;
+        padding: 12px 30px 12px 30px;
+        border-radius: 50px;
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        cursor: pointer;
+        box-shadow: 0 1px 6px rgb(0 0 0 / 6%), 0 2px 32px rgb(0 0 0 / 16%);
+        transition: box-shadow 80ms ease-in-out,width .4s ease .2s;
+    }
+    .espacio_index{
+        margin-bottom: 0px !important; 
+        height: 14px
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        border: 2px solid #fff;
+        background-color: #000;
+    }
+    .contenedor_gracias_registro {
+        background-color: #fff;
+        border-radius: 18px;
+        width: 308px;
+        padding: 30px 38px 30px 38px;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    .w_orden {
+        width: 13% !important;
+    }
+    .usted_bold {
+        font-weight: 600 !important;
+    }
+    .usted_eligio {
+        font-family: 'GR';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FF4E0E;
+        text-align: left;
+    }
+    .enviado {
+        font-family: 'GR';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .matricula_aqui {
+        margin-top: 30px;
+        font-family: CaeciliaLTProHeavy;
+        font-weight: 850;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff
+    }
+    .comunicate {
+        margin-top: 0px;
+        font-family: GR;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .h1_ciclo {
+        font-family: GR;
+        color: #FF4E0E;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .p_ciclo {
+        font-family: GRB;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 30px;
+        align-items: center;
+        color: #FF4E0E;
+    }
+    .contenedor_ciclo {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px 0px 10px 0px;
+        margin-bottom: 8px;
+    }
+    .tac {
+        text-align: center;
+    }
+    .tar {
+        text-align: right;
+    }
+    .texto_footer {
+
+        bottom: 0;
+        color: #ffffff;
+        font-size: 13px;
+        font-family: 'GR';
+        padding: 30px 30px 0px 0px;
+    }
+    .w40 {
+        width: 149px;
+        height: 146px;
+        opacity: .7;
+    }
+    .w40:hover {
+        opacity: 1;
+    }
+    .inline {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .subtitulo_academia {
+        font-family: GR;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        padding: 0px 0px 14px 0px;
+        text-align: center;
+    }
+    .titulo_academia {
+        font-family: 'CaeciliaLTProHeavy';
+        font-weight: 850;
+        font-size: 28px;
+        line-height: 34px;
+        color: #fff;
+        padding: 20px 180px 18px 180px;
+        text-align: center;
+    }
+    .p_terminos {
+        text-align: justify;
+        padding: 0px 20px 0px 20px;
+    }
+    .full_height {
+    }
+    .full_height_2 {
+        
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 16px;
+	margin-top: 20px !important;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .icono_select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23FF4E0E' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: 5px;
+    }
+    .form-control {
+        padding: 8px 30px !important;
+    }
+    .section2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .hailitar_header {
+        display: block !important;
+    }
+    .hailitar_mobile{
+        display: none !important;
+    }
+    .pad0 {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .icono_colegio {
+        width: 25px;
+        margin-right: 20px;
+    }
+    .icono_academia {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .texto_icono_academia {
+        font-family: 'GRB';
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 10px;
+        color: #fff !important;
+    }
+    .centrado {
+        text-align: center;
+    }
+    .centrado_imagen {
+        margin: 0 auto;
+    }
+    .fondo_registro_2021 {
+        background-color: #FF4E0E;
+    }
+    .w_form {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .fondo_blanco {
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .texto_telefono {
+        color: #fff;
+        font-family: GR;
+        margin: 0px 0px 0px 84px;
+    }
+    .pad0 {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .ml80 {
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    }
+    .fondo_landing_interno {
+        background-image: url('../images/tablet_laning.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 330px;
+    }
+    .fondo_landing {
+        background-image: url('../images/tablet_laning.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: 330px;
+    }
+    .vista_home_boton1 {
+        display: block;
+    }
+    .texto_acepta {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: GR !important;
+    }
+}
+  
+/* Estilos para escritorios */
+@media only screen and (min-width: 1024px) 
+{
+     .logo_animado{
+	width: 120px;
+     }
+    .subtitulo_datos{
+        font-family: 'GRB';
+        font-size: 14px;
+    }
+    .titulo_datos{
+        font-family: 'CaeciliaLTProHeavy';
+        font-size: 20px;
+    }
+    .vista_d_m{
+        
+    }
+    .vista_tablet{
+        display: none;
+    }
+	.ml_22{
+        margin-left: 22px;
+    }
+    .btn_principal{
+        width: 296px; 
+        height: 36px; 
+        background-color: #FF4E0E !important; 
+        border: 2px solid #fff !important; 
+        color: #fff !important; 
+        font-family: 'GRB'; 
+        font-size: 18px !important
+    }
+    .wptwa-toggle {
+        background-color: #0dc152;
+        color: rgba(255,255,255,1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        white-space: nowrap;
+        line-height: 100%;
+        padding: 12px 30px 12px 30px;
+        border-radius: 50px;
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+        cursor: pointer;
+        box-shadow: 0 1px 6px rgb(0 0 0 / 6%), 0 2px 32px rgb(0 0 0 / 16%);
+        transition: box-shadow 80ms ease-in-out,width .4s ease .2s;
+    }
+    .espacio_index{
+        margin-bottom: 0px !important; 
+        height: 20px
+    }
+    .checkbox_form {
+        width: 0.75em;
+        height: 0.75em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 2px solid #FF6334;
+        appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .checkbox_form:checked {
+        border: 2px solid #fff;
+        background-color: #000;
+    }
+    .contenedor_gracias_registro {
+        background-color: #fff;
+        border-radius: 18px;
+        width: 308px;
+        padding: 30px 38px 30px 38px;
+        margin-top: 20px;
+    }
+    .w_orden {
+        width: 12% !important;
+    }
+    .usted_bold {
+        font-weight: 600 !important;
+    }
+    .usted_eligio {
+        font-family: 'GR';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FF4E0E;
+    }
+    .enviado {
+        font-family: 'GR';
+        font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .matricula_aqui {
+        margin-top: 30px;
+        font-family: CaeciliaLTProHeavy;
+        font-weight: 850;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff
+    }
+    .comunicate {
+        margin-top: 0px;
+        font-family: 'GR';
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .h1_ciclo {
+        font-family: GR;
+        color: #FF4E0E;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+    .p_ciclo {
+        font-family: GRB;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 30px;
+        align-items: center;
+        color: #FF4E0E;
+    }
+    .contenedor_ciclo {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px 0px 10px 0px;
+        margin-bottom: 8px;
+    }
+    .tac {
+        text-align: center;
+    }
+    .tar {
+        text-align: right;
+    }
+    .texto_footer {
+        margin-top:20px ;
+        bottom: 0;
+        color: #ffffff;
+        font-size: 13px;
+        font-family: GR
+    }
+    .w40 {
+        width: 149px;
+        height: 146px;
+        opacity: .7;
+    }
+    .w40:hover {
+        opacity: 1;
+    }
+    .inline {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .subtitulo_academia {
+        max-width: 100%;
+        font-family: 'GR';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        padding: 0px 0px 0px 0px;
+    }
+    .titulo_academia {
+        font-family: 'CaeciliaLTProHeavy';
+        font-weight: 850;
+        font-size: 28px;
+        line-height: 34px;
+        padding-top:20px ;
+        color: #fff;
+    }
+    .p_terminos {
+        text-align: justify;
+        font-family: 'GR';
+        font-size: 14px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 40px 45px 0px 45px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 16px;
+	margin-top: 20px !important;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .icono_select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23FF4E0E' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: 5px;
+    }
+    .form-control {
+        padding: 8px 30px !important;
+    }
+    .section2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .hailitar_header {
+        display: none;
+    }
+    .pad0 {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .icono_colegio {
+        width: 25px;
+        margin-right: 20px;
+    }
+    .icono_academia {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .texto_icono_academia {
+        font-family: 'GRB';
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 10px;
+        color: #fff !important;
+    }
+    .centrado {
+        text-align: center;
+    }
+    .centrado_imagen {
+        margin: 0 auto;
+    }
+    .fondo_registro_2021 {
+        background-color: #FF4E0E;
+    }
+    .w_form {
+        width: 50%;
+    }
+    .fondo_blanco {
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .texto_telefono {
+        color: #fff;
+        font-family: GR;
+        margin: 0px 0px 0px 84px;
+    }
+    .pad0 {
+        padding: 0px 0px 0px 0px !important;
+    }
+    .ml80 {
+        margin: 0px 0px 0px 80px;
+    }
+    .fondo_landing_interno {
+        background-image: url('../images/desktop_landing.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+       
+    }
+    .fondo_landing {
+        background-image: url('../images/desktop_landing.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+    .vista_home_boton1 {
+        display: block;
+    }
+    .vista_mobile{
+        display: none !important;
+    }
+    .texto_acepta {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: GR !important;
+    }
+}
+
+

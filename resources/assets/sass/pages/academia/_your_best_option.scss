@@ -1,0 +1,129 @@
+.best-option-header{
+  .header--image-focus{
+    max-height: 500px;
+  }
+
+  .header--text{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+
+    h1{
+      font-size: 2.5rem;
+      font-family: $font_cae_bold;
+      margin-bottom: 20px;
+      line-height: 90%;
+
+      @include breakpoint(mom){
+        font-size: 2.2rem;
+      }
+
+      @include breakpoint(baby){
+        font-size: 1.7rem;
+      }
+    }
+
+    p{
+      font-size: 1.1rem;
+      font-family: $font_geo_reg;
+
+      @include breakpoint(mom){
+        font-size: 1rem;
+      }
+
+      @include breakpoint(baby){
+        font-size: .9rem;
+      }
+
+    }
+  }
+}
+
+.best-option-item{
+  margin-bottom: 50px;
+
+  @include breakpoint(baby){
+    margin-bottom: 25px;
+  }
+
+  .item-image{
+    width: 45px;
+
+    @include breakpoint(baby){
+      width: 40px;
+    }
+  }
+
+  .item-text{
+    font-family: $font_geo_reg;
+    padding-left: 10px;
+
+    .item-text-l{
+      color: $orange;
+      margin-left: -7px;
+    }
+  }
+
+}
+
+/*
+.best-option-courses{
+  @include breakpoint(baby){
+    margin-bottom: 20px;
+  }
+
+
+  h3,h4{
+    color: $gray;
+  }
+
+  h3{
+    font-size: 2rem;
+    font-family: $font_cae_bold;
+    margin-bottom: 5px;
+  }
+
+  h4{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-family: $font_geo_reg;
+
+    @include breakpoint(baby){
+      margin-bottom: 20px;
+    }
+  }
+
+  .courses--link{
+    font-size: 1.3rem;
+
+    @include breakpoint(mom){
+      font-size: 1.2rem;
+    }
+  }
+}
+*/
+
+.best-option-courses-title{
+  color: $gray;
+  font-size: 2rem;
+  margin: 20px 0;
+
+  @include breakpoint(baby){
+    font-family: 1.5rem;
+    margin: 10px 0;
+  }
+
+}
+
+.best-option-courses-items{
+
+
+  .courses-item{
+
+  }
+
+  .item-header-image-src{
+    max-width: 100px;
+    fill: $orange;
+  }
+}
