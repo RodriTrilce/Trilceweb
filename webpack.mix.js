@@ -39,3 +39,8 @@ mix.copyDirectory('resources/assets/images', 'public/static/images');
 mix.copyDirectory('resources/assets/fonts', 'public/static/fonts');
 mix.copyDirectory('resources/assets/video', 'public/static/video');
 mix.copy('resources/assets/favicon.ico', 'public/favicon.ico');
+
+mix.copy(
+    'node_modules/tableexport.jquery.plugin/tableExport.min.js',
+    'public/js/tableExport.min.js'
+);

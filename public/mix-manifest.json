@@ -8,5 +8,6 @@
     "/css/main.css": "/css/main.css",
     "/css/admin_main.css": "/css/admin_main.css",
     "/js/app_home.js": "/js/app_home.js",
-    "/favicon.ico": "/favicon.ico"
+    "/favicon.ico": "/favicon.ico",
+    "/js/tableExport.min.js": "/js/tableExport.min.js"
 }

@@ -1,600 +1,820 @@
-@import 'helpers/all';
-
-body, html{
-  width: 100%;
-  height: 100%;
+.text-justify-center {
+  text-align: justify;
+  text-justify: inter-word
 }
 
-@include breakpoint(baby){
-  body {
-    height: 100vh;
-    width: 100vw;
+.grayhr {
+  margin-top: 3rem;
+  margin-bottom: 3rem
+}
+
+.grayhr,.grayhr2 {
+  width: 100%;
+  border: .5px solid #d6d7db
+}
+
+.grayhr2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem
+}
+
+.clearfix {
+  padding: .1px 0
+}
+
+.separator-squared {
+  width: 8%;
+  height: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0
+}
+
+.separator-orange {
+  background: #f4633a
+}
+
+.separator-gray {
+  background: #53565a
+}
+
+.loading-trilce {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px
+}
+
+.loading-trilce-polygon {
+  stroke-dasharray: 2110;
+  stroke-dashoffset: 2110;
+  stroke-width: 1;
+  stroke-linecap: round;
+  -webkit-animation: dash_trilce 3s linear infinite;
+  animation: dash_trilce 3s linear infinite;
+  fill-opacity: 0;
+  stroke: #f4633a
+}
+
+@-webkit-keyframes dash_trilce {
+  0% {
+      stroke-dashoffset: 2410;
+      opacity: 0;
+      stroke: #f4633a
+  }
+
+  15% {
+      opacity: 1;
+      stroke: #f4633a
+  }
+
+  70% {
+      opacity: 1;
+      stroke: #f4633a
+  }
+
+  to {
+      stroke-dashoffset: 0;
+      opacity: 0;
+      stroke: #f4633a
   }
 }
 
-.container-mobile{
+@keyframes dash_trilce {
+  0% {
+      stroke-dashoffset: 2410;
+      opacity: 0;
+      stroke: #f4633a
+  }
+
+  15% {
+      opacity: 1;
+      stroke: #f4633a
+  }
+
+  70% {
+      opacity: 1;
+      stroke: #f4633a
+  }
+
+  to {
+      stroke-dashoffset: 0;
+      opacity: 0;
+      stroke: #f4633a
+  }
+}
+
+@media (min-width: 767px) {
+  .xs-reverse {
+      display:none
+  }
+}
+
+body,html {
+  width: 100%;
+  height: 100%
+}
+
+@media (max-width: 767px) {
+  body {
+      height:100vh;
+      width: 100vw
+  }
+}
+
+.container-mobile {
   margin-top: 20px;
   position: relative;
-  $self: &;
-
   height: 100%;
-  width: 100%;
-
-  @include reverse-breakpoint(baby){
-    display: none;
-  }
-
-  #{$self}__container-logo
-  {
-    display: flex;
-    justify-content: center;
-
-    svg{
-      min-width: 165px;
-      fill: $orange;
-    }
-
-  }
-
+  width: 100%
 }
 
-.container-mobile__content{
+@media (min-width: 767px) {
+  .container-mobile {
+      display:none
+  }
+}
+
+.container-mobile .container-mobile__container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.container-mobile .container-mobile__container-logo svg {
+  min-width: 165px;
+  fill: #f4633a
+}
+
+.container-mobile__content {
   height: 60vh;
-  width: 100%;
-
-  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 
-.box__mobile{
-  position: relative;
+.box__mobile,.container-mobile__content {
   width: 100%;
-  height: 90%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-
-  >div{
-    width: 100%;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 
-.href2{
+.box__mobile {
+  position: relative;
+  height: 90%;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+
+.box__mobile>div,.href2 {
+  width: 100%
+}
+
+.href2 {
   position: relative;
   display: block;
-  width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 10
 }
 
-.human2{
-  border: 7px solid $orange;
+.human2 {
+  border: 7px solid #f4633a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
-  border-right: 0;
-
-  img{
-    min-width: 10vh;
-    height: auto;
-    align-self: center;
-  }
+  border-right: 0
 }
 
-.human2__academia{
-  border-left: 0px;
-  border-right: 7px solid $orange;
-  img{
-  }
+.human2 img {
+  min-width: 10vh;
+  height: auto;
+  -ms-flex-item-align: center;
+  align-self: center
 }
 
-.footer{
+.human2__academia {
+  border-left: 0;
+  border-right: 7px solid #f4633a
+}
+
+.footer {
   display: none;
-  $self: &;
-
   bottom: 0;
   position: absolute;
-  width: 100%;
+  width: 100%
+}
 
-  .footer__buttons {
-    display: flex;
-    width: 100%;
-  }
+.footer .footer__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%
+}
 
-  @include reverse-breakpoint(baby){
-    display: none;
+@media (min-width: 767px) {
+  .footer {
+      display:none
   }
 }
 
-
-.h-boton{
-  width: 50% !important;
+.h-boton {
+  width: 50%!important;
   padding: 10px;
-  text-align: center;
+  text-align: center
 }
 
-.h-boton a{
+.h-boton a {
   font-size: 30px;
   display: block;
   width: 100%;
   height: 100%;
   text-transform: uppercase;
-  font-family: $font_geo_reg;
+  font-family: Geogrotesque-Rg
 }
 
-.footer__buttons__colegio
-{
-  background: white;
-  a,a:link, a:visited{
-  color: $gray;
-  }
+.footer__buttons__colegio {
+  background: #fff
 }
 
-.footer__buttons__academia{
-  background: $orange;
-    a,a:link, a:visited{
-    color: white;
-  }
+.footer__buttons__colegio a,.footer__buttons__colegio a:link,.footer__buttons__colegio a:visited {
+  color: #53565a
 }
 
-.container{
+.footer__buttons__academia {
+  background: #f4633a
+}
+
+.footer__buttons__academia a,.footer__buttons__academia a:link,.footer__buttons__academia a:visited {
+  color: #fff
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 100vh;
+  height: 100vh
+}
 
-  @include breakpoint(baby){
-    display: none;
-  }
-
-  &:hover{
-    >div:not(:hover){
-      width: 35%;
-      opacity: .6;
-    }
+@media (max-width: 767px) {
+  .container {
+      display:none
   }
 }
 
-.side{
-  display: flex;
-  transition: all .2s ease-in-out;
+.container:hover>div:not(:hover) {
+  width: 35%;
+  opacity: .6
+}
+
+.side {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden
 }
 
-.box{
+.box,.side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+
+.box {
   position: relative;
   border: 12px solid;
   border-right: 0;
   border-left: 0;
   width: 65%;
-  height: 50%;
-  display: flex;
-  transition: all .2s ease-in-out;
+  height: 50%
 }
 
-.human{
+.human {
   position: absolute;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-
-  img{
-    min-width: calc(48vh - 10vw) !important;
-  }
-
-
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-
-  display: none;
-  }
-
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
 }
 
-.logo{
+.human img {
+  min-width: calc(48vh - 10vw)!important
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .human {
+      display:none
+  }
+}
+
+.logo {
   width: 150px;
   height: 80px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-
-  svg{
-    width: 100%;
-    height: 100%;
-  }
-
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
 }
 
-.logo-colegio{
-  fill: $orange;
-  left: -135px;
-
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    left: -100px;
-  }
-
+.logo svg {
+  width: 100%;
+  height: 100%
 }
 
-.logo-academia{
-  fill: white;
-  right: -135px;
+.logo-colegio {
+  fill: #f4633a;
+  left: -135px
+}
 
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    right: -100px;
+@media (min-width: 768px) and (max-width:1024px) {
+  .logo-colegio {
+      left:-100px
   }
 }
 
-.cta{
+.logo-academia {
+  fill: #fff;
+  right: -135px
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .logo-academia {
+      right:-100px
+  }
+}
+
+.cta {
   position: absolute;
   min-width: 150px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  font-family: $font_geo_reg;
-  z-index: 5;
+  font-family: Geogrotesque-Rg;
+  z-index: 5
 }
 
-.slogan{
-  font-size: 1.8rem;
-}
-
-.enter{
+.enter {
   margin-top: 15px;
-  font-family: $font_geo_smbold;
+  font-family: Geogrotesque-SmBd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
-
-  @include breakpoint(baby){
-    margin-top: 0;
-  }
-
-  span{
-    font-size: 1.4rem;
-  }
-
-  span .fa{
-    vertical-align: middle;
-  }
-
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 
-.href{
+@media (max-width: 767px) {
+  .enter {
+      margin-top:0
+  }
+}
+
+.enter span {
+  font-size: 1.4rem
+}
+
+.enter span .fa {
+  vertical-align: middle
+}
+
+.href {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 10
 }
 
-.colegio{
+.colegio {
   width: 50%;
-  background: white;
-  justify-content: flex-end;
-
-  .box{
-    border-right: 0;
-    border-color: $orange;
-    justify-content: flex-start;
-
-    &::before{
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 100%;
-      left: 0;
-      background: linear-gradient(to bottom,
-      rgba(244, 99, 58,1) 0%,
-      rgba(244, 99, 58,1) 34%,
-      rgba(244, 99, 58,0) 34%,
-      rgba(244, 99, 58,0) 65%,
-      rgba(244, 99, 58,1) 65%,
-      rgba(244, 99, 58,1) 100%
-      );
-    }
-  }
-
-  .human{
-    margin-left: 50px;
-
-    img{
-      height: 48vh;
-    }
-  }
-
-  .cta{
-    right: -50vw;
-
-    .slogan{
-      color: $gray;
-    }
-
-    .enter{
-      color: $orange;
-      justify-content: flex-start;
-    }
-  }
-
-  &:hover{
-    width: 85%;
-
-    .box{
-      width: 80%;
-    }
-
-    .cta{
-      opacity: 1;
-      right: 5vw;
-    }
-
-  }
+  background: #fff;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
 }
 
-.academia{
+.colegio .box {
+  border-right: 0;
+  border-color: #f4633a;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.colegio .box:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  left: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(#f4633a),color-stop(34%,#f4633a),color-stop(34%,rgba(244,99,58,0)),color-stop(65%,rgba(244,99,58,0)),color-stop(65%,#f4633a),to(#f4633a));
+  background: linear-gradient(180deg,#f4633a 0,#f4633a 34%,rgba(244,99,58,0) 0,rgba(244,99,58,0) 65%,#f4633a 0,#f4633a)
+}
+
+.colegio .human {
+  margin-left: 50px
+}
+
+.colegio .human img {
+  height: 48vh
+}
+
+.colegio .cta {
+  right: -50vw
+}
+
+.colegio .cta .slogan {
+  color: #53565a
+}
+
+.colegio .cta .enter {
+  color: #f4633a;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.colegio:hover {
+  width: 85%
+}
+
+.colegio:hover .box {
+  width: 80%
+}
+
+.colegio:hover .cta {
+  opacity: 1;
+  right: 5vw
+}
+
+.academia {
   width: 50%;
-  background: $orange;
-  justify-content: flex-start;
-
-  .box{
-    border-color: white;
-    justify-content: flex-end;
-
-    &::before{
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 100%;
-      right: 0;
-      top: 0;
-      background: linear-gradient(to bottom,
-      rgba(255, 255, 255,1) 0%,
-      rgba(255, 255, 255,1) 34%,
-      rgba(255, 255, 255,0) 34%,
-      rgba(255, 255, 255,0) 65%,
-      rgba(255, 255, 255,1) 65%,
-      rgba(255, 255, 255,1) 100%
-      );
-
-    }
-  }
-
-  .human{
-    margin-right: 50px;
-    right: 0;
-
-    img{
-      height: 50vh;
-    }
-  }
-
-  .cta{
-    left: -50vw;
-
-    .slogan{
-      color: white;
-    }
-
-    .enter{
-      color: white;
-      justify-content: flex-end;
-    }
-  }
-
-  &:hover{
-    width: 85%;
-
-    .box{
-      width: 80%;
-    }
-
-    .cta{
-      opacity: 1;
-      left: 5vw;
-    }
-
-  }
+  background: #f4633a;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
 }
 
+.academia .box {
+  border-color: #fff;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
 
-/*
-  Adrian idea
-*/
+.academia .box:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(34%,#fff),color-stop(34%,hsla(0,0%,100%,0)),color-stop(65%,hsla(0,0%,100%,0)),color-stop(65%,#fff),to(#fff));
+  background: linear-gradient(180deg,#fff 0,#fff 34%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 65%,#fff 0,#fff)
+}
 
-.logo-adrian{
+.academia .human {
+  margin-right: 50px;
+  right: 0
+}
+
+.academia .human img {
+  height: 50vh
+}
+
+.academia .cta {
+  left: -50vw
+}
+
+.academia .cta .slogan {
+  color: #fff
+}
+
+.academia .cta .enter {
+  color: #fff;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+
+.academia:hover {
+  width: 85%
+}
+
+.academia:hover .box {
+  width: 80%
+}
+
+.academia:hover .cta {
+  opacity: 1;
+  left: 5vw
+}
+
+.logo-adrian {
   max-height: 70px;
   padding: 10px;
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
-.container-adrian{
-//  height: calc(100% - 65px);
+.container-adrian {
   height: calc(100% - 70px);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
-.block{
-//  height: calc(50% - 30px);
+.block {
   height: 50%;
-  overflow: hidden;
-
-  >a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
+  overflow: hidden
 }
 
-.part{
-  width: 100%;
-}
-
-.part__logo{
+.block>a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+
+.block>a,.part {
+  width: 100%
+}
+
+.part__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap;
-
-  .enter{
-    color: white;
-  }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
-.part__academia{
+.part__logo .enter {
+  color: #fff
+}
+
+.part__academia {
   max-width: 120px;
-  fill: white;
+  fill: #fff
 }
 
-.part__colegio{
+.part__colegio {
   max-width: 120px;
-  fill: $orange;
+  fill: #f4633a
 }
 
-.part__enter-colegio{
-  color: $orange !important;
+.part__enter-colegio {
+  color: #f4633a!important
 }
 
-.human-girl{
+.human-girl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
 
-  img{
-    max-width: calc(100% - 2vw);
+.human-girl img {
+  max-width: calc(100% - 2vw)
+}
+
+@media (max-width: 767px) {
+  .human-girl img {
+      width:calc(100% - 30px)
+  }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {
+  .human-girl {
+      width:0
   }
 
-  @include breakpoint(baby){
-    img{
-      width: calc(100% - 30px);
-    }
-
-    @media (orientation: landscape) {
-      width: 0;
-
-      img{
-        display: none;
-      }
-    }
-
+  .human-girl img {
+      display: none
   }
-
-
 }
 
-.block__colegio{
+.block__academia {
+  background: #f4633a
 }
 
-.block__academia{
-  background: $orange;
-}
-
-
-.logo-permanent{
+.logo-permanent {
   margin-left: 30px;
   margin-top: 30px;
   position: absolute;
-  opacity: 1 !important;
-  pointer-events: none;
-
-  svg{
-    width: 240px;
-    max-width: 300px !important;
-  }
+  opacity: 1!important;
+  pointer-events: none
 }
 
-// Cambios Para Los 40 años Trilce
-#logo-40year{
+.logo-permanent svg {
+  width: 240px;
+  max-width: 300px!important
+}
+
+#logo-40year {
   margin-right: 30px;
   margin-bottom: 30px;
   position: absolute;
   pointer-events: none;
-  opacity: 1 !important;
-  bottom: 0px;
-  right: 0px;
-  display:block;
+  opacity: 1!important;
+  bottom: 0;
+  right: 0;
+  display: block;
   width: 240px;
-  text-align:center;
-  svg{
-    height: 130px;
-    max-width: 300px !important;
-  }
-  p{
-    font-family: $font_geo_reg;
-    color: white;
-    text-align:center;
-    width: 240px;
-    padding: 0 55px;
-  }         
+  text-align: center
 }
+
+#logo-40year svg {
+  height: 130px;
+  max-width: 300px!important
+}
+
+#logo-40year p {
+  font-family: Geogrotesque-Rg;
+  color: #fff;
+  text-align: center;
+  width: 240px;
+  padding: 0 55px
+}
+
 .container_new {
-   
-  position: absolute;
   top: 0;
   background: #ff5000;
   color: #ff5000;
-  width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 99999999999
 }
 
-#lottie{
+#lottie,.container_new {
   position: absolute;
-  left: 0%;
+  width: 100%
+}
+
+#lottie {
+  left: 0;
   top: -5%;
-  transform: translate(-0%, -0%);
-  -webkit-transform: translate(-0%, -0%);
-  background-color:#ff5000;
-  width:100%;
-  height:100%;
-  display:block;
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  background-color: #ff5000;
+  height: 100%;
+  display: block;
   overflow: hidden;
-  transform: translate3d(0,0,0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   text-align: center;
-  opacity: 1;
+  opacity: 1
+}
 
-  @media screen and (max-width: 768px) {
-    transform: scale(2.5);
-    -webkit-transform: scale(2.5)
+@media screen and (max-width: 768px) {
+  #lottie {
+      transform:scale(2.5);
+      -webkit-transform: scale(2.5)
   }
-
 }
 
 .cerrar {
   transform: translateY(-100%);
   -webkit-transform: translateY(-200%);
-  transition: all 0.5s;
-  -webkit-transition: all 0.5;
-  @media screen and (max-width: 768px) {
-    transform: translateY(-200%);
-    -webkit-transform: translate(-200%);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transition: all .5
+}
+
+@media screen and (max-width: 768px) {
+  .cerrar {
+      transform:translateY(-200%);
+      -webkit-transform: translate(-200%);
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      -webkit-transition: all .5
   }
 }
 
 body {
   margin: 0;
-  overflow-Y: hidden; /*quitar el scroll*/
+  overflow-Y: hidden
 }
+
+@-webkit-keyframes preloader {
+  90% {
+      width: 100%;
+      opacity: 1
+  }
+
+  to {
+      width: 100%;
+      opacity: 0
+  }
+}
+
 @keyframes preloader {
-    90% {
-        width: 100%;
-        opacity: 1;
-    }
-    100% {
-        width: 100%;
-        opacity: 0;
-    }
+  90% {
+      width: 100%;
+      opacity: 1
+  }
+
+  to {
+      width: 100%;
+      opacity: 0
+  }
+}
+
+.izpo {
+  margin-left: 0
+}
+
+.slogan {
+  margin-left: 0!important;
+  text-align: end;
+}
+
+.text_izq {
+  text-align: end;
+}
+
+.mr {
+  text-align: start
+}
+
+p.slogan.text_der {
+  text-align: start;
+}
+
+.cta {
+  width: 50%;
+}
+
+.enter.ml {
+  justify-content: flex-end !important;
+}
+
+.enter.mr {
+  justify-content: start !important;
+}
+
+.academia .human img {
+  object-fit: cover !important;
 }

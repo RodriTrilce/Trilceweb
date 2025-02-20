@@ -17,7 +17,10 @@ import BootstrapTable from 'bootstrap-table';
 import xlsx from 'xlsx';
 
 import bootstrapTableExport from './plugin.bootstrapTableExport.js';
-import tableExport from 'tableexport.jquery.plugin/tableExport.js';
+import tableExport from 'tableexport.jquery.plugin';
+
+
+
 
 import jsPDF from 'jspdf';
 import 'jspdf-autotable'

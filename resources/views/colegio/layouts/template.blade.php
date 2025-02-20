@@ -11,53 +11,6 @@
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}?v1.3">
   <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?v1.3">
-
-
-
-  <style>
-    .colegio-cardsv2__herotitle{
-      color: #ff4e0e
-    }
-
-    .Pity{
-      color: #000
-    }
-    
-  .blog-home-top-content p {
-    text-align: justify;
-  }
-    @media (max-width: 768px){
-      footer {
-          margin-bottom: 0px;
-      }
-      .card2 {
-        margin-bottom: 0px;
-        margin-top: 2px;
-     }
-     .nav__highlight.nav__highlight--left {
-      padding-left: 0px;
-     }
-     .vacations__select {
-       display: flex !important;
-       justify-content: center !important;
-       align-items: center !important;
-     }
-     .vacations__select-item {
-       display: flex !important;
-       justify-content: center !important;
-       align-items: center !important;
-     }
-     .vacations__select-item .select-vacations{
-      display: flex;
-      justify-content: center;
-     }
-     .ss-main .ss-single-selected{
-      margin-bottom: 10px;
-      width: 180px !important;
-    }
-    
-  }
-  </style>
   @include('tracking.in_head')
 </head>
 
