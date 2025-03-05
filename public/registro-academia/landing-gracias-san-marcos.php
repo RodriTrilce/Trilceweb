@@ -15,20 +15,6 @@ switch ($_POST['ciclo'])
 		$ciclo = "23001";
         $ANIO_ACADEMICO 		= "2025";
 		break;
-    
-    case "Intensivo":
-        $ciclo = "24015";
-        $ANIO_ACADEMICO 		= "2025";
-        break;
-    case "Repaso":
-        $ciclo = "00108";
-        $ANIO_ACADEMICO 		= "2025";
-        break;
-    case "Verano":
-        $ciclo = "00106";
-        $ANIO_ACADEMICO 		= "2025";
-        break;
-    
     case "Semestral":
         $ciclo = "00103";
         $ANIO_ACADEMICO 		= "2025";
@@ -189,23 +175,10 @@ elseif ($ciclo == "23001")
     $subject = "¡Gracias por registrarte! - Ciclo Escolar San Marcos - Trilce Academia";
 	require 'r_sm/escolar.php';	
 }
-elseif ($ciclo == "00103")
+else
 {
     $subject = "¡Gracias por registrarte! - Ciclo Semestral San Marcos - Trilce Academia";
 	require 'r_sm/semestral.php';	
-}
-elseif ($ciclo == "24015")
-{
-    $subject = "¡Gracias por registrarte! - Ciclo Intensivo San Marcos - Trilce Academia";
-	require 'r_sm/intensivo.php';	
-}
-elseif ($ciclo == "00108")
-{
-    $subject = "¡Gracias por registrarte! - Ciclo Repaso San Marcos - Trilce Academia";
-	require 'r_sm/repaso.php';	
-}else{
-    $subject = "¡Gracias por registrarte! - Ciclo Verano San Marcos - Trilce Academia";
-	require 'r_sm/verano.php';	
 }
 
 

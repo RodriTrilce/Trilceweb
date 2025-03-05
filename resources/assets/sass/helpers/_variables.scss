@@ -1,5 +1,5 @@
 /// Color Trilce
-$orange            : hsl(13.2, 89.4%, 59.2%);
+$orange            : #ff4e0e;
 $orange_uri        : unquote('%23' + str-replace(unquote(''+$orange+''), '#', '')); // chrome replace # for %23
 $gray              : hsl(214.3, 4%, 33.9%);
 $gray_border       : #D6D7DB;

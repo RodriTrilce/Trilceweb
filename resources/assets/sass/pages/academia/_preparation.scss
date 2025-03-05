@@ -424,3 +424,928 @@
     }
   }
 }
+
+
+
+/*SAN MARCO CONOCE NUESTROS HORARIOS*/
+    .benefits-container {
+        display: flex;
+        justify-content: center;
+        /* Centra los elementos */
+        background-color: #F5F5F5;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 50px;
+        /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        /* Asegura que se ajusten en pantallas pequeñas */
+
+    }
+
+    .benefits-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 500px;
+        /* Limita el ancho de la sección de los botones y texto */
+        padding-bottom: 10px
+    }
+
+    .benefits-title {
+        font-family: "CaeciliaLTPro-85Heavy";
+        font-size: 2rem;
+        color: #FF4F00;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .benefits-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .benefits-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .benefits-img {
+        width: 100%;
+        max-width: 360px;
+        height: 300px;
+    }
+
+    /* Estilos de los botones */
+    .btn {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 1rem;
+        color: #FF4F00;
+        background-color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        font-family: 'CaeciliaLTPro-85Heavy' !important;
+        border-radius: 20px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #FF4F00;
+        font-size: 1rem;
+        padding: 7px 30px 10px 30px;
+        height: 36px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: #FF4F00;
+        color: #fff;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+
+        .benefits-container {
+            flex-direction: column;
+            /* Los elementos se apilan verticalmente */
+            text-align: center;
+            /* Centra el texto */
+            gap: 0px;
+            /* Menos espacio entre los elementos en pantallas pequeñas */
+            align-items: center
+        }
+
+        .benefits-left,
+        .benefits-right {
+            flex: 1 1 100%;
+            /* Ambos elementos ocupan el 100% */
+            max-width: 100%;
+            /* Evita que los elementos se estiren */
+            align-items: center;
+        }
+
+        .benefits-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .titulo_conoce {
+            font-size: 1.25rem;
+            text-align: left;
+            color: #FF4F00;
+            margin: 10px 0px -40px 0px !important;
+            line-height: 40px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .titulo_conoce {
+            font-size: 1.5rem;
+            text-align: left;
+            color: #FF4F00;
+            margin: 10px 0px -40px 0px !important;
+            line-height: 40px;
+        }
+
+    }
+
+    @media (min-width: 1400px) {
+        .titulo_conoce {
+            font-size: 1.65rem;
+            text-align: left;
+            color: #FF4F00;
+            margin: 4px 0px -30px 0px !important;
+            line-height: 30px;
+        }
+
+        .boton_brochure {
+            color: #FF4F00;
+            font-family: 'CaeciliaLTPro-85Heavy';
+            border-radius: 20px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #FF4F00;
+            font-size: .9rem;
+            padding: 6px 15px 0px 15px;
+            height: 36px;
+            margin-bottom: -40px;
+            width: 400px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .fondo_gris {
+            background-color: #F5F5F5
+        }
+
+        .alinear {
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    /* Media Queries */
+    @media (max-width: 576px) {
+        .mtop {
+            margin-top: 10px
+        }
+
+        .fondo_gris {
+            background-color: #F5F5F5
+        }
+
+        .titulo_conoce {
+            font-size: 1.75rem;
+            text-align: left;
+            color: #FF4F00;
+            line-height: 40px;
+            padding: 20px;
+        }
+
+        .alinear {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .text-info-web {
+        display: block;
+    }
+
+    .text-info-web .span {
+        font-size: 10px;
+        position: absolute;
+    }
+
+    .preparation__title {
+        margin: 20px auto;
+    }
+
+    .preparation__subtitle {
+        margin: 20px auto;
+    }
+
+    .tab_subtitle {
+        display: block;
+        padding: 8px 0px 4px;
+    }
+
+    /* TAB CICLOS */
+    .preparation__courses-list-ul li {
+        width: 100%;
+    }
+
+    .preparation__courses-list {
+        padding-top: 4em;
+    }
+
+    .main {
+        margin: 0 5em 5em;
+        transition: 0.3s;
+    }
+
+    .content {
+        background: #fff;
+        color: #53565a;
+        font-size: 1.5rem;
+        font-family: "Geogrotesque-Rg";
+        transition: 0.3s;
+        margin-top: 1.2em
+    }
+
+    .content>div {
+        display: none;
+        padding: 20px 5px 5px;
+        transition: 0.3s;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: inline-block;
+        padding: 15px 30px;
+        font-weight: 600;
+        text-align: center;
+        border-bottom: 2px solid #efefef;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: 0.3s;
+        font-size: 1.2rem
+    }
+
+    label:hover {
+        cursor: pointer;
+        background: #f4633a;
+        color: #fff;
+        border-bottom: 2px solid #f4633a;
+        transition: 0.3s;
+    }
+
+    input:checked+label {
+        background: #f4633a;
+        color: #fff;
+        border-bottom: 2px solid #f4633a;
+        transition: 0.3s;
+    }
+
+    /* TABLA LARGE */
+    @media(min-width: 992px) {
+        .table-rest {
+            background: white;
+            color: #53565a;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #table-rest.table-rest tr:nth-child(1) th {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+            position: relative;
+        }
+
+        .table-rest thead tr th {
+            border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest tbody tr:nth-child(1) td {
+            padding-top: 2em;
+        }
+
+        .table-rest tr th {}
+
+        .table-rest tr th,
+        .table-rest tr td {
+            padding: 8px 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .table-rest2 {
+            background: white;
+            color: #53565a;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #table-rest.table-rest2 tr:nth-child(1) th {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+            position: relative;
+        }
+
+        .table-rest2 thead tr th {
+            border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest2 tbody tr:nth-child(1) td {
+            padding-top: 2em;
+        }
+
+        .table-rest2 tr th {}
+
+        .table-rest2 tr th,
+        .table-rest2 tr td {
+            padding: 8px 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .table-rest3 {
+            background: white;
+            color: #53565a;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #table-rest.table-rest3 tr:nth-child(1) th {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+            position: relative;
+        }
+
+        .table-rest3 thead tr th {
+            border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest3 tbody tr:nth-child(1) td {
+            padding-top: 2em;
+        }
+
+        .table-rest3 tr th {}
+
+        .table-rest3 tr th,
+        .table-rest3 tr td {
+            padding: 8px 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .table-rest4 {
+            background: white;
+            color: #53565a;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #table-rest.table-rest4 tr:nth-child(1) th {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+            position: relative;
+        }
+
+        .table-rest4 thead tr th {
+            border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest4 tbody tr:nth-child(1) td {
+            padding-top: 2em;
+        }
+
+        .table-rest4 tr th {}
+
+        .table-rest4 tr th,
+        .table-rest4 tr td {
+            padding: 8px 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .table-rest5 {
+            background: white;
+            color: #53565a;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #table-rest.table-rest5 tr:nth-child(1) th {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.50) !important;
+            position: relative;
+        }
+
+        .table-rest5 thead tr th {
+            border-bottom: 1px solid #53565a;
+        }
+
+        .table-rest5 tbody tr:nth-child(1) td {
+            padding-top: 2em;
+        }
+
+        .table-rest5 tr th {}
+
+        .table-rest5 tr th,
+        .table-rest5 tr td {
+            padding: 8px 16px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .trilce-benefits .tab {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* TABLA SMALL */
+    @media (max-width: 991px) {
+        .preparation__courses-list {
+            padding-top: 2em;
+        }
+
+        label {
+            font-size: 1em;
+        }
+
+        .main {
+            margin: 0 auto 0em;
+            width: 100%;
+        }
+
+        .content {
+            margin-top: 0em;
+        }
+
+        .frequentquestions {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        label {
+            width: 90%;
+            margin-left: 0em;
+            margin-right: 0em;
+            margin-bottom: 1em;
+        }
+
+        table.table-rest {
+            font-size: 16px;
+        }
+
+        table.table-rest,
+        .table-rest thead,
+        .table-rest tbody,
+        .table-rest th,
+        .table-rest td,
+        .table-rest tr {
+            display: block;
+        }
+
+
+        .table-rest tbody tr td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .table-rest thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            font-weight: bold;
+        }
+
+        .table-rest tr {
+            margin-bottom: 2em;
+            padding: 0em 1em 2em;
+        }
+
+        .table-rest tr:nth-child(2),
+        .table-rest tr:nth-child(4),
+        .table-rest tr:nth-child(6),
+        .table-rest tr:nth-child(8),
+        .table-rest tr:nth-child(10),
+        .table-rest tr:nth-child(12),
+        .table-rest tr:nth-child(14),
+        .table-rest tr:nth-child(16),
+        .table-rest tr:nth-child(18),
+        .table-rest tr:nth-child(20) {
+            background: #f5f5f5;
+        }
+
+        .table-rest td {
+            /* Behave  like a "row" */
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            margin-bottom: 0.2em;
+            text-align: right;
+            padding: 0.2em;
+        }
+
+        .table-rest td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 1px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left !important;
+        }
+
+        .tab-sup .table-rest tr {
+            padding: 1em !important;
+        }
+
+
+        table.table-rest2 {
+            font-size: 16px;
+        }
+
+        table.table-rest2,
+        .table-rest2 thead,
+        .table-rest2 tbody,
+        .table-rest2 th,
+        .table-rest2 td,
+        .table-rest2 tr {
+            display: block;
+        }
+
+        .table-rest2 tbody tr td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .table-rest2 thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            font-weight: bold;
+        }
+
+        .table-rest2 tr {
+            margin-bottom: 2em;
+            padding: 0em 1em 2em;
+        }
+
+        .table-rest2 tr:nth-child(2),
+        .table-rest2 tr:nth-child(4),
+        .table-rest2 tr:nth-child(6),
+        .table-rest2 tr:nth-child(8),
+        .table-rest2 tr:nth-child(10),
+        .table-rest2 tr:nth-child(12),
+        .table-rest2 tr:nth-child(14),
+        .table-rest2 tr:nth-child(16),
+        .table-rest2 tr:nth-child(18),
+        .table-rest2 tr:nth-child(20) {
+            background: #f5f5f5;
+        }
+
+        .table-rest2 td {
+            /* Behave  like a "row" */
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            margin-bottom: 0.2em;
+            text-align: right;
+            padding: 0.2em;
+        }
+
+        .table-rest2 td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 1px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left !important;
+        }
+
+        .tab-sup .table-rest2 tr {
+            padding: 1em !important;
+        }
+
+
+        table.table-rest3 {
+            font-size: 16px;
+        }
+
+        table.table-rest3,
+        .table-rest3 thead,
+        .table-rest3 tbody,
+        .table-rest3 th,
+        .table-rest3 td,
+        .table-rest3 tr {
+            display: block;
+        }
+
+        .table-rest3 tbody tr td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .table-rest3 thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            font-weight: bold;
+        }
+
+        .table-rest3 tr {
+            margin-bottom: 2em;
+            padding: 0em 1em 2em;
+        }
+
+        .table-rest3 tr:nth-child(2),
+        .table-rest3 tr:nth-child(4),
+        .table-rest3 tr:nth-child(6),
+        .table-rest3 tr:nth-child(8),
+        .table-rest3 tr:nth-child(10),
+        .table-rest3 tr:nth-child(12),
+        .table-rest3 tr:nth-child(14),
+        .table-rest3 tr:nth-child(16),
+        .table-rest3 tr:nth-child(18),
+        .table-rest3 tr:nth-child(20) {
+            background: #f5f5f5;
+        }
+
+        .table-rest3 td {
+            /* Behave  like a "row" */
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            margin-bottom: 0.2em;
+            text-align: right;
+            padding: 0.2em;
+        }
+
+        .table-rest3 td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 1px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left !important;
+        }
+
+        .tab-sup .table-rest3 tr {
+            padding: 1em !important;
+        }
+
+
+        table.table-rest4 {
+            font-size: 16px;
+        }
+
+        table.table-rest4,
+        .table-rest4 thead,
+        .table-rest4 tbody,
+        .table-rest4 th,
+        .table-rest4 td,
+        .table-rest4 tr {
+            display: block;
+        }
+
+        .table-rest4 tbody tr td:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .table-rest4 thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            font-weight: bold;
+        }
+
+        .table-rest4 tr {
+            margin-bottom: 2em;
+            padding: 0em 1em 2em;
+        }
+
+        .table-rest4 tr:nth-child(2),
+        .table-rest4 tr:nth-child(4),
+        .table-rest4 tr:nth-child(6),
+        .table-rest4 tr:nth-child(8),
+        .table-rest4 tr:nth-child(10),
+        .table-rest4 tr:nth-child(12),
+        .table-rest4 tr:nth-child(14),
+        .table-rest4 tr:nth-child(16),
+        .table-rest4 tr:nth-child(18),
+        .table-rest4 tr:nth-child(20) {
+            background: #f5f5f5;
+        }
+
+        .table-rest4 td {
+            /* Behave  like a "row" */
+            border: none;
+            position: relative;
+            padding-left: 50%;
+            margin-bottom: 0.2em;
+            text-align: right;
+            padding: 0.2em;
+        }
+
+        .table-rest4 td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 1px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: left !important;
+        }
+
+        .tab-sup .table-rest4 tr {
+            padding: 1em !important;
+        }
+
+        .margin-texto {
+            margin: 1em 2em 0 2em !important;
+        }
+    }
+
+    .margin-texto {
+        margin: 1em 9em 0 9em;
+    }
+
+    /* TAB SECUNDARIO */
+    .trilce-benefits {
+        position: relative;
+    }
+
+    .trilce-benefits .tabs_wrap {
+        width: 100%;
+        max-width: 750px;
+    }
+
+    .trilce-benefits label {
+        border-bottom: 0px solid #efefef;
+    }
+
+    .trilce-benefits .tab {
+        min-height: auto;
+        font-size: 1rem;
+        min-width: 18%;
+    }
+
+    .tab_check,
+    .tab_content {
+        display: none;
+    }
+
+
+    /*customisation bonus*/
+    * {
+        box-sizing: border-box;
+    }
+
+    .tabs_wrap {
+        font-size: 0em;
+    }
+
+    .tabs_wrap label,
+    .tabs_wrap div {
+        font-size: 16px;
+    }
+
+    .tab {
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .tab_check:checked+.tab {
+        cursor: auto;
+    }
+
+    .tab_content {
+        padding: 10px 15px;
+        min-height: 200px;
+    }
+
+    .trilce-benefits img {
+        height: auto;
+        /*  max-width: 350px; */
+        width: 100%;
+    }
+
+    @media(max-width: 991px) {
+        .text-info-web {
+            display: none !important;
+        }
+
+        .text-info-mobile {
+            display: block;
+        }
+
+        .text-info-mobile p {
+            font-size: 10px;
+            margin-bottom: 1em;
+        }
+
+        td.texto-horario {
+            padding-left: 12em;
+        }
+
+        .trilce-benefits .tabs_wrap {
+            width: 100%;
+        }
+
+        .trilce-benefits .tab {
+            min-height: 51px;
+            font-size: 1rem;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+}
+
+/*PREPARACION INICIO UNI - TABLE*/
+#tab1:checked~.content #content1,
+#tab2:checked~.content #content2,
+#tab3:checked~.content #content3,
+#tab6:checked~.content #content6,
+#tab7:checked~.content #content7,
+#tab8:checked~.content #content8 {
+    display: block;
+    transition: 0.3s;
+}
+
+/*PREPARACIÓN INICIO SAN MARCOS - TABLE*/
+#tab1:checked~.content #content1,
+#tab2:checked~.content #content2,
+#tab3:checked~.content #content3,
+#tab4:checked~.content #content4,
+#tab5:checked~.content #content5,
+#tab6:checked~.content #content6,
+#tab8:checked~.content #content8,
+#tab9:checked~.content #content9,
+#tab10:checked~.content #content10 {
+    display: block;
+    transition: 0.3s;
+}
+
+/*PREPARACIÓN INICIO PUCP - TABLE*/
+#tab1:checked~.content #content1,
+#tab4:checked~.content #content4,
+#tab5:checked~.content #content5 {
+    display: block;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 991px) {
+  /* Ocultar encabezados de tabla en móviles */
+  .table-rest3 thead {
+      display: none;
+  }
+
+  /* Convertir la tabla en un formato tipo lista */
+  .table-rest3, 
+  .table-rest3 tbody, 
+  .table-rest3 tr, 
+  .table-rest3 td {
+      display: block;
+      width: 100%;
+  }
+
+  /* Dar formato a cada fila */
+  .table-rest3 tr {
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #f9f9f9;
+  }
+
+  /* Mostrar títulos como etiquetas */
+  .table-rest3 td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      padding: 10px;
+  }
+
+  /* Agregar etiquetas a cada celda usando data-label */
+  .table-rest3 td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      font-weight: bold;
+      text-align: left;
+      color: #FF4F00;
+      top: auto;
+  }
+}
+
+

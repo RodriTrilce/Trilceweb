@@ -7,15 +7,15 @@
     @include('colegio.partials.modal.ads')
 
     <!--   <div class="banner__loader">
-        <div class="banner__loader-title"></div>
-        <div class="banner__loader-line"></div>
-        <div class="banner__loader-line"></div>
-      </div> -->
+                                    <div class="banner__loader-title"></div>
+                                    <div class="banner__loader-line"></div>
+                                    <div class="banner__loader-line"></div>
+                                  </div> -->
 
     <!--  <div class="index-banners index-banners--colegio"> -->
     <!--  {{-- @include('colegio.partials.banners.all') --}}
-        
-        @foreach ($banners as $banner)
+                                    
+                                    @foreach ($banners as $banner)
     @if (strtotime($banner->start) < time() && strtotime($banner->expire) > time())
     {!! $banner->content !!}
     @endif
@@ -224,103 +224,107 @@
 
     </div>
 
-    <div class="nuevos-i container-base">
-        <div class="row center-xs">
-            <div class="row col-xs-12 col-sm-10 colegio-cardsv2">
-
-                <div class="colegio-cardsv2__title">
-                    <div class="colegio-cardsv2__herotitle"><span>Matrícula<br class="salt"> 2025</span></div>
-                    <div class="colegio-cardsv2__herosubtitle" style="display: none"><span>Elige la modalidad que más
-                            se<br class="salt">adecúe a tus necesidades</span></div>
-                </div>
-
-                <div class="colegio-cardsv2-items colegio-cardsv2-items--hovereffect">
-                    <a href="/colegio/matricula-nuevo" class="colegio-cardsv2-items__item">
-                        <div class="colegio-cardsv2-items__symbol">
-                            <span><i class="fa fa-plus"></i></span>
-                        </div>
-                        <div class="colegio-cardsv2-items__text">
-                            <span class="alumno">
-                                ALUMNO
-                            </span>
-                            <span class="modality">
-                                NUEVO
-                            </span>
-                        </div>
-                    </a>
-
-                    <a href="/colegio/matricula-traslado" class="colegio-cardsv2-items__item">
-                        <div class="colegio-cardsv2-items__symbol">
-                            <span><i class="fa fa-exchange"></i></span>
-                        </div>
-                        <div class="colegio-cardsv2-items__text">
-                            <span class="alumno">
-                                ALUMNO
-                            </span>
-                            <span class="modality">
-                                TRASLADO
-                            </span>
-                        </div>
-                    </a>
-
-                    <a href="/colegio/matricula-regular" class="colegio-cardsv2-items__item">
-                        <div class="colegio-cardsv2-items__symbol">
-                            <span><i class="fa fa-star"></i></span>
-                        </div>
-                        <div class="colegio-cardsv2-items__text">
-                            <span class="alumno">
-                                ALUMNO
-                            </span>
-                            <span class="modality">
-                                REGULAR
-                            </span>
-                            <span class="op">
-                                (actual)
-                            </span>
-                        </div>
-                    </a>
-                </div>
+    <div class="seccion-matricula container py-5">
+        <div class="row align-items-start responsive_ch">
+            <div class="col-md-3 text-md-start text-center respon_text" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-delay="100" data-aos-easing="ease-in-sine">
+                <h2 class="text_matricula v2">Matrícula 2025</h2>
             </div>
-
-            <div class="row col-xs-12 col-sm-10 colegio-cardsv2">
-
-                <div class="colegio-cardsv2__title">
-                    <h1 class="pruebas">Colegio Trilce</h1>
-                    <p style="text-align: justify;" class="Pity">Nuestros 45 años de experiencia brindando una educación
-                        de calidad nos han convertido en una de las organizaciones educativas más grandes del país. Con 18
-                        sedes en Lima y 6 en provincia, nuestro principal objetivo es brindar educación de alta calidad y
-                        fomentar el liderazgo.</p>
-                </div>
-
-                <div class="colegio-cardsv2-items colegio-cardsv2-items--hovereffect">
-                    <div class="row col-xs-12 center-xs admission-ads">
-                        <div class="admission-ads__container">
-                            <div class="row col-xs-12">
-                                <div class="col-xs-12 col-sm">
-                                    <a href="https://www.trilce.edu.pe/matricula-2025/" target="_blank"
-                                        class="admission-ads__link shory">
-                                        <h1>¿Quieres saber más sobre nuestro<br>proceso de matrícula 2025?</h1>
-                                        <button
-                                            class="admission-ads__container-cta banner__button-cta banner__button-cta--white"
-                                            type="button" name="button">
-                                            Regístrate aquí
-                                        </button>
-                                    </a>
-                                </div>
-
-                                <div class="row col-xs-4 bottom-xs center-xs xs-hide ads-sub">
-                                    <img class="nina-banner"
-                                        src="{{ url('/static/images/colegio/propuesta-feb/nina-banner.png') }}"
-                                        alt="Proceso de Matrícula 2024">
-                                </div>
+            <div class="col-md-9 responsive_force">
+                <div class="row g-3 justify-content-center response_mobil">
+                    <div class="col-10 col-sm-6 col-md-4 respon_card_tk" data-aos="fade-down" data-aos-duration="900"
+                        data-aos-delay="100">
+                        <div class="card-matricula color-nuevo">
+                            <div class="icono-matricula">
+                                <i class="las la-laugh-beam la-4x"></i>
                             </div>
+                            <p class="Alumno">Alumno <span class="span">nuevo</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-sm-6 col-md-4 respon_card_tk" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="100">
+                        <div class="card-matricula color-traslado">
+                            <div class="icono-matricula">
+                                <i class="las la-map-signs la-4x"></i>
+                            </div>
+                            <p class="Alumno">Alumno <span class="span">traslado</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-sm-6 col-md-4 respon_card_tk" data-aos="fade-left" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <div class="card-matricula color-regular">
+                            <div class="icono-matricula">
+                                <i class="las la-user-check la-4x"></i>
+                            </div>
+                            <p class="Alumno">Alumno<span class="span">regular</span><span
+                                    class="span_especial">(actual)</span></p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <div class="seccion-matricula container py-5">
+        <div class="row align-items-center">
+            <!-- Columna izquierda - 60% -->
+            <div class="col-md-6">
+                <div class="contenido_iz">
+                    <h2 class="txt_especial" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100">Colegio
+                        Trilce</h2>
+                    <p class="txt_span" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+                        Nuestros 45 años de experiencia brindando una educación de calidad nos han convertido en una de las
+                        organizaciones educativas más grandes del país. Con 18 sedes en Lima y 6 en provincia, nuestro
+                        principal objetivo es brindar educación de alta calidad y fomentar el liderazgo.
+                    </p>
+                    <button class="btn btn-primary btn_wsp" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        <i class="lab la-whatsapp la-2x"></i> ¡Matricúlate aquí!
+                    </button>
+                </div>
+            </div>
+
+            <!-- Columna derecha - 40% -->
+            <div class="col-md-6">
+                <div class="contenido_de" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+                    <img src="/static/images/colegio/trilce_img.webp" alt="Imagen derecha" class="img-fluid img_tri">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion-matricula container py-5">
+        <div class="d-flex align-items-center">
+            <!-- Columna izquierda - 60% -->
+            <div class="col-md-6 d-flex justify-content-end">
+                <div class="contenido_iz text-end iz_de">
+                    <img src="/static/images/colegio/matricula2025.svg" alt="Matrícula 2025" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100">
+                    <p class="txt_propuesta" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                        La mejor propuesta educativa
+                    </p>
+                    <button class="btn btn-primary btn_wsp_2" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="100">
+                        Más información
+                    </button>
+                </div>
+            </div>
+
+            <!-- Columna derecha - 40% -->
+            <div class="col-md-6 d-flex justify-content-start">
+                <div class="contenido_de" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+                    <img src="/static/images/colegio/trilce_nina_2025.png" alt="Imagen derecha"
+                        class="img-fluid image-nina">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
     <!-- 769 X 960  MODALES POP UP-->
     <div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
@@ -360,8 +364,7 @@
 @section('scripts')
     page = 'index';
     <!-- var modal_open = [
-    '#modal-ads',
-    ]; -->
-
+                                '#modal-ads',
+                                ]; -->
     @parent
 @endsection

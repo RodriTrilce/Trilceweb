@@ -11,6 +11,8 @@
   <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}" type="image/x-icon" />
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}?v1.3">
   <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?v1.3">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
   @include('tracking.in_head')
 </head>
 
@@ -40,6 +42,14 @@
     @section('scripts')
   </script>
   <script src="{{ mix('/js/app_colegio.js') }}?v1.1" charset="utf-8"></script>
+  <!-- JS de AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+      once: true  // La animación solo ocurre una vez
+  });
+</script>
+
   @show
 
   @include('tracking.before_end_body')

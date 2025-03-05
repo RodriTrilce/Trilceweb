@@ -99,9 +99,9 @@
       <li class=""><a href="/academia/blog" class="{{ (Request::is('academia/blog*')?'nav-item-active':'') }}">Blog</a></li>
       <li class=""><a href="https://www.trilce.edu.pe/registro-academia/" class="nav-item-active"><strong>Más información</strong></a></li>
             
-            <!--li>
-              <a target="_blank" href="https://www.trilce.edu.pe/l/menu-trilce-2024">Menú Trilce</a>
-            </li-->
+            <li>
+              <a target="_blank" href="https://www.trilce.edu.pe/l/menu-trilce-2025">Menú Trilce</a>
+            </li>
             
             
             <li class="nav__highlight"><a href="/colegio">Colegio</a></li>
@@ -174,8 +174,9 @@
         </ul>
       </li-->
       
-      <!--li class="nav__highlight nav__highlight--left sm-hide md-hide lg-hide"><a target="_blank" href="/menu-trilce">Menú Trilce</a></!--li-->
-      
+
+     <!--- <li class="nav__highlight nav__highlight--left sm-hide md-hide lg-hide"><a target="_blank" href="/menu-trilce">Menú Trilce</a></li> -->
+        
       {{--<li class=""><a href="/academia/contacto" class="{{ (Request::is('academia/contacto')?'nav-item-active nav-item-noclick':'') }}">Escrí­benos</a></li>--}}
       
   </ul>

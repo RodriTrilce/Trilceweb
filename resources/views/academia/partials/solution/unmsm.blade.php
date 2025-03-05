@@ -16,27 +16,27 @@
 
         @foreach($solutions as $solution)
           <tr>
-            <td data-label="">{{$solution->display}}</td>
+            <td data-label="" class="td_responsive">{{$solution->display}}</td>
             
-            <td data-label="Área B y D">
+            <td data-label="" class="td_responsive">
                @if($solution->exm_1)
                 <a href="{{$solution->exm_1}}" target="_blank"><i class="fa fa-file-pdf-o"></i> {{$solution->title_1}}</a>
                @endif
             </td>
 
-            <td data-label="Área E">
+            <td data-label="" class="td_responsive">
                @if($solution->exm_2)
                  <a href="{{$solution->exm_2}}" target="_blank"><i class="fa fa-file-pdf-o"></i> {{$solution->title_2}}</a>
                @endif
             </td>
 			
-			<td data-label="Área A">
+			<td data-label="" class="td_responsive">
                @if($solution->exm_3)
                  <a href="{{$solution->exm_3}}" target="_blank"><i class="fa fa-file-pdf-o"></i> {{$solution->title_3}}</a>
                @endif
             </td>
 			
-			<td data-label="Área C">
+			<td data-label="" class="td_responsive">
                @if($solution->exm_4)
                  <a href="{{$solution->exm_4}}" target="_blank"><i class="fa fa-file-pdf-o"></i> {{$solution->title_4}}</a>
                @endif

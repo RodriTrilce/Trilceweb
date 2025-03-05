@@ -338,16 +338,7 @@
     },
     "Escolar": {
       "Tarde": [],
-    },
-    "Intensivo": {
-      "Mañana": [],
-    },
-    "Repaso": {
-      "Mañana": [],
-    },
-    "Verano": {
-      "Mañana": [],
-    },
+    }
   }
   window.onload = function()
   {

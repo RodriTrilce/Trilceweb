@@ -32,7 +32,7 @@
                                 <tr style="padding: 0; margin: 0; background-color: #ffffff !important;">
                                     <td style="vertical-align: bottom; padding: 0; margin: 0;">
                                         <a href="https://www.trilce.edu.pe/matricula-linea-2025/" target="_blank">
-                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/c7164490-e89e-11ef-b02a-1567ee08d162.png" alt="" width="500">
+                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/6c7e6850-f39e-11ef-93fb-1ddcbcfbb87f.png" alt="" width="500">
                                         </a>
                                     </td>
                                 </tr>

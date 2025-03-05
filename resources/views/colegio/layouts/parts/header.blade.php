@@ -258,7 +258,9 @@ nav > ul > li > a:hover {
                     </div>
                   -->
                   </li>
-                  <!-- <li class="nav__highlight nav__highlight--left sm-hide md-hide lg-hide"><a target="_blank" href="/menu-trilce">Menú Trilce</a></li> -->
+                  <li>
+                    <a target="_blank" href="https://www.trilce.edu.pe/l/menu-trilce-2025">Menú Trilce</a>
+                  </li>
                   <li class="nav__highlight nav__highlight--left"><a href="/academia">Academia</a></li>
                 </ul>
               </nav>

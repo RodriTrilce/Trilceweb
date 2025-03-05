@@ -22,12 +22,13 @@ class FileManagerController extends Controller
      */
     public function index()
     {
-        $files = File::all();
-
+        $files = File::orderBy('created_at', 'desc')->get();
+    
         return view('admin.file_manager.index')->with([
             'files' => $files
         ]);
     }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -202,4 +203,11 @@ class FileManagerController extends Controller
 
         return redirect()->route('filemanager.index')->with('success', '<i>' . $file->name . '</i> Eliminado correctamente');
     }
+
+    public function fetchFiles(Request $request)
+{
+    $files = File::orderBy('created_at', 'desc')->paginate(25); // 25 archivos por página
+    return response()->json($files);
+}
+
 }

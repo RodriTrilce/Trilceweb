@@ -314,3 +314,23 @@ if (page == 'olympics_group') {
   let olymp = new OlimpicsRegisterGroup();
   olymp.init();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".solution-table-content tbody tr").forEach(row => {
+      let cells = row.querySelectorAll("td");
+      let hasContent = false;
+
+      cells.forEach((cell, index) => {
+          if (index !== 0 && cell.innerHTML.trim() === "") {
+              cell.style.display = "none"; // Oculta las celdas vacías
+          } else if (index !== 0) {
+              hasContent = true; // Si al menos una celda tiene contenido, la fila no se oculta
+          }
+      });
+
+      // Ocultar la fila si todas sus celdas (excepto la primera) están vacías
+      if (!hasContent) {
+          row.style.display = "none";
+      }
+  });
+});
