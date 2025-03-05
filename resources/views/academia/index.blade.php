@@ -536,8 +536,15 @@
 
             <div class="carousel-item">
                 <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-pucp">
-                    <img src="{{ asset('static/images/academia/banners/banner-catolica-2025_11zon_11zon.webp') }}"
+                    <img src="{{ asset('static/images/academia/banners/banner-catolica-home-2025.jpg') }}"
                         alt="Cátolica - Trilce">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a target="_blank" href="#">
+                    <img src="{{ asset('static/images/academia/banner-primer-puesto-PUCP-2025-1.webp') }}"
+                        alt="Primer puesto católica">
                 </a>
             </div>
 
@@ -562,10 +569,6 @@
                 </a>
             </div>
 
-            <div class="carousel-item ">
-                <img src="{{ asset('static/images/slides/banner-clases-presenciales_2025_academias_trilce.webp') }}"
-                    alt="Clases Presenciales - Trilce">
-            </div>
 
             <div class="carousel-item ">
                 <img src="{{ asset('static/images/slides/banner-clases-virtuales_3_2025_academias_trilce.webp') }}"
@@ -577,11 +580,6 @@
                         <img src="{{ asset('static/images/slides/banner-escolar-home-7.png') }}" alt="Ecolar - Trilce">
                     </a>
                 </div-->
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-primer-puesto-PUCP-2024-1.png') }}"
-                    alt="Primer Puesto PUCP - Trilce">
-            </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('static/images/slides/banner-45-anios-academia-2024.png') }}"
@@ -604,11 +602,6 @@
                 <a target="_blank" href="https://www.trilce.edu.pe/l/canal-youtube ">
                     <img src="{{ asset('static/images/slides/5-banner-youtube-1.png') }}" alt="Youtube - Trilce">
                 </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/primer-puesto-UNI-2024-2.png') }}"
-                    alt="Primer Puesto UNI - Trilce">
             </div>
 
             <div class="carousel-item">
@@ -667,6 +660,13 @@
                 </a>
             </div>
 
+            <div class="carousel-item">
+                <a target="_blank" href="#">
+                    <img src="{{ asset('static/images/academia/banner-primer-puesto-PUCP-2025-1-MOBILE.webp') }}"
+                        alt="Cátolica - Trilce">
+                </a>
+            </div>
+
 
             <div class="carousel-item">
                 <a target="_blank" href="https://www.trilce.edu.pe/matricula-linea-2025/">
@@ -690,11 +690,6 @@
             </div>
 
             <div class="carousel-item ">
-                <img src="{{ asset('static/images/slides/banner-clases-presenciales-MOBILE_2025_academias_trilce.webp') }}"
-                    alt="Clases Presenciales - Trilce">
-            </div>
-
-            <div class="carousel-item ">
                 <img src="{{ asset('static/images/slides/banner-clases-virtuales-MOBILE_4_2025_academias_trilce.webp') }}"
                     alt="Clases Virtuales - Trilce">
             </div>
@@ -705,10 +700,6 @@
                     </a>
                 </div-->
 
-            <div class="carousel-item ">
-                <img src="{{ asset('static/images/slides/banner-primer-puesto-PUCP-2024-1-MOBILE.png') }}"
-                    alt="Primer Puesto PUCP - Trilce">
-            </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('static/images/slides/banner-45-anios-academia-2024-MOBILE.png') }}"
@@ -733,10 +724,6 @@
                 </a>
             </div>
 
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/primer-puesto-UNI-2024-2-MOBILE.png') }}"
-                    alt="Primer Puesto UNI - Trilce">
-            </div>
 
             <div class="carousel-item">
                 <img src="{{ asset('static/images/slides/banner-primeros-puestos-acad2-MOBILE.png') }}"
