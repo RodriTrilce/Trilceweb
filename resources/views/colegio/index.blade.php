@@ -295,12 +295,13 @@
         </div>
     </div>
 
-    <div class="seccion-matricula container py-5">
-        <div class="d-flex align-items-center">
-            <!-- Columna izquierda - 60% -->
-            <div class="col-md-6 d-flex justify-content-end">
-                <div class="contenido_iz text-end iz_de">
-                    <img src="/static/images/colegio/matricula2025.svg" alt="Matrícula 2025" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100">
+    <div class="seccion-matricula container py-5 respon_espe">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+            <!-- Columna izquierda - 100% en móvil, 50% en desktop -->
+            <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end mb-4 mb-md-0">
+                <div class="contenido_iz text-center text-md-end iz_de">
+                    <img src="/static/images/colegio/matricula2025.svg" alt="Matrícula 2025" 
+                        data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100" class="img-fluid">
                     <p class="txt_propuesta" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                         La mejor propuesta educativa
                     </p>
@@ -310,16 +311,17 @@
                     </button>
                 </div>
             </div>
-
-            <!-- Columna derecha - 40% -->
-            <div class="col-md-6 d-flex justify-content-start">
-                <div class="contenido_de" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+    
+            <!-- Columna derecha - 100% en móvil, 50% en desktop -->
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+                <div class="contenido_de text-start text-md-start" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
                     <img src="/static/images/colegio/trilce_nina_2025.png" alt="Imagen derecha"
                         class="img-fluid image-nina">
                 </div>
             </div>
         </div>
     </div>
+    
 
 
 

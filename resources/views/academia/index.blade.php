@@ -522,7 +522,7 @@
 
             <div class="carousel-item active">
                 <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-uni">
-                    <img src="{{ asset('static/images/academia/banners/banner-uni-home-2025_3_11zon.webp') }}"
+                    <img src="{{ asset('static/images/academia/banner-uni-home-2025_marzo_11zon.webp') }}"
                         alt="UNI - Trilce">
                 </a>
             </div>
@@ -536,7 +536,7 @@
 
             <div class="carousel-item">
                 <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-pucp">
-                    <img src="{{ asset('static/images/academia/banners/banner-catolica-home-2025.jpg') }}"
+                    <img src="{{ asset('static/images/academia/banner-catolica-home-2025_marzo_11zon.webp') }}"
                         alt="Cátolica - Trilce">
                 </a>
             </div>
@@ -641,7 +641,7 @@
 
             <div class="carousel-item active">
                 <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-uni">
-                    <img src="{{ asset('static/images/academia/banners/banner-uni-home-2025-MOBILE_4_11zon.webp') }}"
+                    <img src="{{ asset('static/images/academia/banner-uni-home-2025-MOBILE_marzo_11zon.webp') }}"
                         alt="UNI - Trilce">
                 </a>
             </div>
@@ -655,7 +655,7 @@
 
             <div class="carousel-item">
                 <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-pucp">
-                    <img src="{{ asset('static/images/academia/banners/banner-catolica-home-2026-MOBILE.jpg') }}"
+                    <img src="{{ asset('static/images/academia/banner-catolica-home-2025-HOME_marzo_11zon.webp') }}"
                         alt="Cátolica - Trilce">
                 </a>
             </div>

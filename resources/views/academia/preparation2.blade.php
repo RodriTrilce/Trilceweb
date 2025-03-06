@@ -96,9 +96,9 @@
         <div class="row">
             @if ($type == 'uni')
                 <a href="https://www.trilce.edu.pe/l/whatsapp-uni" target="_blank" style="width: 100%">
-                    <img src="/static/images/academia/banners/banner-uni-2025_1_11zon_11zon.webp" alt="Trilce"
+                    <img src="/static/images/academia/banner-uni-2025_seccion_11zon.webp" alt="Trilce"
                         class="version_desktop" style="width: 100%" />
-                    <img src="/static/images/academia/banners/banner-uni-2025-MOBILE_2_11zon.webp" alt="Trilce"
+                    <img src="/static/images/academia/banner-uni-2025-MOBILE_seccion_11zon.webp" alt="Trilce"
                         class="version_mobile" />
                     <div
                         class="col-xs-12 col-sm-12 header-double-content-top header-double-w-preparation-{{ $type }}">
@@ -116,9 +116,9 @@
                 </a>
             @elseif($type == 'pucp')
                 <a href="https://www.trilce.edu.pe/l/whatsapp-catolica" target="_blank" style="width: 100%">
-                    <img src="/static/images/academia/banners/banner-catolica-2025_11zon_11zon.webp" alt="Trilce"
+                    <img src="/static/images/academia/banner-catolica-2025_seccion_11zon.webp" alt="Trilce"
                         class="version_desktop" style="width: 100%" />
-                    <img src="/static/images/academia/banners/banner-catolica-2025-MOBILE_11zon2025.webp" alt="Trilce"
+                    <img src="/static/images/academia/banner-catolica-2025-MOBILE_seccion_11zon.webp" alt="Trilce"
                         class="version_mobile" />
                     <div
                         class="col-xs-12 col-sm-12 header-double-content-top header-double-w-preparation-{{ $type }}">

@@ -1024,7 +1024,7 @@ footer {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  padding: 35px 20px 0 20px;
+  padding: 35px 20px 0 40px;
 }
 .text_matricula {
   font-family: "Geogrotesque-SmBd";
@@ -1109,13 +1109,11 @@ p.Alumno {
     text-align: center !important; /* Asegura que el texto quede centrado */
   }
   h2.text_matricula.v2 {
-    text-align: center;
+    font-size: 45px;
+    line-height: 43px;
   }
   .responsive_force {
     max-width: 100% !important;
-  }
-  .v2 {
-    font-size: 3rem;
   }
   .respon_card_tk {
     max-width: 28.333333% !important;
@@ -1126,6 +1124,8 @@ p.Alumno {
 @media (max-width: 767px) {
   .card-matricula {
     height: 214px;
+    padding: 30px 0px 0px 30px;
+    
   }
 
   .respon_card_tk {
@@ -1136,7 +1136,6 @@ p.Alumno {
     font-size: 3em;
   }
   .card-matricula {
-    padding: 23px 15px 0 15px;
     height: 195px;
   }
 
@@ -1165,7 +1164,7 @@ p.Alumno {
     max-width: 100% !important;
   }
   .respon_card_tk {
-    justify-content: center;
+    justify-content: start;
   }
 
   .span_especial {
@@ -1205,7 +1204,6 @@ button.close.modern-close {
   border-radius: 50px !important;
   font-size: 17px !important;
   font-family: Geogrotesque-Bd;
-
 }
 button.btn.btn-primary.btn_wsp {
   display: flex;
@@ -1221,7 +1219,7 @@ button.btn.btn-primary.btn_wsp {
 }
 
 .txt_propuesta{
-  font-family: Geogrotesque-Md;
+  font-family: Geogrotesque-SmBd;
   font-size: 17px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1240,9 +1238,11 @@ button.btn.btn-primary.btn_wsp {
   font-family: Geogrotesque-Bd;
 
 }
-.iz_de{
-  text-align: center;
+
+.seccion-matricula.container.py-5.respon_espe{
+  padding-bottom: 0 !important;
 }
+
 
 /*PANTALLAS TRILCE*/
 @media only screen and (max-width: 1366px) {
@@ -1262,7 +1262,61 @@ button.btn.btn-primary.btn_wsp {
 }
 
 @media (max-width: 767px) {
+  .contenido_de{
+    text-align: center;
+  }
+
+  .btn_wsp{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    font-size: 14px !important;
+    font-family: Geogrotesque-Bd;
+  }
+
+  .txt_especial{
+    margin-bottom: 10px;
+  }
+
+  .contenido_iz img{
+    height:70px;
+  }
+
+  .txt_propuesta{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  img.img-fluid.image-nina {
+    max-width: 100% !important;
+  }
+
+  .respon_espe{
+    padding-bottom: 0px;
+  }
+  .seccion-matricula.container.py-5.respon_espe {
+    padding-bottom: 0 !important;
+  }
+
+  .contenido_de{
+    text-align: left;
+  }
+
+  .contenido_iz.text-center.text-md-end.iz_de {
+    text-align: start !important;
+  }
+
+
+  /*CONTENEDOR DEFAULT*/
+  .seccion-matricula.container.py-5{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
 }
 
 @media (max-width: 499px) {
 }
+

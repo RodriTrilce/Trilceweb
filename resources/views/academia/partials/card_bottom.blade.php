@@ -75,7 +75,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-2 trbajaconnosotros">
           <a href="https://www.trilce.edu.pe/trabaja-con-nosotros">
-          <img width="32" height="32" src="https://www.trilce.edu.pe/static/images/svg/icons8-teacher.svg" alt="tuition"/>
+            <i class="las la-chalkboard-teacher"></i>
             <h3>Trabaja con nosotros</h3>
             <p>Escuela de profesores</p>
           </a>
