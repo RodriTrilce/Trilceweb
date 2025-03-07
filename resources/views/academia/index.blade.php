@@ -2,40 +2,9 @@
 @extends('academia.layouts.template')
 @section('title', '')
 @section('content')
-
-@if($popup)
-<div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalLabel" aria-hidden="false">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-body">
-                <a href="{{ $popup->link }}" target="_blank">
-                    <img class="modal-web" src="{{ $popup->image_url }}" alt="Popup">
-                </a>
-                <a href="{{ $popup->link }}" target="_blank">
-                    <img class="modal-movil" src="{{ $popup->image_url_movil }}" alt="Popup">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function(){
-        $('#modalTrilceHome').modal('show');
-    });
-</script>
-@endif
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <style>
         nav>ul>li>a,
         nav>ul>li>a:link,
@@ -329,18 +298,18 @@
         }
 
         /*.carousel-item:nth-child(7) {
-            background-image: url('http://www.trilce.edu.pe/static/images/slides/banner-academias-solucionario-fis-qui-14022020-bg.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          }*/
+                background-image: url('http://www.trilce.edu.pe/static/images/slides/banner-academias-solucionario-fis-qui-14022020-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              }*/
 
         /*.carousel-item:nth-child(8) {
-            background-image: url('http://www.trilce.edu.pe/static/images/slides/banner-academias-23enero2020-bg.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          }*/
+                background-image: url('http://www.trilce.edu.pe/static/images/slides/banner-academias-23enero2020-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+              }*/
 
         .carousel-item:nth-child(12) {
             background-image: url('http://www.trilce.edu.pe/static/images/slides/banner-academia-17012020-bg.png');
@@ -424,7 +393,7 @@
             padding-right: 0px !important;
             z-index: 9999 !important;
             /*       display: flex !important;
-            align-items: center; */
+                align-items: center; */
         }
 
         #modalTrilceHome .modal-dialog {
@@ -529,15 +498,15 @@
 
     @include('academia.partials.modal.ads')
     <!-- <div class="banner__loader">
-          <div class="banner__loader-title"></div>
-          <div class="banner__loader-line"></div>
-          <div class="banner__loader-line"></div>
-        </div> -->
+              <div class="banner__loader-title"></div>
+              <div class="banner__loader-line"></div>
+              <div class="banner__loader-line"></div>
+            </div> -->
 
     <!-- <div class="index-banners index-banners--colegio"> -->
 
     <!-- {{-- @include('academia.partials.banners.all') --}}
-              @foreach ($banners as $banner)
+                  @foreach ($banners as $banner)
     @if (strtotime($banner->start) < time() && strtotime($banner->expire) > time())
     {!! $banner->content !!}
     @endif
@@ -604,10 +573,10 @@
             </div>
 
             <!--div class="carousel-item">
-                    <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
-                        <img src="{{ asset('static/images/slides/banner-escolar-home-7.png') }}" alt="Ecolar - Trilce">
-                    </a>
-                </div-->
+                        <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
+                            <img src="{{ asset('static/images/slides/banner-escolar-home-7.png') }}" alt="Ecolar - Trilce">
+                        </a>
+                    </div-->
 
             <div class="carousel-item">
                 <img src="{{ asset('static/images/slides/banner-45-anios-academia-2024.png') }}"
@@ -723,10 +692,10 @@
             </div>
 
             <!--div class="carousel-item">
-                    <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
-                        <img src="{{ asset('static/images/slides/banner-escolar-home-7-MOBILE.png') }}" alt="Escolar - Trilce">
-                    </a>
-                </div-->
+                        <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
+                            <img src="{{ asset('static/images/slides/banner-escolar-home-7-MOBILE.png') }}" alt="Escolar - Trilce">
+                        </a>
+                    </div-->
 
 
             <div class="carousel-item">
@@ -833,41 +802,45 @@
                 </div>
 
                 <!--div class="col-xs block-effecthover-item">
-                        <a href="/academia/ciclo-escolar">
-                            <div class="nuevos-i-top">
-                                <img src="/static/images/academia/svg/icono-ciclo-escolar.svg" alt="PUCP">
-                                <h4>Ciclo</h4>
-                                <h3>Escolar</h3>
-                            </div>
-                        </a>
-                    </div-->
+                            <a href="/academia/ciclo-escolar">
+                                <div class="nuevos-i-top">
+                                    <img src="/static/images/academia/svg/icono-ciclo-escolar.svg" alt="PUCP">
+                                    <h4>Ciclo</h4>
+                                    <h3>Escolar</h3>
+                                </div>
+                            </a>
+                        </div-->
 
             </div>
         </div>
     </div>
 
-    <div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="false">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-times"></i> <!-- Icono de X de Font Awesome -->
-                </button>
-                <div class="modal-body">
-                    <!-- Imagen para escritorio -->
-                    <a href="https://www.trilce.edu.pe/matricula-linea-2025/" target="_blank" class="modal-web-link">
-                        <img class="modal-web" src="{{ url('/static/images/modal-ciclos-2025.webp') }}"
-                            alt="Trilce - Web">
-                    </a>
-                    <!-- Imagen para móvil -->
-                    <a href="https://www.trilce.edu.pe/matricula-linea-2025/" target="_blank" class="modal-movil-link">
-                        <img class="modal-movil" src="{{ url('/static/images/modal-ciclos-2025.webp') }}"
-                            alt="Trilce - Móvil">
-                    </a>
+    @if ($popup)
+        <div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <a href="{{ $popup->link }}" target="_blank">
+                            <img class="modal-web" src="{{ $popup->image_url }}" alt="Popup">
+                        </a>
+                        <a href="{{ $popup->link }}" target="_blank">
+                            <img class="modal-movil" src="{{ $popup->image_url_movil }}" alt="Popup">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <script>
+            $(document).ready(function() {
+                $('#modalTrilceHome').modal('show');
+            });
+        </script>
+    @endif
 
 
 
@@ -1033,23 +1006,23 @@
 
     <!-- var modal_open = [
 
-        @if (!session('enrollment') && !session('contact') && !session('olympics'))
+            @if (!session('enrollment') && !session('contact') && !session('olympics'))
     '#modal-ads',
     @endif
 
-        @if (session('enrollment'))
+            @if (session('enrollment'))
     '#modal-1',
     @endif
 
-        @if (session('contact'))
+            @if (session('contact'))
     '#modal-1',
     @endif
 
-        @if (session('olympics'))
+            @if (session('olympics'))
     '#modal-1'
     @endif
 
-        ]; -->
+            ]; -->
 
     @parent
 
