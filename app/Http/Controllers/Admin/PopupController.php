@@ -101,4 +101,11 @@ class PopupController extends Controller
     {
         //
     }
+
+    public function getActivePopups()
+{
+    $popups = Popup::where('state', 1)->get();
+    return response()->json($popups);
+}
+
 }

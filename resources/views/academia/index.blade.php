@@ -3,6 +3,34 @@
 @section('title', '')
 @section('content')
 
+@if($popup)
+<div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <a href="{{ $popup->link }}" target="_blank">
+                    <img class="modal-web" src="{{ $popup->image_url }}" alt="Popup">
+                </a>
+                <a href="{{ $popup->link }}" target="_blank">
+                    <img class="modal-movil" src="{{ $popup->image_url_movil }}" alt="Popup">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#modalTrilceHome').modal('show');
+    });
+</script>
+@endif
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"

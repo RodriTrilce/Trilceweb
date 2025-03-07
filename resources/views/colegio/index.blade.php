@@ -6,6 +6,35 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     @include('colegio.partials.modal.ads')
 
+    @if($popup)
+    <div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <a href="{{ $popup->link }}" target="_blank">
+                        <img class="modal-web" src="{{ $popup->image_url }}" alt="Popup">
+                    </a>
+                    <a href="{{ $popup->link }}" target="_blank">
+                        <img class="modal-movil" src="{{ $popup->image_url_movil }}" alt="Popup">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#modalTrilceHome').modal('show');
+        });
+    </script>
+@endif
+
+
+
     <!--   <div class="banner__loader">
                                     <div class="banner__loader-title"></div>
                                     <div class="banner__loader-line"></div>
@@ -328,27 +357,6 @@
 
 
 
-    <!-- 769 X 960  MODALES POP UP-->
-    <div class="modal fade modern-modal modal_2025" id="modalTrilceHome" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="false">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close modern-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <a href="https://www.trilce.edu.pe/matricula-2025/" target="_blank">
-                        <img class="modal-web" src="{{ url('/static/images/colegio/modal-mat-2025.webp') }}"
-                            alt="Trilce">
-                    </a>
-                    <a href="https://www.trilce.edu.pe/matricula-2025/" target="_blank">
-                        <img class="modal-movil" src="{{ url('/static/images/colegio/modal-mat-2025.webp') }}"
-                            alt="Trilce">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"

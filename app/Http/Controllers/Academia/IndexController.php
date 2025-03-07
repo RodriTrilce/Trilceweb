@@ -26,11 +26,12 @@ class IndexController extends Controller
     ->get();
 
     $popup = Popup::where([
-      ['type', '=', Route::currentRouteName()]
-  ])->first();
-  
-  $popup = ($popup && $popup->state == '0') ? null : $popup;
-  
+        ['type', '=', 'academia-index'],  // Asegura que coincida con el tipo de popup en la BD
+        ['state', '=', '1']               // Solo popups activos
+    ])->first();
+    
+    $popup = ($popup && $popup->state == '1') ? $popup : null;
+
 
     Meta::set('title', 'Academia Trilce | Preparación preuniversitaria');
     Meta::set('description', 'Somos una academia preuniversitaria especializada en la preparación para los exámenes de admisión de las universidades San Marcos (UNMSM), la UNI y la Católica (PUCP).');

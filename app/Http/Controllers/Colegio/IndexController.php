@@ -26,10 +26,13 @@ class IndexController extends Controller
     ->get();
 
     $popup = Popup::where([
-      ['type', '=', Route::currentRouteName()]
+      ['type', '=', 'colegio-index'],
+      ['state', '=', '1']
   ])->first();
   
-  $popup = ($popup && $popup->state == '0') ? null : $popup;
+  
+  $popup = ($popup && $popup->state == '1') ? $popup : null;
+
 
     Meta::set('title', 'Colegio Trilce | Con 18 sedes en Lima y 6 en provincia');
     Meta::set('description', 'Con 18 sedes en Lima y 6 en provincia');
