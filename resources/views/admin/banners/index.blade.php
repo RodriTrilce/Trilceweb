@@ -1,161 +1,101 @@
 @extends('admin.layouts.template')
+
 @section('content')
-
-  <div id="modal-1" style="display:none;">
-    <div class="modal-b50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>Editar banner</h2>
-          </div>
-
-          <div class="col-sm-12">
-            <form>
-              <div class="form-group">
-                <label for="txtEmail">Titulo</label>
-                <input type="text" name="title" class="form-control" id="txtEmail" value="San Marcos feliz">
-              </div>
-
-              <div class="form-group">
-                <label for="textLink">Link</label>
-                <input type="text" name="link" class="form-control" id="textLink" value="http://www.google.com.pe/">
-              </div>
-
-              <div class="form-group">
-                <label for="txtFinish">Fecha de finalización</label>
-                <input type="text" class="form-control" name="finish" id="txtFinish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Guardar</button>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Gestión de Banners</h1>
+        <a href="{{ url('/admin/banners/create') }}" class="btn btn-primary">+ Nuevo Banner</a>
     </div>
-  </div>
 
-  <div id="modal-new" style="display:none">
-    <div class="modal-b50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <form class="" action="index.html" method="post">
+    <div class="table-responsive">
+        <table class="table table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Título</th>
+                    <th>Tipo</th>
+                    <th>Estado</th>
+                    <th>Posición</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="sortable-banners">
+              @foreach ($banners as $banner)
+                  <tr data-id="{{ $banner->id }}">
+                      <td class="handle" style="cursor: grab;">&#x2630;</td> 
+                      <td>{{ $banner->title }}</td>
+                      <td><span class="badge bg-info">{{ $banner->type }}</span></td>
+                      <td>
+                          <span class="badge {{ $banner->state ? 'bg-success' : 'bg-danger' }}">
+                              {{ $banner->state ? 'Activo' : 'Inactivo' }}
+                          </span>
+                      </td>
+                      <td>{{ $banner->position }}</td>
+                      <td>
+                          <div class="btn-group">
+                              <a href="{{ route('admin.banners.edit', $banner->id) }}" class="btn btn-warning btn-sm">Editar</a>
+                              <form action="{{ route('admin.banners.destroy', $banner->id) }}" method="POST"
+                                  onsubmit="return confirm('¿Seguro que deseas eliminar este banner?');">
+                                  @csrf
+                                  @method('DELETE')
+                                  <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                              </form>
+                          </div>
+                      </td>
+                  </tr>
+              @endforeach
+          </tbody>
+          
+        </table>
 
-              <div class="form-group">
-                <label for="txtEmail">Titulo</label>
-                <input type="text" name="title" class="form-control" id="txtEmail" value="San Marcos feliz">
-              </div>
+        <button id="saveOrderBtn" class="btn btn-success mt-3">Actualizar Orden</button>
+        <p id="status-message"></p>
 
-              <div class="form-group">
-                <label for="textLink">Link</label>
-                <input type="text" name="link" class="form-control" id="textLink" value="http://www.google.com.pe/">
-              </div>
-
-              <div class="form-group">
-                <label for="txtFinish">Fecha de finalización</label>
-                <input type="text" class="form-control" name="finish" id="txtFinish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
-              </div>
-
-              <button type="submit" class="btn btn-primary">Enviar</button>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Banners</h1>
-  </div>
-
-  @if(Session::has('success'))
-  <div class="alert alert-success" role="alert">
-    {{Session::get('success')}}</h3>
-  </div>
-  @endif
-
-<div class="saveStatus" id="saveStatus">
-
-</div>
-
-<div class="save-order" id="saveOrder">
-  <div class="row">
-    <div class="col-sm-12">
-      <button type="button" class="btn btn-primary" id="saveorderButton">Guardar orden</button>
-    </div>
-  </div>
-</div>
-
-<div class="admin-banners" id="banners">
-  @foreach ($banners as $banner)
-    <div
-      class="banner {{ ($banner->state == 0 ? 'banner--desactive' : '') }}"
-      data-position="{{ $banner->position }}"
-      data-id="{{ $banner->id }}">
-
-      <div class="op close">
-        <form action="{{action('Admin\BannersController@destroy', $banner->id)}}" method="post" onsubmit="return secureDelete(this);">
-            {{csrf_field()}}
-            <input name="_method" type="hidden" value="DELETE">
-            <button class="btn btn-danger btn-xs" type="submit">
-              <span data-feather="trash"></span>
-            </button>
-        </form>
-      </div>
-      <div class="op edit">
-          <a href="{{action('Admin\BannersController@edit', $banner->id)}}" class="btn btn-success">
-            <span data-feather="edit"></span>
-          </a>
-      </div>
-
-      @if($banner->state==0)
-        <div class="info">
-          <br><br>
-          <h2><i>BANNER DESACTIVADO</i></h2>
-        </div>
-      @endif
-
-      <div class="info expire @if(strtotime($banner->start) > time()) red @endif">
-
-        @if($banner->state==1) <br><br> @endif
-
-        <span class="text">Inicio: </span>
-        <span class="expire-date">
-          {{ Date::parse($banner->start)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
-        </span>
-      </div>
-
-      <div class="info expire @if(strtotime($banner->expire) < time()) red @endif">
-        <span class="text">Vencimiento: </span>
-        <span class="expire-date">
-          {{ Date::parse($banner->expire)->format('j \d\e F \d\e\l Y \a \l\a\s G:s') }}
-        </span>
-      </div>
-
-      <div class="info title">
-        <span class="text">Titulo:</span>
-        <span class="title-text">{{ $banner->title }}</span>
-      </div>
-
-      <i>Vista previa (no se ve igual que el banner final):</i>
-
-      <div class="info__banner">
-        {!! $banner->content !!}
-      </div>
 
     </div>
-  @endforeach
-</div>
 
-<br>
-<br>
-<br>
-<br>
+    <h2 class="mt-5">Vista previa de Banners</h2>
+    <div class="row">
+        @foreach ($banners as $banner)
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $banner->title }}</h5>
 
+                        <p class="mb-2"><strong>Vista previa Desktop:</strong></p>
+                        @if ($banner->file_desktop_url)
+                            <img src="{{ $banner->file_desktop_url }}" alt="Banner Desktop"
+                                class="img-fluid rounded border">
+                        @else
+                            <p class="text-muted">No hay imagen para desktop</p>
+                        @endif
+
+                        <p class="mt-3 mb-2"><strong>Vista previa Mobile:</strong></p>
+                        @if ($banner->file_mobile_url)
+                            <img src="{{ $banner->file_mobile_url }}" alt="Banner Mobile" class="img-fluid rounded border">
+                        @else
+                            <p class="text-muted">No hay imagen para móvil</p>
+                        @endif
+
+                        <div class="mt-3">
+                            <a href="{{ route('admin.banners.edit', $banner->id) }}"
+                                class="btn btn-primary btn-sm">Editar</a>
+                            <form action="{{ route('admin.banners.destroy', $banner->id) }}" method="POST"
+                                class="d-inline" onsubmit="return confirm('¿Seguro que deseas eliminar este banner?');">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
 @endsection
 
 @section('scripts')
-  var page = 'banners_index'
-  @parent
+    <script>
+        var page = 'banners_index';
+    </script>
+    @parent
 @endsection

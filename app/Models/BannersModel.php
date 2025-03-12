@@ -3,14 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\File;
 
 class BannersModel extends Model
 {
-  protected $table = 'banners';
+    protected $table = 'banners';
 
-  public function file()
-  {
-    return $this->hasOne('App\Models\File', 'id', 'file_id');
-  }
+    protected $fillable = [
+        'title', 'type', 'state', 'start', 'expire', 'content', 
+        'file_desktop_url', 'file_mobile_url', 'position'
+    ];
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="update-order-url" content="{{ route('admin.banners.updateOrder') }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -435,15 +436,83 @@
     <script src="{{ mix('/js/admin_main.js') }}" charset="utf-8"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          $("#search-input").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("#my-table tbody tr").filter(function () {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        document.addEventListener("DOMContentLoaded", function() {
+            $("#search-input").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#my-table tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
             });
-          });
         });
-      </script>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let order = [];
+
+            let sortable = new Sortable(document.getElementById('sortable-banners'), {
+                handle: '.handle', // Solo permite arrastrar desde el icono ☰
+                animation: 150,
+                onEnd: function() {
+                    order = []; // Limpiar el array antes de actualizar
+
+                    document.querySelectorAll("#sortable-banners tr").forEach((row, index) => {
+                        order.push({
+                            id: row.getAttribute("data-id"),
+                            position: index + 1
+                        });
+
+                        // Actualizar la posición en la tabla sin recargar
+                        row.querySelector("td:nth-child(5)").textContent = index + 1;
+                    });
+
+                    console.log("Nuevo orden registrado:", order);
+                }
+            });
+
+            // Obtener URL y CSRF desde el HTML
+            const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+            const updateOrderUrl = document.querySelector('meta[name="update-order-url"]').getAttribute('content');
+
+            // Botón para actualizar el orden
+            document.getElementById("saveOrderBtn").addEventListener("click", function() {
+                if (order.length === 0) {
+                    alert("No hay cambios en el orden.");
+                    return;
+                }
+
+                if (confirm("¿Estás seguro de que quieres guardar el nuevo orden?")) {
+                    document.getElementById('status-message').textContent = "Guardando...";
+
+                    fetch(updateOrderUrl, {
+                            method: "POST",
+                            headers: {
+                                "X-CSRF-TOKEN": csrfToken,
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                order: order
+                            })
+                        }).then(response => response.json())
+                        .then(data => {
+                            document.getElementById('status-message').textContent =
+                                "¡Orden actualizado!";
+                            setTimeout(() => {
+                                document.getElementById('status-message').textContent = "";
+                                location
+                            .reload(); // Recargar la página para reflejar los cambios
+                            }, 2000);
+                        }).catch(error => {
+                            console.error("Error:", error);
+                            document.getElementById('status-message').textContent =
+                                "Error al actualizar";
+                        });
+                }
+            });
+        });
+    </script>
+
 
 </body>
 

@@ -515,115 +515,24 @@
 
     <div id="carouselTrilceAcademiaWeb" class="carousel web slide" data-ride="carousel" data-interval="5000">
         <div class="carousel-inner">
-
-
-            <div class="carousel-item active">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-uni">
-                    <img src="{{ asset('static/images/academia/banner-uni-home-2025_marzo_11zon.webp') }}"
-                        alt="UNI - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-san-marcos">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-san-marcos-home-2025_4_11zon.webp') }}"
-                        alt="San Marcos - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-pucp">
-                    <img src="{{ asset('static/images/academia/banner-catolica-home-2025_marzo_11zon.webp') }}"
-                        alt="Cátolica - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="#">
-                    <img src="{{ asset('static/images/academia/banner-primer-puesto-PUCP-2025-1.webp') }}"
-                        alt="Primer puesto católica">
-                </a>
-            </div>
-
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/matricula-linea-2025/">
-                    <img src="{{ asset('static/images/slides/banner-matricula-en-linea-1.png') }}"
-                        alt="Matrícula en línea - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-primer-puesto-pucp-computo-general-academia-2.png') }}"
-                    alt="Primer Puesto PUCP Cómputo General - Trilce">
-            </div>
-
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-ves">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-sede-ves_11zon.webp') }}"
-                        alt="Villa El Salvador - Trilce">
-                </a>
-            </div>
-
-
-            <div class="carousel-item ">
-                <img src="{{ asset('static/images/slides/banner-clases-virtuales_3_2025_academias_trilce.webp') }}"
-                    alt="Clases Virtuales - Trilce">
-            </div>
-
-            <!--div class="carousel-item">
-                        <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
-                            <img src="{{ asset('static/images/slides/banner-escolar-home-7.png') }}" alt="Ecolar - Trilce">
+            @php
+                $firstBanner = $banners->first(); // Obtiene el banner con menor posición
+            @endphp
+    
+            @foreach ($banners as $banner)
+                <div class="carousel-item {{ $banner->id === $firstBanner->id ? 'active' : '' }}">
+                    @if ($banner->content)
+                        <a target="_blank" href="{{ $banner->content }}">
+                            <img src="{{ asset($banner->file_desktop_url) }}" 
+                                 alt="{{ $banner->title ?: 'Banner de Trilce Academia' }}">
                         </a>
-                    </div-->
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-45-anios-academia-2024.png') }}"
-                    alt="Banner 45 años - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-academias">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-sedes-presenciales_2_11zon.webp') }}"
-                        alt="Academia sedes">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/1-banner-primer-puesto-SM-2024-2.png') }}"
-                    alt="Primer Puesto San Marcos - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/canal-youtube ">
-                    <img src="{{ asset('static/images/slides/5-banner-youtube-1.png') }}" alt="Youtube - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-primeros-puestos-acad2.png') }}"
-                    alt="Primeros Puestos - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.tiktok.com/@trilce.academia">
-                    <img src="{{ asset('static/images/slides/3-banner-tiktok-acad-1.png') }}" alt="TikTok - Trile">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/solucionarios">
-                    <img src="{{ asset('static/images/slides/banner-solucionarios-2023.png') }}"
-                        alt="Solucionario - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-medioambiente.png') }}" alt="Medio Ambiente - Trilce">
-            </div>
+                    @else
+                        <img src="{{ asset($banner->file_desktop_url) }}" 
+                             alt="{{ $banner->title ?: 'Banner de Trilce Academia' }}">
+                    @endif
+                </div>
+            @endforeach
         </div>
-
         <a class="carousel-control-prev" href="#carouselTrilceAcademiaWeb" role="button" data-slide="prev">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
         </a>
@@ -631,123 +540,23 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
         </a>
     </div>
-
+    
     <div id="carouselTrilceAcademiaMovil" class="carousel mobile slide" data-ride="carousel" data-interval="5000">
         <div class="carousel-inner">
-
-
-            <div class="carousel-item active">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-uni">
-                    <img src="{{ asset('static/images/academia/banner-uni-home-2025-MOBILE_marzo_11zon.webp') }}"
-                        alt="UNI - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-san-marcos">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-san-marcos-home-2025-MOBILE_1_11zon.webp') }}"
-                        alt="San Marcos - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/preparacion-pucp">
-                    <img src="{{ asset('static/images/academia/banner-catolica-home-2025-HOME_marzo_11zon.webp') }}"
-                        alt="Cátolica - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="#">
-                    <img src="{{ asset('static/images/academia/banner-primer-puesto-PUCP-2025-1-MOBILE.webp') }}"
-                        alt="Cátolica - Trilce">
-                </a>
-            </div>
-
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/matricula-linea-2025/">
-                    <img src="{{ asset('static/images/slides/banner-matricula-en-linea-1-MOBILE.png') }}"
-                        alt="Matrícula en línea - Trilce">
-                </a>
-            </div>
-
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-primer-puesto-pucp-computo-general-academia-2-MOBILE.png') }}"
-                    alt="Primer Puesto PUCP Cómputo General - Trilce">
-            </div>
-
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-ves">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-sede-ves-MOBILE_11zon.webp') }}"
-                        alt="Villa El Salvador - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item ">
-                <img src="{{ asset('static/images/slides/banner-clases-virtuales-MOBILE_4_2025_academias_trilce.webp') }}"
-                    alt="Clases Virtuales - Trilce">
-            </div>
-
-            <!--div class="carousel-item">
-                        <a target="_blank" href="https://www.trilce.edu.pe/academia/ciclo-escolar">
-                            <img src="{{ asset('static/images/slides/banner-escolar-home-7-MOBILE.png') }}" alt="Escolar - Trilce">
+            @foreach ($banners as $banner)
+                <div class="carousel-item {{ $banner->id === $firstBanner->id ? 'active' : '' }}">
+                    @if ($banner->content)
+                        <a target="_blank" href="{{ $banner->content }}">
+                            <img src="{{ asset($banner->file_mobile_url) }}" 
+                                 alt="{{ $banner->title ?: 'Banner de Trilce Academia' }}">
                         </a>
-                    </div-->
-
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-45-anios-academia-2024-MOBILE.png') }}"
-                    alt="Banner 45 años - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/whatsapp-academias">
-                    <img src="{{ asset('static/images/academia/banners_2025_enero/banner-sedes-presenciales-MOBILE_1_11zon.webp') }}"
-                        alt="Trilce - 45 años">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/1-banner-primer-puesto-SM-2024-2-MOBILE.png') }}"
-                    alt="Primer Puesto San Marcos - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/l/canal-youtube ">
-                    <img src="{{ asset('static/images/slides/5-banner-youtube-1-MOBILE.png') }}" alt="Youtube - Trilce">
-                </a>
-            </div>
-
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-primeros-puestos-acad2-MOBILE.png') }}"
-                    alt="Primeros Puestos - Trilce">
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.tiktok.com/@trilce.academia">
-                    <img src="{{ asset('static/images/slides/3-banner-tiktok-acad-1-MOBILE.png') }}"
-                        alt="TikTok - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <a target="_blank" href="https://www.trilce.edu.pe/academia/solucionarios">
-                    <img src="{{ asset('static/images/slides/banner-solucionarios-2023-MOBILE.png') }}"
-                        alt="Solucionarios - Trilce">
-                </a>
-            </div>
-
-            <div class="carousel-item">
-                <img src="{{ asset('static/images/slides/banner-medioambiente-movil.png') }}"
-                    alt="Medio Ambiente - Trilce">
-            </div>
-
+                    @else
+                        <img src="{{ asset($banner->file_mobile_url) }}" 
+                             alt="{{ $banner->title ?: 'Banner de Trilce Academia' }}">
+                    @endif
+                </div>
+            @endforeach
         </div>
-
         <a class="carousel-control-prev" href="#carouselTrilceAcademiaMovil" role="button" data-slide="prev">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
         </a>
@@ -755,6 +564,8 @@
             <i class="fa fa-angle-right" aria-hidden="true"></i>
         </a>
     </div>
+    
+    
 
     <div class="nuevos-i" id="inicios">
         <div class="row center-xs">

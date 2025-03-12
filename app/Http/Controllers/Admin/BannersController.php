@@ -53,63 +53,59 @@ class BannersController extends Controller
      */
     public function store(BannerCreateRequest $request)
     {
-      $request->validated();
-
-      $banner = new Banner;
-
-      $banner->title  = $request->title;
-      $banner->content   = $request->content;
-
-      $banner->type   = $request->type;
-      $banner->state = '1';
-      $banner->start = $request->start;
-      $banner->expire = $request->expire;
-
-      /*
-        $file = $this->storeBannerImage($request);
-        $banner->file_id = $file->id;
-      */
-      
-      $position = Banner::where([
-        ['type', '=', $request->type],
-        ['state', '=', '1']
-      ])
-      ->orderBy('position', 'desc')
-      ->take(1)
-      ->get();
-
-      $banner->position = (!isset($position[0]->position)?0:$position[0]->position+1);
-
-      $banner->save();
-
-      return back()->with('success', 'Banner creado correctamente');
+        $request->validated();
+    
+        $banner = new Banner;
+    
+        $banner->title = $request->title;
+        $banner->type = $request->type;
+        $banner->state = '1';
+        $banner->start = $request->start;
+        $banner->expire = $request->expire;
+        $banner->content = $request->content ?? 'Valor por defecto';
+    
+        // Guardar las URLs en lugar de archivos
+        $banner->file_desktop_url = $request->file_desktop_url;
+        $banner->file_mobile_url = $request->file_mobile_url;
+    
+        // Posicionamiento del banner
+        $position = Banner::where('type', $request->type)->orderBy('position', 'desc')->first();
+        $banner->position = $position ? $position->position + 1 : 0;
+    
+        $banner->save();
+    
+        return back()->with('success', 'Banner creado correctamente');
     }
+    
+    
 
-    public function storeBannerImage($request)
-    {
-      $mime   = new Mime;
-      $file   = new File;
-
-      $file->token              = date("djo") . str_random(10);
-      $file->type               = 'image';
-      $file->mime               = $request->file('image')->getMimeType();
-      $file->extension          = $mime->getExtension($request->file('image')->getMimeType());
-      $file->location_folder    = 'static/images/banner';
-      $file->name               = $request->title;
-      $file->dimension          = '1920×500';
-      $file->size               = $request->file('image')->getClientSize();
-      $file->save();
-
-      $image = Image::make($request->file('image'));
-
-      Storage::put('public/' . $file->location_folder . '/' . $file->token. '.' . $file->extension, $image->encode(null, 80));
-
-      $optimizerChain = OptimizerChainFactory::create();
-      $optimizerChain->optimize(getcwd() . Storage::url($file->location_folder . '/' . $file->token . '.' . $file->extension));
-
-      return $file;
-    }
-
+  private function storeBannerImage($file)
+  {
+      $mime = new \Mimey\MimeTypes;
+      $fileModel = new File;
+  
+      $fileModel->token = date("djo") . str_random(10);
+      $fileModel->type = 'image';
+      $fileModel->mime = $file->getMimeType();
+      $fileModel->extension = $mime->getExtension($file->getMimeType());
+      $fileModel->location_folder = 'static/images/banner';
+      $fileModel->name = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+      $fileModel->dimension = '1920×500'; // Opcional
+      $fileModel->size = $file->getSize();
+      $fileModel->save();
+  
+      $image = Image::make($file);
+      $filePath = 'public/' . $fileModel->location_folder . '/' . $fileModel->token . '.' . $fileModel->extension;
+      Storage::put($filePath, $image->encode(null, 80));
+  
+      // Optimizar la imagen
+      $optimizerChain = \Spatie\ImageOptimizer\OptimizerChainFactory::create();
+      $optimizerChain->optimize(storage_path('app/' . $filePath)); 
+  
+      return $fileModel;
+  }
+  
+  
     /**
      * Display the specified resource.
      *
@@ -142,22 +138,33 @@ class BannersController extends Controller
      */
     public function update(BannerCreateRequest $request, $id)
     {
-      $request->validated();
-
-      $banner = Banner::find($id);
-
-      $banner->title    = $request->title;
-      $banner->content  = $request->content;
-
-      $banner->state    = ($request->state == 'on' ? 1 : 0);
-      $banner->type     = $request->type;
-      $banner->start    = $request->start;
-      $banner->expire   = $request->expire;
-
-      $banner->save();
-
+        $request->validated();
+    
+        $banner = Banner::find($id);
+    
+        $banner->title = $request->title;
+        $banner->state = $request->state == 'on' ? 1 : 0;
+        $banner->type = $request->type;
+        $banner->start = $request->start;
+        $banner->expire = $request->expire;
+        $banner->content = $request->content ?? 'Valor por defecto';
+    
+        // Actualizar solo si se envían nuevas URLs
+        if ($request->file_desktop_url) {
+            $banner->file_desktop_url = $request->file_desktop_url;
+        }
+    
+        if ($request->file_mobile_url) {
+            $banner->file_mobile_url = $request->file_mobile_url;
+        }
+    
+        $banner->save();
+    
         return back()->with('success', 'Banner actualizado correctamente');
     }
+    
+    
+    
 
     /**
      * Remove the specified resource from storage.
@@ -200,6 +207,16 @@ class BannersController extends Controller
         return back()->with('success', 'Banner eliminado correctamente');
     }
 
+    public function updateOrder(Request $request)
+    {
+        foreach ($request->order as $item) {
+            Banner::where('id', $item['id'])->update(['position' => $item['position']]);
+        }
+    
+        return response()->json(['message' => 'Orden actualizado correctamente'], 200);
+    }
+    
+    
     public function storePositions(Request $request)
     {
       $positions = json_decode($request->positions);
@@ -212,3 +229,4 @@ class BannersController extends Controller
       echo json_encode(['status' => 'ok']);
     }
 }
+
