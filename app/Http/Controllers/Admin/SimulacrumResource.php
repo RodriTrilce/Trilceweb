@@ -21,7 +21,9 @@ class SimulacrumResource extends Controller
     public function index()
     {
         $university = University::findOrFail(strip_tags($_GET['id']));
-        $all = Simulacrum::where('university_id', $university->id)->get();
+        $all = Simulacrum::where('university_id', $university->id)
+        ->orderBy('created_at', 'desc') // Ordena por fecha descendente
+        ->get();
         return view('admin.simulacrum.index')->with([
             'simulacros' => $all,
             'university' => $university

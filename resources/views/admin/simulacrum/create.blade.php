@@ -29,7 +29,7 @@
     </div>
     <div class="form-group">
       <label for="create_finish">Fecha del simulacro</label>
-      <input type="text" class="form-control" id="mo_finish" name="created_at" id="create_finish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
+      <input type="date" class="form-control" id="mo_finish" name="created_at" id="create_finish" autocomplete="off" placeholder="Clic aquí para Selecionar fecha" required>
     </div>
 
     <div class="form-group">
