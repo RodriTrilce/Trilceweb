@@ -93,3 +93,12 @@
     text-align: left !important;
   }
 }
+
+.download-link {
+  transition: opacity 0.3s ease;
+}
+
+.download-link[href="#"] {
+  opacity: 0.5;
+  pointer-events: none; /* Evita que el usuario haga clic */
+}

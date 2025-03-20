@@ -334,3 +334,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".download-link").forEach(link => {
+      if (link.getAttribute("href") === "#") {
+          link.style.opacity = "0.5";
+          link.addEventListener("click", function (event) {
+              event.preventDefault(); // Evita el refresco de la página
+          });
+      }
+  });
+});
