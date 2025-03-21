@@ -92,7 +92,7 @@
                             <tr>
                                 <td data-label="Inicio:">03/03/2025</td>
                                 <td data-label="Fin:">05/07/2025</td>
-                                <td data-label="Nro. Semanas:">19</td>
+                                <td data-label="Nro. Semanas:">18</td>
                                 <td data-label="Pago único (Presencial):">S/ 1700.00</td>
                                 <td data-label="1ra cuota:">S/ 900.00</td>
                                 <td data-label="2da cuota:">S/ 850.00</td>
@@ -129,7 +129,7 @@
                                 <td data-label="1ra cuota:">S/ 600.00</td>
                                 <td data-label="2da cuota:">S/ 400.00</td>
                                 <td data-label="Pago mensual (Virtual):">---</td>
-                                <td data-label="Sedes:" class="texto-horario">Los Olivos y Santa Beatriz</td>
+                                <td  data-label="Sedes:" class="texto-horario">Los Olivos y Santa Beatriz</td>
                             </tr>
                             <tr>
                                 <td data-label="Inicio:">17/03/2025</td>
@@ -383,15 +383,15 @@
             </div>
             <div class="beginning-breakline"></div>
             <div class="col-xs beginning--item beginning--item--activecolors">
-                <a href="/academia/ciclo-escolar" class="item-a">
-                    <div class="item-a-container">
-                        <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-ciclo-escolar.svg') }}"
-                            alt="Nuevos Inicios">
-                        <div class="item-a-preparation"><br /></div>
-                        <span class="item-a-university">ESCOLAR</span>
-                    </div>
-                </a>
-            </div>
+   <a href="/academia/ciclo-escolar" class="item-a">
+    <div class="item-a-container">
+    <img class="item-a-img" src="{{ url('/static/images/academia/svg/logo-ciclo-escolar.svg') }}"
+     alt="Nuevos Inicios">
+    <div class="item-a-preparation"><br /></div>
+    <span class="item-a-university">ESCOLAR</span>
+    </div>
+   </a>
+  </div>
         </div>
     </div>
     <script>

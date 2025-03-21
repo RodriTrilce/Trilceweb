@@ -520,3 +520,24 @@
 footer{
   height: auto;
 }
+
+.version_desktop {
+  display: block;
+}
+
+.version_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .version_desktop {
+      display: none;
+  }
+
+  .version_mobile {
+      display: block;
+  }
+  img.version_mobile {
+    width: 100%;
+}
+}

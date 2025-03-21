@@ -8,12 +8,12 @@
 .header-double-top{
   >.row{
     position: relative;
-    height: 250px;
+    height: auto;
     flex-wrap: wrap;
     overflow: hidden;
 
     @include breakpoint(baby){
-      height: 130px;
+      height: auto;
     }
   }
 }
