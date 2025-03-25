@@ -102,3 +102,13 @@
   opacity: 0.5;
   pointer-events: none; /* Evita que el usuario haga clic */
 }
+
+.solutions-ban{
+  height: 35vh;
+}
+
+@media (max-width: 767px) {
+  .solutions-ban{
+    height: 20vh;
+  }
+}

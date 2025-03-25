@@ -46,9 +46,6 @@
         width: 100%;
         height: 100%;
         display: block;
-        padding: 20px;
-        padding-top: 65px;
-        padding-bottom: 65px;
         position: relative;
       }
 
@@ -199,7 +196,7 @@
         &:nth-child(3)::before{
           content: "";
           position: absolute;
-          left: 10%;
+          right: 0;
           z-index: 1;
           top: 20%;
           width: 1px;
@@ -540,4 +537,20 @@ footer{
   img.version_mobile {
     width: 100%;
 }
+}
+
+.boxi{
+    justify-content: space-around;
+}
+.boxi a{
+  padding: 30px 20px 40px;
+}
+.recta{
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .recta{
+          width: 40% !important; /* Ocupa la mitad del ancho */
+      }
 }

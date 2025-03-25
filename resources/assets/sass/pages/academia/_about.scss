@@ -234,3 +234,18 @@
   }// End vgrid-item--text
 
 }
+
+.about-venues-sec{
+  height: 35vh;
+}
+@media (max-width: 767px) {
+  .about-venues-sec{
+    height: 20vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-history--pcontainer p {
+    font-size:1rem;
+  }
+}

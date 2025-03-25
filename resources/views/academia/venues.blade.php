@@ -11,7 +11,7 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
-      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-venues"></div>
+      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-venues venues-ban"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Nuestras sedes</h1>

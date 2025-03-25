@@ -6,11 +6,11 @@
   <div class="header-double-top">
     <div class="row">
       <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
-      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-simulacrum"></div>
+      <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-simulacrum solutions-ban"></div>
       <div class="header-double-border"></div>
       <div class="header-double-title">
         <h1>Simulacros</h1>
-        <p class="header-double-p-up">Resultados de los exámenes</p>
+        <p class="header-double-p-up">Resultados de los exámenes</p> 
       </div>
     </div>
   </div>

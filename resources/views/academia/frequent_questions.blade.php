@@ -6,7 +6,7 @@
 <div class="header-double-top">
   <div class="row">
     <div class="col-xs-12 col-sm-6 header-double-bottom"></div>
-    <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-frequent-questions"></div>
+    <div class="col-xs-12 col-sm-6 header-double-content-top header-double-w-frequent-questions solutions-ban"></div>
     <div class="header-double-border"></div>
     <div class="header-double-title">
       <h1>Preguntas frecuentes</h1>
