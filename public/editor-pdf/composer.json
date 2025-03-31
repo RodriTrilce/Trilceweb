@@ -1,0 +1,16 @@
+{
+    "name": "trilce/pdf-editor",
+    "description": "Editor de PDF con hiperv\u0000nculos para Trilce.",
+    "type": "project",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Rodrigo Mora",
+            "email": "lmora@trilce.edu.pe"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "setasign/fpdf": "^1.8"
+    }
+}

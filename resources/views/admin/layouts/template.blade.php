@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="update-order-url" content="{{ route('admin.banners.updateOrder') }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
+
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -18,9 +19,25 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_style.min.css" rel="stylesheet"
         type="text/css" />
     <link rel="stylesheet" href="{{ mix('/css/admin_main.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" />
+
+
     <!-- CSS adicional para mejorar el sidebar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" />
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Librerías necesarias -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js";
+    </script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -321,6 +338,22 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <!-- Pdf Editor  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pdf-editor" data-toggle="collapse" aria-expanded="false">
+                                <span data-feather="file-text"></span>
+                                Pdf editor
+                                <span data-feather="chevron-down" class="float-right"></span>
+                            </a>
+                            <ul class="collapse nav flex-column mb-2" id="pdf-editor">
+                                <li class="nav-item">
+                                    <a href="/admin/pdf-editor/" class="nav-link">
+                                        <span data-feather="corner-down-right"></span> Editor
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -361,7 +394,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Inicializar los iconos de Feather
@@ -432,9 +464,7 @@
             }
         });
     </script>
-
     <script src="{{ mix('/js/admin_main.js') }}" charset="utf-8"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             $("#search-input").on("keyup", function() {
@@ -445,7 +475,6 @@
             });
         });
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -501,7 +530,7 @@
                             setTimeout(() => {
                                 document.getElementById('status-message').textContent = "";
                                 location
-                            .reload(); // Recargar la página para reflejar los cambios
+                                    .reload(); // Recargar la página para reflejar los cambios
                             }, 2000);
                         }).catch(error => {
                             console.error("Error:", error);
@@ -512,8 +541,7 @@
             });
         });
     </script>
-
-
+    @yield('scripts')
 </body>
 
 </html>

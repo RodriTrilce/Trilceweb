@@ -55,12 +55,19 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
       Route::resource('/solutions', 'SolutionResource');
       Route::resource('/form-sorteo', 'FormSorteoController');
       Route::resource('/form-claves', 'FormClavesSanMarcosController');
+      Route::resource('/pdf-editor', 'EditorPdfController');
 });
 
 Route::get('/admin/banners/{id}/edit', 'BannerController@edit')->name('admin.banners.edit');
 Route::delete('/admin/banners/{id}', 'BannerController@destroy')->name('admin.banners.destroy');
 Route::post('/admin/banners/update-order', [BannersController::class, 'updateOrder'])
     ->name('admin.banners.updateOrder');
+
+    Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
+      Route::resource('/pdf-editor', 'EditorPdfController');
+  });
+  
+  
 
 
 
