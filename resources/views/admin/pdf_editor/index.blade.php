@@ -298,7 +298,6 @@
             }
         });
 
-
         document.getElementById("upload-pdf").addEventListener("change", function(event) {
             const file = event.target.files[0];
             if (file) {
@@ -307,7 +306,6 @@
                 fileReader.readAsArrayBuffer(file);
                 fileReader.onload = function() {
                     const pdfData = new Uint8Array(fileReader.result);
-
 
                     // ⚡ Actualizamos pdfBytes para exportarlo correctamente
                     window.pdfBytes = pdfData;
