@@ -269,7 +269,7 @@
 					<div id="central">
 						<a href="http://www.trilce.edu.pe/l/whatsapp-matricula-2025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
-								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 922 33 6565
+								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 936 827 930
 							</button>
 						</a>
 					</div>

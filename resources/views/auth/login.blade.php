@@ -1,67 +1,113 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<style>
+    body {
+        background-color: #f8f8f8; /* Reemplaza con tu imagen real */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+    .login-overlay {
+        background-color: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        padding: 40px 30px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+    .login-btn {
+        background-color: #FF4E0E;
+        border: none;
+        transition: background 0.3s ease;
+    }
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+    .login-btn:hover {
+        background-color: #e24308;
+    }
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+    .form-control:focus {
+        border-color: #FF4E0E;
+        box-shadow: 0 0 0 0.2rem rgba(255, 78, 14, 0.25);
+    }
+
+    .card-header {
+        background-color: transparent;
+        text-align: center;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .login-logo img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .login-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #FF4E0E;
+    }
+
+    .form-label {
+        font-weight: 500;
+    }
+</style>
+
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 20vh;">
+    <div class="col-md-6">
+        <div class="card border-0">
+            <div class="card-header">
+                <div class="login-logo">
+                    <img src="https://www.trilce.edu.pe/static/images/logos/logo-a-colegio.gif" alt="Trilce Colegio">                </div>
+            </div>
+            <div class="card-body login-overlay">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input id="email" type="email"
+                               class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                               name="email" value="{{ old('email') }}" required autofocus>
+                        @if ($errors->has('email'))
+                            <div class="invalid-feedback">
+                                {{ $errors->first('email') }}
                             </div>
-                        </div>
+                        @endif
+                    </div>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input id="password" type="password"
+                               class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                               name="password" required>
+                        @if ($errors->has('password'))
+                            <div class="invalid-feedback">
+                                {{ $errors->first('password') }}
                             </div>
-                        </div>
+                        @endif
+                    </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember" name="remember"
+                               {{ old('remember') ? 'checked' : '' }}>
+                        <label class="form-check-label" for="remember">Recuérdame</label>
+                    </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
+                    <div class="d-grid">
+                        <button type="submit" class="btn login-btn text-white">
+                            Iniciar sesión
+                        </button>
+                    </div>
 
-                                <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a> -->
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    {{-- <div class="text-center mt-3">
+                        <a href="{{ route('password.request') }}" class="text-decoration-none">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div> --}}
+                </form>
             </div>
         </div>
     </div>

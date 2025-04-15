@@ -36,7 +36,7 @@
                 <dd class="badger-accordion__panel js-badger-accordion-panel">
                     <div class="js-badger-accordion-panel-inner">
                       <p class="question-answer">
-                          Nuestra propuesta ha sido desarrollada por una plana docente especializada en diversas materias, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes. Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, gracias al apoyo de un equipo de tutoras. Conoce nuestra propuesta educativa <a href="https://www.trilce.edu.pe/propuesta-educativa/" target="_blank">aquí</a>                    
+                          Nuestra propuesta ha sido desarrollada por una plana docente especializada en diversas materias, que a su vez controla el proceso de aprendizaje mediante evaluaciones permanentes. Asimismo, cuenta con un programa de valores que complementa la formación integral del alumno, gracias al apoyo de un equipo de tutoras. Conoce nuestra propuesta educativa <a href="https://www.trilce.edu.pe/matricula-2025/" target="_blank">aquí</a>                    
                       </p>
                       <!--@include('colegio.partials.ads')--> <!-- Codigo para listar ese partials.ads-->
                     </div>

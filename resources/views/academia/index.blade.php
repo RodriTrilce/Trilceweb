@@ -609,15 +609,6 @@
                     </a>
                 </div>
 
-                <div class="block-effecthover-item recta">
-                    <a href="/academia/ciclo-escolar">
-                        <div class="nuevos-i-top">
-                            <img src="/static/images/academia/svg/icono-ciclo-escolar.svg" alt="PUCP">
-                            <h4>Ciclo</h4>
-                            <h3>Escolar</h3>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
     </div>

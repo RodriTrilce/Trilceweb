@@ -24,7 +24,7 @@
 
 @media (max-width: 768px) {
   .responsive-image {
-    content: url('{{ url("/static/images/academia/banner-informacion-academias-MOBILE-_1__11zon.webp") }}');
+    content: url('{{ url("https://www.trilce.edu.pe/storage/static/upload/c07be030-066a-11f0-87c0-f9c853dccd1b.webp") }}');
   }
 }
 
@@ -51,7 +51,7 @@
   </div>
   </div-->
   <a href="https://www.trilce.edu.pe/matricula-linea-2025/" target="_blank" class="responsive-link">
-    <img src="{{ url('/static/images/academia/banner-informacion-academias-_1__11zon.webp') }}" 
+    <img src="{{ url('https://www.trilce.edu.pe/storage/static/upload/97a36e10-069f-11f0-b755-0f48605d325b.png') }}" 
          alt="Banner información" class="responsive-image">
   </a>
   </div>

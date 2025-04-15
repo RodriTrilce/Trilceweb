@@ -31,7 +31,7 @@
 }
 
 .separator-orange {
-  background: #f4633a
+  background: #FF4E0E
 }
 
 .separator-gray {
@@ -52,30 +52,30 @@
   -webkit-animation: dash_trilce 3s linear infinite;
   animation: dash_trilce 3s linear infinite;
   fill-opacity: 0;
-  stroke: #f4633a
+  stroke: #FF4E0E
 }
 
 @-webkit-keyframes dash_trilce {
   0% {
       stroke-dashoffset: 2410;
       opacity: 0;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   15% {
       opacity: 1;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   70% {
       opacity: 1;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   to {
       stroke-dashoffset: 0;
       opacity: 0;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 }
 
@@ -83,23 +83,23 @@
   0% {
       stroke-dashoffset: 2410;
       opacity: 0;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   15% {
       opacity: 1;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   70% {
       opacity: 1;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 
   to {
       stroke-dashoffset: 0;
       opacity: 0;
-      stroke: #f4633a
+      stroke: #FF4E0E
   }
 }
 
@@ -145,7 +145,7 @@ body,html {
 
 .container-mobile .container-mobile__container-logo svg {
   min-width: 165px;
-  fill: #f4633a
+  fill: #FF4E0E
 }
 
 .container-mobile__content {
@@ -188,7 +188,7 @@ body,html {
 }
 
 .human2 {
-  border: 7px solid #f4633a;
+  border: 7px solid #FF4E0E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ body,html {
 
 .human2__academia {
   border-left: 0;
-  border-right: 7px solid #f4633a
+  border-right: 7px solid #FF4E0E
 }
 
 .footer {
@@ -262,7 +262,7 @@ body,html {
 }
 
 .footer__buttons__academia {
-  background: #f4633a
+  background: #FF4E0E
 }
 
 .footer__buttons__academia a,.footer__buttons__academia a:link,.footer__buttons__academia a:visited {
@@ -350,7 +350,7 @@ body,html {
 }
 
 .logo-colegio {
-  fill: #f4633a;
+  fill: #FF4E0E;
   left: -135px
 }
 
@@ -429,7 +429,7 @@ body,html {
 
 .colegio .box {
   border-right: 0;
-  border-color: #f4633a;
+  border-color: #FF4E0E;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start
@@ -441,8 +441,8 @@ body,html {
   width: 12px;
   height: 100%;
   left: 0;
-  background: -webkit-gradient(linear,left top,left bottom,from(#f4633a),color-stop(34%,#f4633a),color-stop(34%,rgba(244,99,58,0)),color-stop(65%,rgba(244,99,58,0)),color-stop(65%,#f4633a),to(#f4633a));
-  background: linear-gradient(180deg,#f4633a 0,#f4633a 34%,rgba(244,99,58,0) 0,rgba(244,99,58,0) 65%,#f4633a 0,#f4633a)
+  background: -webkit-gradient(linear,left top,left bottom,from(#FF4E0E),color-stop(34%,#FF4E0E),color-stop(34%,rgba(244,99,58,0)),color-stop(65%,rgba(244,99,58,0)),color-stop(65%,#FF4E0E),to(#FF4E0E));
+  background: linear-gradient(180deg,#FF4E0E 0,#FF4E0E 34%,rgba(244,99,58,0) 0,rgba(244,99,58,0) 65%,#FF4E0E 0,#FF4E0E)
 }
 
 .colegio .human {
@@ -462,7 +462,7 @@ body,html {
 }
 
 .colegio .cta .enter {
-  color: #f4633a;
+  color: #FF4E0E;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start
@@ -483,7 +483,7 @@ body,html {
 
 .academia {
   width: 50%;
-  background: #f4633a;
+  background: #FF4E0E;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start
@@ -615,11 +615,11 @@ body,html {
 
 .part__colegio {
   max-width: 120px;
-  fill: #f4633a
+  fill: #FF4E0E
 }
 
 .part__enter-colegio {
-  color: #f4633a!important
+  color: #FF4E0E!important
 }
 
 .human-girl {
@@ -655,7 +655,7 @@ body,html {
 }
 
 .block__academia {
-  background: #f4633a
+  background: #FF4E0E
 }
 
 .logo-permanent {

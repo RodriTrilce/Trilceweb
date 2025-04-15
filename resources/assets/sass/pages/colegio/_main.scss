@@ -840,9 +840,6 @@ ul {
   font-family: CaeciliaLTPro-45Light;
 }
 
-.card2 h3 {
-  color: #f4633a;
-}
 
 .colegio-cardsv2-items__item:hover {
   text-decoration: none;
@@ -1009,10 +1006,25 @@ footer {
 .v2 {
   color: black !important;
 }
+.seccion-matricula.container.py-5.py-8-manual {
+  padding-top: 8rem !important;
+}
+
+.wcontainer {
+  background-color: #f8f8f8;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.show.active {
+  display: block;
+}
 
 .card-matricula {
   width: 100%;
-  height: 240px; /* Tamaño fijo para todas las cajas */
+  height: 280px; /* Tamaño fijo para todas las cajas */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1023,7 +1035,7 @@ footer {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  padding: 35px 20px 0 40px;
+  padding: 50px 20px 0 40px;
 }
 .text_matricula {
   font-family: "Geogrotesque-SmBd";
@@ -1097,10 +1109,17 @@ p.Alumno {
 
 /* 🔽 Media Queries Responsivas */
 
-/* 🖥 1️⃣ En pantallas medianas (tablets y laptops pequeñas) */
+/* 🖥 1️⃣ En pantallas medianas (tablets y laptops pequeñas) */ /*TABLETS*/
 @media (max-width: 1160px) {
+  h2.text_matricula.v2 {
+    text-align: center;
+  }
+  .seccion-matricula.container.py-5.py-8-manual {
+    padding-top: 5rem !important;
+  }
   .responsive_ch {
     flex-direction: column !important;
+    gap: 30px;
   }
   .respon_text {
     flex: 0 0 100%;
@@ -1119,12 +1138,14 @@ p.Alumno {
   }
 }
 
-/* 📱 2️⃣ En celulares (tarjetas en columna) */
+/* 📱 2️⃣ En celulares (tarjetas en columna) */ /*CELULARES*/
 @media (max-width: 767px) {
+  .seccion-matricula.container.py-5.py-8-manual {
+    padding-top: 2rem !important;
+  }
   .card-matricula {
     height: 214px;
     padding: 30px 0px 0px 30px;
-    
   }
 
   .respon_card_tk {
@@ -1147,6 +1168,7 @@ p.Alumno {
 }
 
 @media (max-width: 499px) {
+  /*CELULAR MAS PEQUEÑAS*/
   .v2 {
     font-size: 2.2rem;
   }
@@ -1163,7 +1185,7 @@ p.Alumno {
     max-width: 100% !important;
   }
   .respon_card_tk {
-    justify-content: start;
+    justify-content: center;
   }
 
   .span_especial {
@@ -1176,7 +1198,7 @@ button.close.modern-close {
 }
 
 /*SECCION COLEGIOS TRILCE - HOME COLEGIO NEW*/
-.img_tri{
+.img_tri {
   max-width: 80% !important;
 }
 .txt_especial {
@@ -1185,7 +1207,7 @@ button.close.modern-close {
   color: $orange;
   margin-bottom: 20px;
 }
-.txt_span{
+.txt_span {
   font-family: Geogrotesque-Rg;
   color: hwb(0 0% 100%);
   font-size: 17px;
@@ -1193,8 +1215,8 @@ button.close.modern-close {
   text-align: justify;
 }
 
-.btn_wsp{
-  background-color: #0DBC42 !important;
+.btn_wsp {
+  background-color: #0dbc42 !important;
   border: none !important;
   padding-left: 40px !important;
   padding-right: 40px !important;
@@ -1211,48 +1233,160 @@ button.btn.btn-primary.btn_wsp {
   gap: 5px;
 }
 
-
 /*SECCTION MATRICUTA 2025 CALL TO ACTION*/
-.image-nina{
-  max-width: 60% !important; 
+.image-nina {
+  max-width: 80% !important;
 }
 
-.txt_propuesta{
-  font-family: Geogrotesque-SmBd;
-  font-size: 17px;
+.col-md-6.d-flex.justify-content-end {
+  align-items: center;
+}
+
+.txt_propuesta {
+  font-family: Geogrotesque-md;
+  font-size: 16px;
   margin-top: 15px;
   margin-bottom: 15px;
-
+  text-align: center;
+}
+.contenido_iz.text-end.iz_de {
+  text-align: center;
+}
+.iz_de img{
+  width: 65%;
 }
 
-.btn_wsp_2{
-  background-color: #FF4E0E !important;
+.btn_wsp_2 {
+  background-color: #ff4e0e !important;
   border: none !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding-left: 62px !important;
+  padding-right: 62px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   border-radius: 50px !important;
-  font-size: 17px !important;
+  font-size: 18px !important;
   font-family: Geogrotesque-Bd;
-
 }
 
-.seccion-matricula.container.py-5.respon_espe{
+.seccion-matricula.container.py-5.respon_espe {
   padding-bottom: 0 !important;
 }
 
+.v3 {
+  color: #000;
+  font-size: 1.8em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+/*TABS DISEÑO*/
+div#contenido-nuevo,
+div#contenido-traslado,
+div#contenido-regular {
+  width: 100%;
+}
+
+.nav-link a {
+  color: $orange;
+}
+.nav-tabs .nav-link {
+  border: 3px solid $orange !important;
+  border-radius: 50px !important;
+}
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+a.nav-link {
+  font-family: $font_geo_md;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.nav-link {
+  /*width: 100%*/
+}
+
+a.nav-link.show.active {
+  background-color: $orange;
+  color: #f9f9f9;
+}
+
+a.nav-link:hover {
+  background-color: $orange !important;
+  color: #f9f9f9 !important;
+}
+.nav-tabs .nav-link.active {
+  background-color: $orange !important;
+  color: #f9f9f9 !important;
+}
+
+li.nav-item.flex-fill {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a.nav-link {
+  width: 300px;
+}
+
+ul#subTabNuevo,
+ul#subTabRegular,
+ul#subTabTraslado {
+  margin-left: -10px;
+}
+
+.cont_tab {
+  padding-left: 100px;
+}
+
+.v4 {
+  color: #000;
+  font-size: 1.8em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.cont_tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.text_reg_tab {
+  font-family: $font_geo_reg;
+  font-size: 18px;
+  color: #000;
+}
+
+.card_tabs_proc {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.padre_tabs_cont {
+  display: flex;
+}
+
+.padre_tabs_cont {
+  width: 100%;
+  gap: 60px;
+}
 
 /*PANTALLAS TRILCE*/
 @media only screen and (max-width: 1366px) {
   .txt_especial {
     font-size: 2.5rem;
   }
-  .v2{
+  .v2 {
     font-size: 2.9rem;
   }
 
-  .txt_span{
+  .txt_span {
     font-size: 14px;
   }
 }
@@ -1261,11 +1395,11 @@ button.btn.btn-primary.btn_wsp {
 }
 
 @media (max-width: 767px) {
-  .contenido_de{
+  .contenido_de {
     text-align: center;
   }
 
-  .btn_wsp{
+  .btn_wsp {
     padding-left: 20px !important;
     padding-right: 20px !important;
     padding-top: 7px !important;
@@ -1274,15 +1408,15 @@ button.btn.btn-primary.btn_wsp {
     font-family: Geogrotesque-Bd;
   }
 
-  .txt_especial{
+  .txt_especial {
     margin-bottom: 10px;
   }
 
-  .contenido_iz img{
-    height:70px;
+  .contenido_iz img {
+    height: 70px;
   }
 
-  .txt_propuesta{
+  .txt_propuesta {
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1292,28 +1426,29 @@ button.btn.btn-primary.btn_wsp {
     max-width: 100% !important;
   }
 
-  .respon_espe{
+  .respon_espe {
     padding-bottom: 0px;
   }
   .seccion-matricula.container.py-5.respon_espe {
     padding-bottom: 0 !important;
   }
 
-  .contenido_de{
+  .contenido_de {
     text-align: left;
   }
 
   .contenido_iz.text-center.text-md-end.iz_de {
     text-align: start !important;
   }
-
+  .contenido_iz.text-end.iz_de {
+    text-align: center;
+}
 
   /*CONTENEDOR DEFAULT*/
-  .seccion-matricula.container.py-5{
+  .seccion-matricula.container.py-5 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
-
 }
 
 @media (max-width: 499px) {
@@ -1322,5 +1457,57 @@ button.btn.btn-primary.btn_wsp {
 @media (max-width: 767px) {
   img.nina-banner {
     display: none;
+  }
+
+  h2.text_matricula.v2 {
+    text-align: center;
+  }
+
+
+  /*CARD TRILCE RESPONSIVE*/
+  .man_flex_respon{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .iz_de img{
+    width: 100%;
+  }
+  .iz_de{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn_wsp_2 {
+    padding-left: 62px !important;
+    padding-right: 62px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 40px !important;
+    font-size: 17px !important;
+    font-family: Geogrotesque-Bd;
+  }
+  
+
 }
+
+
+@media (max-width: 767.98px) {
+  .card-matricula {
+      cursor: pointer;
+  }
+
+  .card-matricula::after {    
+      float: right;
+      font-size: 1.2rem;
+      margin-right: 10px;
+      transition: transform 0.3s;
+  }
+
+  .card-matricula[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+  }
+}
+
+.seccion-matricula.container.py-5.manu-pad {
+  padding-bottom: 0 !important;
 }

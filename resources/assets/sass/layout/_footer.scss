@@ -1,11 +1,16 @@
 footer{
-  background: $gray;
+  background: #53565A;
   height: 100%;
   width: 100%;
   color: lighten($gray, 50%);
   font-size: 0.8rem;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
+
+  span.espe-text {
+    font-family: 'Geogrotesque-Md';
+    font-size: 15px;
+}
 
   @include breakpoint(baby){
     margin-bottom: 65px;
@@ -24,7 +29,6 @@ footer{
   }
 
   .footer-top{
-    border-bottom: 1px solid lighten($gray, 20%);
     padding-bottom: 5px;
     margin-bottom: 10px;
     font-size: 1rem;
@@ -118,3 +122,47 @@ footer{
 .followconnect{
   padding: 0.5rem;
 }
+
+
+.footer-text-left {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.footer-text-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* alinea el contenido a la izquierda */
+  margin: 0 auto;
+}
+
+.fot-est {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-column-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Al comienzo de la columna */
+  height: 100%; /* Esto es necesario para que se pueda distribuir el espacio */
+  gap: 50px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 20px; /* Espacio entre los textos y las redes sociales */
+}
+
+.footer-right-icons {
+  margin-top: 10px; /* Un poco de espacio extra antes de los íconos */
+}
+
+.separator-line {
+  border-top: 1px solid #ccc;  /* Línea de separación */
+  margin: 20px 0;  /* Espacio por encima y por debajo de la línea */
+}
+
