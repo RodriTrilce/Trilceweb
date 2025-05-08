@@ -659,12 +659,15 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        /*
         // Show the modal when the page loads
         window.onload = function() {
             modal.style.display = "block";
         }
+            */
 
         // When the user clicks on <span> (x), close the modal
+            /*
         span.onclick = function() {
             modal.style.display = "none";
         }
@@ -675,6 +678,7 @@
                 modal.style.display = "none";
             }
         }
+            */
     </script>
 
     <!-- /*************************************** */ -->
@@ -797,29 +801,28 @@
 
     @include('academia.partials.card_bottom')
 @endsection
+{{-- 
 @section('scripts')
     page = 'index';
 
-    <!-- var modal_open = [
+    var modal_open = [
+        @if (!session('enrollment') && !session('contact') && !session('olympics'))
+            '#modal-ads',
+        @endif
 
-                        @if (!session('enrollment') && !session('contact') && !session('olympics'))
-    '#modal-ads',
-    @endif
+        @if (session('enrollment'))
+            '#modal-1',
+        @endif
 
-                        @if (session('enrollment'))
-    '#modal-1',
-    @endif
+        @if (session('contact'))
+            '#modal-1',
+        @endif
 
-                        @if (session('contact'))
-    '#modal-1',
-    @endif
-
-                        @if (session('olympics'))
-    '#modal-1'
-    @endif
-
-                        ]; -->
+        @if (session('olympics'))
+            '#modal-1'
+        @endif
+    ];
 
     @parent
-
-@endsection
+@endsection 
+--}}

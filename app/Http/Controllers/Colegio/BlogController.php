@@ -22,33 +22,39 @@ class BlogController extends Controller
 
   public function index()
   {
-    $posts = Post::where([
-      ['type', '=', $this->typePost],
-      ['visible', '=', '1'],
-      ['approved', '=', '1'],
-    ])
-    ->orderBy('created_at', 'desc')
-    ->paginate(10);
-
-    $markers = Post::where([
-      ['type', '=', $this->typePost],
-      ['visible', '=', '1'],
-      ['approved', '=', '1'],
-      ['marker', '=', '1']
-    ])
-    ->orderBy('created_at', 'desc')
-    ->take(4)
-    ->get();
-
-    Meta::set('title', 'Colegio Trilce | Blog: Un espacio para nuestras noticias');
-    Meta::set('description', 'Un espacio para nuestras noticias');
-
-    return view('/colegio/blog')->with([
-                                        'posts'    => $posts,
-                                        'markers'  => $markers,
-                                        'site'     => $this->site
-                                      ]);
+      // Obtener los posts marcados
+      $markers = Post::where([
+          ['type', '=', $this->typePost],
+          ['visible', '=', '1'],
+          ['approved', '=', '1'],
+          ['marker', '=', '1'],
+          ['site', '=', $this->site],
+      ])
+      ->orderBy('created_at', 'desc')
+      ->take(4)
+      ->get();
+  
+      // Obtener los posts normales excluyendo los posts marcados
+      $posts = Post::where([
+          ['type', '=', $this->typePost],
+          ['visible', '=', '1'],
+          ['approved', '=', '1'],
+          ['site', '=', $this->site],
+      ])
+      ->whereNotIn('id', $markers->pluck('id')) // Excluir los posts marcados
+      ->orderBy('created_at', 'desc')
+      ->paginate(10);
+  
+      Meta::set('title', 'Colegio Trilce | Blog: Un espacio para nuestras noticias');
+      Meta::set('description', 'Un espacio para nuestras noticias');
+  
+      return view('/colegio/blog')->with([
+          'posts'    => $posts,
+          'markers'  => $markers,
+          'site'     => $this->site
+      ]);
   }
+  
 
   public function post($post)
   {
@@ -79,18 +85,11 @@ class BlogController extends Controller
     }
 
   }
+
+  public function showBlog()
+{
+    $topPost = Post::where('is_top', true)->first(); // o cualquier lógica que uses
+    return view('colegio.blog', compact('topPost'));
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//
+}

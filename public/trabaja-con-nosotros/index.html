@@ -1,42 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="favicon.ico">
-    <title>Trabaja con nosotros - Trilce</title>
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-    <!--script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/rz4DvU-cY2JYCwHSTck0_qm-/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-aJ5xsrCQpVIerLjPClxd2/zymwtiASBXEUnrXM6155CBhx/rePWIivYadh9Ih+UX"></script-->
-    <!--script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&amp;render=explicit" async="" defer=""></script-->
-    <link href="css/app.bdac735b.css" rel="preload" as="style">
-    <link href="css/chunk-vendors.391ed6f9.css" rel="preload" as="style">
-    <!--link href="js/app.051b7a9d.js" rel="preload" as="script"-->
-    <!--link href="js/chunk-vendors.fd3ae0fd.js" rel="preload" as="script"-->
-    <link href="css/chunk-vendors.391ed6f9.css" rel="stylesheet">
-    <link href="css/app.bdac735b.css" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function validateForm() 
-      {
-        var recaptcha = document.forms["myForm"]["g-recaptcha-response"].value;
-        if (recaptcha == "") 
-        {
-          document.getElementById("recaptchaError").innerHTML = "Debe marcar el reCAPTCHA.";
-          return false;
-        }
-        return true;
+
+<head>
+  <meta http-equiv="origin-trial"
+    content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Trabaja con nosotros - Trilce</title>
+  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+  <!--script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/rz4DvU-cY2JYCwHSTck0_qm-/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-aJ5xsrCQpVIerLjPClxd2/zymwtiASBXEUnrXM6155CBhx/rePWIivYadh9Ih+UX"></script-->
+  <!--script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&amp;render=explicit" async="" defer=""></script-->
+  <link href="css/app.bdac735b.css" rel="preload" as="style">
+  <link href="css/chunk-vendors.391ed6f9.css" rel="preload" as="style">
+  <!--link href="js/app.051b7a9d.js" rel="preload" as="script"-->
+  <!--link href="js/chunk-vendors.fd3ae0fd.js" rel="preload" as="script"-->
+  <link href="css/chunk-vendors.391ed6f9.css" rel="stylesheet">
+  <link href="css/app.bdac735b.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function validateForm() {
+      var recaptcha = document.forms["myForm"]["g-recaptcha-response"].value;
+      if (recaptcha == "") {
+        document.getElementById("recaptchaError").innerHTML = "Debe marcar el reCAPTCHA.";
+        return false;
       }
-    </script>
-  </head>
+      return true;
+    }
+  </script>
+  <style>
+    .g-recaptcha {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  </style>
+</head>
+
 <body>
-  <noscript><strong>We're sorry but trabajo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+  <noscript><strong>We're sorry but trabajo doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong></noscript>
   <div id="app">
     <header>
-      <div class="header__logo">
-        <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 116.94 37.45" style="fill: white;"><path d="M54.34,11.55a3.73,3.73,0,1,0-3.73-3.73,3.73,3.73,0,0,0,3.73,3.73" transform="translate(-1 -1.06)"></path><path d="M69.19,33.39a1,1,0,0,1-1-1V1.06H62.14V33.78a4.74,4.74,0,0,0,4.74,4.73h4.6V33.39Z" transform="translate(-1 -1.06)"></path><polygon points="0 2.28 0 10.21 5.12 10.21 5.12 8.15 12.95 8.15 12.95 32.33 10.6 32.33 10.6 37.45 21.68 37.45 21.68 32.33 19.33 32.33 19.33 8.15 27.16 8.15 27.16 10.21 32.24 10.21 32.24 2.28 0 2.28"></polygon><polygon points="56.41 32.33 56.41 14.14 43.4 14.14 43.4 19.29 50.36 19.29 50.36 32.33 43.4 32.33 43.4 37.45 58.86 37.45 58.86 32.33 56.41 32.33"></polygon><polygon points="27.16 14.14 27.16 32.33 24.71 32.33 24.71 37.45 40.37 37.45 40.37 32.33 33.22 32.33 33.22 19.29 40.37 19.29 40.37 14.14 30.84 14.16 27.16 14.14"></polygon><path d="M101.24,24.5a4.78,4.78,0,0,1,.63-2.07,5.38,5.38,0,0,1,1.38-1.54,6.28,6.28,0,0,1,1.88-.95,7.57,7.57,0,0,1,2.21-.32,5,5,0,0,1,3.78,1.31,5,5,0,0,1,1.24,3.57Zm15.62-4.61a8.49,8.49,0,0,0-2.51-3A9.68,9.68,0,0,0,111,15.37a15,15,0,0,0-8.34.3,10.83,10.83,0,0,0-3.86,2.23,10.47,10.47,0,0,0-2.6,3.73,13.32,13.32,0,0,0-1,5.22,17.18,17.18,0,0,0,.11,1.94,13.12,13.12,0,0,0,.73,3.07,10.36,10.36,0,0,0,4.3,5c2,1.19,4.84,1.67,8.7,1.67s5.81-.16,5.81-.16v-5s-2.7,0-6,0c-4.88,0-6.53-3-6.87-3.81a7.3,7.3,0,0,1-.26-.79h16c.46-2.24.26-6.73-.85-8.9" transform="translate(-1 -1.06)"></path><path d="M93,24.61V17a.59.59,0,0,0-.35-.54,24.44,24.44,0,0,0-3-1,18.56,18.56,0,0,0-4.75-.59,15.65,15.65,0,0,0-5,.79,11.55,11.55,0,0,0-4,2.33,10.81,10.81,0,0,0-2.65,3.76,12.84,12.84,0,0,0-.95,5.07A13.94,13.94,0,0,0,73,31.76a9.75,9.75,0,0,0,2.22,3.62c1.66,1.74,4.88,3,8.62,3.12h7.48V33.39H85.56a9.36,9.36,0,0,1-5.41-1.72,6.54,6.54,0,0,1-1.41-2.13,7,7,0,0,1-.49-2.67,6.85,6.85,0,0,1,.61-3,6.26,6.26,0,0,1,1.58-2.11,6.18,6.18,0,0,1,2.22-1.22,8.63,8.63,0,0,1,2.51-.38,12.87,12.87,0,0,1,2.81.31v4.17Z" transform="translate(-1 -1.06)"></path></svg>
-      </div>
+      <a href="https://www.trilce.edu.pe/">
+        <div class="header__logo">
+          <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 116.94 37.45" style="fill: white;">
+            <path d="M54.34,11.55a3.73,3.73,0,1,0-3.73-3.73,3.73,3.73,0,0,0,3.73,3.73" transform="translate(-1 -1.06)">
+            </path>
+            <path d="M69.19,33.39a1,1,0,0,1-1-1V1.06H62.14V33.78a4.74,4.74,0,0,0,4.74,4.73h4.6V33.39Z"
+              transform="translate(-1 -1.06)"></path>
+            <polygon
+              points="0 2.28 0 10.21 5.12 10.21 5.12 8.15 12.95 8.15 12.95 32.33 10.6 32.33 10.6 37.45 21.68 37.45 21.68 32.33 19.33 32.33 19.33 8.15 27.16 8.15 27.16 10.21 32.24 10.21 32.24 2.28 0 2.28">
+            </polygon>
+            <polygon
+              points="56.41 32.33 56.41 14.14 43.4 14.14 43.4 19.29 50.36 19.29 50.36 32.33 43.4 32.33 43.4 37.45 58.86 37.45 58.86 32.33 56.41 32.33">
+            </polygon>
+            <polygon
+              points="27.16 14.14 27.16 32.33 24.71 32.33 24.71 37.45 40.37 37.45 40.37 32.33 33.22 32.33 33.22 19.29 40.37 19.29 40.37 14.14 30.84 14.16 27.16 14.14">
+            </polygon>
+            <path
+              d="M101.24,24.5a4.78,4.78,0,0,1,.63-2.07,5.38,5.38,0,0,1,1.38-1.54,6.28,6.28,0,0,1,1.88-.95,7.57,7.57,0,0,1,2.21-.32,5,5,0,0,1,3.78,1.31,5,5,0,0,1,1.24,3.57Zm15.62-4.61a8.49,8.49,0,0,0-2.51-3A9.68,9.68,0,0,0,111,15.37a15,15,0,0,0-8.34.3,10.83,10.83,0,0,0-3.86,2.23,10.47,10.47,0,0,0-2.6,3.73,13.32,13.32,0,0,0-1,5.22,17.18,17.18,0,0,0,.11,1.94,13.12,13.12,0,0,0,.73,3.07,10.36,10.36,0,0,0,4.3,5c2,1.19,4.84,1.67,8.7,1.67s5.81-.16,5.81-.16v-5s-2.7,0-6,0c-4.88,0-6.53-3-6.87-3.81a7.3,7.3,0,0,1-.26-.79h16c.46-2.24.26-6.73-.85-8.9"
+              transform="translate(-1 -1.06)"></path>
+            <path
+              d="M93,24.61V17a.59.59,0,0,0-.35-.54,24.44,24.44,0,0,0-3-1,18.56,18.56,0,0,0-4.75-.59,15.65,15.65,0,0,0-5,.79,11.55,11.55,0,0,0-4,2.33,10.81,10.81,0,0,0-2.65,3.76,12.84,12.84,0,0,0-.95,5.07A13.94,13.94,0,0,0,73,31.76a9.75,9.75,0,0,0,2.22,3.62c1.66,1.74,4.88,3,8.62,3.12h7.48V33.39H85.56a9.36,9.36,0,0,1-5.41-1.72,6.54,6.54,0,0,1-1.41-2.13,7,7,0,0,1-.49-2.67,6.85,6.85,0,0,1,.61-3,6.26,6.26,0,0,1,1.58-2.11,6.18,6.18,0,0,1,2.22-1.22,8.63,8.63,0,0,1,2.51-.38,12.87,12.87,0,0,1,2.81.31v4.17Z"
+              transform="translate(-1 -1.06)"></path>
+          </svg>
+        </div>
+      </a>
       <div class="header__titles">
         <div class="header__title">
           <h1>¡Trabaja con nosotros!</h1>
@@ -51,7 +83,8 @@
         <div class="square"></div>
       </div><!---->
       <div class="row col-xs-12 center-xs body__container">
-        <form class="row col-xs-12 col-sm-10 start-xs center-sm" name="myForm" action="gracias.php" method="post" onsubmit="return validateForm()">
+        <form class="row col-xs-12 col-sm-10 start-xs center-sm" name="myForm" action="gracias.php" method="post"
+          onsubmit="return validateForm()">
           <div class="row col-xs-12 body__step">
             <div class="row xs-hide col-sm-4 start-xs">
               <h3 class="body__subtitle body__subtitle--big">CONVOCATORIA<br>ESCUELA DE PROFESORES</h3>
@@ -60,7 +93,8 @@
               <div class="body__subtitle-mobile">
                 <h3 class="body__subtitle body__subtitle--big">CONVOCATORIA<br>ESCUELA DE PROFESORES</h3>
               </div>
-              <p>¿Deseas formar parte de una organización que se dedica a mejorar la educación de miles de jóvenes? ¡TRILCE ES TU MEJOR OPCIÓN!<br><br>
+              <p>¿Deseas formar parte de una organización que se dedica a mejorar la educación de miles de jóvenes?
+                ¡TRILCE ES TU MEJOR OPCIÓN!<br><br>
                 <strong>¡Postula a nuestro Taller de Escuela de Profesores!</strong>
               </p>
             </div>
@@ -103,16 +137,22 @@
                 <li>Historia del Perú</li>
                 <li>Historia Universal</li>
                 <li>Razonamiento Verbal</li>
+                <li>Economía</li>
               </ul>
               <div class="col-xs-12">
                 <p><strong>Te invitamos a conocer más sobre Trilce en el siguiente video:</strong><br></p>
-                <div class="col-xs-12 center-xs">
-                  <video width="500" height="350" controls="controls">
-                    <source src="https://www.trilce.edu.pe/static/video/trilce_44.mp4" type="video/mp4">
-                  </video>
+                <div class="col-xs-12 center-xs" style="display: flex; justify-content: center;">
+                  <div class="video-wrapper"
+                    style="position: relative; width: 100%; max-width: 1080px; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <iframe src="https://drive.google.com/file/d/1CNu5AIXUmd9zy7XG5APJi4ckC9QhTmA2/preview"
+                      allow="autoplay"
+                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                    </iframe>
+                  </div>
                 </div>
-                <p></p>
+
               </div>
+              <p></p>
             </div>
           </div>
           <div class="row col-xs-12 body__step">
@@ -128,7 +168,8 @@
                   <label for="inputName">
                     <h3 class="body__question">Nombres y apellidos <span>*</span></h3>
                   </label>
-                  <input type="text" name="nombre" placeholder="Nombres y apellidos" data-vv-as="Nombres y apellidos" id="inputName" class="" aria-required="true" aria-invalid="false" required>
+                  <input type="text" name="nombre" placeholder="Nombres y apellidos" data-vv-as="Nombres y apellidos"
+                    id="inputName" class="" aria-required="true" aria-invalid="false" required>
                   <p class="help is-danger" style="display: none;"></p>
                 </div>
                 <div class="row col-xs-12">
@@ -136,14 +177,16 @@
                     <label for="inputDNI">
                       <h3 class="body__question">DNI <span>*</span></h3>
                     </label>
-                    <input type="number" name="dni" placeholder="DNI" data-vv-as="DNI" id="inputDNI" class="" aria-required="true" aria-invalid="false" required>
+                    <input type="number" name="dni" placeholder="DNI" data-vv-as="DNI" id="inputDNI" class=""
+                      aria-required="true" aria-invalid="false" required>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <label for="inputTelefono">
                       <h3 class="body__question">Teléfono <span>*</span></h3>
                     </label>
-                    <input type="number" name="telefono" placeholder="Teĺéfono" data-vv-as="Teĺéfono" id="inputTelefono" class="" aria-required="true" aria-invalid="false" required>
+                    <input type="number" name="telefono" placeholder="Teĺéfono" data-vv-as="Teĺéfono" id="inputTelefono"
+                      class="" aria-required="true" aria-invalid="false" required>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
                 </div>
@@ -151,7 +194,8 @@
                   <label for="inputEmail">
                     <h3 class="body__question">Correo electrónico <span>*</span></h3>
                   </label>
-                  <input type="text" name="email" data-vv-as="Correo electrónico" id="inputEmail" class="" aria-required="true" aria-invalid="false" required>
+                  <input type="text" name="email" data-vv-as="Correo electrónico" id="inputEmail" class=""
+                    aria-required="true" aria-invalid="false" required>
                   <p class="help is-danger" style="display: none;"></p>
                 </div>
                 <div class="row col-xs-12">
@@ -159,14 +203,16 @@
                     <label for="inputCarrera">
                       <h3 class="body__question">Carrera <span>*</span></h3>
                     </label>
-                    <input type="text" name="carrera" data-vv-as="Carrera" id="inputCarrera" class="" aria-required="true" aria-invalid="false" required>
+                    <input type="text" name="carrera" data-vv-as="Carrera" id="inputCarrera" class=""
+                      aria-required="true" aria-invalid="false" required>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <label for="inputDistrito">
                       <h3 class="body__question">Distrito de residencia <span>*</span></h3>
                     </label>
-                    <input type="text" name="distrito" data-vv-as="Distrito de residencia" id="inputDistrito" class="" aria-required="true" aria-invalid="false" required>
+                    <input type="text" name="distrito" data-vv-as="Distrito de residencia" id="inputDistrito" class=""
+                      aria-required="true" aria-invalid="false" required>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
                 </div>
@@ -175,23 +221,24 @@
                     <label for="inputCurso">
                       <h3 class="body__question">Curso <span>*</span></h3>
                     </label>
-                    <select name="curso" data-vv-as="Curso" id="inputCurso" class="" aria-required="true" aria-invalid="false" required>
+                    <select name="curso" data-vv-as="Curso" id="inputCurso" class="" aria-required="true"
+                      aria-invalid="false" required>
                       <option value="">Seleccionar curso</option>
                       <option value="Algebra">Álgebra</option>
                       <option value="Aritmetica">Aritmética</option>
-                      <option value="Biologia">Biología</option>
-                      <option value="Economia y Civica">Economía y Cívica</option>
-                      <option value="Fisica">Física</option>
-                      <option value="Geografia">Geografía</option>
                       <option value="Geometria">Geometría</option>
-                      <option value="Historia del Peru">Historia del Perú</option>
-                      <option value="Historia Universal">Historia Universal</option>
+                      <option value="Trigonometria">Trigonometría</option>
+                      <option value="Razonamiento Matematico">Razonamiento Matemático</option>
+                      <option value="Fisica">Física</option>
+                      <option value="Quimica">Química</option>
+                      <option value="Biologia">Biología</option>
                       <option value="Lenguaje">Lenguaje</option>
                       <option value="Literatura">Literatura</option>
-                      <option value="Quimica">Química</option>
+                      <option value="Geografia">Geografía</option>
+                      <option value="Historia del Peru">Historia del Perú</option>
+                      <option value="Historia Universal">Historia Universal</option>
                       <option value="Razonamiento Matematico">Razonamiento Matemático</option>
-                      <option value="Razonamiento Verbal">Razonamiento Verbal</option>
-                      <option value="Trigonometria">Trigonometría</option>
+                      <option value="Economia">Economía</option>
                     </select>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
@@ -199,51 +246,63 @@
                     <label for="inputCentroEstudios">
                       <h3 class="body__question">Centro de estudios <span>*</span></h3>
                     </label>
-                    <input type="text" name="centro_estudios" data-vv-as="Centro de estudios" id="inputCentroEstudios" class="" aria-required="true" aria-invalid="false" required>
+                    <input type="text" name="centro_estudios" data-vv-as="Centro de estudios" id="inputCentroEstudios"
+                      class="" aria-required="true" aria-invalid="false" required>
                     <p class="help is-danger" style="display: none;"></p>
                   </div>
                 </div>
               </fieldset>
             </div>
           </div>
-        </div>
-        <div class="row col-xs-12">
-          <div class="col-xs-12 col-sm-6">
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <!-- Add reCAPTCHA widget -->
-            <div class="g-recaptcha" data-sitekey="6LdXfrcpAAAAABC0nrCV9bm33DYSY-7CWxYiROuC" data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired"></div>
-            <span id="recaptchaError" style="color: red;"></span>
-            <button type="submit">Enviar</button>
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
+    <div class="row col-xs-12" style="justify-content: center; display: flex; flex-wrap: wrap;">
+      <div class="col-xs-12 col-sm-6" style="text-align: center;">
+        <!-- reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LeHW1cUAAAAALgptl-KjhXhIlK5JzCBI4Mt0Zi1"
+          data-callback="recaptchaCallback" data-expired-callback="recaptchaExpired">
+        </div>
+
+        <!-- Error -->
+        <span id="recaptchaError" style="color: red; display: block; margin-top: 10px;"></span>
+
+        <!-- Botón -->
+        <button type="submit" style="margin-top: 15px;">Enviar</button>
+      </div>
+    </div>
+
+    </form>
+  </div>
   </div>
   <footer>
     <div class="footer-call">
       <ul class="footer-call__list">
         <li>
-          <a href="https://api.whatsapp.com/send?phone=51922336565&amp;text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n" rel="nofollow" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.trilce.edu.pe/l/info-general-whatsapp" rel="nofollow" target="_blank"><i
+              class="fa fa-whatsapp"></i></a>
         </li>
         <li>
           <a href="https://twitter.com/TRILCEtweet" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a>
         </li>
         <li>
-          <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.facebook.com/ColegioTrilce/?pnref=lhc" rel="nofollow" target="_blank"><i
+              class="fa fa-facebook"></i></a>
         </li>
         <li>
-          <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" rel="nofollow" target="_blank"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://www.youtube.com/user/ColegiosTRILCEperu?sub_confirmation=1" rel="nofollow" target="_blank"><i
+              class="fa fa-youtube-play"></i></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/trilcecolegio/" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.instagram.com/trilcecolegio/" rel="nofollow" target="_blank"><i
+              class="fa fa-instagram"></i></a>
         </li>
       </ul>
     </div>
     <div>
-      <h2 class="footer-text">© 2024 Colegio Trilce. Todos los derechos reservados.</h2>
+      <h2 class="footer-text">© 2025 Colegio Trilce. Todos los derechos reservados.</h2>
     </div>
   </footer>
-</div>
+  </div>
 </body>
+
 </html>

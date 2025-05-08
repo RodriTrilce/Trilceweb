@@ -1511,3 +1511,17 @@ ul#subTabTraslado {
 .seccion-matricula.container.py-5.manu-pad {
   padding-bottom: 0 !important;
 }
+
+
+.card-matricula {
+  cursor: pointer;
+}
+
+.card-matricula.dimmed {
+  opacity: 0.4;
+}
+
+.card-matricula.active-card {
+  opacity: 1;
+}
+

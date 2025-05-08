@@ -66,6 +66,9 @@ Route::post('/admin/banners/update-order', [BannersController::class, 'updateOrd
     Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
       Route::resource('/pdf-editor', 'EditorPdfController');
   });
+
+  Route::patch('/admin/blog/{id}/toggle-marker', 'Admin\BlogController@toggleMarker')->name('admin.blog.toggleMarker');
+
   
   
 

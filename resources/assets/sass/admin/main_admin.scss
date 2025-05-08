@@ -714,3 +714,95 @@ main {
  *  Filemanager
  */
 @import 'filemanager';
+
+
+/* 
+BLOGS - STYLE
+*/
+.switch-group {
+  display: flex;
+  gap: 1rem;
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+      background-color: #ff4e0e;
+      color: white;
+      border-color: #ff4e0e;
+    }
+  }
+
+  label {
+    padding: 0.5rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.custom-toggle-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.custom-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + label::before {
+      background-color: #0d6efd;
+    }
+
+    &:checked + label::after {
+      left: 20px;
+      background-color: white;
+    }
+  }
+
+  label {
+    position: relative;
+    padding-left: 48px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 40px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 20px;
+      transition: background 0.3s ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      background: white;
+      border-radius: 50%;
+      transition: left 0.3s ease;
+    }
+  }
+}
+

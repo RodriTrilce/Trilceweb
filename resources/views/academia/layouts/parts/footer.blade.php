@@ -58,5 +58,3 @@
               });
         }
     </script>
-    <script src="https://kit.fontawesome.com/15aa215f5f.js" crossorigin="anonymous"></script>
-

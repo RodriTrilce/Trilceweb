@@ -51,7 +51,15 @@
         @foreach ($posts as $post)
           <div class="row col-xs-12 col-sm-6 blog-home-grid--item">
             <div class="col-xs-4 col-sm-6 blog-home-grid--item-image">
-              <a href="/{{$post->site}}/blog/{{$post->slug}}"><img src="{{ url( $post->blogFile->blogImage(true) ) }}" alt=""></a>
+              <a href="/{{$post->site}}/blog/{{$post->slug}}">
+              
+                @if($post->blogFile)
+                <img src="{{ url($post->blogFile->blogImage(true)) }}" alt="">
+              @else
+                <img src="{{ asset('images/blog-placeholder.jpg') }}" alt=""> {{-- imagen por defecto --}}
+              @endif
+              
+              </a>
             </div>
 
             <div class="row col-xs blog-home-grid--item-content start-xs">

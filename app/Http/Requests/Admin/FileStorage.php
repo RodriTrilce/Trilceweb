@@ -24,7 +24,7 @@ class FileStorage extends FormRequest
     public function rules()
     {
         return [
-            'file' => 'required|mimes:jpeg,png,gif,jpg,apng,svg,mp4,pdf,xlsx,webp,csv|max:2048'
+            'file' => 'required|mimes:jpeg,png,gif,jpg,apng,svg,mp4,pdf,xlsx,webp,csv|max:5120'
         ];
     }
 }

@@ -66,7 +66,7 @@
                 <div class="row g-3 justify-content-center response_mobil">
                     <div class="col-10 col-sm-6 col-md-4 respon_card_tk" data-aos="fade-down" data-aos-duration="900"
                         data-aos-delay="100">
-                        <div class="card-matricula color-nuevo" data-target="#contenido-nuevo">
+                        <div class="card-matricula color-nuevo active-card" data-target="#contenido-nuevo">
                             <div class="icono-matricula">
                                 <i class="las la-laugh-beam la-4x"></i>
                             </div>
@@ -99,7 +99,7 @@
 
             <!-- Tabs de contenido -->
             <div class="tab-pane fade" id="contenido-nuevo">
-                <div data-aos="fade-down" data-aos-duration="300" data-aos-delay="100" data-aos-easing="ease-in-sine">
+                <div data-aos="fade-down" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-in-out">
                     <h3 class="text_matricula v3">Requisitos Alumno nuevo:</h3>
                 </div>
                 <ul class="nav nav-tabs d-flex" id="subTabNuevo">
@@ -391,7 +391,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <div class="seccion-matricula container py-5">
         <div class="row align-items-center">
@@ -491,93 +491,94 @@
         });
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Mostrar por defecto el contenido de "Alumno nuevo" al cargar la página
-            document.querySelector("#contenido-nuevo").classList.add("show", "active");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Mostrar por defecto el contenido de "Alumno nuevo"
+        document.querySelector("#contenido-nuevo").classList.add("show", "active");
 
-            // Asegurarse que el primer sub-tab esté activo
-            let firstSubTab = document.querySelector("#subTabNuevo .nav-link");
-            if (firstSubTab) {
-                new bootstrap.Tab(firstSubTab).show();
+        // Activar visualmente la tarjeta por defecto y aplicar opacidad a las demás
+        document.querySelectorAll(".card-matricula").forEach(function (card) {
+            if (!card.classList.contains("active-card")) {
+                card.classList.add("dimmed");
             }
+        });
 
-            // Manejo de clics en tarjetas de matrícula
-            document.querySelectorAll(".card-matricula").forEach(function(card) {
-                card.addEventListener("click", function() {
-                    let target = this.getAttribute("data-target");
+        // Activar el primer sub-tab por defecto
+        let firstSubTab = document.querySelector("#subTabNuevo .nav-link");
+        if (firstSubTab) {
+            new bootstrap.Tab(firstSubTab).show();
+        }
 
-                    // Ocultar todas las secciones principales
-                    document.querySelectorAll(".tab-pane").forEach(function(pane) {
-                        pane.classList.remove("show", "active");
-                    });
+        // Manejo de clics en tarjetas
+        document.querySelectorAll(".card-matricula").forEach(function (card) {
+            card.addEventListener("click", function () {
+                let target = this.getAttribute("data-target");
 
-                    // Mostrar solo la sección seleccionada
-                    let selectedTab = document.querySelector(target);
-                    if (selectedTab) {
-                        selectedTab.classList.add("show", "active");
-
-                        // Activar SIEMPRE el primer sub-tab dentro de la sección seleccionada
-                        let firstSubTab = selectedTab.querySelector(
-                            ".nav-tabs .nav-link:first-child");
-                        if (firstSubTab) {
-                            // Desactivar cualquier otro sub-tab que esté activo
-                            selectedTab.querySelectorAll(".nav-tabs .nav-link").forEach(function(
-                                tab) {
-                                tab.classList.remove("active");
-                            });
-
-                            // Activar el primer sub-tab
-                            firstSubTab.classList.add("active");
-
-                            // Ocultar todos los contenidos de sub-tabs
-                            selectedTab.querySelectorAll(".tab-content .tab-pane").forEach(function(
-                                content) {
-                                content.classList.remove("show", "active");
-                            });
-
-                            // Mostrar el contenido del primer sub-tab
-                            let firstTabContent = document.querySelector(firstSubTab.getAttribute(
-                                "href"));
-                            if (firstTabContent) {
-                                firstTabContent.classList.add("show", "active");
-                            }
-
-                            new bootstrap.Tab(firstSubTab).show();
-                        }
-                    }
+                // Cambiar visualmente las tarjetas
+                document.querySelectorAll(".card-matricula").forEach(function (otherCard) {
+                    otherCard.classList.remove("active-card");
+                    otherCard.classList.add("dimmed");
                 });
-            });
+                this.classList.add("active-card");
+                this.classList.remove("dimmed");
 
-            // Manejo del cambio de sub-tabs dentro de cada sección
-            document.querySelectorAll('.nav-tabs .nav-link').forEach(function(tab) {
-                tab.addEventListener("click", function(event) {
-                    event.preventDefault(); // Evita el comportamiento por defecto
+                // Cambiar contenido principal
+                document.querySelectorAll(".tab-pane").forEach(function (pane) {
+                    pane.classList.remove("show", "active");
+                });
 
-                    let tabContentId = this.getAttribute("href"); // Obtiene el ID del contenido
-                    if (tabContentId) {
-                        // Ocultar todos los contenidos de los sub-tabs dentro de la misma sección
-                        let parentTabContent = this.closest('.tab-pane');
-                        if (parentTabContent) {
-                            parentTabContent.querySelectorAll('.tab-content .tab-pane').forEach(
-                                function(content) {
-                                    content.classList.remove("show", "active");
-                                });
+                let selectedTab = document.querySelector(target);
+                if (selectedTab) {
+                    selectedTab.classList.add("show", "active");
 
-                            // Mostrar el contenido correspondiente al sub-tab seleccionado
-                            let targetContent = document.querySelector(tabContentId);
-                            if (targetContent) {
-                                targetContent.classList.add("show", "active");
-                            }
+                    let firstSubTab = selectedTab.querySelector(".nav-tabs .nav-link:first-child");
+                    if (firstSubTab) {
+                        selectedTab.querySelectorAll(".nav-tabs .nav-link").forEach(function (tab) {
+                            tab.classList.remove("active");
+                        });
+
+                        firstSubTab.classList.add("active");
+
+                        selectedTab.querySelectorAll(".tab-content .tab-pane").forEach(function (content) {
+                            content.classList.remove("show", "active");
+                        });
+
+                        let firstTabContent = document.querySelector(firstSubTab.getAttribute("href"));
+                        if (firstTabContent) {
+                            firstTabContent.classList.add("show", "active");
                         }
 
-                        // Usar Bootstrap para activar correctamente el tab
-                        new bootstrap.Tab(this).show();
+                        new bootstrap.Tab(firstSubTab).show();
                     }
-                });
+                }
             });
         });
-    </script>
+
+        // Manejo de clics en sub-tabs
+        document.querySelectorAll('.nav-tabs .nav-link').forEach(function (tab) {
+            tab.addEventListener("click", function (event) {
+                event.preventDefault();
+                let tabContentId = this.getAttribute("href");
+                if (tabContentId) {
+                    let parentTabContent = this.closest('.tab-pane');
+                    if (parentTabContent) {
+                        parentTabContent.querySelectorAll('.tab-content .tab-pane').forEach(function (content) {
+                            content.classList.remove("show", "active");
+                        });
+
+                        let targetContent = document.querySelector(tabContentId);
+                        if (targetContent) {
+                            targetContent.classList.add("show", "active");
+                        }
+                    }
+
+                    new bootstrap.Tab(this).show();
+                }
+            });
+        });
+    });
+</script>
+
 
     @include('colegio.partials.card_bottom')
 @endsection

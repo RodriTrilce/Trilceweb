@@ -24,9 +24,17 @@ class BlogCreateRequest extends FormRequest
     public function rules()
     {
         return [
-          'title'   => 'required|unique:posts,title',
-          'site'    => 'required',
-          'content' => 'required'
+            'site'        => 'required|string|max:255',
+            'title'       => 'required|string|max:255',
+            'content'     => 'required|string',
+            'created_at'  => 'nullable|date',
+            'visible'     => 'nullable|boolean',
+            'marker'      => 'nullable|boolean',
+            'approved'    => 'nullable|boolean',
+            'image' => 'nullable|array', // Acepta un array de imágenes
+            'image.*' => 'mimes:jpeg,png,jpg,webp|max:2048', // Cada imagen debe ser válida y no superar los 2MB
+            'markerimage' => 'nullable|string',
         ];
     }
+    
 }
