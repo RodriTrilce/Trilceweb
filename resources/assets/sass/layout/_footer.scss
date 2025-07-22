@@ -1,5 +1,5 @@
-footer{
-  background: #53565A;
+footer {
+  background: #1C1B1D;
   height: 100%;
   width: 100%;
   color: lighten($gray, 50%);
@@ -7,12 +7,23 @@ footer{
   padding-bottom: 20px;
   padding-top: 30px;
 
-  span.espe-text {
-    font-family: 'Geogrotesque-Md';
+  a.espe-text {
+    font-family: "Geogrotesque-Rg";
     font-size: 15px;
-}
+    color: rgba(255, 255, 255, 0.775);
+    transition: color 0.3s ease;
+  }
 
-  @include breakpoint(baby){
+  a.espe-text:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  .c-white {
+    color: white !important;
+  }
+
+  @include breakpoint(baby) {
     margin-bottom: 65px;
   }
 
@@ -20,109 +31,113 @@ footer{
     font-size: 11px;
   }
 
-  a{
+  a {
     color: white;
   }
 
-  .footer-menu{
+  .footer-menu {
     width: 100%;
   }
+  .footer-bottom{
+    font-family: Geogrotesque-Rg !important;
+    font-size: 14px;
+  }
 
-  .footer-top{
+  .footer-top {
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     font-size: 1rem;
+    margin-top: 50px;
 
-    span{
+    span {
       @media screen and (max-width: 768px) {
         font-size: 11px;
       }
     }
   }
 
-  @include breakpoint(baby){
-    .footer-bottom{
+  @include breakpoint(baby) {
+    .footer-bottom {
       margin-top: 20px;
     }
   }
 
-.links{
-  ul{
-    margin-top: 15px;
+  .links {
+    ul {
+      margin-top: 15px;
 
-    li{
-      display: inline;
+      li {
+        display: inline;
 
-      a,a:link{
-        text-decoration: none;
-        color: lighten($gray, 50%);
-      }
+        a,
+        a:link {
+          text-decoration: none;
+          color: lighten($gray, 50%);
+        }
 
-      &::after{
-        padding-left: 5px;
-        padding-right: 5px;
-        content:"|";
-      }
+        &::after {
+          padding-left: 5px;
+          padding-right: 5px;
+          content: "|";
+        }
 
-      &:last-child{
-        &::after{
-          content: "";
+        &:last-child {
+          &::after {
+            content: "";
+          }
+        }
+        a:hover {
+          color: white;
+        }
+      } // end  li
+
+      @media screen and (max-width: 768px) {
+        text-align: left;
+
+        li {
+          margin-top: 6%;
+          display: block;
+
+          &::after {
+            padding-left: 0;
+            content: "";
+          } // end after
+        } // end li
+      } // end media ul
+    } //end ul
+  }
+
+  .footer-right-icons {
+    @media screen and (max-width: 768px) {
+      padding-left: 26px !important;
+    }
+
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 1.5rem;
+        @media screen and (max-width: 768px) {
+          font-size: 1.6rem;
         }
       }
-      a:hover{
+
+      a:link,
+      a:visited {
         color: white;
       }
-    }// end  li
 
-    @media screen and (max-width: 768px) {
-      text-align: left;
-
-      li{
-        margin-top: 6%;
-        display: block;
-
-        &::after{
-          padding-left: 0;
-          content:"";
-        }// end after
-
-      }// end li
-
-    }// end media ul
-
-  }//end ul
-}
-
-.footer-right-icons {
-  @media screen and (max-width: 768px) {
-  }
-
-  li{
-    display: inline-block;
-
-    a{
-      font-size: 1.5rem;
-      @media screen and (max-width: 768px) {
-        font-size: 1rem;
+      &::after {
+        content: "";
+        padding-left: 10px;
       }
     }
-
-    a:link,a:visited{
-      color: white
-    }
-
-    &::after{
-      content:"";
-      padding-left: 10px;
-    }
   }
 }
-}
 
-.followconnect{
+.followconnect {
   padding: 0.5rem;
 }
-
 
 .footer-text-left {
   text-align: left;
@@ -134,12 +149,20 @@ footer{
   flex-direction: column;
   align-items: center; /* alinea el contenido a la izquierda */
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    align-items: start;
+  }
 }
 
 .fot-est {
   display: flex;
   flex-direction: column;
   gap: 0;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 28px;
+
+  }
 }
 
 .footer-column-space {
@@ -162,7 +185,22 @@ footer{
 }
 
 .separator-line {
-  border-top: 1px solid #ccc;  /* Línea de separación */
-  margin: 20px 0;  /* Espacio por encima y por debajo de la línea */
+  border-top: 1px solid #ccc; /* Línea de separación */
+  margin: 20px 0; /* Espacio por encima y por debajo de la línea */
+  opacity: 10%;
+}
+.imgSvgFot img {
+  width: 180px;
 }
 
+@media only screen and (max-width: 1366px) {
+  .espe-text {
+    font-size: 17px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.espe-text{
+  text-transform: uppercase;
+}
+}

@@ -1,14 +1,11 @@
-
-.error-404{
+.error-404 {
   margin-top: 15vh;
   margin-bottom: 20vh;
 
-
-  >div{
-    .row{
-
-      >div{
-        &:nth-child(1){
+  > div {
+    .row {
+      > div {
+        &:nth-child(1) {
           border-bottom: 1.2px solid $gray_opaque;
           border-right: 1.2px solid $orange;
           position: relative;
@@ -16,7 +13,7 @@
           padding-left: 0;
           text-align: right;
 
-          &::before{
+          &::before {
             content: "";
             position: absolute;
             width: 8px;
@@ -27,7 +24,7 @@
             background: $orange;
           }
 
-          &::after{
+          &::after {
             content: "\f108";
             position: absolute;
             top: -53px;
@@ -40,43 +37,41 @@
             font-size: 2.3rem;
             background: $orange;
             color: white;
-
           }
         }
 
-        &:last-child{
+        &:last-child {
           text-align: initial;
           padding-left: 1rem;
           border-bottom: 1.2px solid $gray_opaque;
         }
 
-        >div{
+        > div {
           width: 100%;
           margin-top: 3rem;
-        }//up
-
+        } //up
       }
     }
   }
 
-  .text{
-    h1{
+  .text {
+    h1 {
       color: $orange;
       font-size: 1.3rem;
       font-weight: bold;
       width: 8rem;
     }
 
-    p{
+    p {
       font-size: 1rem;
       margin-top: 2rem;
-      >a{
+      > a {
         color: $orange;
       }
     }
   }
 }
 
-.error-404--image{
+.error-404--image {
   max-width: 400px;
 }

@@ -2,7 +2,8 @@
   display: none;
 }
 .venue{
-  margin: 40px 0;
+  margin: 40px !important;
+  margin-left: 0 !important;
 
   @include breakpoint(baby){
     margin: 20px 0;

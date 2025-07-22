@@ -3,7 +3,7 @@
 }
 
 .js-tabs__header {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -12,11 +12,10 @@
   li {
     display: inline-block;
     float: left;
-    max-width: 14%;
+    flex: 1; 
 
     a{
       color: $gray;
-      min-height: 150px;
       display: flex;
       align-items: center;
       justify-content: center;

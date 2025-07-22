@@ -1,13 +1,14 @@
 #slides {
-    display: none
+    display: none;
 }
 
-#slides a img, #slides img{
+#slides a img,
+#slides img {
     width: 100%;
 }
 
 #slides .slidesjs-navigation {
-    margin-top:3px;
+    margin-top: 3px;
 }
 
 #slides .slidesjs-previous {
@@ -76,10 +77,10 @@
 }
 
 .navbar {
-    overflow: hidden
+    overflow: hidden;
 }
-@media (max-width: 480px){
-    .slidesjs-pagination{
+@media (max-width: 480px) {
+    .slidesjs-pagination {
         display: none;
     }
 }

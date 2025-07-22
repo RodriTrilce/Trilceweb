@@ -5,47 +5,46 @@
   margin-left: $left;
 }
 
-.header-double-top{
-  >.row{
+.header-double-top {
+  > .row {
     position: relative;
     height: auto;
     flex-wrap: wrap;
     overflow: hidden;
 
-    @include breakpoint(baby){
+    @include breakpoint(baby) {
       height: auto;
     }
   }
 }
 
-.header-double-bottom{
+.header-double-bottom {
   background: $orange;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     height: 30px;
   }
 }
 
-.header-double-content-top{
+.header-double-content-top {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     order: -1;
     height: 100px;
   }
 }
 
-
-.header-double-title{
+.header-double-title {
   position: absolute;
   width: 60%;
   transform: translate(-60%, -50%);
   left: 50%;
   top: 50%;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     right: -83%;
     width: 100%;
     left: unset;
@@ -55,45 +54,42 @@
     left: 0;
     text-align: center;
 
-    &::before{
+    &::before {
       display: none;
     }
   }
 
-
-  h1{
+  h1 {
     font-size: 2.4em;
     font-family: $font_cae_heavy;
     color: white;
     display: inline-block;
     background-color: $orange;
-    padding: .7rem;
+    padding: 0.7rem;
 
-    @include breakpoint(baby){
+    @include breakpoint(baby) {
       font-size: 1.3rem;
       padding: 0.1rem;
     }
 
-    @include breakpoint(minibaby){
+    @include breakpoint(minibaby) {
       font-size: 1.1rem;
-      padding: .1rem;
+      padding: 0.1rem;
     }
-
   }
 
-  p{
+  p {
     color: white;
     display: inline-block;
     margin-left: 2rem;
 
-    @media (max-width: 1600px){
+    @media (max-width: 1600px) {
       display: none;
     }
   }
-
 }
 
-.header-double-border{
+.header-double-border {
   position: absolute;
   border: 10px solid white;
   width: 65.3%;
@@ -102,65 +98,60 @@
   left: 50%;
   top: 50%;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     display: none; // v2
   }
 }
 
-.header-double-p-up{
+.header-double-p-up {
   font-size: 1.1rem;
   font-weight: bold;
   max-width: 25rem;
 }
 
-
-
-
-
-
-.header-double-top-colegio{
-  >.row{
+.header-double-top-colegio {
+  > .row {
     position: relative;
     height: 255px;
     flex-wrap: wrap;
     overflow: hidden;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       height: auto;
     }
 
-    >div.col-xs-12,div.col-sm-6,div.col-md-12{
-      &:nth-child(1){
-
-        @media screen and (max-width: 768px){
+    > div.col-xs-12,
+    div.col-sm-6,
+    div.col-md-12 {
+      &:nth-child(1) {
+        @media screen and (max-width: 768px) {
           height: 4rem;
         }
       }
 
-      &:nth-child(2){
+      &:nth-child(2) {
         background-repeat: no-repeat;
         background-size: cover;
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
           order: -1;
           height: 10rem;
         }
       }
-
     }
 
-    .header-double-title{
+    .header-double-title {
       position: absolute;
       width: 60%;
       @include margin(5rem, initial, initial, 11.5%);
       left: 0;
 
-      @include breakpoint(baby){
-        bottom:0px;
-        margin-left: 10%
+      @include breakpoint(baby) {
+        bottom: 0px;
+        margin-left: 10%;
       }
 
-      h1{
+      h1 {
         font-size: 3.5em;
         font-family: $font_cae_heavy;
         color: $orange;
@@ -168,26 +159,25 @@
         background-color: white;
         padding: 0.8rem;
 
-        @include breakpoint(baby){
+        @include breakpoint(baby) {
           font-size: 1.2rem;
-          padding: .1rem;
+          padding: 0.1rem;
         }
       }
 
-      p{
+      p {
         font-family: $font_geo_reg;
         color: $gray;
         display: inline-block;
         margin-left: 2rem;
 
-        @include breakpoint(baby){
+        @include breakpoint(baby) {
           display: none;
         }
       }
-
     }
 
-    .header-double-border{
+    .header-double-border {
       position: absolute;
       border: 0.7rem solid $orange;
       width: 60%;
@@ -195,7 +185,7 @@
       height: 70%;
       left: 0;
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         border: 0.3rem solid white;
         bottom: -50%;
       }

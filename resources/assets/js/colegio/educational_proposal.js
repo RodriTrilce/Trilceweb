@@ -57,3 +57,41 @@ const AcorditionProposal = {
 }
 
 export default AcorditionProposal;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.accordions__item');
+
+  accordions.forEach(el => {
+    el.addEventListener('click', (e) => {
+      const self = e.currentTarget;
+      const control = self.querySelector('.accordions__control');
+      const content = self.querySelector('.accordions__content');
+
+      // 🔹 Cerrar todos los ítems primero
+      accordions.forEach(other => {
+        if (other !== self) {
+          other.classList.remove('open');
+          const otherControl = other.querySelector('.accordions__control');
+          const otherContent = other.querySelector('.accordions__content');
+          otherControl.setAttribute('aria-expanded', false);
+          otherContent.setAttribute('aria-hidden', true);
+          otherContent.style.maxHeight = null;
+        }
+      });
+
+      // 🔹 Alternar el actual
+      const isOpen = self.classList.contains('open');
+      if (isOpen) {
+        self.classList.remove('open');
+        control.setAttribute('aria-expanded', false);
+        content.setAttribute('aria-hidden', true);
+        content.style.maxHeight = null;
+      } else {
+        self.classList.add('open');
+        control.setAttribute('aria-expanded', true);
+        content.setAttribute('aria-hidden', false);
+        content.style.maxHeight = (content.scrollHeight + 100) + 'px'; // le suma 100px
+      }
+    });
+  });
+});

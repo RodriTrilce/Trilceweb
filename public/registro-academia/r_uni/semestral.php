@@ -1,6 +1,7 @@
 <?php
 	//Replace the plain text body with one created manually
-	$mail->Body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	$mail->Body = '
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     
@@ -32,7 +33,7 @@
                                 <tr style="padding: 0; margin: 0; background-color: #ffffff !important;">
                                     <td style="vertical-align: bottom; padding: 0; margin: 0;">
                                         <a href="https://www.trilce.edu.pe/matricula-linea-2025/" target="_blank">
-                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/d6619780-f3a0-11ef-9e7c-8b92215704b1.png" alt="" width="500">
+                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/9a46d260-14be-11f0-a78c-ef41fc2ae457.png" alt="" width="500">
                                         </a>
                                     </td>
                                 </tr>
@@ -44,7 +45,7 @@
                                 <tr style="padding: 0; margin: 0; background-color: #ffffff !important;">
                                     <td style="vertical-align: bottom; padding: 0; margin: 0;">
                                         <a href="https://www.trilce.edu.pe/l/whatsapp-uni" target="_blank">
-                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/4ae5c630-ddc5-11ef-9b19-e3deed64c727.png" alt="" width="500">
+                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/10738270-0a83-11f0-b5ae-a9bb5c76d8c9.png" alt="" width="500">
                                         </a>
                                     </td>
                                 </tr>
@@ -56,7 +57,7 @@
                                 <tr style="padding: 0; margin: 0; background-color: #ffffff !important;">
                                     <td style="vertical-align: bottom; padding: 0; margin: 0;">
                                         <a href="https://www.messenger.com/t/AcademiaTrilce" target="_blank">
-                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/4b0d7750-ddc5-11ef-ae56-8549205eef55.png" alt="" width="500">
+                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/e9382330-0683-11f0-8bf5-c16184a913b8.png" alt="" width="500">
                                         </a>
                                     </td>
                                 </tr>
@@ -67,7 +68,7 @@
                                 <tr style="padding: 0; margin: 0; background-color: #ffffff !important;">
                                     <td style="vertical-align: bottom; padding: 0; margin: 0;">
                                         <a href="tel:016198100" target="_blank">
-                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/4b309c40-ddc5-11ef-a0fc-0989ddf8117d.png" alt="" width="500">
+                                            <img class="logo" style="vertical-align: bottom;" src="https://www.trilce.edu.pe/storage/static/upload/e953a420-0683-11f0-8bf2-1b530c48044a.png" alt="" width="500">
                                         </a>
                                     </td>
                                 </tr>

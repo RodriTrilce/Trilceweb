@@ -6,7 +6,7 @@
   <title>Trilce | Academia | Tu mejor opción</title>
     {!! Meta::tag('description') !!}
     {!! Meta::tag('robots') !!}
-    {!! Meta::tag('url', Request::url()); !!}
+    {!! Meta::tag('url', Request::url()) !!}
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -98,6 +98,8 @@
   var page;
   @section('scripts');
 </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <script src="{{ mix('/js/app_academia.js') }}?v1.3" charset="utf-8"></script>
 <!-- <script src="{{ mix('/js/app_colegio.js') }}?v1.1" charset="utf-8"></script> -->
 @show

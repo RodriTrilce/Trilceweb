@@ -318,6 +318,22 @@
                             </ul>
                         </li>
 
+                        <!-- Pdf Editor  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pdf-editor" data-toggle="collapse" aria-expanded="false">
+                                <span data-feather="file-text"></span>
+                                Pdf editor
+                                <span data-feather="chevron-down" class="float-right"></span>
+                            </a>
+                            <ul class="collapse nav flex-column mb-2" id="pdf-editor">
+                                <li class="nav-item">
+                                    <a href="/admin/pdf-editor/" class="nav-link">
+                                        <span data-feather="corner-down-right"></span> Editor
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <!-- File manager -->
                         <li class="nav-item">
                             <a class="nav-link" href="#filemanager" data-toggle="collapse" aria-expanded="false">
@@ -339,21 +355,6 @@
                             </ul>
                         </li>
 
-                        <!-- Pdf Editor  -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pdf-editor" data-toggle="collapse" aria-expanded="false">
-                                <span data-feather="file-text"></span>
-                                Pdf editor
-                                <span data-feather="chevron-down" class="float-right"></span>
-                            </a>
-                            <ul class="collapse nav flex-column mb-2" id="pdf-editor">
-                                <li class="nav-item">
-                                    <a href="/admin/pdf-editor/" class="nav-link">
-                                        <span data-feather="corner-down-right"></span> Editor
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </nav>

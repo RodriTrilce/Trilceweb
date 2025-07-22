@@ -671,24 +671,6 @@ body,html {
   max-width: 300px!important
 }
 
-#logo-40year {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  position: absolute;
-  pointer-events: none;
-  opacity: 1!important;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 240px;
-  text-align: center
-}
-
-#logo-40year svg {
-  height: 130px;
-  max-width: 300px!important
-}
-
 #logo-40year p {
   font-family: Geogrotesque-Rg;
   color: #fff;
@@ -817,4 +799,7 @@ p.slogan.text_der {
 
 .academia .human img {
   object-fit: cover !important;
+}
+ul.contant-info-ul {
+  padding-left: 0 !important;
 }

@@ -10,15 +10,38 @@
 	.class_h4{
 		font-family: Geogrotesque-Md !important;
 	}
-</style>
-	<div class="row col-xs-12 center-xs admission-ads">
-		<div class="admission-ads__container">
-			<div class="row col-xs-12">
 
-				<div class="col-xs-12 col-sm">
-					<h3 class="class_h3">¿Quieres saber más sobre nuestro<br>proceso de matrícula 2025?</h3> <br>
+	.sede-whatsapp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.sede-whatsapp-grid a {
+  flex: 1 1 calc(50% - 12px); /* 2 columnas con espacio */
+  max-width: calc(50% - 12px);
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .sede-whatsapp-grid a {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+</style>
+<div class="wcontainer">
+	<div class="seccion-matricula container py-5 manu-pad">
+		<div class="d-flex align-items-cemter man_flex_respon">
+			<!-- Columna izquierda - 60% -->
+			<div class="col-md-6 d-flex justify-content-end">
+				<div class="contenido_iz text-center iz_de" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="100">
+					<h3 class="class_h3">¿Quieres saber más sobre nuestro<br>proceso de matrícula 2025?</h3>
 					<h3 class="class_h4" style="color: #25d366 !important">¡Contáctanos!</h3> <br>
-					<div id="brena">
+					
+					<div id="brena" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51944387279&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 944 387 279
@@ -30,21 +53,21 @@
 							</button>
 						</a>
 					</div>
-					<div id="callao">
+					<div id="callao" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873603&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 603
 							</button>
 						</a>
 					</div>
-					<div id="chorrillos">
+					<div id="chorrillos" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873608&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 608
 							</button>
 						</a>
 					</div>
-					<div id="comas">
+					<div id="comas" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873589&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 589
@@ -56,15 +79,10 @@
 							</button>
 						</a>
 					</div>
-					<div id="la-molina">
+					<div id="la-molina" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51932883977&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 883 977
-							</button>
-						</a>
-						<a href="https://api.whatsapp.com/send?phone=51944859260&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
-							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
-								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 944 859 260
 							</button>
 						</a>
 						<a href="https://api.whatsapp.com/send?phone=51932836392&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
@@ -73,7 +91,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="los-olivos">
+					<div id="los-olivos" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873598&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 598
@@ -85,14 +103,14 @@
 							</button>
 						</a>
 					</div>
-					<div id="maranga">
+					<div id="maranga" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873593&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 593
 							</button>
 						</a>
 					</div>
-					<div id="marsano">
+					<div id="marsano" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51940492520&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 940 492 520
@@ -104,28 +122,28 @@
 							</button>
 						</a>
 					</div>
-					<div id="nana">
+					<div id="nana" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51989147350&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 989 147 350
 							</button>
 						</a>
 					</div>
-					<div id="pro">
+					<div id="pro" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51977456026&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 977 456 026
 							</button>
 						</a>
 					</div>
-					<div id="roma">
+					<div id="roma" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873619&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 619
 							</button>
 						</a>
 					</div>
-					<div id="salamanca">
+					<div id="salamanca" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51932883680&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 883 680
@@ -133,32 +151,32 @@
 						</a>
 						<a href="https://api.whatsapp.com/send?phone=51932883983&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
-								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 883 680
+								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 883 983
 							</button>
 						</a>
 					</div>
-					<div id="salaverry">
+					<div id="salaverry" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873572&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 572
 							</button>
 						</a>
 					</div>
-					<div id="san-isidro">
+					<div id="san-isidro" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51989301343&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 989 301 343
 							</button>
 						</a>
 					</div>
-					<div id="san-juan-de-lurigancho">
+					<div id="san-juan-de-lurigancho" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51984290389&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 984 290 389
 							</button>
 						</a>
 					</div>
-					<div id="santa-anita">
+					<div id="santa-anita" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51988075467&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 988 075 467
@@ -170,7 +188,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="villa-el-salvador">
+					<div id="villa-el-salvador" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51989039381&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 989 039 381
@@ -182,7 +200,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="villa-maria">
+					<div id="villa-maria" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51989045810&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 989 045 810
@@ -194,7 +212,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="arequipa">
+					<div id="arequipa" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51963975939&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 963 975 939
@@ -206,7 +224,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="chiclayo">
+					<div id="chiclayo" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51932883945&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 883 945
@@ -218,21 +236,21 @@
 							</button>
 						</a>
 					</div>
-					<div id="chanchamayo">
+					<div id="chanchamayo" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873583&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 583
 							</button>
 						</a>
 					</div>
-					<div id="huancayo">
+					<div id="huancayo" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51908873614&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 908 873 614
 							</button>
 						</a>
 					</div>
-					<div id="piura">
+					<div id="piura" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51932836382&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 932 836 382
@@ -244,7 +262,7 @@
 							</button>
 						</a>
 					</div>
-					<div id="trujillo">
+					<div id="trujillo" class="sede-whatsapp-grid">
 						<a href="https://api.whatsapp.com/send?phone=51974067867&text=%20%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%20de%20matr%C3%ADcula%202025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 974 067 867
@@ -266,23 +284,26 @@
 							</button>
 						</a>
 					</div>
-					<div id="central">
+					<div id="central" class="sede-whatsapp-grid">
 						<a href="http://www.trilce.edu.pe/l/whatsapp-matricula-2025" target="_blank" class="admission-ads__link">
 							<button class="admission-ads__container-cta banner__button-cta banner__button-cta--white" type="button" name="button" style="border-radius:20px; background-color: #25d366 !important; display: inline-flex; align-items: center;">
 								<img src="https://www.trilce.edu.pe/registro-academia/images/w_b.svg" alt="Trilce Colegios" style="width: 18px; padding-top: 3px; margin-right: 4px"> 936 827 930
 							</button>
 						</a>
 					</div>
-
-					
 				</div>
+			</div>
 
-				<div class="row col-xs-4 bottom-xs center-xs xs-hide ">
-					<img src="{{ url('/static/images/colegio/propuesta-feb/nina-banner.png') }}" alt="">	
-				</div>        		
+			<!-- Columna derecha - 40% -->
+			<div class="col-md-6 d-flex justify-content-start">
+				<div class="contenido_de" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+					<img src="/static/images/colegio/trilce_nina_2025.png" alt="Imagen derecha"
+						class="img-fluid image-nina">
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 	<script type="text/javascript">
 		if (window.location.href.indexOf("brena") != -1) {

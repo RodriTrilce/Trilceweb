@@ -36,49 +36,86 @@
 
         <div class="main tab-sup">
 
-            <input id="tab9" type="radio" name="tabs" checked>
-            <label for="tab9">
-                Anual
-            </label>
-
-            <input id="tab8" type="radio" name="tabs">
-            <label for="tab8">
-                Semestral
-            </label>
-
-            <input id="tab10" type="radio" name="tabs">
+            <input id="tab10" type="radio" name="tabs" checked>
             <label for="tab10">
                 Escolar
             </label>
 
+
+            <input id="tab8" type="radio" name="tabs">
+            <label for="tab8">
+                Reforzamiento
+            </label>
+
+            <input id="tab9" type="radio" name="tabs">
+            <label for="tab9">
+                Anual
+            </label>
+
             <div class="content">
+
 
                 <div id="content8">
                     <table class="table-rest3 animate__animated animate__fadeIn">
                         <thead>
                             <tr>
-                                <th>Inicio</th>
-                                <th>Fin</th>
-                                <th>N° Semanas</th>
-                                <th>Precio Mensual (Presencial)</th>
-                                <th>Precio Mensual (Virtual)</th>
-                                <th>Turno</th>
-                                <th>Sedes</th>
+                              <th colspan="9" style="border: none; padding: 0;"></th> <!-- Ocupa todo el ancho sin mostrar nada -->
                             </tr>
-                        </thead>
+                            <tr>
+                                <th colspan="5" style="border: none; background-color: white;"></th>
+                                <th colspan="2" class="text-center espeDa" style="border: none;
+">
+                                  <div style="
+                                    display: inline-block;
+                                    font-weight: bold;
+                                  ">
+                                    Pago en cuotas
+                                  </div>
+                                </th>
+                                <th colspan="2" style="border: none; background-color: white;"></th>
+                              </tr>
+                              
+                            <tr>
+                              <th>Inicio</th>
+                              <th>Fin</th>
+                              <th>N° Semanas</th>
+                              <th>Modalidad</th>
+                              <th>Pago único</th>
+                              <th>1era cuota</th>
+                              <th>2da cuota</th>
+                              <th>Turno</th>
+                              <th>Sedes</th>
+                            </tr>
+                          </thead>
+                          
+                          
                         <tbody>
                             <tr>
-                                <td data-label="Inicio:">17/03/2025</td>
-                                <td data-label="Fin:">09/08/2025</td>
-                                <td data-label="N° Semanas:">21</td>
-                                <td data-label="Precio Mensual (Presencial):">S/ 430.00</td>
-                                <td data-label="Precio Mensual (Virtual):">S/ 220.00 </td>
+                                <td data-label="Inicio:" style="font-weight: bold; color: #ff4e0e;">11/08/2025</td>
+                                <td data-label="Fin:">04/09/2025</td>
+                                <td data-label="N° Semanas:">8</td>
+                                <td data-label="Modalidad:" style="font-weight: bold; color: #ff4e0e;">Presencial</td>
+                                <td data-label="Pago único:">S/ 800.00</td>
+                                <td data-label="1era cuota:">S/ 400.00</td>
+                                <td data-label="2da cuota:">S/ 450.00</td>
                                 <td data-label="Turno:">Mañana</td>
                                 <td data-label="Sedes:">Santa Beatriz, Los Olivos y Villa el Salvador</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Inicio:" style="font-weight: bold; color: #ff4e0e;">11/08/2025</td>
+                                <td data-label="Fin:">04/09/2025</td>
+                                <td data-label="N° Semanas:">8</td>
+                                <td data-label="Modalidad:" style="font-weight: bold; color: #ff4e0e;">Virtual</td>
+                                <td data-label="Pago único:">S/ 450.00</td>
+                                <td data-label="1era cuota:">S/ 300.00</td>
+                                <td data-label="2da cuota:">S/ 200.00</td>
+                                <td data-label="Turno:">Mañana</td>
+                                <td data-label="Sedes:">-</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                
 
 
                 <div id="content9">
@@ -104,6 +141,16 @@
                                 <td data-label="Turno:">Mañana</td>
                                 <td data-label="Sedes:">Santa Beatriz, Los Olivos y Villa el Salvador</td>
                             </tr>
+
+                            <tr>
+                                <td data-label="Inicio:">31/03/2025</td>
+                                <td data-label="Fin:">13/12/2025</td>
+                                <td data-label="N° Semanas:">37</td>
+                                <td data-label="Precio Mensual (Presencial:">S/ 430.00</td>
+                                <td data-label="Precio Mensual (Virtual):">S/ -- </td>
+                                <td data-label="Turno:">Mañana</td>
+                                <td data-label="Sedes:">Villa el Salvador</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -122,6 +169,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                            
+                        <tr>
+                                <td data-label="Inicio:" style="font-weight: bold; color: #ff4e0e;">04/08/2025</td>
+                                <td data-label="Fin:">06/12/2025</td>
+                                <td data-label="N° Semanas:">18</td>
+                                <td data-label="Precio Mensual (Presencial):">S/ 300.00</td>
+                                <td data-label="Precio Mensual (Virtual):">S/ 160.00 </td>
+                                <td data-label="Turno:">Tarde</td>
+                                <td data-label="Sedes:">Santa Beatriz, Los Olivos y Villa el Salvador</td>
+                            </tr>
+
+                            <!--
                             <tr>
                                 <td data-label="Inicio:">17/03/2025</td>
                                 <td data-label="Fin:">19/07/2025</td>
@@ -131,6 +190,18 @@
                                 <td data-label="Turno:">Tarde</td>
                                 <td data-label="Sedes:">Santa Beatriz y Los Olivos</td>
                             </tr>
+
+                            <tr>
+                                <td data-label="Inicio:">07/04/2025</td>
+                                <td data-label="Fin:">19/07/2025</td>
+                                <td data-label="N° Semanas:">16</td>
+                                <td data-label="Precio Mensual (Presencial):">S/ 300.00</td>
+                                <td data-label="Precio Mensual (Virtual):">S/ -- </td>
+                                <td data-label="Turno:">Tarde</td>
+                                <td data-label="Sedes:">Villa el Salvador</td>
+                            </tr>
+                            -->
+
                         </tbody>
                     </table>
                 </div>
@@ -153,8 +224,10 @@
             <div class="benefits-buttons">
                 <a href="https://www.trilce.edu.pe/l/brochure-anual-sm-2025" target="_blank" class="btn">Descargar
                     Brochure Anual</a>
+                <!--
                 <a href="https://www.trilce.edu.pe/l/brochure-semestral-sm-2025" target="_blank"
                     class="btn">Descargar Brochure Semestral</a>
+-->
                 <a href="https://www.trilce.edu.pe/l/brochure-escolar-sm-2025" target="_blank" class="btn">Descargar
                     Brochure Escolar</a>
             </div>
@@ -471,7 +544,7 @@
                     </div>
                 </a>
             </div>
-            <div class="beginning-breakline"></div>
+            <!-- <div class="beginning-breakline"></div> -->
             <!--div class="col-xs beginning--item beginning--item--activecolors">
    <a href="/academia/ciclo-escolar" class="item-a">
     <div class="item-a-container">

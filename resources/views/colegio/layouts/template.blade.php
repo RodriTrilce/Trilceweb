@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="{{ mix('/css/main.css') }}?v1.3">
   <link rel="stylesheet" href="{{ mix('/css/main_colegio.css') }}?v1.3">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   @include('tracking.in_head')
 </head>
 
@@ -23,14 +25,6 @@
       overflow-x: hidden;
     }
   </style>
-
-  <div class="modal">
-    <div class="modal-inner">
-      <span data-modal-close data-modal-close-desing>
-        <!--&times;--><i class="fa fa-close"></i></span>
-      <div class="modal-content"></div>
-    </div>
-  </div>
 
   @yield('afterBody')
   @include('colegio.layouts.parts.header')

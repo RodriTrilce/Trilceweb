@@ -1,0 +1,112 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  04 Personalizado. CALL CSS START
+/*----------------------------------------*/
+
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  04 Personalizado. CALL CSS START
+/*----------------------------------------*/
+
+.flip-box {
+    background-color: transparent;
+    width: 700px;
+    height: 320px;
+    perspective: 1000px;
+
+	    @media #{$xs} {
+            height: 400px;
+        }
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: -10px 20px 30px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .flip-box-front {
+    background-color: #00B6B2;
+    color: white;
+  }
+  
+  .image-side {
+    flex-shrink: 0;
+            @media #{$xs}{
+              display: none;
+        }
+  }
+  
+  .image-side img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .flip-box-back {
+    background-color: #FFFFFF;
+        box-shadow: -10px 20px 30px 10px rgba(0, 0, 0, 0.1);
+
+    transform: rotateX(180deg);
+    padding: 50px;
+
+    	    @media #{$xs} {
+            padding: 25px;
+        }
+  }
+
+  .txtCalla{
+    font-size: 30px;
+    font-weight: 300;
+
+      @media #{$xs} {
+        font-size: 24px;
+      }
+  }
+
+  .txtCallb{
+    font-size: 58px;
+    font-weight: bold;
+
+      @media #{$xs} {
+        font-size: 46px;
+        line-height: 38px;
+      }
+  }
+  
+  .seguro{
+    font-size: 29px;
+    font-weight: 500;
+
+    	    @media #{$xs} {
+            font-size: 16px;
+        }
+  }
+
+  .texseguro{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+  

@@ -30,7 +30,7 @@ class File extends Model
 
   public function fileUrl()
   {
-    return Storage::url($this->location_folder . '/' . $this->token . '.' . $this->extension);
+    return rtrim(config('app.url'), '/') . Storage::url($this->location_folder . '/' . $this->token . '.' . $this->extension);
   }
 
   public function realFileUrl()

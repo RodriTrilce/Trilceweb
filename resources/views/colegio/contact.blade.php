@@ -4,7 +4,7 @@
 @section('content')
 
   <div class="header-double-image">
-    <div class="row col-xs-12 header-double-image-desk">
+    <div class="col-xs-12 header-double-image-desk">
       <img src="{{ url('/static/images/colegio/pages-banners/banner-contactenos.jpg') }}" alt="">
     </div>
     <div class="header-double-image-mobile">

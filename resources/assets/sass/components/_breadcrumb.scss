@@ -1,18 +1,19 @@
-.breadcrumb{
+.breadcrumb {
   display: inline;
 
   @media screen and (max-width: 700px) {
     font-size: 11px;
   }
 
-  li{
+  li {
     display: inline;
 
-    a:link,a:visited{
+    a:link,
+    a:visited {
       color: white;
     }
 
-    &::before{
+    &::before {
       content: "\F112";
       color: $orange;
       font-family: $font_icon;
@@ -21,20 +22,17 @@
       margin-right: 5px;
     }
 
-    &:first-child{
+    &:first-child {
       margin-left: 0;
 
-      &::before{
+      &::before {
         content: "";
         margin-left: 0;
       }
     }
 
-    &:last-child{
+    &:last-child {
       font-family: $font_cae_bold;
     }
-
-
   }
-
 }

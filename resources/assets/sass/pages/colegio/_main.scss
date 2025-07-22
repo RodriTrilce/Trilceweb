@@ -1,3 +1,54 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.foot {
+  margin-left: 0px !important;
+}
+
+.solo-movil {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .solo-movil {
+    display: none;
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.accordion-button:focus {
+  box-shadow: rgba(255, 0, 0, 0);
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.flecha-acordeon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Cuando el botón está expandido (quita .collapsed) */
+.accordion-button:not(.collapsed) .flecha-acordeon {
+  transform: rotate(180deg);
+}
+
+.flechita {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 85%;
+}
+
 // Nuevos inicios
 .nuevos-i {
   margin: 40px 0;
@@ -31,188 +82,6 @@
         max-width: 100%;
       }
     }
-  }
-}
-
-.nuevos-i-box {
-  > div {
-    margin-right: 6%;
-    transition: 0.2s ease-out;
-    position: relative;
-
-    > a {
-      width: 100%;
-      height: 100%;
-      display: block;
-      padding: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    .nuevos-i-top {
-      font-family: $font_geo_reg;
-
-      h3 {
-        font-size: 1.3rem;
-        color: transparentize($gray, 0.4);
-        transition: 0.2s ease-in;
-
-        @media (max-width: 768px) {
-          font-size: 0.9rem;
-        }
-      }
-
-      h4 {
-        letter-spacing: 0.25rem;
-        font-size: 1.3rem;
-        color: transparentize($gray, 0.4);
-      }
-
-      > img {
-        opacity: 0.4;
-        filter: alpha(opacity=40);
-        transition: 0.1s ease-in;
-        max-width: 40px;
-
-        @media (max-width: 768px) {
-          width: 60px;
-          height: 60px;
-        }
-      }
-
-      .modality {
-        font-family: $font_cae_bold;
-        font-size: 2rem;
-        display: inline-block;
-
-        @media (max-width: 1400px) {
-          font-size: 1.8rem;
-        }
-
-        @media (max-width: 1200px) {
-          font-size: 1.7rem;
-        }
-
-        @media (max-width: 1100px) {
-          font-size: 1.6rem;
-        }
-
-        @media (max-width: 768px) {
-          font-size: 1.2rem;
-          display: block;
-        }
-      }
-    }
-
-    .nuevos-i-bottom {
-      color: $gray;
-
-      .nuevos-hr {
-        margin: 15px auto;
-        width: 5%;
-        height: 8px;
-      }
-
-      .nuevos-hr-blue {
-        background: $gray;
-      }
-
-      .nuevos-hr-yellow {
-        background: $gray;
-      }
-
-      .nuevos-hr-orange {
-        background: $gray;
-      }
-    }
-
-    &:hover {
-      border-color: $orange;
-
-      h3,
-      h4 {
-        color: $gray;
-      }
-
-      img {
-        opacity: 1 !important;
-        filter: alpha(opacity=100) !important;
-      }
-
-      .nuevos-i-bottom {
-        font-weight: bold;
-      }
-
-      .nuevos-i-top {
-        color: $gray;
-        .modality-orange {
-          color: $gray;
-        }
-
-        .modality-blue {
-          color: $gray;
-        }
-
-        .modality-yellow {
-          color: $gray;
-        }
-      }
-    }
-
-    // Lineas
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      z-index: 1;
-      top: 20%;
-      width: 1px;
-      height: 45%;
-      background: transparentize($gray, 0.65);
-    }
-
-    &:last-child {
-      &::before {
-        width: 0;
-      }
-    }
-
-    //end lines
-
-    @media screen and (max-width: 768px) {
-      border: 0px;
-      margin-right: 0;
-
-      > a {
-        padding: 0;
-      }
-
-      .nuevos-i-top {
-        img {
-          max-width: 35px;
-          margin-bottom: 0 !important;
-        }
-
-        h3 {
-          font-size: 1rem;
-        }
-
-        h4 {
-          letter-spacing: 0;
-          font-size: 0.9rem;
-        }
-      }
-
-      .nuevos-i-bottom {
-        display: none;
-      }
-    }
-  } // end >div
-}
-
-.nuevos-colegio {
-  > div {
-    margin-right: 0;
   }
 }
 
@@ -840,7 +709,6 @@ ul {
   font-family: CaeciliaLTPro-45Light;
 }
 
-
 .colegio-cardsv2-items__item:hover {
   text-decoration: none;
 }
@@ -1024,13 +892,13 @@ footer {
 
 .card-matricula {
   width: 100%;
-  height: 280px; /* Tamaño fijo para todas las cajas */
+  height: 290px; /* Tamaño fijo para todas las cajas */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: white;
-  border-radius: 6px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.2);
   text-align: left;
   transition:
     transform 0.3s ease,
@@ -1040,12 +908,13 @@ footer {
 .text_matricula {
   font-family: "Geogrotesque-SmBd";
   color: #f4633a;
-  font-size: 3.6rem;
+  font-size: 42px;
   text-align: left;
-  line-height: 65px;
   margin-bottom: 15px;
 }
-
+.footer-right-icons {
+  padding-left: 0 !important;
+}
 /* Asegurar que todas las cajas tengan la misma altura */
 .seccion-matricula .row .col-10,
 .seccion-matricula .row .col-sm-6,
@@ -1068,8 +937,8 @@ footer {
 
 /* Efecto hover */
 .card-matricula:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px);
+  box-shadow: 0px 30px 40px 0px rgba(3, 24, 128, 0.3);
 }
 
 /* Colores */
@@ -1140,8 +1009,21 @@ p.Alumno {
 
 /* 📱 2️⃣ En celulares (tarjetas en columna) */ /*CELULARES*/
 @media (max-width: 767px) {
+  h3.text_matricula.v4 {
+    font-size: 1.4em;
+  }
+
+  h3.text_matricula.v3 {
+
+    line-height: 1.2;
+  }
+  .text_matricula {
+    margin-bottom: 20px;
+  }
+
   .seccion-matricula.container.py-5.py-8-manual {
-    padding-top: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0rem !important;
   }
   .card-matricula {
     height: 214px;
@@ -1150,6 +1032,8 @@ p.Alumno {
 
   .respon_card_tk {
     max-width: 33% !important;
+    padding: 0 !important;
+    display: inline !important;
   }
 
   .icono-matricula .la-4x {
@@ -1177,9 +1061,16 @@ p.Alumno {
     align-items: center;
     gap: 20px;
   }
+  .accordion-button:not(.collapsed)::after {
+    display: none;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+
   .card-matricula {
     height: 190px;
-    max-width: 220px;
+    max-width: 100%;
   }
   .respon_card_tk {
     max-width: 100% !important;
@@ -1191,6 +1082,7 @@ p.Alumno {
   .span_especial {
     line-height: 21px;
   }
+  
 }
 
 button.close.modern-close {
@@ -1202,7 +1094,7 @@ button.close.modern-close {
   max-width: 80% !important;
 }
 .txt_especial {
-  font-family: CaeciliaLTPro-75Bold;
+  font-family: Geogrotesque-SmBd;
   font-size: 50px;
   color: $orange;
   margin-bottom: 20px;
@@ -1224,7 +1116,7 @@ button.close.modern-close {
   padding-bottom: 8px !important;
   border-radius: 50px !important;
   font-size: 17px !important;
-  font-family: Geogrotesque-Bd;
+  font-family: Geogrotesque-SmBd !important;
 }
 button.btn.btn-primary.btn_wsp {
   display: flex;
@@ -1235,7 +1127,7 @@ button.btn.btn-primary.btn_wsp {
 
 /*SECCTION MATRICUTA 2025 CALL TO ACTION*/
 .image-nina {
-  max-width: 80% !important;
+  max-width: 65% !important;
 }
 
 .col-md-6.d-flex.justify-content-end {
@@ -1245,14 +1137,14 @@ button.btn.btn-primary.btn_wsp {
 .txt_propuesta {
   font-family: Geogrotesque-md;
   font-size: 16px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .contenido_iz.text-end.iz_de {
   text-align: center;
 }
-.iz_de img{
+.iz_de img {
   width: 65%;
 }
 
@@ -1265,7 +1157,8 @@ button.btn.btn-primary.btn_wsp {
   padding-bottom: 10px !important;
   border-radius: 50px !important;
   font-size: 18px !important;
-  font-family: Geogrotesque-Bd;
+  font-family: Geogrotesque-Rg !important;
+  font-weight: 700 !important;
 }
 
 .seccion-matricula.container.py-5.respon_espe {
@@ -1274,10 +1167,22 @@ button.btn.btn-primary.btn_wsp {
 
 .v3 {
   color: #000;
-  font-size: 1.8em;
+  font-size: 37px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
+}
+
+@media (max-width: 768px) {
+  h3.text_matricula.v3 {
+    margin-left: 0 !important;
+    font-size: 29px;
+    margin-top: 0px;
+  }
+
+  .accordions__list {
+    padding-left: 0;
+  }
 }
 
 /*TABS DISEÑO*/
@@ -1303,10 +1208,6 @@ a.nav-link {
   font-size: 17px;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.nav-link {
-  /*width: 100%*/
 }
 
 a.nav-link.show.active {
@@ -1360,6 +1261,10 @@ ul#subTabTraslado {
   font-family: $font_geo_reg;
   font-size: 18px;
   color: #000;
+
+  @media (max-width: 499px) {
+    font-size: 15px;
+  }
 }
 
 .card_tabs_proc {
@@ -1389,9 +1294,6 @@ ul#subTabTraslado {
   .txt_span {
     font-size: 14px;
   }
-}
-
-@media (max-width: 1160px) {
 }
 
 @media (max-width: 767px) {
@@ -1442,76 +1344,77 @@ ul#subTabTraslado {
   }
   .contenido_iz.text-end.iz_de {
     text-align: center;
-}
+
+    img.nina-banner {
+      display: none;
+    }
+
+    h2.text_matricula.v2 {
+      text-align: center;
+    }
+
+    /*CARD TRILCE RESPONSIVE*/
+    .man_flex_respon {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .iz_de img {
+      width: 100%;
+    }
+    .iz_de {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn_wsp_2 {
+      padding-left: 62px !important;
+      padding-right: 62px !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      border-radius: 40px !important;
+      font-size: 17px !important;
+      font-family: Geogrotesque-Bd;
+    }
+  }
 
   /*CONTENEDOR DEFAULT*/
   .seccion-matricula.container.py-5 {
     padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-}
-
-@media (max-width: 499px) {
-}
-
-@media (max-width: 767px) {
-  img.nina-banner {
-    display: none;
+    padding-bottom: 0rem !important;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  h2.text_matricula.v2 {
-    text-align: center;
-  }
-
-
-  /*CARD TRILCE RESPONSIVE*/
-  .man_flex_respon{
+  .man_flex_respon {
     flex-direction: column;
     gap: 20px;
   }
-  .iz_de img{
-    width: 100%;
-  }
-  .iz_de{
-    display: flex;
-    flex-direction: column;
-  }
 
-  .btn_wsp_2 {
-    padding-left: 62px !important;
-    padding-right: 62px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    border-radius: 40px !important;
-    font-size: 17px !important;
-    font-family: Geogrotesque-Bd;
+  .col-md-6.d-flex.justify-content-end {
+    justify-content: center !important;
   }
-  
-
 }
-
 
 @media (max-width: 767.98px) {
   .card-matricula {
-      cursor: pointer;
+    cursor: pointer;
   }
 
-  .card-matricula::after {    
-      float: right;
-      font-size: 1.2rem;
-      margin-right: 10px;
-      transition: transform 0.3s;
+  .card-matricula::after {
+    float: right;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: transform 0.3s;
   }
 
   .card-matricula[aria-expanded="true"]::after {
-      transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
 .seccion-matricula.container.py-5.manu-pad {
   padding-bottom: 0 !important;
 }
-
 
 .card-matricula {
   cursor: pointer;
@@ -1525,3 +1428,97 @@ ul#subTabTraslado {
   opacity: 1;
 }
 
+/* ubdex*/
+.cent_cont,
+.inscription_text {
+  text-align: center;
+}
+
+/*acordeon*/
+.accordion-button {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+.desktok {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .dek-top.d-flex {
+    flex-direction: column;
+  }
+}
+.contact {
+  margin-top: 40px !important;
+}
+.contact-subtitle {
+  font-size: 1.3rem;
+}
+
+//*preguntas fecuentes*/
+.frequent_questions__tabs .js-tabs__header {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 80%;
+
+}
+.js-tabs__header li a {
+  color: #53565a;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.frequentquestions{
+  margin-top: 50px !important;
+}
+.frequent_questions__tabs .js-tabs__header>li>a {
+  font-size: 1.5rem;
+}
+div#tabs_frequent_questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#headingOne, div#headingTwo, div#headingThree {
+  border: none !important;
+  background: none;
+}
+.card{
+  border: none !important;
+}
+button.bnt{
+  width: 100%;
+}
+.btn:focus,
+.btn-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}

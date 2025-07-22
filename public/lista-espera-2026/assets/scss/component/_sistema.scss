@@ -1,0 +1,123 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  01 Personalizado. SISTEMA EDUCATIVO CSS START
+/*----------------------------------------*/
+
+.sistema{
+    &__item{
+        height: 190px;
+        position: relative;
+        padding: 30px 35px;
+        padding-bottom: 45px;
+        @include box-shadow(0px 30px 40px 0px rgba(3, 24, 128, 0.2));
+        @include border-radius(14px);
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -moz-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -ms-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -o-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+
+        @media #{$xl}{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media #{$lg}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$sm}{
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 220px;
+        }
+        @media #{$xs}{
+            padding: 55px 35px;
+            height: 300px;
+        }
+
+        &:hover{
+            @include transform(translateY(-5px) translate3d(0,-5px,0));
+            cursor: pointer;
+            /*
+            & p{
+                visibility: hidden;
+                opacity: 0;
+            }
+            & .link-btn-2{
+                bottom: 45px;
+                visibility: visible;
+                opacity: 1;
+            }
+            */
+        }
+    }
+    &__title{
+        font-size: 22px;
+        color: $white;
+        margin-bottom: 17px;
+    }
+    &__content{
+        & p{
+            color: $white;
+            opacity: .8;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+        & .link-btn-2{
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+            visibility: hidden;
+            opacity: 0;
+            color: $white;
+
+            @media #{$lg}{
+                left: 15px;
+            }
+            &:hover{
+                border-color: $white;
+            }
+        }
+    }
+  &__thumb {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 85%; // <--- ajusta según lo que necesites
+  margin: 0 auto;
+
+
+    img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+
+    &.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .sistema__thumb {
+    height: 370px;
+  }
+}

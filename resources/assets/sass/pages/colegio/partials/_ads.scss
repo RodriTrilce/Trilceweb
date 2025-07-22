@@ -1,52 +1,53 @@
-
-.admission-ads{
-
+.admission-ads {
   margin-top: 20px;
-  margin-bottom: 40px;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     margin-top: 19px;
     margin-bottom: 20px;
   }
 }
 
-.admission-ads__link{
-	display: block;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	
-	@include breakpoint(baby){
-		padding: 15px;
-	}
+.admission-ads__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  @include breakpoint(baby) {
+    padding: 15px;
+  }
 }
 
-.admission-ads__container{
-    min-height: 100px;
-    color: $orange;
-    max-width: 700px;
-    /* border: 1px solid $orange; */
-    background: #efefef;
+.admission-ads__container {
+  min-height: 100px;
+  color: $orange;
+  border-radius: 20px;
+  /* border: 1px solid $orange; */
+  background: #efefef;
 
-
-  h1{
+  h1 {
     font-size: 1.7rem;
-    @include breakpoint(baby){
+    @include breakpoint(baby) {
       font-size: 1.3rem;
     }
   }
 
-
-  h1,h2{
+  h1,
+  h2 {
     color: $orange;
     font-family: $font_geo_reg;
     margin-bottom: 10px;
   }
 }
 
-.admission-ads__container-cta{
-  padding: 10px;
+.admission-ads__container-cta {
+  padding: 10px !important;
   margin-bottom: 10px;
-  background:  $orange;
+  background: $orange;
   color: white;
+}
+
+a.admission-ads__link {
+  margin-bottom: 10px;
+  padding: 20p;
 }

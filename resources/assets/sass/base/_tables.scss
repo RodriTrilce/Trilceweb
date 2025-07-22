@@ -1,23 +1,24 @@
 .table-responsive {
-  table{
+  table {
     border: 1px solid #ccc;
     width: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     border-collapse: collapse;
     border-spacing: 0;
 
-    tr{
+    tr {
       border: 1px solid #ddd;
       padding: 5px;
     }
 
-    th, td {
+    th,
+    td {
       padding: 8px;
       text-align: center;
     }
 
-    tbody td{
+    tbody td {
       vertical-align: top;
     }
 
@@ -31,10 +32,8 @@
 }
 
 @media screen and (max-width: 757px) {
-
   .table-responsive {
-    table{
-
+    table {
       border: 0;
 
       tr {
@@ -56,17 +55,16 @@
         &:before {
           content: attr(data-label);
           float: left;
-  //        text-transform: uppercase;
+          //        text-transform: uppercase;
           font-weight: bold;
         }
       }
     }
   }
 
-  .table-responsive{
+  .table-responsive {
     thead {
       display: none;
-    }    
+    }
   }
-
 }

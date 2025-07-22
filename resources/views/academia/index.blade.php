@@ -9,6 +9,10 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <style>
+
+html:has(:target) {
+    scroll-behavior: smooth;
+}
         nav>ul>li>a,
         nav>ul>li>a:link,
         nav>ul>li a:visited {
@@ -30,17 +34,11 @@
             width: 100%;
             height: auto;
         }
-
-
-
-
-
         div#modalTrilceHome {
             padding-right: 0 !important;
             !i;
             !;
         }
-
         .modern-modal .modal-dialog {
             width: 100%;
             height: auto;
@@ -183,13 +181,6 @@
             left: -9999px;
             top: -9999px;
         }
-
-
-
-
-
-
-
 
 
         .nuevos-i .nuevos-i-box>div>a:hover h3 {
@@ -634,10 +625,22 @@
         </div>
 
         <script>
-            $(document).ready(function() {
-                $('#modalTrilceHome').modal('show');
+            // Bandera global para evitar mostrar el popup múltiples veces
+            window.popupAlreadyShown = false;
+        
+            document.addEventListener("DOMContentLoaded", function () {
+                const modal = $('#modalTrilceHome');
+        
+                if (modal.length && !window.location.hash && !window.popupAlreadyShown) {
+                    console.log('✅ Mostrando popup al cargar sin hash');
+                    modal.modal('show');
+                    window.popupAlreadyShown = true;
+                } else {
+                    console.log('⛔ No mostramos popup (hash presente o ya mostrado)');
+                }
             });
         </script>
+          
     @endif
 
 
@@ -645,12 +648,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
     </script>
-    <script>
-        $(document).ready(function() {
-            jQuery.noConflict();
-            $("#modalTrilceHome").modal('show');
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 
     <script>
         // Get the modal

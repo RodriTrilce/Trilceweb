@@ -1,22 +1,22 @@
-.admission-new-title{
+.admission-new-title {
   font-family: $font_geo_reg;
   padding: 40px 0;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     padding: 20px 0;
   }
 }
 
-.new-t-symbol{
+.new-t-symbol {
   color: $gray;
   font-size: 2rem;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     font-size: 1.5rem;
   }
 }
 
-.new-t-title{
+.new-t-title {
   font-family: $font_geo_bold;
   color: $gray;
   font-size: 2.2rem;
@@ -30,88 +30,87 @@
     }
   */
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     font-size: 1.8rem;
   }
 }
 
-.new-t-subtitle{
+.new-t-subtitle {
   margin-top: 5px;
   font-size: 1.2rem;
 }
 
-.new-t-p{
+.new-t-p {
   margin-top: 7px;
   color: $gray;
 }
 
-.admission-new-table{
+.admission-new-table {
   margin-top: 40px;
   font-family: $font_geo_reg;
 }
 
-.admission-new-step{
+.admission-new-step {
   border-right: 1px solid transparentize($orange, 0.4);
 
-  >div{
+  > div {
     align-items: center;
     justify-content: center;
   }
 
-  .step-guide{
+  .step-guide {
     font-size: 1rem;
     text-align: right;
   }
 
-  .step-number{
+  .step-number {
     font-weight: bold;
     font-size: 30px;
     padding-left: 5px;
 
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
       padding-right: 5px;
     }
   }
 }
 
-.admission-new-item{
+.admission-new-item {
   padding-bottom: 30px;
 
-  @media (min-width: 700px){
+  @media (min-width: 700px) {
     padding-bottom: 50px;
   }
 }
 
-.admission-new-item-content{
+.admission-new-item-content {
   margin-left: 15px;
 
-  .item-content-title{
+  .item-content-title {
     font-family: $font_cae_bold;
     font-size: 1.4rem;
     margin-bottom: 15px;
 
-    @media (max-width: 700px){
+    @media (max-width: 700px) {
       font-size: 1.2rem;
     }
   }
 }
 
-.admission-new-table{
-  ul{
+.admission-new-table {
+  ul {
     padding-left: 18px;
 
-    li{
+    li {
       color: $gray;
       font-size: 1.1rem;
       position: relative;
 
-      @media (max-width: 700px){
+      @media (max-width: 700px) {
         font-size: 0.8rem;
       }
-
     }
 
-    li::before{
+    li::before {
       content: "\F323";
       color: $gray;
       font-family: $font_icon;
@@ -122,10 +121,9 @@
       margin-left: -19px;
     }
 
-    >ul{
-
-      li{
-        &::before{
+    > ul {
+      li {
+        &::before {
           content: "\F323";
           color: $gray;
           font-family: $font_icon;
@@ -134,27 +132,26 @@
         }
       }
     }
-
   }
 }
 
-.admission-new-superindex{
+.admission-new-superindex {
   margin: 40px 0;
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     margin: 20px 0;
   }
 }
 
-.admission-transfer-table{
+.admission-transfer-table {
   margin-top: 0;
   margin-bottom: 40px;
 
-  @include breakpoint(baby){
+  @include breakpoint(baby) {
     margin-bottom: 20px;
   }
 }
 
-.admission-regular-title{
+.admission-regular-title {
   margin-bottom: 1rem;
-  font-family: $font_cae_bold
+  font-family: $font_cae_bold;
 }

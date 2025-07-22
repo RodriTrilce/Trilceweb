@@ -1,0 +1,33 @@
+.rojizo-bg{
+    background-color:rgb(242, 46, 25);
+}
+
+.amarillo-bg {
+    background: rgb(255, 148, 6);
+}
+
+.azul-bg {
+    background: rgb(29, 77, 155);
+}
+
+.morado-bg {
+    background: rgb(98, 52, 140);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.white{
+    color: #FFF !important;
+}
+
+.fw-700{
+    font-weight: 700 !important;
+}
+
+.x-8{
+    padding-top: 6rem;
+    @media (max-width: 767px) {
+        padding-top: 2rem;
+    }
+}
