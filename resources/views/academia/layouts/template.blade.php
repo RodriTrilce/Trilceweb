@@ -83,13 +83,6 @@
   @include('tracking.init_body')
   @yield('afterBody')
 
-<div class="modal">
-  <div class="modal-inner">
-    <span data-modal-close data-modal-close-desing><i class="fa fa-close"></i></span>
-    <div class="modal-content"></div>
-  </div>
-</div>
-
 @include('academia.layouts.parts.header')
 @yield('content')
 @include('academia.layouts.parts.footer')
@@ -98,7 +91,6 @@
   var page;
   @section('scripts');
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <script src="{{ mix('/js/app_academia.js') }}?v1.3" charset="utf-8"></script>
 <!-- <script src="{{ mix('/js/app_colegio.js') }}?v1.1" charset="utf-8"></script> -->
