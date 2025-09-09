@@ -66,11 +66,33 @@
             <nav class="col-md-3 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
+
                         <li class="nav-item">
                             <a class="nav-link active" href="/admin/">
                                 <span data-feather="home"></span>
                                 Inicio <span class="sr-only">(current)</span>
                             </a>
+                        </li>
+
+                        <!-- Usuarios -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#usuarios" data-toggle="collapse" aria-expanded="false">
+                                <span data-feather="users"></span>
+                                Usuarios
+                                <span data-feather="chevron-down" class="float-right"></span>
+                            </a>
+                            <ul class="collapse nav flex-column mb-2" id="usuarios">
+                                <li class="nav-item">
+                                    <a href="/admin/users" class="nav-link">
+                                        <span data-feather="corner-down-right"></span> Listar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/admin/users/create" class="nav-link">
+                                        <span data-feather="corner-down-right"></span> Crear
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="nav-item">
@@ -150,7 +172,6 @@
                             </ul>
                         </li>
 
-                        <!-- Continuar con los demás elementos del menú siguiendo el mismo patrón -->
                         <!-- Solucionarios -->
                         <li class="nav-item">
                             <a class="nav-link" href="#solucionarios" data-toggle="collapse" aria-expanded="false">
@@ -386,23 +407,23 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Inicializar los iconos de Feather
             feather.replace();
 
             // Manejar la expansión y colapso de los menús
-            document.querySelectorAll('.sidebar .nav-link[data-toggle="collapse"]').forEach(function(element) {
-                element.addEventListener('click', function(e) {
+            document.querySelectorAll('.sidebar .nav-link[data-toggle="collapse"]').forEach(function (element) {
+                element.addEventListener('click', function (e) {
                     e.preventDefault();
                     var target = document.querySelector(this.getAttribute('href'));
                     if (target) {
@@ -419,7 +440,7 @@
 
             // Marcar como activo el elemento de menú actual basado en la URL
             var currentPath = window.location.pathname;
-            document.querySelectorAll('.sidebar .nav-link').forEach(function(link) {
+            document.querySelectorAll('.sidebar .nav-link').forEach(function (link) {
                 if (link.getAttribute('href') === currentPath) {
                     link.classList.add('active');
                     // Si es un submenú, expandir el menú padre
@@ -443,7 +464,7 @@
                     addRemoveLinks: true,
                     dictRemoveFile: "Eliminar",
                     previewTemplate: document.querySelector("#fileTemplate").innerHTML,
-                    success: function(file, response) {
+                    success: function (file, response) {
                         console.log("Respuesta del servidor:", response);
                         if (response.status == "1") {
                             var previewElement = file.previewElement;
@@ -467,10 +488,10 @@
     </script>
     <script src="{{ mix('/js/admin_main.js') }}" charset="utf-8"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            $("#search-input").on("keyup", function() {
+        document.addEventListener("DOMContentLoaded", function () {
+            $("#search-input").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
-                $("#my-table tbody tr").filter(function() {
+                $("#my-table tbody tr").filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
                 });
             });
@@ -478,13 +499,13 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             let order = [];
 
             let sortable = new Sortable(document.getElementById('sortable-banners'), {
                 handle: '.handle', // Solo permite arrastrar desde el icono ☰
                 animation: 150,
-                onEnd: function() {
+                onEnd: function () {
                     order = []; // Limpiar el array antes de actualizar
 
                     document.querySelectorAll("#sortable-banners tr").forEach((row, index) => {
@@ -506,7 +527,7 @@
             const updateOrderUrl = document.querySelector('meta[name="update-order-url"]').getAttribute('content');
 
             // Botón para actualizar el orden
-            document.getElementById("saveOrderBtn").addEventListener("click", function() {
+            document.getElementById("saveOrderBtn").addEventListener("click", function () {
                 if (order.length === 0) {
                     alert("No hay cambios en el orden.");
                     return;
@@ -516,15 +537,15 @@
                     document.getElementById('status-message').textContent = "Guardando...";
 
                     fetch(updateOrderUrl, {
-                            method: "POST",
-                            headers: {
-                                "X-CSRF-TOKEN": csrfToken,
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                order: order
-                            })
-                        }).then(response => response.json())
+                        method: "POST",
+                        headers: {
+                            "X-CSRF-TOKEN": csrfToken,
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            order: order
+                        })
+                    }).then(response => response.json())
                         .then(data => {
                             document.getElementById('status-message').textContent =
                                 "¡Orden actualizado!";

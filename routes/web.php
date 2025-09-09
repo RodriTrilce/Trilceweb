@@ -1,4 +1,5 @@
 <?php
+
 use App\Http\Controllers\Admin\BannersController;
 /*
 |--------------------------------------------------------------------------
@@ -61,16 +62,14 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
 Route::get('/admin/banners/{id}/edit', 'BannerController@edit')->name('admin.banners.edit');
 Route::delete('/admin/banners/{id}', 'BannerController@destroy')->name('admin.banners.destroy');
 Route::post('/admin/banners/update-order', [BannersController::class, 'updateOrder'])
-    ->name('admin.banners.updateOrder');
+      ->name('admin.banners.updateOrder');
 
-    Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
       Route::resource('/pdf-editor', 'EditorPdfController');
-  });
+});
 
-  Route::patch('/admin/blog/{id}/toggle-marker', 'Admin\BlogController@toggleMarker')->name('admin.blog.toggleMarker');
+Route::patch('/admin/blog/{id}/toggle-marker', 'Admin\BlogController@toggleMarker')->name('admin.blog.toggleMarker');
 
-  
-  
 
 
 
@@ -78,16 +77,15 @@ Route::post('/admin/banners/update-order', [BannersController::class, 'updateOrd
  * General
  */
 
-// Inicio (Home)
-Route::name('home')->get('/', function () {
-      return view('home');
-});
+      // Inicio (Home)
+      Route::name('home')->get('/', function () {
+            return view('home');
+      });
 
-/* Route::name('menu-trilce')
-      ->get('/menu-trilce', function(){
-        return Redirect::to('/storage/other/documents/menu/2019/menu.pdf');
-});
- */
+      Route::prefix('admin')->middleware('auth')->group(function () {
+            Route::resource('users', 'Admin\UserController');
+        });
+        
 
 
 // Downloader
@@ -106,8 +104,8 @@ Route::name('shortlink-dinamic')
 Route::name('academia-index')
       ->get('/academia', 'Academia\IndexController@index');
 
-      Route::name('academia-schoolcycle')
-    ->get('/academia/ciclo-escolar', 'Academia\SchoolcycleController@index');
+Route::name('academia-schoolcycle')
+      ->get('/academia/ciclo-escolar', 'Academia\SchoolcycleController@index');
 
 
 // Preparación (Preparation)
@@ -142,8 +140,7 @@ Route::name('academia-studentship-exam')
 Route::name('academia-studentship-exam-finish')
       ->post('/academia/becas-{university}/inscripcion/{idexam}', 'Academia\StudentshipExamController@store');
 
-Route::get('/academia/becas-{university}/inscripcion', function () {
-});
+Route::get('/academia/becas-{university}/inscripcion', function () {});
 
 // Seminary > Exam
 
@@ -275,7 +272,7 @@ Route::name('academia-tutorials')
 
 // Nosotros (Payment Guide)
 Route::name('academia-paymentguide')
-->get('/academia/guia-de-pagos', 'Academia\PaymentguideController@index');
+      ->get('/academia/guia-de-pagos', 'Academia\PaymentguideController@index');
 
 
 // Contactenos (Contact)
